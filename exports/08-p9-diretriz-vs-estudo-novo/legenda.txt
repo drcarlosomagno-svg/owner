@@ -1,0 +1,15 @@
+Saiu um estudo novo: a diretriz mudou? Como checar com IA antes de mudar a conduta.
+
+Uma recomendação de diretriz se apoia num corpo de evidência, não num estudo só. Antes de mudar a prática, pergunte:
+1. É a mesma população?
+2. É o mesmo desfecho e a mesma dose?
+3. Quanto o estudo pesa frente ao que já existe?
+4. Ele contradiz, confirma ou refina?
+
+O P9 da Biblioteca paper.ai__ coloca a recomendação literal ao lado do estudo novo e dá o veredito: se sustenta, se sustenta com ressalva, precisa de revisão ou não se sustenta.
+
+⚠️ Evidência não é conduta. A decisão sobre cada pessoa continua sendo sua.
+
+📤 Manda para o grupo que mudou a conduta pela manchete.
+
+#medicinabaseadaemevidencias #diretrizes #pesquisamedica #promptsdeia #paperai

@@ -1,0 +1,20 @@
+01.png
+Slide 1 de 7. Risco relativo impressiona. Risco absoluto informa. NNT, RR e HR sem medo, e o prompt que leva os números do estudo para a consulta.
+
+02.png
+Slide 2 de 7. 25% de redução do risco pode ser só 2,5 pontos percentuais. Se o evento cai de 10% para 7,5%, o risco relativo cai 25%. O risco absoluto cai 2,5 pontos. As duas frases descrevem o mesmo resultado.
+
+03.png
+Slide 3 de 7. O que cada número diz. Risco relativo: Risco no tratado ÷ risco no controle. 7,5% ÷ 10% = 0,75. Redução absoluta do risco: Risco no controle − risco no tratado. 10% − 7,5% = 2,5 pontos. Número necessário para tratar: 1 ÷ RRA. 1 ÷ 0,025 = 40 tratados para evitar 1 evento, no tempo do estudo.
+
+04.png
+Slide 4 de 7. E as três que mais confundem. Razão de chances (odds ratio): Parecida com o RR quando o evento é raro. Se afasta dele quando o evento é comum. Hazard ratio: Compara o risco instantâneo de evento ao longo do tempo, em análises de sobrevida. Intervalo de confiança de 95%: Para RR, OR e HR, se o intervalo inclui 1, o resultado não é estatisticamente significativo a 5%.
+
+05.png
+Slide 5 de 7. O formato da resposta. Resposta do P10. P10 · Tradutor clínico — [Autor], [ano] Em 30 segundos [o efeito em número absoluto: “de cada 100 pessoas...”] Os números que importam Desfecho · Controle · Intervenção · Diferença absoluta · NNT/NNH Conta: [como cada número foi calculado] [cálculo meu] Danos [o que foi medido, com números] [o que não foi medido] Na consulta “[frase 1]”
+
+06.png
+Slide 6 de 7. Confira a conta. Sempre. IA pode errar aritmética. Por isso o P10 marca toda conta com [cálculo meu] e mostra o cálculo ao lado: você confere em segundos. E lembre: o NNT vale para o tempo de seguimento do estudo.
+
+07.png
+Slide 7 de 7. Salve para o próximo journal club. “Saiu um estudo grande e a conduta mudou.” Mudou mesmo? É o próximo post. A Biblioteca de Prompts paper.ai__ está chegando. Lista de espera no link da bio.

@@ -6,9 +6,9 @@ publicar: Semana 1 · segunda
 slides:
   - tipo: capa
     tag: Manifesto
-    titulo: Você não precisa ler ==mais artigos==. Precisa fazer *perguntas melhores*.
+    titulo: Você não precisa ler mais artigos. Precisa ler ==os certos.==
     subtitulo: Por que a paper.ai__ existe e o que você vai encontrar aqui.
-    comando: Atue como pesquisador sênior em [SUA ÁREA]...
+    comando: creatina e memória em idosos
 
   - tipo: numero
     tag: O tamanho do problema
@@ -17,82 +17,79 @@ slides:
     texto: |
       Ninguém lê tudo. Nem precisa.
 
-      O que separa quem se atualiza de quem se afoga é saber **o que perguntar**.
+      O que separa quem se atualiza de quem se afoga é saber **o que buscar e em que confiar**.
     fonte: National Library of Medicine, estatísticas do PubMed/MEDLINE.
 
   - tipo: texto
     tag: A promessa
     titulo: A IA lê um artigo em ==segundos==
     texto: |
-      ChatGPT, Claude, Gemini, NotebookLM: todas resumem, traduzem e explicam.
+      Claude, ChatGPT, Gemini: todas buscam, resumem e explicam.
 
       O problema não é a ferramenta. É **o que você pede** para ela.
 
   - tipo: contraste
     tag: A diferença
     titulo: Pedido genérico, resposta genérica
+    mono: false
     ruim:
       rotulo: O que quase todo mundo pede
-      texto: Resume esse artigo pra mim.
+      texto: Me dá artigos sobre creatina e memória.
     bom:
-      rotulo: O que um pesquisador pede
-      texto: |
-        Extraia PICO, desenho, n, desfecho primário com IC 95% e limitações.
-        Cite a seção de cada dado.
-        Se não constar, escreva "não consta".
+      rotulo: O que a biblioteca pede por você
+      texto: Busque no PubMed, abra cada artigo antes de citar, classifique pelo nível de evidência e traga o DOI e o link. Sem fonte aberta, escreva **[não verificado]**.
 
   - tipo: numero
     tag: O risco
     numero: 47%
-    titulo: das referências geradas pelo ChatGPT-3.5 num estudo ==não existiam==
-    texto: Só 7% estavam corretas. Modelos novos erram menos. Mas erram.
+    titulo: das referências que o ChatGPT gerou num estudo ==não existiam==
+    texto: Era o GPT-3.5. Só 7% estavam corretas. Modelos novos erram menos. Mas erram.
     fonte: Bhattacharyya M et al. Cureus. 2023;15(5):e39238.
 
   - tipo: lista
-    tag: O que você vai encontrar aqui
-    titulo: Método, não mágica
-    estilo: check
+    tag: O que vem aí
+    titulo: Onze prompts, ==um para cada momento==
+    estilo: cartoes
     itens:
-      - t: Prompts prontos
-        d: Para cada etapa da pesquisa, da pergunta ao abstract.
-      - t: Leitura crítica
-        d: RoB 2, GRADE e vieses explicados sem enrolação.
-      - t: Estatística sem medo
-        d: NNT, RR, HR e IC 95% como um preceptor explicaria.
-      - t: Estudo ativo
-        d: Flashcards e revisão espaçada a partir de artigos e diretrizes.
-      - t: IA com ética
-        d: LGPD, declaração de uso e checagem de tudo.
+      - m: Buscar · P1–P3
+        t: Encontrar o que existe sobre o tema
+      - m: Ler · P4–P6
+        t: Decidir o que vale a leitura e ler a fundo
+      - m: Checar · P7–P9
+        t: Conferir antes de confiar
+      - m: Usar · P10–P11
+        t: Levar para o consultório e para o público
 
   - tipo: texto
     tag: Quem faz
     titulo: Médico e ==residente da USP==, no maior complexo hospitalar da América Latina.
     texto: |
-      Cada prompt daqui nasce de um framework científico (PICO, PRISMA, CONSORT, RoB 2, GRADE) e é testado em artigos reais antes de chegar até você.
+      Cada prompt da biblioteca segue um contrato de veracidade: nenhum artigo entra sem ter sido aberto e nenhum número é arredondado.
 
       Feito com IA. **Revisado por humano.**
 
   - tipo: cta
     destaque: seguir
     titulo: Siga para pesquisar ==melhor==, não mais.
-    texto: Toda semana, prompts prontos para copiar, testados e explicados.
-    extra: Estamos construindo a **biblioteca paper.ai__**, com um prompt para cada etapa da pesquisa. Lista de espera no link da bio.
+    texto: Toda semana, um prompt da biblioteca explicado. O que ele faz, o que volta e quando usar.
+    extra: A **Biblioteca de Prompts paper.ai__** está chegando. Lista de espera no link da bio.
 
 legenda: |
-  Prompts de IA para pesquisa médica: por que a paper.ai__ existe.
+  Biblioteca de prompts para pesquisa científica: por que a paper.ai__ existe.
 
-  Mais de 1 milhão de artigos novos entram no PubMed todo ano. A IA consegue ler, resumir e explicar em segundos, mas só responde bem a quem pergunta bem.
+  Mais de 1 milhão de artigos novos entram no PubMed todo ano. A IA consegue buscar, ler e explicar em segundos, mas só responde bem a quem pede bem. E, quando pede mal, inventa referência.
 
-  Aqui você vai encontrar:
-  ✅ Prompts prontos para cada etapa da pesquisa
-  ✅ Leitura crítica sem enrolação
-  ✅ Estatística explicada como um preceptor faria
-  ✅ Estudo ativo com IA
-  ✅ Uso ético: LGPD, declaração de uso e checagem
+  A Biblioteca de Prompts paper.ai__ tem onze prompts, um para cada momento da pesquisa:
+  🔎 Buscar (P1–P3): encontrar o que existe sobre o tema
+  📖 Ler (P4–P6): decidir o que vale a leitura e ler a fundo
+  ✅ Checar (P7–P9): conferir antes de confiar
+  🩺 Usar (P10–P11): levar para o consultório e para o público
 
-  Feito por um médico e residente da USP, no maior complexo hospitalar da América Latina. Com ajuda de IA, revisado por humano.
+  Funciona no Claude, no ChatGPT e no Gemini.
 
-  👉 Siga @paper.ai__ e ative as notificações. A biblioteca completa está chegando; a lista de espera está no link da bio.
+  Feito por um médico e residente da USP, no Hospital das Clínicas da FMUSP, o maior complexo hospitalar da América Latina. Com ajuda de IA, revisado por humano.
+
+  👉 Siga @paper.ai__ e ative as notificações. A lista de espera está no link da bio.
 
   Referência citada: Bhattacharyya M et al. High Rates of Fabricated and Inaccurate References in ChatGPT-Generated Medical Content. Cureus. 2023. doi:10.7759/cureus.39238
 

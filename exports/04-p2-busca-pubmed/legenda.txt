@@ -1,0 +1,15 @@
+Como fazer uma busca avançada no PubMed com IA, com MeSH e operadores booleanos: o P2 da paper.ai__.
+
+Buscar com palavras soltas perde os artigos indexados com outro nome e traz ruído. O P2 mapeia cada conceito no MeSH, soma os sinônimos que o MeSH não cobre e testa a busca antes de entregar.
+
+O que volta:
+✅ os termos certos (descritor MeSH + sinônimos)
+✅ a busca pronta em três versões: ampla, equilibrada e restrita
+✅ versões para Embase, Cochrane CENTRAL e Scopus
+✅ o texto da seção de métodos, no padrão PRISMA-S
+
+⚠️ Antes de rodar, confira cada termo no MeSH Database e teste com artigos que você já conhece.
+
+💾 Salve para a próxima busca e siga @paper.ai__.
+
+#pubmed #pesquisamedica #revisaosistematica #promptsdeia #paperai

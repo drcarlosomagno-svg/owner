@@ -1,0 +1,19 @@
+Biblioteca de prompts para pesquisa científica: onze prompts, um para cada momento da pesquisa.
+
+🔎 Buscar
+P1 Motor de Busca de Referências · P2 Gerador de Busca Avançada · P3 Vigilância Semanal
+
+📖 Ler
+P4 Triagem Rápida · P5 Dissecação de um Artigo · P6 Mesa de Comparação
+
+✅ Checar
+P7 Caçador de Vieses · P8 Detector de Referência Falsa · P9 Diretriz vs. Estudo Novo
+
+🩺 Usar
+P10 Tradutor Clínico · P11 Tradutor para Leigos
+
+Cada prompt indica o próximo passo e tem versão própria para Claude, ChatGPT e Gemini. Você escreve o tema, copia e cola numa conversa nova.
+
+💬 Comente BIBLIOTECA e eu te mando o link da lista de espera por DM, com acesso antecipado ao lançamento.
+
+#pesquisamedica #medicinabaseadaemevidencias #promptsdeia #iaparamedicos #paperai

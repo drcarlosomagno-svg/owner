@@ -1,0 +1,20 @@
+01.png
+Slide 1 de 7. A busca do PubMed pronta para colar. Termos MeSH, sinônimos e três versões (ampla, equilibrada e restrita), sem decorar sintaxe.
+
+02.png
+Slide 2 de 7. Buscar com palavras soltas perde artigos e traz ruído. O mesmo conceito aparece com nomes diferentes: SGLT2 inhibitors, gliflozins, empagliflozin... O PubMed indexa pelo MeSH, o vocabulário controlado dele. Quem busca sem MeSH perde o que foi indexado com outro nome.
+
+03.png
+Slide 3 de 7. Anatomia de uma boa busca. Um bloco por conceito: Em geral, população e intervenção. O desfecho costuma ficar de fora para não perder artigos. OR dentro de cada bloco: Junta o descritor MeSH e os sinônimos no título e no resumo. AND entre os blocos: Exige que todos os conceitos apareçam. Teste antes de usar: Conte os resultados e confira se os artigos que você já conhece aparecem.
+
+04.png
+Slide 4 de 7. O formato da resposta. Resposta do P2. P2 · Busca avançada — [tema] Em 30 segundos Use no PubMed: a versão [ampla / equilibrada / restrita] · [N] resultados em [data] Termos-chave: [Descritor MeSH 1] + [Descritor MeSH 2] Buscas prontas para o PubMed Ampla · encontra mais, com mais ruído Equilibrada · o meio-termo Restrita · menos ruído, pode perder artigos Outras bases Embase · Cochrane CENTRAL · Scopus Texto para a seção de métodos [até 5 linhas no padrão PRISMA-S]
+
+05.png
+Slide 5 de 7. SGLT2 na IC com fração de ejeção preservada. Prompt para copiar: ("Sodium-Glucose Transporter 2 Inhibitors"[Mesh] OR "SGLT2 inhibitor*"[tiab] OR gliflozin*[tiab] OR empagliflozin[tiab] OR dapagliflozin[tiab]) AND ("Heart Failure"[Mesh] OR "heart failure"[tiab]) AND ("preserved ejection fraction"[tiab] OR HFpEF[tiab])
+
+06.png
+Slide 6 de 7. Confira em 3 passos. Valide cada termo MeSH: Pesquise no MeSH Database do PubMed. A IA pode errar o nome do descritor. Teste com artigos que você já conhece: Se os estudos-chave não aparecem, a busca está estreita demais. Registre a estratégia: Base, data e busca exata. O P2 já entrega o texto de métodos no padrão PRISMA-S.
+
+07.png
+Slide 7 de 7. Salve para a sua próxima busca. No próximo post, o erro que pode fazer você citar um artigo que não existe. A Biblioteca de Prompts paper.ai__ está chegando. Lista de espera no link da bio.

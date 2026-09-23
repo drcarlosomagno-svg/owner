@@ -1,0 +1,23 @@
+01.png
+Slide 1 de 8. Escreva o tema. Receba os melhores artigos, com nível de evidência e link. O P1 faz a IA buscar no PubMed de verdade e abrir cada artigo antes de citar.
+
+02.png
+Slide 2 de 8. Pedir artigos “de memória” é pedir referência inventada. Num estudo com o ChatGPT-3.5, 47% das referências geradas não existiam. O P1 inverte a lógica: só entra na lista artigo que a IA abriu nesta conversa.
+
+03.png
+Slide 3 de 8. Como usar, em 3 passos. Escreva o tema: Em linguagem livre, do jeito que você perguntaria a um colega. Copie o prompt: Ele sai pronto para a IA que você usa, com o seu tema já dentro. Cole numa conversa nova: A resposta chega com os melhores artigos, o nível de evidência e o link para abrir cada um.
+
+04.png
+Slide 4 de 8. Você escreve do seu jeito. O P1 transforma em pergunta clínica. Antes de buscar, ele identifica o tipo de pergunta: tratamento, dano, diagnóstico, prognóstico ou prevalência. É o tipo de pergunta que define como cada artigo vai ser classificado.
+
+05.png
+Slide 5 de 8. O formato da resposta. Resposta do P1. P1 · Busca de referências — [tema em até 8 palavras] Pergunta: [a pergunta clínica] · Tipo: [tratamento / dano / ...] Em 30 segundos [a resposta em até 3 linhas, citando os artigos que a sustentam] Os melhores artigos 1. [Título original do artigo] [Primeiro autor] et al. · [Periódico] · [ano] · [desenho, n] Nível de evidência: [1 a 5] (Oxford 2011) O que encontrou: [resultado principal com IC 95%] DOI: [10.xxxx] · Link: https://pubmed.gov/[PMID]
+
+06.png
+Slide 6 de 8. Três escolhas sustentam o P1. Nenhum artigo sem ser aberto: O link é montado com o PMID lido na página. Isso elimina a referência inventada. Nível de evidência de Oxford: Escala de 1 a 5 na coluna do tipo de pergunta, com o motivo de cada rebaixamento. Entra quem não achou efeito: A seleção pesa evidência, relevância e influência, e a lista não pode ter só resultado favorável.
+
+07.png
+Slide 7 de 8. Uma dica para cada IA. Ligue a pesquisa na web: E o conector PubMed, se você tiver. Em temas longos, ative o pensamento estendido. Ligue o raciocínio: No plano gratuito, “Pense bem” no botão +. Em temas amplos, use o Deep Research. Escolha o Pro, se tiver: Se vier “Sem pesquisa na web”, responda “pesquise”. E confira os links com o P8.
+
+08.png
+Slide 8 de 8. Salve para a sua próxima pergunta clínica. No próximo post, o P2, para quando você mesmo quer montar a busca no PubMed. A Biblioteca de Prompts paper.ai__ está chegando. Lista de espera no link da bio.

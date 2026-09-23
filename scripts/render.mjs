@@ -17,13 +17,15 @@ import { TEMA_PADRAO, TEMAS, TIPOS, altText } from './lib/slides.mjs';
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const PASTA_CONTEUDO = path.join(RAIZ, 'carrosseis');
 const PASTA_BUILD = path.join(RAIZ, '.build');
+const CATALOGO = JSON.parse(await readFile(path.join(RAIZ, 'marca', 'catalogo-produto.json'), 'utf8'));
+const PROMPTS = new Map(CATALOGO.prompts.map((p) => [p.id, p]));
 const FORMATOS = { '3x4': { w: 1080, h: 1440 }, '4x5': { w: 1080, h: 1350 } };
 const MAX_HASHTAGS = 5;
 const MAX_LEGENDA = 2200;
 const K_MINIMO = 0.7;
 const K_ALERTA = 0.86;
-const K_MAXIMO = 1.18;
-const OCUPACAO_ALVO = 0.72;
+const K_MAXIMO = 1.2;
+const OCUPACAO_ALVO = 0.8;
 
 // ---------- argumentos ----------
 
@@ -41,7 +43,7 @@ if (!FORMATOS[formato]) {
 const { w: W, h: H } = FORMATOS[formato];
 const PASTA_SAIDA = path.join(RAIZ, formato === '3x4' ? 'exports' : `exports-${formato}`);
 
-// ---------- fio marca-texto contínuo ----------
+// ---------- fio vermelho contínuo ----------
 
 // Altura do fio em cada borda entre slides. As bordas compartilham o mesmo y,
 // então a linha "continua" quando a pessoa arrasta para o próximo slide.
@@ -62,12 +64,13 @@ function fio(i, total) {
 
 // ---------- montagem do HTML ----------
 
-const LOGO = '<div class="logo">paper<span class="ai">.ai</span><span class="cursor">__</span></div>';
+const LOGO = '<div class="logo">paper<span>.ai__</span></div>';
 const SETA = inline('→');
 
-function slideHtml(s, i, total, numero) {
+function slideHtml(s, i, total, numero, ctx) {
   const tema = s.tema || TEMA_PADRAO[s.tipo];
-  const capaNum = s.tipo === 'capa' && numero ? `<div class="capa-num" aria-hidden="true">${escapeHtml(numero)}</div>` : '';
+  const marca = ctx.produto?.id ?? numero;
+  const capaNum = s.tipo === 'capa' && marca ? `<div class="capa-num" aria-hidden="true">${escapeHtml(marca)}</div>` : '';
   const n = String(total).padStart(2, '0');
   const atual = String(i + 1).padStart(2, '0');
   const ultimo = i === total - 1;
@@ -75,9 +78,9 @@ function slideHtml(s, i, total, numero) {
 <section class="slide t-${tema} tipo-${s.tipo}" style="--w:${W}px;--h:${H}px">
   <header class="topo">${LOGO}<div class="pag"><b>${atual}</b>/${n}</div></header>
   ${capaNum}
-  <main class="corpo">${TIPOS[s.tipo](s)}</main>
+  <main class="corpo">${TIPOS[s.tipo](s, ctx)}</main>
   ${fio(i, total)}
-  <footer class="rodape"><span>@paper.ai__</span>${ultimo ? '<span>prompts para pesquisa médica</span>' : `<span class="arraste">arraste ${SETA}</span>`}</footer>
+  <footer class="rodape"><span>@paper.ai__</span>${ultimo ? '<span>biblioteca de prompts para pesquisa</span>' : `<span class="arraste">arraste ${SETA}</span>`}</footer>
 </section>`;
 }
 
@@ -100,6 +103,7 @@ function validar(c, arquivo) {
     if (!TIPOS[s.tipo]) erros.push(`slide ${i + 1}: tipo "${s.tipo}" não existe (${Object.keys(TIPOS).join(', ')})`);
     if (s.tema && !TEMAS.includes(s.tema)) erros.push(`slide ${i + 1}: tema "${s.tema}" não existe (${TEMAS.join(', ')})`);
   });
+  if (c.produto && !PROMPTS.has(c.produto)) erros.push(`produto "${c.produto}" não existe no catálogo (${[...PROMPTS.keys()].join(', ')})`);
   const tags = c.hashtags || [];
   if (tags.length > MAX_HASHTAGS) avisos.push(`${tags.length} hashtags; o Instagram limita a ${MAX_HASHTAGS}`);
   const primeira = String(c.legenda || '').trim().split('\n')[0];
@@ -130,7 +134,9 @@ function ajustarTexto({ kMin, kMax, ocupacao }) {
       topo = Math.min(topo, b.top);
       base = Math.max(base, b.bottom);
     }
-    const larguraOk = [...c.querySelectorAll('*')].every((el) => el.scrollWidth <= el.clientWidth + 1 || el.clientWidth === 0);
+    const larguraOk = [...c.querySelectorAll('*')].every(
+      (el) => el.scrollWidth <= el.clientWidth + 1 || el.clientWidth === 0 || getComputedStyle(el).textOverflow === 'ellipsis',
+    );
     return { cabe: base - topo <= r.height + 1 && larguraOk, fracao: (base - topo) / r.height };
   };
   const aplicar = (c, k) => c.style.setProperty('--k', k);
@@ -179,9 +185,10 @@ async function main() {
     const avisos = validar(c, arquivo);
     const total = c.slides.length;
     const numero = c.numero ?? id.match(/^(\d+)/)?.[1];
+    const ctx = { produto: PROMPTS.get(c.produto) };
 
     const htmlPath = path.join(PASTA_BUILD, `${id}.html`);
-    await writeFile(htmlPath, paginaHtml(c.titulo || id, c.slides.map((s, i) => slideHtml(s, i, total, numero)).join('\n')));
+    await writeFile(htmlPath, paginaHtml(c.titulo || id, c.slides.map((s, i) => slideHtml(s, i, total, numero, ctx)).join('\n')));
     await page.goto(pathToFileURL(htmlPath).href);
     await page.evaluate(() => document.fonts.ready);
 
@@ -209,6 +216,7 @@ async function main() {
       id,
       titulo: c.titulo || id,
       arquetipo: c.arquetipo || '',
+      produto: ctx.produto ? `${ctx.produto.id} · ${ctx.produto.nome}` : '',
       objetivo: c.objetivo || '',
       publicar: c.publicar || '',
       slides: total,
@@ -271,9 +279,9 @@ async function galeria() {
     '',
     'Cada pasta tem os slides numerados (`01.png`, `02.png`…), a legenda pronta para colar (`legenda.txt`) e o texto alternativo de cada slide (`alt-text.txt`).',
     '',
-    '| # | Carrossel | Arquétipo | Objetivo | Quando postar |',
-    '|---|---|---|---|---|',
-    ...metas.map((m) => `| ${m.id.slice(0, 2)} | [${m.titulo}](#${m.id}) | ${m.arquetipo} | ${m.objetivo} | ${m.publicar} |`),
+    '| # | Carrossel | Prompt da biblioteca | Arquétipo | Objetivo | Quando postar |',
+    '|---|---|---|---|---|---|',
+    ...metas.map((m) => `| ${m.id.slice(0, 2)} | [${m.titulo}](#${m.id}) | ${m.produto || '—'} | ${m.arquetipo} | ${m.objetivo} | ${m.publicar} |`),
     '',
   ];
   for (const m of metas) {
@@ -281,7 +289,7 @@ async function galeria() {
       `<a id="${m.id}"></a>`,
       `## ${m.titulo}`,
       '',
-      `**${m.arquetipo}** · objetivo: ${m.objetivo} · ${m.publicar} · ${m.slides} slides · [slides](${m.id}/) · [legenda](${m.id}/legenda.txt) · [alt text](${m.id}/alt-text.txt)`,
+      `${m.produto ? `**${m.produto}** · ` : ''}**${m.arquetipo}** · objetivo: ${m.objetivo} · ${m.publicar} · ${m.slides} slides · [slides](${m.id}/) · [legenda](${m.id}/legenda.txt) · [alt text](${m.id}/alt-text.txt)`,
       '',
       `![${m.titulo}](${m.id}/_prancha.jpg)`,
       '',

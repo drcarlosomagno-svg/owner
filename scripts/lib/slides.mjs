@@ -2,14 +2,15 @@ import { blocks, escapeHtml, inline, plain, promptText } from './markup.mjs';
 
 // Tema padrão de cada tipo de slide (pode ser trocado com `tema:` no YAML).
 export const TEMA_PADRAO = {
-  capa: 'escuro',
+  capa: 'claro',
   texto: 'claro',
   lista: 'claro',
   prompt: 'claro',
+  resposta: 'claro',
   contraste: 'claro',
   chat: 'claro',
   numero: 'claro',
-  cta: 'escuro',
+  cta: 'marca',
 };
 
 export const TEMAS = ['claro', 'escuro', 'marca'];
@@ -27,19 +28,60 @@ const ICONES = {
 export const icone = (nome, cls = '') =>
   `<svg class="ico ${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICONES[nome]}</svg>`;
 
-const tag = (t) => (t ? `<div class="tag">${inline(t)}</div>` : '');
+const tag = (t, codigo) =>
+  t || codigo ? `<div class="tag">${codigo ? `<span class="cod">${escapeHtml(codigo)}</span>` : ''}${t ? `<span>${inline(t)}</span>` : ''}</div>` : '';
 const titulo = (t, cls = 'titulo') => (t ? `<h2 class="${cls}">${inline(t)}</h2>` : '');
+const EMOJI = /\p{Extended_Pictographic}/u;
+
+// Cartão de um prompt da biblioteca, como na home do site.
+export const cartaoProduto = (p) =>
+  `<div class="cartao-produto"><span class="cod">${escapeHtml(p.id)}</span><b>${escapeHtml(p.nome)}</b><span>${escapeHtml(p.curto)}</span></div>`;
+
+// Formato de resposta de um prompt: "# título", "## seção", "- item", texto.
+// [colchetes] viram o destaque de campo do produto; `crases` viram código.
+function resposta(texto) {
+  const fmt = (t) =>
+    inline(t)
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/\[(?!\d+\])([^\]<]+)\]/g, '<span class="var">[$1]</span>');
+  let html = '';
+  let lista = false;
+  for (const linha of String(texto ?? '').split('\n')) {
+    const l = linha.trim();
+    const item = l.startsWith('- ');
+    if (lista && !item) {
+      html += '</ul>';
+      lista = false;
+    }
+    if (!l) continue;
+    if (l.startsWith('## ')) html += `<h4>${fmt(l.slice(3))}</h4>`;
+    else if (l.startsWith('# ')) html += `<p class="r-tit">${fmt(l.slice(2))}</p>`;
+    else if (item) {
+      if (!lista) html += '<ul>';
+      lista = true;
+      html += `<li>${fmt(l.slice(2))}</li>`;
+    } else html += `<p>${fmt(l)}</p>`;
+  }
+  return lista ? html + '</ul>' : html;
+}
 
 // Cada função devolve o HTML de dentro de <main class="corpo">.
+// `ctx.produto` é o prompt da biblioteca ligado ao carrossel (ou undefined).
 export const TIPOS = {
-  capa: (s) => `
-    ${tag(s.tag)}
+  capa: (s, ctx) => `
+    ${tag(s.tag, ctx.produto?.id)}
     <h1 class="titulo-capa">${inline(s.titulo)}</h1>
     ${s.subtitulo ? `<p class="subtitulo">${inline(s.subtitulo)}</p>` : ''}
-    ${s.comando ? `<div class="comando"><span class="prompt-sinal">&gt;</span><span>${promptText(s.comando)}</span><span class="cursor-bloco"></span></div>` : ''}`,
+    ${
+      s.comando
+        ? `<div class="pergunta"><span class="digitado">${escapeHtml(s.comando)}<span class="cursor"></span></span><span class="botao-prim">Criar prompt</span></div>`
+        : ctx.produto && s.cartao !== false
+          ? cartaoProduto(ctx.produto)
+          : ''
+    }`,
 
   texto: (s) => `
-    ${tag(s.tag)}
+    ${tag(s.tag, s.codigo)}
     ${titulo(s.titulo)}
     ${s.texto ? `<div class="texto">${blocks(s.texto)}</div>` : ''}
     ${s.nota ? `<p class="nota">${inline(s.nota)}</p>` : ''}`,
@@ -50,25 +92,35 @@ export const TIPOS = {
       .map((it, i) => {
         const item = typeof it === 'string' ? { t: it } : it;
         let marcador;
-        if (item.m) marcador = `<span class="marcador letra">${escapeHtml(item.m)}</span>`;
+        if (item.m && EMOJI.test(item.m)) marcador = `<span class="marcador emoji-m">${escapeHtml(item.m)}</span>`;
+        else if (item.m) marcador = `<span class="marcador letra">${escapeHtml(item.m)}</span>`;
         else if (estilo === 'check') marcador = `<span class="marcador sim">${icone('check')}</span>`;
         else if (estilo === 'x') marcador = `<span class="marcador nao">${icone('x')}</span>`;
         else marcador = `<span class="marcador num">${String(i + (s.inicio || 1)).padStart(2, '0')}</span>`;
         return `<li>${marcador}<div><div class="item-t">${inline(item.t)}</div>${item.d ? `<div class="item-d">${inline(item.d)}</div>` : ''}</div></li>`;
       })
       .join('');
-    const siglas = (s.itens || []).some((it) => typeof it === 'object' && String(it.m || '').length > 1);
-    return `${tag(s.tag)}${titulo(s.titulo)}<ol class="lista lista-${estilo}${siglas ? ' siglas' : ''}">${itens}</ol>${s.nota ? `<p class="nota">${inline(s.nota)}</p>` : ''}`;
+    const siglas = (s.itens || []).some((it) => typeof it === 'object' && String(it.m || '').length > 2 && !EMOJI.test(it.m));
+    return `${tag(s.tag, s.codigo)}${titulo(s.titulo)}<ol class="lista lista-${estilo}${siglas ? ' siglas' : ''}">${itens}</ol>${s.nota ? `<p class="nota">${inline(s.nota)}</p>` : ''}`;
   },
 
   prompt: (s) => `
-    ${tag(s.tag)}
+    ${tag(s.tag, s.codigo)}
     ${titulo(s.titulo, 'titulo titulo-menor')}
     <div class="cartao-prompt">
-      <div class="cartao-topo"><span>${escapeHtml(s.rotulo || 'PROMPT')}${s.parte ? ` · parte ${escapeHtml(s.parte)}` : ''}</span>${s.copiavel === false ? '' : `<span class="copie">${icone('copiar')}copie e cole</span>`}</div>
+      <div class="cartao-topo"><span>${escapeHtml(s.rotulo || 'Prompt')}${s.parte ? ` · parte ${escapeHtml(s.parte)}` : ''}</span>${s.copiavel === false ? '' : `<span class="copie">${icone('copiar')}Copiar</span>`}</div>
       <pre class="prompt-texto">${promptText(s.prompt)}</pre>
     </div>
     ${s.rodape ? `<p class="nota">${inline(s.rodape)}</p>` : ''}`,
+
+  resposta: (s) => `
+    ${tag(s.tag, s.codigo)}
+    ${titulo(s.titulo, 'titulo titulo-menor')}
+    <div class="resposta${s.cortada ? ' cortada' : ''}">
+      ${s.rotulo ? `<div class="r-cab">${escapeHtml(s.rotulo)}</div>` : ''}
+      ${resposta(s.resposta)}
+    </div>
+    ${s.nota ? `<p class="nota">${inline(s.nota)}</p>` : ''}`,
 
   contraste: (s) => {
     const lado = (d, tipo) => `
@@ -76,7 +128,7 @@ export const TIPOS = {
         <div class="lado-rotulo">${icone(tipo === 'ruim' ? 'x' : 'check')}${inline(d.rotulo || (tipo === 'ruim' ? 'Prompt comum' : 'Prompt de pesquisador'))}</div>
         <div class="lado-texto ${s.mono === false ? '' : 'mono'}">${s.mono === false ? inline(d.texto) : promptText(d.texto)}</div>
       </div>`;
-    return `${tag(s.tag)}${titulo(s.titulo, 'titulo titulo-menor')}<div class="contraste">${lado(s.ruim, 'ruim')}${lado(s.bom, 'bom')}</div>${s.nota ? `<p class="nota">${inline(s.nota)}</p>` : ''}`;
+    return `${tag(s.tag, s.codigo)}${titulo(s.titulo, 'titulo titulo-menor')}<div class="contraste">${lado(s.ruim, 'ruim')}${lado(s.bom, 'bom')}</div>${s.nota ? `<p class="nota">${inline(s.nota)}</p>` : ''}`;
   },
 
   chat: (s) => {
@@ -86,11 +138,11 @@ export const TIPOS = {
         return `<div class="msg msg-${quem}"><div class="msg-quem">${quem === 'ia' ? 'IA' : 'Você'}</div><div class="balao">${inline(m.texto)}</div></div>`;
       })
       .join('');
-    return `${tag(s.tag)}${titulo(s.titulo, 'titulo titulo-menor')}<div class="chat">${msgs}</div>${s.nota ? `<p class="nota">${inline(s.nota)}</p>` : ''}`;
+    return `${tag(s.tag, s.codigo)}${titulo(s.titulo, 'titulo titulo-menor')}<div class="chat">${msgs}</div>${s.nota ? `<p class="nota">${inline(s.nota)}</p>` : ''}`;
   },
 
   numero: (s) => `
-    ${tag(s.tag)}
+    ${tag(s.tag, s.codigo)}
     <div class="numero-grande"><mark>${escapeHtml(s.numero)}</mark></div>
     ${titulo(s.titulo)}
     ${s.texto ? `<div class="texto">${blocks(s.texto)}</div>` : ''}
@@ -105,7 +157,7 @@ export const TIPOS = {
       .map((a) => `<div class="acao ${a === destaque ? 'ativa' : ''}">${icone(a)}<span>${rotulos[a]}</span></div>`)
       .join('');
     return `
-      ${tag(s.tag)}
+      ${tag(s.tag, s.codigo)}
       <h2 class="titulo-cta">${inline(s.titulo)}</h2>
       ${s.texto ? `<div class="texto">${blocks(s.texto)}</div>` : ''}
       ${s.palavra ? `<div class="palavra">Comente <mark>${escapeHtml(s.palavra)}</mark></div>` : ''}
@@ -130,6 +182,11 @@ export function altText(s, i, total) {
     case 'prompt':
       add(s.titulo);
       partes.push('Prompt para copiar:', plain(s.prompt));
+      break;
+    case 'resposta':
+      add(s.titulo);
+      add(s.rotulo);
+      partes.push(plain(String(s.resposta || '').replace(/^#+ /gm, '').replace(/^- /gm, '').replace(/`/g, '')));
       break;
     case 'contraste':
       add(s.titulo);

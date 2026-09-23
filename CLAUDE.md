@@ -14,12 +14,14 @@ Conteúdo de Instagram da paper.ai__ (biblioteca de prompts de IA para pesquisa 
 - `carrosseis/*.yaml`: conteúdo. `_modelo.yaml` documenta todos os tipos de slide; arquivos com `_` não são renderizados.
 - `scripts/render.mjs`: lê o YAML, monta o HTML, ajusta o texto (`--k`), tira os prints com Playwright e escreve `legenda.txt`, `alt-text.txt`, `meta.json`, `_prancha.jpg` e `exports/README.md`.
 - `scripts/lib/slides.mjs`: HTML de cada tipo de slide + alt text. `scripts/lib/markup.mjs`: marcação (`==marca==`, `**negrito**`, `*itálico*`, `[VARIÁVEL]`, `→`).
-- `templates/slide.css`: todo o visual. Tamanhos dentro de `.corpo` usam `calc(Npx * var(--k))`.
+- `templates/slide.css`: todo o visual, com os tokens do produto (vermelho `#D0112B`, Anton, IBM Plex). Tamanhos dentro de `.corpo` usam `calc(Npx * var(--k))`.
+- `marca/catalogo-produto.json`: os onze prompts da Biblioteca de Prompts (P1–P11), extraídos do artefato do produto. `produto: P8` no YAML liga o carrossel a um prompt.
 - `exports/`: saída gerada e versionada (o usuário baixa daqui). Sempre regenere depois de editar um YAML.
 
 ## Regras de conteúdo
 
-- Siga `estrategia/playbook-carrosseis.md` e `marca/identidade.md`.
+- Siga `estrategia/playbook-carrosseis.md` e `marca/identidade.md`. A identidade é a do produto; não invente métodos, nomes ou prompts que não existem no catálogo.
+- Nunca publique um prompt do produto na íntegra: mostre o que ele faz e o formato da resposta.
 - Nenhum dado sem fonte verificável; prompts sempre com regra de checagem; nunca sugerir colar dados de pacientes na IA.
 - Sem superlativos não demonstráveis ("a melhor biblioteca").
 - Para criar um carrossel novo, use o skill `/novo-carrossel`.

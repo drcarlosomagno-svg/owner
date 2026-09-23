@@ -1,0 +1,98 @@
+titulo: O contrato de veracidade
+arquetipo: O que é…?
+objetivo: salvamentos
+publicar: Semana 1 · quarta
+
+slides:
+  - tipo: capa
+    tag: O que muda tudo
+    titulo: O contrato que a IA assina ==antes de falar de qualquer artigo==
+    subtitulo: As regras que todo prompt da paper.ai__ carrega, e por que elas acabam com a referência inventada.
+
+  - tipo: texto
+    tag: O problema
+    titulo: Sem regras, a IA ==preenche lacunas== com o que parece plausível
+    texto: |
+      Autor comum, revista famosa, ano recente, número redondo.
+
+      **Parece verdade. Muitas vezes não é.**
+
+  - tipo: lista
+    tag: O contrato de veracidade
+    titulo: As 4 primeiras regras
+    itens:
+      - t: Só vale o que foi aberto
+        d: Toda afirmação sobre um estudo vem de uma fonte aberta na conversa. Memória serve para planejar a busca, nunca como fonte.
+      - t: Sem leitura, sem PMID
+        d: PMID, DOI, autor e ano só aparecem se foram lidos. Sem isso, a IA escreve [não verificado].
+      - t: Número como publicado
+        d: Sem arredondar, converter ou estimar.
+      - t: Associação não é causa
+        d: Estudo observacional recebe verbo de associação, nunca de causa.
+
+  - tipo: lista
+    tag: O contrato de veracidade
+    titulo: E mais quatro
+    inicio: 5
+    itens:
+      - t: Subgrupo é do subgrupo
+        d: Nunca é atribuído à amostra inteira.
+      - t: Divergência aparece
+        d: Fontes que se contradizem entram as duas, com a diferença de método que explica a briga.
+      - t: “Não responde” é resposta
+        d: Quando os estudos não respondem à pergunta, a IA diz isso.
+      - t: Nulo pesa igual
+        d: Resultado sem efeito ou contrário tem o mesmo peso do favorável.
+
+  - tipo: lista
+    tag: Como ler a resposta
+    titulo: Três marcas que a IA é obrigada a usar
+    estilo: cartoes
+    itens:
+      - m: "[não verificado]"
+        t: Dado que a IA não leu na fonte
+        d: Confira antes de usar.
+      - m: "[cálculo meu]"
+        t: Conta feita pela IA
+        d: Sempre com a conta ao lado, para você conferir.
+      - m: "[inferência]"
+        t: Interpretação da IA
+        d: Algo que o estudo não afirma.
+
+  - tipo: prompt
+    tag: Copie e cole
+    titulo: A versão curta, para qualquer pedido
+    prompt: |
+      REGRAS (valem acima de qualquer outro pedido):
+      1. Só afirme sobre um estudo o que você leu numa fonte aberta nesta conversa.
+      2. PMID, DOI, autor e ano só se lidos na fonte. Sem isso, escreva [não verificado].
+      3. Números exatamente como publicados. Não arredonde nem estime.
+      4. Estudo observacional: linguagem de associação, nunca de causa.
+      5. Se os estudos não respondem à pergunta, diga isso.
+    rodape: Na biblioteca, cada prompt traz o contrato completo, com versão própria para Claude, ChatGPT e Gemini.
+
+  - tipo: cta
+    destaque: salvar
+    titulo: Salve e cole antes do seu próximo pedido.
+    texto: No próximo post, o prompt que aplica esse contrato para buscar os melhores artigos do tema, o P1.
+    extra: A **Biblioteca de Prompts paper.ai__** está chegando. Lista de espera no link da bio.
+
+legenda: |
+  Como impedir que o ChatGPT invente referências: o contrato de veracidade dos prompts paper.ai__.
+
+  Sem regras, a IA preenche lacunas com o que parece plausível: autor comum, revista famosa, número redondo. Todo prompt da Biblioteca paper.ai__ começa com um contrato de veracidade que vale acima de qualquer outro pedido.
+
+  📋 VERSÃO CURTA PARA COPIAR (cole antes do seu pedido):
+
+  REGRAS (valem acima de qualquer outro pedido):
+  1. Só afirme sobre um estudo o que você leu numa fonte aberta nesta conversa.
+  2. PMID, DOI, autor e ano só se lidos na fonte. Sem isso, escreva [não verificado].
+  3. Números exatamente como publicados. Não arredonde nem estime.
+  4. Estudo observacional: linguagem de associação, nunca de causa.
+  5. Se os estudos não respondem à pergunta, diga isso.
+
+  ⚠️ As regras reduzem o risco, não eliminam. Abra cada link antes de citar.
+
+  💾 Salve e siga @paper.ai__.
+
+hashtags: [promptsdeia, pesquisamedica, chatgptparamedicos, integridadecientifica, paperai]

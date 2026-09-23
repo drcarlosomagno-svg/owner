@@ -2,14 +2,14 @@
 # Arquivos que começam com "_" não são renderizados.
 #
 # Marcação dentro dos textos:
-#   ==texto==    marca-texto amarelo (use em 1 a 3 palavras por slide)
+#   ==texto==    destaque vermelho (use em 1 a 5 palavras por slide)
 #   **texto**    negrito
 #   *texto*      itálico
 #   →            vira uma seta desenhada
-#   [VARIÁVEL]   dentro de prompts, em MAIÚSCULAS, fica destacada em amarelo
+#   [VARIÁVEL]   dentro de prompts, em MAIÚSCULAS, ganha o realce de campo do produto
 #
-# Temas (opcional em qualquer slide): claro, escuro, marca (fundo amarelo).
-# Padrão: capa e cta = escuro; o resto = claro.
+# Temas (opcional em qualquer slide): claro, escuro, marca (fundo vermelho).
+# Padrão: cta = marca; o resto = claro.
 #
 # Regras do playbook (estrategia/playbook-carrosseis.md):
 #   - slide 1 = gancho; slide 2 = segundo gancho (funciona sozinho)
@@ -17,17 +17,19 @@
 #   - até 5 hashtags; 1ª linha da legenda com a palavra-chave (até 125 caracteres)
 
 titulo: Nome interno do carrossel
-arquetipo: Prompt pronto          # Prompt pronto | Contraste | O que é…? | Erro / alerta | Fluxo / passo a passo | Bastidor / venda
+arquetipo: Prompt da biblioteca   # Prompt da biblioteca | Prompt pronto | Contraste | O que é…? | Erro / alerta | Fluxo / passo a passo | Bastidor / venda
 objetivo: salvamentos             # salvamentos | envios | comentários | seguidores
 publicar: Semana 5 · segunda
-# numero: "13"                    # número grande da capa (padrão: o número do nome do arquivo)
+produto: P1                       # prompt da biblioteca (P1–P11, ver marca/catalogo-produto.json); apague se não houver
+# numero: "13"                    # número grande da capa quando não há produto (padrão: o número do arquivo)
 
 slides:
   - tipo: capa
     tag: Prompt pronto
     titulo: Gancho com a ==palavra-chave== do tema
     subtitulo: Uma frase que explica a promessa.
-    comando: Opcional, o começo de um prompt com [VARIÁVEL]...
+    comando: creatina e memória em idosos   # tema na caixa "Criar prompt" (opcional; sem ele, a capa mostra o cartão do produto)
+    # cartao: false                # esconde o cartão do produto na capa
 
   - tipo: texto
     tag: O problema
@@ -41,7 +43,7 @@ slides:
   - tipo: lista
     tag: O método
     titulo: Título da lista
-    estilo: numerada               # numerada | check | x   (ou use "m:" em cada item para letras/siglas)
+    estilo: numerada               # numerada | check | x | cartoes   (ou "m:" em cada item: sigla, código ou emoji 🟢)
     # inicio: 5                    # começa a numeração em 5
     itens:
       - t: Item com título
@@ -80,12 +82,23 @@ slides:
     nota: Observação opcional.
     fonte: Autor et al. Revista. Ano;volume:páginas.
 
+  - tipo: resposta
+    tag: O que volta
+    titulo: O formato da resposta
+    rotulo: Resposta do P1
+    cortada: true                  # esmaece o fim do cartão
+    resposta: |
+      # P1 · Busca de referências — [tema]
+      ## Em 30 segundos
+      [a resposta em até 3 linhas]
+      - **Item:** [campo]
+
   - tipo: prompt
     tag: Copie e cole
     titulo: O prompt
     # parte: 1/2                   # para prompts longos divididos em 2 slides
-    # rotulo: BUSCA                # troca o rótulo "PROMPT" do cartão
-    # copiavel: false              # esconde o "copie e cole"
+    # rotulo: Busca                # troca o rótulo "Prompt" do cartão
+    # copiavel: false              # esconde o botão "Copiar"
     prompt: |
       Atue como [ESPECIALISTA].
       1. Passo um.
@@ -96,17 +109,19 @@ slides:
   - tipo: cta
     destaque: salvar               # salvar | enviar | comentar | seguir
     titulo: Salve para ==usar depois==.
-    # palavra: PICO                # mostra "Comente PICO" (para automação de DM)
+    # palavra: BIBLIOTECA          # mostra "Comente BIBLIOTECA" (para automação de DM)
     texto: Teaser do próximo post.
-    extra: A biblioteca paper.ai__ está chegando. **Lista de espera no link da bio.**
+    extra: A **Biblioteca de Prompts paper.ai__** está chegando. Lista de espera no link da bio.
 
 legenda: |
   Palavra-chave + promessa em até 125 caracteres.
 
   Contexto em 2 ou 3 linhas.
 
+  O que o prompt da biblioteca faz e o que volta, em tópicos.
+
   📋 PROMPT PARA COPIAR:
-  (cole aqui o prompt completo)
+  (só a versão curta gratuita, se houver; nunca o prompt do produto)
 
   ⚠️ Uma linha de cuidado.
 

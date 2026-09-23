@@ -1,0 +1,18 @@
+Leitura crítica de ensaio clínico com IA: como achar o risco de viés de um resultado bom demais.
+
+Os 5 domínios do RoB 2 (Cochrane):
+1. Processo de randomização
+2. Desvios das intervenções pretendidas
+3. Dados de desfecho faltantes
+4. Mensuração do desfecho
+5. Seleção do resultado relatado
+
+O P7 da Biblioteca paper.ai__, o Caçador de Vieses, entrega os achados por gravidade (🔴 compromete a conclusão · 🟠 exige cautela · 🟡 vale registrar), cada um com o trecho do artigo que o sustenta, e lista também o que foi auditado e estava limpo.
+
+⚠️ A IA aponta; você julga. Confira com a ferramenta oficial em riskofbias.info.
+
+Referência: Sterne JAC et al. RoB 2: a revised tool for assessing risk of bias in randomised trials. BMJ. 2019;366:l4898. doi:10.1136/bmj.l4898
+
+💾 Salve para o próximo ECR.
+
+#leituracritica #ensaioclinico #medicinabaseadaemevidencias #revisaosistematica #paperai

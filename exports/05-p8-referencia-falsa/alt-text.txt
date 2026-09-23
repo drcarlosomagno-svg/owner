@@ -1,0 +1,20 @@
+01.png
+Slide 1 de 7. A IA inventou essa referência. E você quase citou. Como pegar a referência falsa antes que ela entre no seu TCC, no seu artigo ou na sua aula.
+
+02.png
+Slide 2 de 7. 47% das referências que o ChatGPT gerou não existiam. Estudo com o GPT-3.5. Outras 46% existiam, mas com dados errados na citação. Só 7% estavam corretas.
+
+03.png
+Slide 3 de 7. A referência falsa não é inventada do nada. Ela recombina pedaços reais: título verdadeiro com autor errado, DOI real em artigo que não existe. Por isso parece tão convincente. E por isso só conferir o título não basta.
+
+04.png
+Slide 4 de 7. 3 pedidos que geram referência falsa. “Me dê 10 referências sobre...”: Pedir citações de memória é o gatilho clássico. “Complete a bibliografia.”: A IA preenche o que falta com o que parece plausível. “Qual é o DOI desse estudo?”: Sem acesso à base, ela pode montar um DOI com cara de verdadeiro.
+
+05.png
+Slide 5 de 7. Campo por campo, e um veredito por referência. Título, autor, periódico, ano e DOI conferem: Com o link da fonte. Existe, mas com algum campo errado: O P8 mostra qual campo e a versão correta. Não existe, ou foi retratada: Remova ou não cite como evidência. Sem acesso à base: É diferente de inexistente.
+
+06.png
+Slide 6 de 7. A regra anti-alucinação. Prompt para copiar: REGRAS: - Use só o material que eu enviei ou fontes abertas nesta conversa. - Para cada afirmação, indique a seção ou a página. - PMID, DOI, autor e ano só se lidos na fonte. Sem isso, escreva [não verificado]. - Nunca crie referências. - Se os estudos não respondem, diga isso.
+
+07.png
+Slide 7 de 7. Manda para aquele colega que confia demais na IA. Uma referência falsa num TCC, num artigo ou numa aula pode custar caro. O P8 confere a lista inteira, referência por referência. Lista de espera no link da bio.

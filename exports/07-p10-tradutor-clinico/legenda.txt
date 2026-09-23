@@ -1,0 +1,18 @@
+NNT, risco relativo, odds ratio e hazard ratio: como levar os números de um estudo para a consulta.
+
+“Reduziu o risco em 25%” pode significar uma queda de 10% para 7,5%, ou seja, 2,5 pontos percentuais e NNT de 40. As duas frases descrevem o mesmo resultado (exemplo hipotético).
+
+RR = risco no tratado ÷ risco no controle
+RRA = risco no controle − risco no tratado
+NNT = 1 ÷ RRA (vale para o tempo de seguimento do estudo)
+OR ≈ RR só quando o evento é raro
+HR = risco instantâneo ao longo do tempo (análise de sobrevida)
+IC 95% que inclui 1 = não significativo a 5% (para RR, OR e HR)
+
+O P10 da Biblioteca paper.ai__, o Tradutor Clínico, converte o resultado em risco absoluto, NNT e danos, mostra a conta e escreve três frases para a consulta.
+
+⚠️ IA pode errar conta. Confira sempre.
+
+💾 Salve para o próximo journal club.
+
+#estatisticamedica #medicinabaseadaemevidencias #journalclub #promptsdeia #paperai

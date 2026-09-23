@@ -1,0 +1,18 @@
+Como impedir que o ChatGPT invente referências: o contrato de veracidade dos prompts paper.ai__.
+
+Sem regras, a IA preenche lacunas com o que parece plausível: autor comum, revista famosa, número redondo. Todo prompt da Biblioteca paper.ai__ começa com um contrato de veracidade que vale acima de qualquer outro pedido.
+
+📋 VERSÃO CURTA PARA COPIAR (cole antes do seu pedido):
+
+REGRAS (valem acima de qualquer outro pedido):
+1. Só afirme sobre um estudo o que você leu numa fonte aberta nesta conversa.
+2. PMID, DOI, autor e ano só se lidos na fonte. Sem isso, escreva [não verificado].
+3. Números exatamente como publicados. Não arredonde nem estime.
+4. Estudo observacional: linguagem de associação, nunca de causa.
+5. Se os estudos não respondem à pergunta, diga isso.
+
+⚠️ As regras reduzem o risco, não eliminam. Abra cada link antes de citar.
+
+💾 Salve e siga @paper.ai__.
+
+#promptsdeia #pesquisamedica #chatgptparamedicos #integridadecientifica #paperai

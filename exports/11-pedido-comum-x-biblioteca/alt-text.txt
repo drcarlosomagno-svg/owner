@@ -1,0 +1,20 @@
+01.png
+Slide 1 de 7. Pedido comum vs. pedido da biblioteca. 3 pedidos que todo mundo faz para a IA, e o que muda quando o prompt faz o trabalho pesado.
+
+02.png
+Slide 2 de 7. A IA é tão boa quanto o pedido que recebe. Mesma IA, mesmo artigo. O que muda o resultado é o pedido. Papel de especialista, regras, formato e checagem: é isso que cada prompt da biblioteca traz pronto.
+
+03.png
+Slide 3 de 7. Encontrar os artigos de um tema. Pedido comum: Me dá 10 artigos sobre creatina e memória. P1 · Motor de Busca de Referências: Busca no PubMed, abre cada artigo antes de citar, classifica pelo nível de evidência (Oxford 2011) e entrega DOI e link. Artigo não aberto não entra.
+
+04.png
+Slide 4 de 7. Entender um resultado. Pedido comum: O que significa HR 0,80?. P10 · Tradutor Clínico: Converte o resultado em risco absoluto, NNT e danos, mostra cada conta e escreve três frases para a consulta.
+
+05.png
+Slide 5 de 7. Conferir uma bibliografia. Pedido comum: Essas referências estão certas?. P8 · Detector de Referência Falsa: Confere título, autor, periódico, ano e DOI de cada referência, separadamente, e dá o veredito. Verificada, parcial, inexistente ou retratada.
+
+06.png
+Slide 6 de 7. O que todo prompt da biblioteca tem. Um papel de especialista. O contrato de veracidade. Uma resposta que começa pelo veredito. Uma checagem final antes de responder. Versão própria para Claude, ChatGPT e Gemini.
+
+07.png
+Slide 7 de 7. Manda para quem ainda pede “me dá artigos sobre...”. E salve para lembrar o que um bom pedido precisa ter. A Biblioteca de Prompts paper.ai__ está chegando. Lista de espera no link da bio.

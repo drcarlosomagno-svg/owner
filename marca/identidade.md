@@ -1,101 +1,112 @@
 # Identidade da paper.ai__
 
+A identidade do Instagram segue a do produto: a **Biblioteca de Prompts** ([artefato](https://claude.ai/artifact/87rA4X3tchY2QFpgAsfbmE)). Cores, fontes, nomes e frases vêm de lá. Se o produto mudar, atualize este arquivo e o [`catalogo-produto.json`](catalogo-produto.json).
+
 ## Posicionamento
 
-> **A biblioteca de prompts para pesquisa médica.** Prompts em português, feitos por médico, baseados em método científico e com verificação embutida, para quem quer usar IA para estudar, ler e pesquisar artigos.
+> **Biblioteca de prompts para pesquisa científica.** Escreva o que você quer saber. A biblioteca monta o prompt que faz a IA buscar no PubMed os melhores artigos do tema, com o nível de evidência, o DOI e o link de cada um.
 
-- **Para quem:** estudantes de medicina (TCC, iniciação científica, provas), residentes (journal club, artigo de conclusão, prova de título), pós-graduandos (revisões e dissertações) e médicos que querem se atualizar com evidência.
-- **Contra o quê:** o prompt genérico ("resume esse artigo"), a referência inventada e o curso de IA que ensina teoria, mas não entrega o que colar.
-- **Promessa:** do PICO ao abstract, um prompt testado para cada etapa.
+- **Para quem:** médicos, residentes e pós-graduandos que usam IA para buscar, ler e aplicar evidência. Os prompts são escritos para "um médico que quer a resposta e as referências, sem rodeios".
+- **Promessa:** onze prompts, um para cada momento da pesquisa. Buscar, ler, checar e usar. Cada prompt indica o próximo passo.
+- **Funciona no Claude, no ChatGPT e no Gemini**, com versão própria para cada um.
+- **Quem faz:** médico e residente da USP, no Hospital das Clínicas da FMUSP, o maior complexo hospitalar da América Latina.
 
-### Frases de marca
+## O produto em uma tela
 
-- Pesquise melhor, não mais.
-- Método, não mágica.
-- Feito por médico. Com IA. Revisado por humano.
-- A IA sugere. Você julga.
-
-## O nome e a assinatura
-
-**paper.ai__** junta dois mundos:
-
-- **paper** (serifada): o artigo científico, o papel, o rigor;
-- **.ai** (monoespaçada): a máquina, o prompt;
-- **__** (amarelo): o cursor piscando, esperando a sua pergunta.
-
-A assinatura aparece no topo de todos os slides. O @ é **@paper.ai__**.
-
-## O método próprio: P.A.P.E.R.
-
-A marca tem um método com o próprio nome. Use-o em todo conteúdo e no produto.
-
-| Letra | Bloco | O que é |
+| Etapa | O que é | Prompts |
 |---|---|---|
-| **P** | Papel | Quem a IA deve ser |
-| **A** | Artigo e contexto | O material e o objetivo |
-| **P** | Pedido | A tarefa, em passos |
-| **E** | Estrutura | O formato da resposta |
-| **R** | Regras | A checagem: citar a fonte, "não consta", nunca inventar |
+| **Buscar** | Encontrar o que existe sobre o tema | P1 Motor de Busca de Referências · P2 Gerador de Busca Avançada · P3 Vigilância Semanal |
+| **Ler** | Decidir o que vale a leitura e ler a fundo | P4 Triagem Rápida · P5 Dissecação de um Artigo · P6 Mesa de Comparação |
+| **Checar** | Conferir antes de confiar | P7 Caçador de Vieses · P8 Detector de Referência Falsa · P9 Diretriz vs. Estudo Novo |
+| **Usar** | Levar para o consultório e para o público | P10 Tradutor Clínico · P11 Tradutor para Leigos |
 
-## Cores
+Descrições curtas, quando usar e o que cada prompt entrega: [`catalogo-produto.json`](catalogo-produto.json). O gerador lê esse arquivo para montar o cartão do prompt na capa.
 
-| Nome | Hex | Uso |
-|---|---|---|
-| Papel | `#F4EFE4` | Fundo dos slides internos |
-| Tinta | `#14161B` | Texto; fundo da capa e do CTA (tema escuro `#111317`) |
-| Marca-texto | `#FFD43B` | Destaques, o fio contínuo, cursor, variáveis dos prompts |
-| Tinta suave | `#4B505A` | Texto secundário |
-| Revisão (vermelho) | `#C43D27` | "Errado", "prompt comum", "nunca faça" |
-| Aprovado (verde) | `#2B7552` | "Certo", "prompt de pesquisador", "faça assim" |
+## O que torna os prompts diferentes (use como prova em todo conteúdo)
 
-**Regra do marca-texto:** no máximo 1 a 3 palavras destacadas por slide. Se tudo é destaque, nada é.
+1. **Contrato de veracidade.** Oito regras que valem acima de qualquer pedido: só vale fonte aberta na conversa; PMID e DOI só se lidos; número como publicado; associação não é causa; subgrupo é do subgrupo; divergência aparece; "os estudos não respondem" é resposta; resultado nulo pesa igual.
+2. **Marcas fixas na resposta:** `[não verificado]` (dado que a IA não leu na fonte), `[cálculo meu]` (conta da IA, com a conta ao lado) e `[inferência]` (interpretação que o estudo não afirma).
+3. **Resposta que começa pelo veredito:** a primeira seção é sempre "Em 30 segundos".
+4. **Métodos reconhecidos:** nível de evidência de Oxford (OCEBM 2011), certeza GRADE (⊕⊕⊕◯), risco de viés por domínio, busca no padrão PRISMA-S.
+5. **Links verificáveis:** `https://pubmed.gov/PMID`, montado com o PMID lido na página.
+6. **Checagem final** antes de responder e **o próximo passo** indicado em cada prompt.
 
-## Tipografia
+### Os três cuidados (frase do site)
 
-Todas gratuitas (licença OFL) e já incluídas em `assets/fonts/`.
+- **Confira as referências.** IA erra citação misturando pedaços reais: título certo, autor errado. O P8 confere uma a uma.
+- **Nunca cole dados de paciente.** Nada de nome, prontuário ou documento. Use um perfil genérico.
+- **Evidência não é conduta.** Os prompts interpretam estudos. A decisão sobre cada pessoa continua sendo sua.
+
+## Assinatura
+
+**paper.ai__** em Anton: "paper" na cor da tinta e ".ai__" em vermelho. Aparece no topo de todos os slides. O @ é **@paper.ai__**.
+
+## Cores (tokens do produto)
+
+| Token | Claro | Escuro | Uso |
+|---|---|---|---|
+| Fundo | `#FCFCFB` | `#111214` | Fundo dos slides |
+| Cartão | `#FFFFFF` | `#17181B` | Caixa de pergunta, cartão de resposta |
+| Painel | `#F5F4F2` | `#1C1D20` | Cartões de prompt, fundo do prompt |
+| Linha | `#ECEAE8` | `#27282C` | Divisórias |
+| Tinta | `#17181B` | `#EDEBE8` | Texto principal |
+| Tinta 2 | `#4A4A50` | `#C4C1BE` | Texto de apoio |
+| Cinza | `#726C6E` | `#9C9698` | Etiquetas, códigos, rodapé |
+| **Vermelho** | `#D0112B` | `#F0445C` | Destaque, botão "Criar prompt", fio contínuo, fundo do CTA |
+| Vermelho suave | `#FCEDEF` | `#3A161B` | Fundo do "pedido comum", etiqueta de código |
+| Realce | `#FFF0C7` + texto `#6B4200` | `#4A3A12` + `#FFD27A` | Campos preenchidos e `[VARIÁVEIS]` |
+| OK | `#1E7F4F` | `#4CC38A` | "Pedido da biblioteca", checks |
+
+## Tipografia (a mesma do site, licença OFL, em `assets/fonts/`)
 
 | Papel | Fonte | Onde |
 |---|---|---|
-| Títulos | **Fraunces** (serifada editorial) | Capas, títulos, números grandes |
-| Texto | **Inter** | Parágrafos, descrições |
-| Prompt e detalhes | **JetBrains Mono** | Prompts, etiquetas, contador de páginas, assinatura |
+| Display | **Anton** | Logo, capa, números grandes, CTA |
+| Texto | **IBM Plex Sans** (400 a 700) | Títulos internos (600), parágrafos, listas |
+| Código | **IBM Plex Mono** | Códigos P1–P11, prompts, contador, rodapé |
 
-## Elementos visuais
+## Componentes visuais
 
-- **Fio marca-texto:** linha amarela contínua que atravessa todos os slides do carrossel, do anel na capa até o ponto final no CTA. Dá vontade de arrastar (tendência "linha contínua" de 2026).
-- **Número da edição:** a capa mostra o número do carrossel em grande, vazado. O perfil ganha cara de publicação em série, como uma revista científica.
-- **Cartão de prompt:** borda preta, sombra sólida, faixa amarela com "copie e cole". Parece um objeto que dá para pegar.
-- **Contraste:** caixa tracejada vermelha (comum) × caixa sólida verde (pesquisador).
-- **Formato:** 3:4 (1080×1440), que ocupa mais tela no feed e não é cortado na grade do perfil.
+- **Caixa de pergunta** (capa): igual à do site, com o tema digitado e o botão vermelho **Criar prompt**.
+- **Cartão do prompt** (capa): código, nome e descrição curta, como na home do site. Aparece sozinho quando o carrossel tem `produto:`.
+- **Código gigante** (capa): o código do prompt (P1, P8…) ou o número do post, em cinza claro, no canto.
+- **Formato da resposta:** um cartão branco mostrando o esqueleto do que o prompt devolve, com os campos em realce.
+- **Semáforo** 🟢 🟡 🔴 (P4) e **gravidade** 🔴 🟠 🟡 (P7), como no produto.
+- **Fio vermelho contínuo:** atravessa todos os slides, do anel na capa ao ponto final no CTA.
+- **CTA** com fundo vermelho e texto branco, como o botão principal do site.
+- **Formato:** 3:4 (1080×1440).
 
 ## Voz
 
 | É | Não é |
 |---|---|
-| Colega de plantão que manja de método | Guru de IA |
-| Direto, prático, com exemplo clínico | Hype, "revolucionário", "segredo" |
-| Honesto sobre limites da IA | Promessa de resultado (aprovação, publicação) |
-| Rigoroso: fonte em todo dado | Número sem referência |
-| "Você" | "Vocês", "galera" |
-
-Escreva frases curtas, uma ideia por slide e verbo no imperativo nos CTAs ("Salve", "Manda", "Comente").
+| Direto, frases curtas, "você" | Guru de IA, "revolucionário", "segredo" |
+| Veredito primeiro, depois o caminho | Enrolação antes da resposta |
+| Honesto sobre os limites da IA | Promessa de resultado (aprovação, publicação) |
+| Rigoroso: número com fonte, conta mostrada | Número sem referência |
+| Vocabulário do produto: buscar, ler, checar, usar; "Em 30 segundos"; "o próximo passo" | Jargão de marketing |
 
 ## Regras inegociáveis
 
 1. Nenhum dado, estatística ou referência sem fonte conferida.
 2. Nunca sugerir colar dados identificáveis de pacientes em IA (LGPD).
-3. Todo prompt tem uma etapa de verificação.
-4. Transparência sobre o uso de IA na produção do conteúdo.
-5. Sem persona sintética: quando houver rosto, é o do médico real por trás da marca.
-6. Sem superlativos que não dá para provar ("a melhor do Brasil"). Prefira o demonstrável (ver [concorrentes-e-referencias.md](../pesquisa/concorrentes-e-referencias.md)).
+3. **Não publicar os prompts do produto na íntegra.** O Instagram mostra o que o prompt faz, o formato da resposta e versões curtas gratuitas (como a do contrato de veracidade). O prompt completo é o que se vende.
+4. Todo carrossel de produto usa o nome e o código exatos do catálogo.
+5. Transparência sobre o uso de IA na produção do conteúdo.
+6. Sem persona sintética: quando houver rosto, é o do médico real por trás da marca.
+7. Sem superlativos que não dá para provar ("a melhor do Brasil"). Prefira o demonstrável.
 
-## Bio sugerida para o Instagram
+## Perfil do Instagram
+
+**Nome** (campo pesquisável, até 30 caracteres): `Prompts para pesquisa médica`
+
+**Bio** (até 150 caracteres):
 
 ```
-paper.ai__ | Prompts de IA para pesquisa médica
-Método P.A.P.E.R.: prompts testados, do PICO ao abstract
-Feito por médico · com IA · revisado por humano
-↓ Lista de espera da biblioteca
+Prompts de IA para pesquisa científica
+Buscar · ler · checar · usar evidência
+Médico residente HC-FMUSP · CRM [nº/UF]
+↓ Lista de espera
 ```
 
-Nome do perfil (campo pesquisável): **paper.ai | Prompts para pesquisa médica**
+Pela Resolução CFM 2.336/2023, o médico que se identifica como médico nas redes informa nome e CRM. Como residente, não anuncie especialidade (exige RQE).

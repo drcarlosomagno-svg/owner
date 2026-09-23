@@ -1,0 +1,96 @@
+titulo: P8 · Detector de Referência Falsa
+arquetipo: Erro / alerta
+objetivo: envios
+publicar: Semana 2 · quarta
+produto: P8
+
+slides:
+  - tipo: capa
+    tag: Checar
+    titulo: A IA inventou essa referência. ==E você quase citou.==
+    subtitulo: Como pegar a referência falsa antes que ela entre no seu TCC, no seu artigo ou na sua aula.
+
+  - tipo: numero
+    tag: O estudo
+    numero: 47%
+    titulo: das referências que o ChatGPT gerou ==não existiam==
+    texto: Estudo com o GPT-3.5. Outras 46% existiam, mas com dados errados na citação. Só **7%** estavam corretas.
+    fonte: Bhattacharyya M et al. Cureus. 2023;15(5):e39238.
+
+  - tipo: texto
+    tag: Por que engana
+    titulo: A referência falsa ==não é inventada do nada==
+    texto: |
+      Ela recombina pedaços reais: **título verdadeiro com autor errado**, **DOI real em artigo que não existe**.
+
+      Por isso parece tão convincente. E por isso só conferir o título não basta.
+
+  - tipo: lista
+    tag: Nunca faça
+    titulo: 3 pedidos que geram referência falsa
+    estilo: x
+    itens:
+      - t: '“Me dê 10 referências sobre...”'
+        d: Pedir citações de memória é o gatilho clássico.
+      - t: '“Complete a bibliografia.”'
+        d: A IA preenche o que falta com o que parece plausível.
+      - t: '“Qual é o DOI desse estudo?”'
+        d: Sem acesso à base, ela pode montar um DOI com cara de verdadeiro.
+
+  - tipo: lista
+    tag: Como o P8 confere
+    titulo: Campo por campo, e um veredito por referência
+    estilo: cartoes
+    itens:
+      - m: ✔ VERIFICADA
+        t: Título, autor, periódico, ano e DOI conferem
+        d: Com o link da fonte.
+      - m: ◐ PARCIAL
+        t: Existe, mas com algum campo errado
+        d: O P8 mostra qual campo e a versão correta.
+      - m: ✖ INEXISTENTE · ⊘ RETRATADA
+        t: Não existe, ou foi retratada
+        d: Remova ou não cite como evidência.
+      - m: "? NÃO VERIFICÁVEL"
+        t: Sem acesso à base
+        d: É diferente de inexistente.
+
+  - tipo: prompt
+    tag: Copie e cole
+    titulo: A regra anti-alucinação
+    prompt: |
+      REGRAS:
+      - Use só o material que eu enviei ou fontes abertas nesta conversa.
+      - Para cada afirmação, indique a seção ou a página.
+      - PMID, DOI, autor e ano só se lidos na fonte. Sem isso, escreva [não verificado].
+      - Nunca crie referências.
+      - Se os estudos não respondem, diga isso.
+    rodape: Ela reduz o risco, mas não elimina. Para conferir uma lista pronta, use o P8.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda para aquele colega que ==confia demais== na IA.
+    texto: Uma referência falsa num TCC, num artigo ou numa aula pode custar caro.
+    extra: O P8 confere a lista inteira, referência por referência. **Lista de espera no link da bio.**
+
+legenda: |
+  ChatGPT inventa referências? Em um estudo, 47% das referências geradas pelo ChatGPT-3.5 não existiam.
+
+  No mesmo estudo, 46% existiam mas tinham dados errados, e só 7% estavam corretas. Modelos novos erram menos, mas o risco continua. E a referência falsa engana porque recombina pedaços reais: título verdadeiro com autor errado, DOI real em artigo que não existe.
+
+  O P8 da Biblioteca paper.ai__ confere título, autor, periódico, ano e DOI de cada referência, separadamente, e dá um veredito: verificada, parcial, inexistente, retratada ou não verificável.
+
+  📋 REGRA ANTI-ALUCINAÇÃO (cole no fim de qualquer prompt):
+
+  REGRAS:
+  - Use só o material que eu enviei ou fontes abertas nesta conversa.
+  - Para cada afirmação, indique a seção ou a página.
+  - PMID, DOI, autor e ano só se lidos na fonte. Sem isso, escreva [não verificado].
+  - Nunca crie referências.
+  - Se os estudos não respondem, diga isso.
+
+  📤 Manda para aquele colega que confia demais na IA.
+
+  Referência: Bhattacharyya M, Miller VM, Bhattacharyya D, Miller LE. High Rates of Fabricated and Inaccurate References in ChatGPT-Generated Medical Content. Cureus. 2023;15(5):e39238. doi:10.7759/cureus.39238
+
+hashtags: [pesquisamedica, chatgptparamedicos, integridadecientifica, promptsdeia, paperai]

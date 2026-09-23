@@ -1,0 +1,109 @@
+titulo: P1 · Motor de Busca de Referências
+arquetipo: Prompt da biblioteca
+objetivo: salvamentos
+publicar: Semana 1 · sexta
+produto: P1
+
+slides:
+  - tipo: capa
+    tag: Buscar
+    titulo: Escreva o tema. Receba ==os melhores artigos==, com nível de evidência e link.
+    subtitulo: O P1 faz a IA buscar no PubMed de verdade e abrir cada artigo antes de citar.
+    comando: vitamina D e prevenção de fraturas em idosos
+
+  - tipo: texto
+    tag: O problema
+    titulo: Pedir artigos “de memória” é ==pedir referência inventada==
+    texto: |
+      Num estudo com o ChatGPT-3.5, 47% das referências geradas não existiam.
+
+      O P1 inverte a lógica: **só entra na lista artigo que a IA abriu** nesta conversa.
+    nota: Bhattacharyya M et al. Cureus. 2023;15(5):e39238.
+
+  - tipo: lista
+    tag: Comece por aqui
+    titulo: Como usar, em 3 passos
+    itens:
+      - t: Escreva o tema
+        d: Em linguagem livre, do jeito que você perguntaria a um colega.
+      - t: Copie o prompt
+        d: Ele sai pronto para a IA que você usa, com o seu tema já dentro.
+      - t: Cole numa conversa nova
+        d: A resposta chega com os melhores artigos, o nível de evidência e o link para abrir cada um.
+
+  - tipo: texto
+    tag: Sem precisar saber PICO
+    titulo: Você escreve do seu jeito. ==O P1 transforma em pergunta clínica.==
+    texto: |
+      Antes de buscar, ele identifica o tipo de pergunta: **tratamento, dano, diagnóstico, prognóstico ou prevalência**.
+
+      É o tipo de pergunta que define como cada artigo vai ser classificado.
+
+  - tipo: resposta
+    tag: O que volta
+    titulo: O formato da resposta
+    rotulo: Resposta do P1
+    cortada: true
+    resposta: |
+      # P1 · Busca de referências — [tema em até 8 palavras]
+      Pergunta: [a pergunta clínica] · Tipo: [tratamento / dano / ...]
+      ## Em 30 segundos
+      [a resposta em até 3 linhas, citando os artigos que a sustentam]
+      ## Os melhores artigos
+      **1. [Título original do artigo]**
+      [Primeiro autor] et al. · [Periódico] · [ano] · [desenho, n]
+      Nível de evidência: **[1 a 5]** (Oxford 2011)
+      O que encontrou: [resultado principal com IC 95%]
+      DOI: [10.xxxx] · Link: https://pubmed.gov/[PMID]
+
+  - tipo: lista
+    tag: Por que funciona
+    titulo: Três escolhas sustentam o P1
+    itens:
+      - t: Nenhum artigo sem ser aberto
+        d: O link é montado com o PMID lido na página. Isso elimina a referência inventada.
+      - t: Nível de evidência de Oxford
+        d: Escala de 1 a 5 na coluna do tipo de pergunta, com o motivo de cada rebaixamento.
+      - t: Entra quem não achou efeito
+        d: A seleção pesa evidência, relevância e influência, e a lista não pode ter só resultado favorável.
+
+  - tipo: lista
+    tag: Antes de colar
+    titulo: Uma dica para cada IA
+    estilo: cartoes
+    itens:
+      - m: Claude
+        t: Ligue a pesquisa na web
+        d: E o conector PubMed, se você tiver. Em temas longos, ative o pensamento estendido.
+      - m: ChatGPT
+        t: Ligue o raciocínio
+        d: No plano gratuito, “Pense bem” no botão +. Em temas amplos, use o Deep Research.
+      - m: Gemini
+        t: Escolha o Pro, se tiver
+        d: Se vier “Sem pesquisa na web”, responda “pesquise”. E confira os links com o P8.
+
+  - tipo: cta
+    destaque: salvar
+    titulo: Salve para a sua próxima ==pergunta clínica==.
+    texto: No próximo post, o P2, para quando você mesmo quer montar a busca no PubMed.
+    extra: A **Biblioteca de Prompts paper.ai__** está chegando. Lista de espera no link da bio.
+
+legenda: |
+  Como encontrar os melhores artigos de um tema com IA, com nível de evidência, DOI e link: o P1 da paper.ai__.
+
+  Pedir “artigos sobre…” de memória é pedir referência inventada. O P1 faz a IA buscar no PubMed, abrir cada artigo antes de citar e classificar pelo nível de evidência de Oxford (2011).
+
+  Como usar:
+  1️⃣ Escreva o tema, em linguagem livre
+  2️⃣ Copie o prompt, que já sai com o seu tema dentro
+  3️⃣ Cole numa conversa nova do Claude, do ChatGPT ou do Gemini
+
+  O que volta: a resposta em 30 segundos, os melhores artigos (do nível de evidência mais alto para o mais baixo), a diretriz vigente, os limites e a string de busca usada.
+
+  ⚠️ Abra cada link antes de citar. A IA ajuda; a leitura é sua.
+
+  💾 Salve e siga @paper.ai__. Lista de espera da biblioteca no link da bio.
+
+  Referência citada: Bhattacharyya M et al. Cureus. 2023. doi:10.7759/cureus.39238
+
+hashtags: [pesquisamedica, pubmed, medicinabaseadaemevidencias, promptsdeia, paperai]

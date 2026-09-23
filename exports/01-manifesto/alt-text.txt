@@ -1,23 +1,23 @@
 01.png
-Slide 1 de 8. Você não precisa ler mais artigos. Precisa fazer perguntas melhores. Por que a paper.ai__ existe e o que você vai encontrar aqui.
+Slide 1 de 8. Você não precisa ler mais artigos. Precisa ler os certos. Por que a paper.ai__ existe e o que você vai encontrar aqui.
 
 02.png
-Slide 2 de 8. +1 mi de artigos novos entram no PubMed todo ano. Ninguém lê tudo. Nem precisa. O que separa quem se atualiza de quem se afoga é saber o que perguntar.
+Slide 2 de 8. +1 mi de artigos novos entram no PubMed todo ano. Ninguém lê tudo. Nem precisa. O que separa quem se atualiza de quem se afoga é saber o que buscar e em que confiar.
 
 03.png
-Slide 3 de 8. A IA lê um artigo em segundos. ChatGPT, Claude, Gemini, NotebookLM: todas resumem, traduzem e explicam. O problema não é a ferramenta. É o que você pede para ela.
+Slide 3 de 8. A IA lê um artigo em segundos. Claude, ChatGPT, Gemini: todas buscam, resumem e explicam. O problema não é a ferramenta. É o que você pede para ela.
 
 04.png
-Slide 4 de 8. Pedido genérico, resposta genérica. O que quase todo mundo pede: Resume esse artigo pra mim. O que um pesquisador pede: Extraia PICO, desenho, n, desfecho primário com IC 95% e limitações. Cite a seção de cada dado. Se não constar, escreva "não consta".
+Slide 4 de 8. Pedido genérico, resposta genérica. O que quase todo mundo pede: Me dá artigos sobre creatina e memória. O que a biblioteca pede por você: Busque no PubMed, abra cada artigo antes de citar, classifique pelo nível de evidência e traga o DOI e o link. Sem fonte aberta, escreva [não verificado].
 
 05.png
-Slide 5 de 8. 47% das referências geradas pelo ChatGPT-3.5 num estudo não existiam. Só 7% estavam corretas. Modelos novos erram menos. Mas erram.
+Slide 5 de 8. 47% das referências que o ChatGPT gerou num estudo não existiam. Era o GPT-3.5. Só 7% estavam corretas. Modelos novos erram menos. Mas erram.
 
 06.png
-Slide 6 de 8. Método, não mágica. Prompts prontos: Para cada etapa da pesquisa, da pergunta ao abstract. Leitura crítica: RoB 2, GRADE e vieses explicados sem enrolação. Estatística sem medo: NNT, RR, HR e IC 95% como um preceptor explicaria. Estudo ativo: Flashcards e revisão espaçada a partir de artigos e diretrizes. IA com ética: LGPD, declaração de uso e checagem de tudo.
+Slide 6 de 8. Onze prompts, um para cada momento. Encontrar o que existe sobre o tema. Decidir o que vale a leitura e ler a fundo. Conferir antes de confiar. Levar para o consultório e para o público.
 
 07.png
-Slide 7 de 8. Médico e residente da USP, no maior complexo hospitalar da América Latina. Cada prompt daqui nasce de um framework científico (PICO, PRISMA, CONSORT, RoB 2, GRADE) e é testado em artigos reais antes de chegar até você. Feito com IA. Revisado por humano.
+Slide 7 de 8. Médico e residente da USP, no maior complexo hospitalar da América Latina. Cada prompt da biblioteca segue um contrato de veracidade: nenhum artigo entra sem ter sido aberto e nenhum número é arredondado. Feito com IA. Revisado por humano.
 
 08.png
-Slide 8 de 8. Siga para pesquisar melhor, não mais. Toda semana, prompts prontos para copiar, testados e explicados. Estamos construindo a biblioteca paper.ai__, com um prompt para cada etapa da pesquisa. Lista de espera no link da bio.
+Slide 8 de 8. Siga para pesquisar melhor, não mais. Toda semana, um prompt da biblioteca explicado. O que ele faz, o que volta e quando usar. A Biblioteca de Prompts paper.ai__ está chegando. Lista de espera no link da bio.

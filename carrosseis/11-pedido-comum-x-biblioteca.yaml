@@ -1,0 +1,91 @@
+titulo: Pedido comum × pedido da biblioteca
+arquetipo: Contraste
+objetivo: envios
+publicar: Semana 4 · quarta
+
+slides:
+  - tipo: capa
+    tag: Contraste
+    titulo: Pedido comum vs. ==pedido da biblioteca==
+    subtitulo: 3 pedidos que todo mundo faz para a IA, e o que muda quando o prompt faz o trabalho pesado.
+
+  - tipo: texto
+    tag: A diferença
+    titulo: A IA é tão boa quanto ==o pedido que recebe==
+    texto: |
+      Mesma IA, mesmo artigo. O que muda o resultado é o pedido.
+
+      Papel de especialista, regras, formato e checagem: é isso que cada prompt da biblioteca traz pronto.
+
+  - tipo: contraste
+    tag: 1 · Buscar
+    titulo: Encontrar os artigos de um tema
+    mono: false
+    ruim:
+      rotulo: Pedido comum
+      texto: Me dá 10 artigos sobre creatina e memória.
+    bom:
+      rotulo: P1 · Motor de Busca de Referências
+      texto: Busca no PubMed, **abre cada artigo** antes de citar, classifica pelo nível de evidência (Oxford 2011) e entrega DOI e link. Artigo não aberto não entra.
+
+  - tipo: contraste
+    tag: 2 · Usar
+    titulo: Entender um resultado
+    mono: false
+    ruim:
+      rotulo: Pedido comum
+      texto: O que significa HR 0,80?
+    bom:
+      rotulo: P10 · Tradutor Clínico
+      texto: Converte o resultado em **risco absoluto, NNT e danos**, mostra cada conta e escreve três frases para a consulta.
+
+  - tipo: contraste
+    tag: 3 · Checar
+    titulo: Conferir uma bibliografia
+    mono: false
+    ruim:
+      rotulo: Pedido comum
+      texto: Essas referências estão certas?
+    bom:
+      rotulo: P8 · Detector de Referência Falsa
+      texto: Confere **título, autor, periódico, ano e DOI** de cada referência, separadamente, e dá o veredito. Verificada, parcial, inexistente ou retratada.
+
+  - tipo: lista
+    tag: O padrão
+    titulo: O que todo prompt da biblioteca tem
+    estilo: check
+    itens:
+      - Um **papel** de especialista
+      - O **contrato de veracidade**
+      - Uma resposta que **começa pelo veredito**
+      - Uma **checagem final** antes de responder
+      - Versão própria para **Claude, ChatGPT e Gemini**
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda para quem ainda pede ==“me dá artigos sobre...”==
+    texto: E salve para lembrar o que um bom pedido precisa ter.
+    extra: A **Biblioteca de Prompts paper.ai__** está chegando. Lista de espera no link da bio.
+
+legenda: |
+  Prompt para pesquisa médica: a diferença entre o pedido comum e o pedido da biblioteca.
+
+  Mesma IA, mesmo artigo. O que muda o resultado é o pedido.
+
+  1️⃣ Buscar
+  ❌ “Me dá 10 artigos sobre creatina e memória.”
+  ✅ P1: busca no PubMed, abre cada artigo antes de citar, classifica pelo nível de evidência e entrega DOI e link.
+
+  2️⃣ Usar
+  ❌ “O que significa HR 0,80?”
+  ✅ P10: converte em risco absoluto, NNT e danos, mostra cada conta e escreve três frases para a consulta.
+
+  3️⃣ Checar
+  ❌ “Essas referências estão certas?”
+  ✅ P8: confere título, autor, periódico, ano e DOI de cada referência e dá o veredito.
+
+  Todo prompt da Biblioteca paper.ai__ tem papel de especialista, contrato de veracidade, resposta que começa pelo veredito, checagem final e versão própria para Claude, ChatGPT e Gemini.
+
+  📤 Manda para quem ainda pede “me dá artigos sobre...”.
+
+hashtags: [promptsdeia, chatgptparamedicos, pesquisamedica, residenciamedica, paperai]

@@ -1,0 +1,89 @@
+titulo: P9 · Diretriz vs. Estudo Novo
+arquetipo: Erro / alerta
+objetivo: envios
+publicar: Semana 3 · quarta
+produto: P9
+
+slides:
+  - tipo: capa
+    tag: Checar
+    titulo: Saiu um estudo grande. ==A conduta mudou mesmo?==
+    subtitulo: Por que um estudo novo raramente derruba uma diretriz sozinho, e como checar antes de mudar a prática.
+
+  - tipo: texto
+    tag: A manchete
+    titulo: “Novo estudo muda tudo” é ==manchete, não conduta==
+    texto: |
+      Uma recomendação de diretriz se apoia num **corpo de evidência**, não num estudo só.
+
+      Antes de mudar a prática, a pergunta é: onde esse estudo se encaixa?
+
+  - tipo: lista
+    tag: O encaixe
+    titulo: As 4 perguntas antes de mudar a conduta
+    itens:
+      - t: Mesma população?
+        d: O estudo incluiu pacientes como os da recomendação?
+      - t: Mesmo desfecho e mesma dose?
+        d: Mediu o que a diretriz considera, na dose que ela recomenda?
+      - t: Quanto pesa frente ao que já existe?
+        d: Um ensaio novo não vale o mesmo que o conjunto de estudos por trás da recomendação.
+      - t: Contradiz, confirma ou refina?
+        d: Nem todo resultado novo é uma contradição.
+
+  - tipo: resposta
+    tag: O que volta
+    titulo: O formato da resposta
+    rotulo: Resposta do P9
+    cortada: true
+    resposta: |
+      # P9 · Diretriz vs. estudo novo — [tema]
+      ## Em 30 segundos
+      - **Veredito:** a recomendação [se sustenta / se sustenta com ressalva / precisa de revisão / não se sustenta]
+      - **Por quê:** [uma frase]
+      ## A recomendação hoje
+      “[texto literal da recomendação]”
+      [Sociedade], [ano] · Força: [...] · Nível de evidência: [...]
+      ## O saldo
+      - **Mudou:** [...]
+      - **Não mudou:** [...]
+      - **Virou incerto:** [...]
+
+  - tipo: texto
+    tag: Por que funciona
+    titulo: A IA usa a ==régua dos painéis de diretriz==
+    texto: |
+      O estudo novo entra no corpo de evidência, com população, desfecho, risco de viés e peso, como faz quem escreve a recomendação.
+
+      Isso impede que a manchete vire conduta antes da hora.
+
+  - tipo: texto
+    tag: Um dos três cuidados
+    titulo: Evidência ==não é conduta==
+    texto: |
+      Os prompts interpretam estudos.
+
+      **A decisão sobre cada pessoa continua sendo sua.**
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda para o grupo que ==mudou a conduta pela manchete==.
+    texto: No próximo post, o resultado bom demais e onde ele pode falhar.
+    extra: A **Biblioteca de Prompts paper.ai__** está chegando. Lista de espera no link da bio.
+
+legenda: |
+  Saiu um estudo novo: a diretriz mudou? Como checar com IA antes de mudar a conduta.
+
+  Uma recomendação de diretriz se apoia num corpo de evidência, não num estudo só. Antes de mudar a prática, pergunte:
+  1. É a mesma população?
+  2. É o mesmo desfecho e a mesma dose?
+  3. Quanto o estudo pesa frente ao que já existe?
+  4. Ele contradiz, confirma ou refina?
+
+  O P9 da Biblioteca paper.ai__ coloca a recomendação literal ao lado do estudo novo e dá o veredito: se sustenta, se sustenta com ressalva, precisa de revisão ou não se sustenta.
+
+  ⚠️ Evidência não é conduta. A decisão sobre cada pessoa continua sendo sua.
+
+  📤 Manda para o grupo que mudou a conduta pela manchete.
+
+hashtags: [medicinabaseadaemevidencias, diretrizes, pesquisamedica, promptsdeia, paperai]

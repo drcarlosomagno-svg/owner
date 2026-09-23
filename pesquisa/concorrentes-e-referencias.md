@@ -8,7 +8,7 @@ Quem disputa a atenção (e o dinheiro) de médicos e estudantes que querem usar
 |---|---|---|---|
 | **Cursos de "IA para médicos"** | IAMED, do Dr. Jocerlano Sousa (Hotmart); Einstein, "IA para Médicos"; Afya + Microsoft; Data Science Academy, "IA para Medicina 4.0" | Aula sobre IA em geral: conceitos, machine learning, casos | Eles ensinam **o que é** IA. A paper.ai__ entrega **o que colar** na IA em cada etapa da pesquisa |
 | **Ferramentas de IA para pesquisa** | OpenEvidence ("ChatGPT dos médicos", avaliada em US$ 12 bi segundo Times Brasil/CNBC); Elicit; Consensus; SciSpace; NotebookLM | Software com busca e leitura de artigos | São ferramentas; a paper.ai__ é o **método** que funciona **dentro de qualquer uma** (ChatGPT, Claude, Gemini, NotebookLM, OpenEvidence) |
-| **Pacotes genéricos de prompts** | "Pack 10.000 prompts" e similares (Gumroad, Hotmart) | Quantidade | A paper.ai__ vende **curadoria e rigor**: poucos prompts, testados, baseados em PICO, PRISMA, CONSORT, RoB 2 e GRADE, com checagem anti-alucinação |
+| **Pacotes genéricos de prompts** | "Pack 10.000 prompts" e similares (Gumroad, Hotmart) | Quantidade | A paper.ai__ vende **curadoria e rigor**: onze prompts, um para cada momento da pesquisa, com contrato de veracidade, nível de evidência de Oxford, GRADE e checagem final |
 | **Criadores de IA generalistas** | Danilo Gato (apontado pela Favikon como principal criador de IA do Brasil; foco em negócios) | Produtividade e IA para empresas | Nicho vertical: **pesquisa e estudo em medicina**, em português |
 | **Conteúdo pronto para médicos postarem** | CreatorMed, GalilAI | Posts e carrosséis de saúde gerados por IA para o consultório | Outro problema (marketing do médico). Não concorre diretamente, mas mostra que o médico já paga por IA |
 | **Perfis de IA na medicina** | @liviamed.brasil, @iamed_oficial | Divulgação e cursos | Referência para acompanhar o que o público já consome |
@@ -19,13 +19,13 @@ Quem disputa a atenção (e o dinheiro) de médicos e estudantes que querem usar
 
 Ninguém ocupa com clareza a posição:
 
-> **"A biblioteca de prompts para pesquisa médica, em português, construída por médico, com método científico e verificação embutidos."**
+> **"A biblioteca de prompts para pesquisa científica, em português, feita por médico, com verificação embutida em cada prompt."**
 
 Três provas para sustentar essa promessa em todo conteúdo:
 
-1. **Método**: cada prompt nasce de um framework reconhecido (PICO, PRISMA 2020, CONSORT, RoB 2, GRADE, IMRaD).
-2. **Segurança**: todo prompt obriga a IA a citar trecho e página, a responder "não consta" quando a informação não estiver no texto e a nunca inventar referência.
-3. **Pronto para uso**: copiar, colar, trocar as [VARIÁVEIS] e pronto. Funciona em qualquer IA.
+1. **Método**: onze prompts na ordem em que o trabalho acontece (buscar, ler, checar, usar), com nível de evidência de Oxford (2011), GRADE, risco de viés por domínio e busca no padrão PRISMA-S.
+2. **Segurança**: o contrato de veracidade obriga a IA a abrir cada artigo antes de citar, a marcar [não verificado] o que não leu e a tratar resultado nulo com o mesmo peso do favorável.
+3. **Pronto para uso**: escreva o tema, copie e cole numa conversa nova. Versão própria para Claude, ChatGPT e Gemini.
 
 ### Sobre "a melhor biblioteca"
 

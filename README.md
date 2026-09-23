@@ -1,8 +1,8 @@
 # paper.ai__ · carrosséis para o Instagram
 
-Projeto de conteúdo do **@paper.ai__**, a biblioteca de prompts de IA para pesquisa médica. Aqui ficam a pesquisa de tendências, a estratégia, a identidade visual, os textos dos carrosséis e um gerador que transforma cada texto em slides PNG prontos para postar.
+Projeto de conteúdo do **@paper.ai__**, o Instagram da [Biblioteca de Prompts](https://claude.ai/artifact/87rA4X3tchY2QFpgAsfbmE) para pesquisa científica. Aqui ficam a pesquisa de tendências, a estratégia, a identidade visual (a mesma do produto), os textos dos carrosséis e um gerador que transforma cada texto em slides PNG prontos para postar.
 
-**Os 12 primeiros carrosséis já estão prontos em [`exports/`](exports/)**, com legenda e texto alternativo.
+**Os 12 primeiros carrosséis já estão prontos em [`exports/`](exports/)**, cada um ligado a um prompt da biblioteca (P1 a P11), com legenda e texto alternativo.
 
 ## Por onde começar
 
@@ -13,11 +13,12 @@ Projeto de conteúdo do **@paper.ai__**, a biblioteca de prompts de IA para pesq
 | Ver concorrentes e como se diferenciar | [`pesquisa/concorrentes-e-referencias.md`](pesquisa/concorrentes-e-referencias.md) |
 | As regras para criar um carrossel (ganchos, CTAs, legenda) | [`estrategia/playbook-carrosseis.md`](estrategia/playbook-carrosseis.md) |
 | O que postar em cada dia | [`estrategia/calendario.md`](estrategia/calendario.md) |
-| Cores, fontes, voz e o método P.A.P.E.R. | [`marca/identidade.md`](marca/identidade.md) |
+| Cores, fontes, voz e o produto em uma tela | [`marca/identidade.md`](marca/identidade.md) |
+| O que foi revisado para alinhar ao produto | [`estrategia/avaliacao-e-alinhamento.md`](estrategia/avaliacao-e-alinhamento.md) |
 
 ## Como postar um carrossel
 
-1. Abra a pasta do carrossel em `exports/` (ex.: `exports/03-pico-em-30-segundos/`).
+1. Abra a pasta do carrossel em `exports/` (ex.: `exports/03-p1-motor-de-busca/`).
 2. Suba os arquivos `01.png`, `02.png`… **nessa ordem** no Instagram, em formato **3:4**.
 3. Cole o texto de `legenda.txt` na legenda.
 4. Em *Configurações avançadas → Escrever texto alternativo*, cole o texto de cada slide que está em `alt-text.txt`.
@@ -27,7 +28,9 @@ Projeto de conteúdo do **@paper.ai__**, a biblioteca de prompts de IA para pesq
 
 Os textos ficam em [`carrosseis/`](carrosseis/), um arquivo `.yaml` por carrossel. O [`_modelo.yaml`](carrosseis/_modelo.yaml) mostra todos os tipos de slide disponíveis:
 
-`capa` · `texto` · `lista` · `prompt` · `contraste` · `chat` · `numero` · `cta`
+`capa` · `texto` · `lista` · `prompt` · `resposta` · `contraste` · `chat` · `numero` · `cta`
+
+Para ligar o carrossel a um prompt da biblioteca, escreva `produto: P8` no topo do arquivo: a capa ganha o código gigante e o cartão do prompt, com nome e descrição tirados de [`marca/catalogo-produto.json`](marca/catalogo-produto.json).
 
 Depois de editar, gere as imagens:
 
@@ -42,7 +45,7 @@ npm run render -- --formato 4x5   # versão 1080×1350, em exports-4x5/
 O gerador:
 
 - ajusta o tamanho do texto sozinho e **avisa** se algum slide ficou cheio demais;
-- desenha o fio marca-texto contínuo entre os slides;
+- desenha o fio vermelho contínuo entre os slides;
 - gera `legenda.txt` (com as hashtags), `alt-text.txt` e uma prancha (`_prancha.jpg`) para revisar tudo de uma vez;
 - avisa quando há mais de 5 hashtags ou quando a primeira linha da legenda passa de 125 caracteres.
 
@@ -63,8 +66,8 @@ carrosseis/     textos dos carrosséis (YAML)
 exports/        PNGs, legendas e alt text gerados
 templates/      estilo visual dos slides (CSS)
 scripts/        gerador (Node + Playwright)
-assets/fonts/   fontes Fraunces, Inter e JetBrains Mono (licença OFL)
+assets/fonts/   fontes do produto: Anton, IBM Plex Sans e IBM Plex Mono (licença OFL)
 pesquisa/       tendências do Instagram e concorrentes
 estrategia/     playbook e calendário
-marca/          identidade visual e voz
+marca/          identidade visual, voz e catálogo do produto (P1–P11)
 ```

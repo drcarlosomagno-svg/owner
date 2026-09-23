@@ -1,0 +1,20 @@
+01.png
+Slide 1 de 7. O contrato que a IA assina antes de falar de qualquer artigo. As regras que todo prompt da paper.ai__ carrega, e por que elas acabam com a referência inventada.
+
+02.png
+Slide 2 de 7. Sem regras, a IA preenche lacunas com o que parece plausível. Autor comum, revista famosa, ano recente, número redondo. Parece verdade. Muitas vezes não é.
+
+03.png
+Slide 3 de 7. As 4 primeiras regras. Só vale o que foi aberto: Toda afirmação sobre um estudo vem de uma fonte aberta na conversa. Memória serve para planejar a busca, nunca como fonte. Sem leitura, sem PMID: PMID, DOI, autor e ano só aparecem se foram lidos. Sem isso, a IA escreve [não verificado]. Número como publicado: Sem arredondar, converter ou estimar. Associação não é causa: Estudo observacional recebe verbo de associação, nunca de causa.
+
+04.png
+Slide 4 de 7. E mais quatro. Subgrupo é do subgrupo: Nunca é atribuído à amostra inteira. Divergência aparece: Fontes que se contradizem entram as duas, com a diferença de método que explica a briga. “Não responde” é resposta: Quando os estudos não respondem à pergunta, a IA diz isso. Nulo pesa igual: Resultado sem efeito ou contrário tem o mesmo peso do favorável.
+
+05.png
+Slide 5 de 7. Três marcas que a IA é obrigada a usar. Dado que a IA não leu na fonte: Confira antes de usar. Conta feita pela IA: Sempre com a conta ao lado, para você conferir. Interpretação da IA: Algo que o estudo não afirma.
+
+06.png
+Slide 6 de 7. A versão curta, para qualquer pedido. Prompt para copiar: REGRAS (valem acima de qualquer outro pedido): 1. Só afirme sobre um estudo o que você leu numa fonte aberta nesta conversa. 2. PMID, DOI, autor e ano só se lidos na fonte. Sem isso, escreva [não verificado]. 3. Números exatamente como publicados. Não arredonde nem estime. 4. Estudo observacional: linguagem de associação, nunca de causa. 5. Se os estudos não respondem à pergunta, diga isso.
+
+07.png
+Slide 7 de 7. Salve e cole antes do seu próximo pedido. No próximo post, o prompt que aplica esse contrato para buscar os melhores artigos do tema, o P1. A Biblioteca de Prompts paper.ai__ está chegando. Lista de espera no link da bio.

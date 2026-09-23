@@ -1,0 +1,20 @@
+01.png
+Slide 1 de 7. Saiu um estudo grande. A conduta mudou mesmo?. Por que um estudo novo raramente derruba uma diretriz sozinho, e como checar antes de mudar a prática.
+
+02.png
+Slide 2 de 7. “Novo estudo muda tudo” é manchete, não conduta. Uma recomendação de diretriz se apoia num corpo de evidência, não num estudo só. Antes de mudar a prática, a pergunta é: onde esse estudo se encaixa?.
+
+03.png
+Slide 3 de 7. As 4 perguntas antes de mudar a conduta. Mesma população?: O estudo incluiu pacientes como os da recomendação?. Mesmo desfecho e mesma dose?: Mediu o que a diretriz considera, na dose que ela recomenda?. Quanto pesa frente ao que já existe?: Um ensaio novo não vale o mesmo que o conjunto de estudos por trás da recomendação. Contradiz, confirma ou refina?: Nem todo resultado novo é uma contradição.
+
+04.png
+Slide 4 de 7. O formato da resposta. Resposta do P9. P9 · Diretriz vs. estudo novo — [tema] Em 30 segundos Veredito: a recomendação [se sustenta / se sustenta com ressalva / precisa de revisão / não se sustenta] Por quê: [uma frase] A recomendação hoje “[texto literal da recomendação]” [Sociedade], [ano] · Força: [...] · Nível de evidência: [...] O saldo Mudou: [...] Não mudou: [...] Virou incerto: [...]
+
+05.png
+Slide 5 de 7. A IA usa a régua dos painéis de diretriz. O estudo novo entra no corpo de evidência, com população, desfecho, risco de viés e peso, como faz quem escreve a recomendação. Isso impede que a manchete vire conduta antes da hora.
+
+06.png
+Slide 6 de 7. Evidência não é conduta. Os prompts interpretam estudos. A decisão sobre cada pessoa continua sendo sua.
+
+07.png
+Slide 7 de 7. Manda para o grupo que mudou a conduta pela manchete. No próximo post, o resultado bom demais e onde ele pode falhar. A Biblioteca de Prompts paper.ai__ está chegando. Lista de espera no link da bio.

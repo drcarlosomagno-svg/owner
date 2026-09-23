@@ -1,0 +1,112 @@
+titulo: Onze prompts, um para cada momento
+arquetipo: Fluxo / venda
+objetivo: comentários (lista de espera)
+publicar: Semana 4 · sexta
+
+slides:
+  - tipo: capa
+    tag: Biblioteca de prompts
+    titulo: Onze prompts. ==Um para cada momento da pesquisa.==
+    subtitulo: Buscar, ler, checar e usar. Cada prompt indica o próximo passo.
+    comando: HIIT após infarto
+
+  - tipo: texto
+    tag: O problema
+    titulo: Prompt solto resolve uma tarefa. ==Método resolve a pesquisa.==
+    texto: |
+      Cada momento da pesquisa tem uma pergunta diferente e um tipo de erro diferente.
+
+      Por isso a biblioteca segue **a ordem em que o trabalho acontece**.
+
+  - tipo: lista
+    tag: Buscar · P1–P3
+    titulo: Encontrar o que existe sobre o tema
+    estilo: cartoes
+    itens:
+      - m: P1
+        t: Motor de Busca de Referências
+        d: Os melhores artigos do tema, com nível de evidência, DOI e link.
+      - m: P2
+        t: Gerador de Busca Avançada
+        d: Os termos certos e a busca pronta para colar no PubMed.
+      - m: P3
+        t: Vigilância Semanal
+        d: Receba toda semana o que saiu de novo no seu tema.
+
+  - tipo: lista
+    tag: Ler · P4–P6
+    titulo: Decidir o que vale a leitura e ler a fundo
+    estilo: cartoes
+    itens:
+      - m: P4
+        t: Triagem Rápida
+        d: Em segundos, saiba se o artigo merece sua leitura.
+      - m: P5
+        t: Dissecação de um Artigo
+        d: A leitura crítica completa de um único estudo.
+      - m: P6
+        t: Mesa de Comparação
+        d: Entenda por que os estudos discordam entre si.
+
+  - tipo: lista
+    tag: Checar · P7–P9
+    titulo: Conferir antes de confiar
+    estilo: cartoes
+    itens:
+      - m: P7
+        t: Caçador de Vieses
+        d: Encontre onde um resultado bom demais pode falhar.
+      - m: P8
+        t: Detector de Referência Falsa
+        d: Confira se cada referência existe de verdade.
+      - m: P9
+        t: Diretriz vs. Estudo Novo
+        d: Descubra se o estudo novo muda mesmo a diretriz.
+
+  - tipo: lista
+    tag: Usar · P10–P11
+    titulo: Levar para o consultório e para o público
+    estilo: cartoes
+    itens:
+      - m: P10
+        t: Tradutor Clínico
+        d: Risco absoluto, NNT e danos, prontos para a consulta.
+      - m: P11
+        t: Tradutor para Leigos
+        d: Explique um estudo sem exagerar e sem jargão.
+
+  - tipo: texto
+    tag: Como funciona
+    titulo: Funciona no ==Claude, no ChatGPT e no Gemini==
+    texto: |
+      Cada prompt tem uma versão própria para cada IA, com o contrato de veracidade e a dica de uso de cada uma.
+
+      Você escreve o tema, **copia o prompt e cola numa conversa nova**.
+
+  - tipo: cta
+    destaque: comentar
+    titulo: Quer entrar na ==lista de espera==?
+    palavra: BIBLIOTECA
+    texto: Comente a palavra abaixo e eu te mando o link por DM, com acesso antecipado ao lançamento.
+    extra: Prefere o link direto? **Está na bio.**
+
+legenda: |
+  Biblioteca de prompts para pesquisa científica: onze prompts, um para cada momento da pesquisa.
+
+  🔎 Buscar
+  P1 Motor de Busca de Referências · P2 Gerador de Busca Avançada · P3 Vigilância Semanal
+
+  📖 Ler
+  P4 Triagem Rápida · P5 Dissecação de um Artigo · P6 Mesa de Comparação
+
+  ✅ Checar
+  P7 Caçador de Vieses · P8 Detector de Referência Falsa · P9 Diretriz vs. Estudo Novo
+
+  🩺 Usar
+  P10 Tradutor Clínico · P11 Tradutor para Leigos
+
+  Cada prompt indica o próximo passo e tem versão própria para Claude, ChatGPT e Gemini. Você escreve o tema, copia e cola numa conversa nova.
+
+  💬 Comente BIBLIOTECA e eu te mando o link da lista de espera por DM, com acesso antecipado ao lançamento.
+
+hashtags: [pesquisamedica, medicinabaseadaemevidencias, promptsdeia, iaparamedicos, paperai]

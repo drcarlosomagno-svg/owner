@@ -1,0 +1,18 @@
+Como encontrar os melhores artigos de um tema com IA, com nível de evidência, DOI e link: o P1 da paper.ai__.
+
+Pedir “artigos sobre…” de memória é pedir referência inventada. O P1 faz a IA buscar no PubMed, abrir cada artigo antes de citar e classificar pelo nível de evidência de Oxford (2011).
+
+Como usar:
+1️⃣ Escreva o tema, em linguagem livre
+2️⃣ Copie o prompt, que já sai com o seu tema dentro
+3️⃣ Cole numa conversa nova do Claude, do ChatGPT ou do Gemini
+
+O que volta: a resposta em 30 segundos, os melhores artigos (do nível de evidência mais alto para o mais baixo), a diretriz vigente, os limites e a string de busca usada.
+
+⚠️ Abra cada link antes de citar. A IA ajuda; a leitura é sua.
+
+💾 Salve e siga @paper.ai__. Lista de espera da biblioteca no link da bio.
+
+Referência citada: Bhattacharyya M et al. Cureus. 2023. doi:10.7759/cureus.39238
+
+#pesquisamedica #pubmed #medicinabaseadaemevidencias #promptsdeia #paperai

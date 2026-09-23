@@ -1,0 +1,23 @@
+01.png
+Slide 1 de 8. Onze prompts. Um para cada momento da pesquisa. Buscar, ler, checar e usar. Cada prompt indica o próximo passo.
+
+02.png
+Slide 2 de 8. Prompt solto resolve uma tarefa. Método resolve a pesquisa. Cada momento da pesquisa tem uma pergunta diferente e um tipo de erro diferente. Por isso a biblioteca segue a ordem em que o trabalho acontece.
+
+03.png
+Slide 3 de 8. Encontrar o que existe sobre o tema. Motor de Busca de Referências: Os melhores artigos do tema, com nível de evidência, DOI e link. Gerador de Busca Avançada: Os termos certos e a busca pronta para colar no PubMed. Vigilância Semanal: Receba toda semana o que saiu de novo no seu tema.
+
+04.png
+Slide 4 de 8. Decidir o que vale a leitura e ler a fundo. Triagem Rápida: Em segundos, saiba se o artigo merece sua leitura. Dissecação de um Artigo: A leitura crítica completa de um único estudo. Mesa de Comparação: Entenda por que os estudos discordam entre si.
+
+05.png
+Slide 5 de 8. Conferir antes de confiar. Caçador de Vieses: Encontre onde um resultado bom demais pode falhar. Detector de Referência Falsa: Confira se cada referência existe de verdade. Diretriz vs. Estudo Novo: Descubra se o estudo novo muda mesmo a diretriz.
+
+06.png
+Slide 6 de 8. Levar para o consultório e para o público. Tradutor Clínico: Risco absoluto, NNT e danos, prontos para a consulta. Tradutor para Leigos: Explique um estudo sem exagerar e sem jargão.
+
+07.png
+Slide 7 de 8. Funciona no Claude, no ChatGPT e no Gemini. Cada prompt tem uma versão própria para cada IA, com o contrato de veracidade e a dica de uso de cada uma. Você escreve o tema, copia o prompt e cola numa conversa nova.
+
+08.png
+Slide 8 de 8. Quer entrar na lista de espera?. Comente a palavra abaixo e eu te mando o link por DM, com acesso antecipado ao lançamento. Comente BIBLIOTECA. Prefere o link direto? Está na bio.

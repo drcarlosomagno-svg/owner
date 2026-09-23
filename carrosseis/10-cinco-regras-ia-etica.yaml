@@ -13,16 +13,16 @@ slides:
     tag: Regra 1
     titulo: Nunca cole dados que ==identifiquem o paciente==
     texto: |
-      Dado de saúde é **dado pessoal sensível** pela LGPD (Lei 13.709/2018).
+      Nada de nome, prontuário ou documento. **Use um perfil genérico.**
 
-      Tirar o nome não basta. Iniciais, data de nascimento, prontuário, datas de internação, cidade pequena e doença rara também identificam.
+      Dado de saúde é dado pessoal sensível pela LGPD (Lei 13.709/2018). Iniciais, data de nascimento, datas de internação e doença rara também identificam.
     nota: Em pesquisa com dados de pacientes, siga também o protocolo aprovado pelo CEP.
 
   - tipo: texto
     tag: Regra 2
     titulo: Nunca cite uma referência ==que você não abriu==
     texto: |
-      A IA pode inventar autor, revista, DOI e PMID.
+      A IA erra citação misturando pedaços reais: **título certo, autor errado**.
 
       Toda citação precisa ser conferida na fonte: PubMed, site da revista, DOI.
 
@@ -44,11 +44,11 @@ slides:
 
   - tipo: texto
     tag: Regra 5
-    titulo: Nunca terceirize o ==julgamento clínico==
+    titulo: Nunca confunda ==evidência com conduta==
     texto: |
-      A IA organiza, resume e sugere.
+      A IA interpreta estudos. Ela organiza, resume e aponta.
 
-      Decidir se uma evidência muda a conduta é trabalho de quem responde pelo paciente: **você**.
+      A decisão sobre cada pessoa continua sendo de quem responde pelo paciente: **você**.
 
   - tipo: lista
     tag: Resumo
@@ -64,16 +64,16 @@ slides:
     destaque: enviar
     titulo: Manda para o seu grupo de pesquisa ==antes do próximo artigo==.
     texto: E salve para consultar sempre que bater a dúvida.
-    extra: Todos os prompts da biblioteca paper.ai__ seguem essas 5 regras. **Lista de espera no link da bio.**
+    extra: Todos os prompts da **Biblioteca paper.ai__** seguem essas regras. Lista de espera no link da bio.
 
 legenda: |
   IA na pesquisa médica com ética: 5 coisas que você nunca deve fazer com IA se você é médico.
 
-  1. Nunca cole dados que identifiquem o paciente. Dado de saúde é dado pessoal sensível pela LGPD (Lei 13.709/2018), e tirar o nome não basta.
-  2. Nunca cite uma referência que você não abriu. A IA pode inventar autor, revista, DOI e PMID.
+  1. Nunca cole dados que identifiquem o paciente. Nada de nome, prontuário ou documento: use um perfil genérico. Dado de saúde é dado pessoal sensível pela LGPD (Lei 13.709/2018).
+  2. Nunca cite uma referência que você não abriu. A IA erra citação misturando pedaços reais: título certo, autor errado.
   3. Nunca esconda o uso de IA no manuscrito. O ICMJE pede a declaração e não aceita chatbot como autor.
-  4. Nunca envie à IA o manuscrito que você está revisando. O ICMJE orienta revisores a não colocar manuscritos em ferramentas que não garantam confidencialidade.
-  5. Nunca terceirize o julgamento clínico. A IA sugere; a decisão é sua.
+  4. Nunca envie à IA o manuscrito que você está revisando. O ICMJE orienta revisores a não usar ferramentas que não garantam confidencialidade.
+  5. Nunca confunda evidência com conduta. A IA interpreta estudos; a decisão sobre cada pessoa é sua.
 
   Em pesquisa com dados de pacientes, siga também o protocolo aprovado pelo CEP e a política da revista.
 

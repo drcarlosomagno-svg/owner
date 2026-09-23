@@ -1,0 +1,135 @@
+{
+  "_fonte": "Artefato 'Biblioteca de Prompts' (https://claude.ai/artifact/87rA4X3tchY2QFpgAsfbmE), extraído em 23/09/2026. Atualize se o produto mudar.",
+  "produto": "Biblioteca de Prompts paper.ai__",
+  "olho": "Biblioteca de prompts para pesquisa científica",
+  "titulo": "Comece sua pesquisa.",
+  "subtitulo": "Escreva o que você quer saber. A biblioteca monta o prompt que faz a IA buscar no PubMed os melhores artigos do tema, com o nível de evidência, o DOI e o link de cada um.",
+  "ias": [
+    "Claude",
+    "ChatGPT",
+    "Gemini"
+  ],
+  "grupos": [
+    {
+      "id": "buscar",
+      "nome": "Buscar",
+      "descricao": "Encontrar o que existe sobre o tema."
+    },
+    {
+      "id": "ler",
+      "nome": "Ler",
+      "descricao": "Decidir o que vale a leitura e ler a fundo."
+    },
+    {
+      "id": "checar",
+      "nome": "Checar",
+      "descricao": "Conferir antes de confiar."
+    },
+    {
+      "id": "usar",
+      "nome": "Usar",
+      "descricao": "Levar para o consultório e para o público."
+    }
+  ],
+  "prompts": [
+    {
+      "id": "P1",
+      "nome": "Motor de Busca de Referências",
+      "grupo": "buscar",
+      "curto": "Os melhores artigos do tema, com nível de evidência, DOI e link.",
+      "quando": "Você quer saber o que os melhores artigos dizem sobre um tema, com cada referência pronta para abrir.",
+      "saida": "uma resposta curta e a lista dos melhores artigos do tema, cada um com o nível de evidência, o que encontrou, o DOI e o link",
+      "porque": "Três escolhas sustentam este prompt. Nenhum artigo entra sem ter sido aberto, e o link é montado com o PMID lido na página, o que elimina a referência inventada. O nível de evidência segue a escala de Oxford na coluna do tipo de pergunta, com o motivo de cada rebaixamento, em vez de uma nota subjetiva. E a seleção pesa evidência, relevância e influência na área, incluindo os estudos que não encontraram efeito."
+    },
+    {
+      "id": "P2",
+      "nome": "Gerador de Busca Avançada",
+      "grupo": "buscar",
+      "curto": "Os termos certos e a busca pronta para colar no PubMed.",
+      "quando": "Você quer fazer a sua própria busca no PubMed e não sabe quais termos usar, ou precisa de uma busca bem feita e reprodutível para uma revisão, um TCC ou um projeto.",
+      "saida": "os termos certos (MeSH e sinônimos) e a busca pronta em três versões para o PubMed, mais as versões para Embase, Cochrane e Scopus e o texto para a seção de métodos",
+      "porque": "Buscar só com palavras soltas perde os artigos indexados com outro nome e traz ruído. O P2 mapeia cada conceito no MeSH, que é o vocabulário que o PubMed usa para indexar os artigos, soma os sinônimos que o MeSH não cobre e testa a busca antes de entregar. Você recebe só o que vai colar, em três versões, e o texto de métodos pronto."
+    },
+    {
+      "id": "P3",
+      "nome": "Vigilância Semanal",
+      "grupo": "buscar",
+      "curto": "Receba toda semana o que saiu de novo no seu tema.",
+      "quando": "Você quer parar de correr atrás do que saiu de novo no seu tema.",
+      "saida": "string testada com o volume semanal medido, links prontos, passo a passo do alerta e o prompt de resumo semanal",
+      "porque": "Alerta mal calibrado é o motivo pelo qual quase todo médico desliga o alerta do PubMed. O prompt mede o volume antes de entregar e só aceita a faixa que uma pessoa consegue ler toda semana."
+    },
+    {
+      "id": "P4",
+      "nome": "Triagem Rápida",
+      "grupo": "ler",
+      "curto": "Em segundos, saiba se o artigo merece sua leitura.",
+      "quando": "Chegou um artigo pelo grupo, pelo alerta ou pelo colega. Antes de ler, você decide se vale a pena. Serve para um artigo ou para uma pilha de dez.",
+      "saida": "semáforo por artigo, a ameaça principal de cada um e a ordem de leitura",
+      "porque": "A maior parte do tempo perdido em leitura científica vai para artigos que não deveriam ter passado da primeira página. O prompt julga o desenho real, não o prometido, e trata ausência de dado como informação, que é o que um revisor experiente faz."
+    },
+    {
+      "id": "P5",
+      "nome": "Dissecação de um Artigo",
+      "grupo": "ler",
+      "curto": "A leitura crítica completa de um único estudo.",
+      "quando": "O artigo passou na triagem e vai virar conduta ou aula. Aqui você não lê o artigo: você o interroga.",
+      "saida": "veredito, ficha metodológica, registro vs. publicação, risco de viés por domínio, números absolutos, spin e GRADE",
+      "porque": "Três movimentos que quase nenhum leitor faz sozinho: reconstruir o estudo sem usar o resumo, abrir o registro para caçar troca de desfecho e pôr resultado, conclusão e título lado a lado para expor o spin. Somados ao instrumento formal de viés, transformam leitura em auditoria."
+    },
+    {
+      "id": "P6",
+      "nome": "Mesa de Comparação",
+      "grupo": "ler",
+      "curto": "Entenda por que os estudos discordam entre si.",
+      "quando": "Os estudos sobre o mesmo tema apontam para lados diferentes e você precisa saber se a briga é real ou só aparente.",
+      "saida": "quadro-resumo, pontos de concordância e discordância, a causa da briga e quem pesa mais",
+      "porque": "O erro mais comum ao comparar estudos é supor que mediram a mesma coisa. O prompt confere a definição do desfecho antes de comparar resultados e separa a discordância estatística real da discordância de narrativa."
+    },
+    {
+      "id": "P7",
+      "nome": "Caçador de Vieses",
+      "grupo": "checar",
+      "curto": "Encontre onde um resultado bom demais pode falhar.",
+      "quando": "O resultado é bom demais, o estudo é patrocinado ou algo não fecha, e você quer saber onde está o problema.",
+      "saida": "achados por gravidade com a evidência de cada um, domínios limpos e veredito técnico",
+      "porque": "Auditoria de verdade separa gravidade e registra o que está limpo. Listar os domínios sem achado evita o efeito \"tudo é viés\", que destrói a credibilidade de quem critica artigo por esporte."
+    },
+    {
+      "id": "P8",
+      "nome": "Detector de Referência Falsa",
+      "grupo": "checar",
+      "curto": "Confira se cada referência existe de verdade.",
+      "quando": "Sempre que qualquer IA entregar uma lista de referências. Serve também para a bibliografia de um TCC, artigo ou aula.",
+      "saida": "veredito por referência (verificada, parcial, inexistente, retratada), a correção e o padrão de erro",
+      "porque": "A alucinação típica não inventa do nada: recombina pedaços reais, como título verdadeiro com autor errado ou DOI real em artigo inexistente. Conferir os cinco campos separadamente é o único jeito de pegar isso, e é por isso que o veredito PARCIAL existe."
+    },
+    {
+      "id": "P9",
+      "nome": "Diretriz vs. Estudo Novo",
+      "grupo": "checar",
+      "curto": "Descubra se o estudo novo muda mesmo a diretriz.",
+      "quando": "Saiu um estudo grande e todo mundo diz que a conduta mudou. Você quer saber se mudou mesmo.",
+      "saida": "a recomendação literal, o encaixe do estudo no corpo de evidência e o veredito sobre a recomendação",
+      "porque": "Transfere para a IA a régua que painéis de diretriz usam de verdade: a recomendação se sustenta sobre um corpo de evidência. Isso impede que a manchete de \"novo estudo muda tudo\" vire conduta antes da hora."
+    },
+    {
+      "id": "P10",
+      "nome": "Tradutor Clínico",
+      "grupo": "usar",
+      "curto": "Risco absoluto, NNT e danos, prontos para a consulta.",
+      "quando": "O estudo é bom, mas você precisa saber o que ele significa em número absoluto para o seu paciente.",
+      "saida": "números absolutos com a conta, relevância do desfecho, danos, aplicabilidade e três frases para a consulta",
+      "porque": "A maior parte da desinformação médica nasce de risco relativo sem risco absoluto. O prompt obriga a conversão, mostra a conta e dá aos danos o mesmo espaço dos benefícios, que é o que separa leitura crítica de propaganda."
+    },
+    {
+      "id": "P11",
+      "nome": "Tradutor para Leigos",
+      "grupo": "usar",
+      "curto": "Explique um estudo sem exagerar e sem jargão.",
+      "quando": "Você precisa explicar um estudo para paciente, família ou aluno, sem sensacionalismo e sem aula chata.",
+      "saida": "a ideia central, os números em linguagem de gente, o que o estudo não quer dizer e o texto pronto",
+      "porque": "O bloco \"o que isso não quer dizer\" é o que impede a tradução de virar manchete. E converter para \"de cada 100 pessoas\" elimina de uma vez o truque do risco relativo."
+    }
+  ]
+}

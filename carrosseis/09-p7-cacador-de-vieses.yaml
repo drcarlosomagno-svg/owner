@@ -1,0 +1,91 @@
+titulo: P7 · Caçador de Vieses
+arquetipo: O que é…?
+objetivo: salvamentos
+publicar: Semana 3 · sexta
+produto: P7
+
+slides:
+  - tipo: capa
+    tag: Checar
+    titulo: Resultado bom demais? ==Descubra onde ele pode falhar.==
+    subtitulo: O checklist de risco de viés que os revisores usam, com a IA como auditora, não como juíza.
+
+  - tipo: texto
+    tag: Por que importa
+    titulo: Um ECR não é confiável ==só por ser randomizado==
+    texto: |
+      Randomização mal feita, perdas de seguimento e um desfecho escolhido depois de ver os dados podem distorcer qualquer resultado.
+
+      O **RoB 2**, da Cochrane, organiza essa avaliação em 5 domínios.
+
+  - tipo: lista
+    tag: O método
+    titulo: Os 5 domínios do RoB 2
+    itens:
+      - t: Processo de randomização
+        d: A sequência era aleatória e oculta? Os grupos começaram parecidos?
+      - t: Desvios das intervenções pretendidas
+        d: Quebra de cegamento ou troca de tratamento afetaram o resultado?
+      - t: Dados de desfecho faltantes
+        d: Quantos participantes se perderam, e por quê?
+      - t: Mensuração do desfecho
+        d: Quem avaliou sabia o grupo? O método foi igual nos dois braços?
+      - t: Seleção do resultado relatado
+        d: O resultado segue o protocolo registrado antes?
+    nota: "Sterne JAC et al. BMJ. 2019;366:l4898."
+
+  - tipo: lista
+    tag: Como o P7 entrega
+    titulo: Achados por gravidade, cada um com a prova
+    itens:
+      - m: 🔴
+        t: Compromete a conclusão
+        d: Com o trecho do artigo que sustenta o achado.
+      - m: 🟠
+        t: Exige cautela
+        d: E quanto isso muda a leitura do resultado.
+      - m: 🟡
+        t: Vale registrar
+        d: Não derruba o estudo, mas precisa constar.
+
+  - tipo: texto
+    tag: O detalhe que dá credibilidade
+    titulo: Auditoria séria também diz ==o que está limpo==
+    texto: |
+      O P7 lista os domínios conferidos sem achado e o que não foi possível auditar.
+
+      Isso evita o efeito “tudo é viés”, que destrói a credibilidade de quem critica artigo por esporte.
+
+  - tipo: texto
+    tag: O limite
+    titulo: A IA ==aponta==. Você ==julga==.
+    texto: |
+      Ela pode deixar passar um detalhe do protocolo ou interpretar mal o cegamento. Use a resposta como rascunho e confira com a ferramenta oficial em **riskofbias.info**.
+
+      Na revisão sistemática, a avaliação continua sendo de **dois revisores independentes**.
+
+  - tipo: cta
+    destaque: salvar
+    titulo: Salve para o próximo ==ensaio clínico== que você ler.
+    texto: No próximo post, as 5 regras para usar IA na pesquisa sem colocar você e o paciente em risco.
+    extra: A **Biblioteca de Prompts paper.ai__** está chegando. Lista de espera no link da bio.
+
+legenda: |
+  Leitura crítica de ensaio clínico com IA: como achar o risco de viés de um resultado bom demais.
+
+  Os 5 domínios do RoB 2 (Cochrane):
+  1. Processo de randomização
+  2. Desvios das intervenções pretendidas
+  3. Dados de desfecho faltantes
+  4. Mensuração do desfecho
+  5. Seleção do resultado relatado
+
+  O P7 da Biblioteca paper.ai__, o Caçador de Vieses, entrega os achados por gravidade (🔴 compromete a conclusão · 🟠 exige cautela · 🟡 vale registrar), cada um com o trecho do artigo que o sustenta, e lista também o que foi auditado e estava limpo.
+
+  ⚠️ A IA aponta; você julga. Confira com a ferramenta oficial em riskofbias.info.
+
+  Referência: Sterne JAC et al. RoB 2: a revised tool for assessing risk of bias in randomised trials. BMJ. 2019;366:l4898. doi:10.1136/bmj.l4898
+
+  💾 Salve para o próximo ECR.
+
+hashtags: [leituracritica, ensaioclinico, medicinabaseadaemevidencias, revisaosistematica, paperai]

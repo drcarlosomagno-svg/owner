@@ -1,5 +1,5 @@
 // Marcação leve usada nos textos dos carrosséis:
-//   ==texto==   marca-texto amarelo
+//   ==texto==   destaque vermelho
 //   **texto**   negrito
 //   *texto*     itálico (serifada nos títulos)
 //   [VARIÁVEL]  destaque de variável (só dentro de prompts)

@@ -1,0 +1,20 @@
+01.png
+Slide 1 de 7. Em segundos, saiba se o artigo merece a sua leitura. O P4 faz a triagem. O P5 disseca o que passou.
+
+02.png
+Slide 2 de 7. Quanto tempo você já gastou num artigo que não respondia à sua pergunta?. Artigo do grupo, do alerta, do colega. Antes de ler, decida se vale a pena. O P4 julga o desenho real, não o prometido, e trata ausência de dado como informação, como faz um revisor experiente.
+
+03.png
+Slide 3 de 7. Um veredito por artigo. Ler inteiro: Vai para a leitura completa. Ler só os métodos: Pode servir, mas confira como foi feito antes de confiar. Descartar: Não vale o seu tempo para essa pergunta.
+
+04.png
+Slide 4 de 7. O formato da resposta. Resposta do P4. P4 · Triagem — 3 artigos Legenda: 🟢 ler inteiro · 🟡 ler só os métodos · 🔴 descartar Em 30 segundos Ordem de leitura: [2] → [1] · Descartar: [3] 🟢 [2] [título curto] — [Autor], [ano] Desenho e n: [...] Desfecho: [clínico ou substituto · primário ou secundário] Efeito: [medida (IC 95% ...)] ou “não informado no resumo” Ameaça principal: [...] Veredito: [uma frase]
+
+05.png
+Slide 5 de 7. No P5, você não lê o artigo. Você o interroga. Veredito, ficha do estudo, registro × publicação, risco de viés por domínio, números absolutos, spin e certeza da evidência (GRADE).
+
+06.png
+Slide 6 de 7. 3 movimentos que quase nenhum leitor faz sozinho. Reconstruir o estudo sem o resumo: O resumo é a vitrine. Os métodos são o estudo. Abrir o registro do ensaio: Para caçar troca de desfecho entre o protocolo e a publicação. Pôr resultado, conclusão e título lado a lado: É assim que o spin aparece.
+
+07.png
+Slide 7 de 7. Salve para a próxima pilha de artigos. No próximo post, os números do artigo em risco absoluto, com o P10. A Biblioteca de Prompts paper.ai__ está chegando. Lista de espera no link da bio.

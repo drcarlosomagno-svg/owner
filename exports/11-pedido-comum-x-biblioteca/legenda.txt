@@ -1,0 +1,21 @@
+Prompt para pesquisa médica: a diferença entre o pedido comum e o pedido da biblioteca.
+
+Mesma IA, mesmo artigo. O que muda o resultado é o pedido.
+
+1️⃣ Buscar
+❌ “Me dá 10 artigos sobre creatina e memória.”
+✅ P1: busca no PubMed, abre cada artigo antes de citar, classifica pelo nível de evidência e entrega DOI e link.
+
+2️⃣ Usar
+❌ “O que significa HR 0,80?”
+✅ P10: converte em risco absoluto, NNT e danos, mostra cada conta e escreve três frases para a consulta.
+
+3️⃣ Checar
+❌ “Essas referências estão certas?”
+✅ P8: confere título, autor, periódico, ano e DOI de cada referência e dá o veredito.
+
+Todo prompt da Biblioteca paper.ai__ tem papel de especialista, contrato de veracidade, resposta que começa pelo veredito, checagem final e versão própria para Claude, ChatGPT e Gemini.
+
+📤 Manda para quem ainda pede “me dá artigos sobre...”.
+
+#promptsdeia #chatgptparamedicos #pesquisamedica #residenciamedica #paperai

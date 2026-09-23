@@ -1,17 +1,18 @@
-Prompts de IA para pesquisa médica: por que a paper.ai__ existe.
+Biblioteca de prompts para pesquisa científica: por que a paper.ai__ existe.
 
-Mais de 1 milhão de artigos novos entram no PubMed todo ano. A IA consegue ler, resumir e explicar em segundos, mas só responde bem a quem pergunta bem.
+Mais de 1 milhão de artigos novos entram no PubMed todo ano. A IA consegue buscar, ler e explicar em segundos, mas só responde bem a quem pede bem. E, quando pede mal, inventa referência.
 
-Aqui você vai encontrar:
-✅ Prompts prontos para cada etapa da pesquisa
-✅ Leitura crítica sem enrolação
-✅ Estatística explicada como um preceptor faria
-✅ Estudo ativo com IA
-✅ Uso ético: LGPD, declaração de uso e checagem
+A Biblioteca de Prompts paper.ai__ tem onze prompts, um para cada momento da pesquisa:
+🔎 Buscar (P1–P3): encontrar o que existe sobre o tema
+📖 Ler (P4–P6): decidir o que vale a leitura e ler a fundo
+✅ Checar (P7–P9): conferir antes de confiar
+🩺 Usar (P10–P11): levar para o consultório e para o público
 
-Feito por um médico e residente da USP, no maior complexo hospitalar da América Latina. Com ajuda de IA, revisado por humano.
+Funciona no Claude, no ChatGPT e no Gemini.
 
-👉 Siga @paper.ai__ e ative as notificações. A biblioteca completa está chegando; a lista de espera está no link da bio.
+Feito por um médico e residente da USP, no Hospital das Clínicas da FMUSP, o maior complexo hospitalar da América Latina. Com ajuda de IA, revisado por humano.
+
+👉 Siga @paper.ai__ e ative as notificações. A lista de espera está no link da bio.
 
 Referência citada: Bhattacharyya M et al. High Rates of Fabricated and Inaccurate References in ChatGPT-Generated Medical Content. Cureus. 2023. doi:10.7759/cureus.39238
 

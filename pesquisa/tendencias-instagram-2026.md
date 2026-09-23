@@ -54,11 +54,11 @@ Cada afirmação tem um selo de confiança:
 |---|---|---|
 | **Contraste** | Duas ideias opostas lado a lado (esperado × alternativa) | "Prompt comum × prompt de pesquisador" |
 | **"O que é …?"** | Explica um conceito pouco conhecido de forma curiosa | "O que é PICO?", "O que é RoB 2?", "O que é NNT?" |
-| **Linha contínua / panorâmico** | Um elemento visual atravessa de um slide para o outro e dá vontade de arrastar | Nosso **fio marca-texto**: uma linha amarela que corre por todos os slides até o CTA |
+| **Linha contínua / panorâmico** | Um elemento visual atravessa de um slide para o outro e dá vontade de arrastar | Nosso **fio vermelho**: uma linha que corre por todos os slides até o CTA |
 | **Micro-aula** | Uma ideia por slide, poucas palavras, âncora visual forte | Padrão de todos os carrosséis educativos |
 | **Checklist / passo a passo** | Lista numerada que a pessoa salva para consultar | Fluxo "da dúvida ao artigo", checklist de leitura crítica |
 | **Texto primeiro (estilo post/tweet, estilo notas)** | Parece nativo, pouco produzido | Slide de "print" de conversa com IA (tipo `chat`) |
-| **Editorial / revista** | Tipografia forte, identidade premium | Nossa base visual: papel, serifa, marca-texto |
+| **Editorial / revista** | Tipografia forte, identidade premium | A identidade do produto: Anton, IBM Plex e vermelho |
 | **Reel em slideshow** | Carrossel transformado em vídeo com música | Reaproveitar cada carrossel como Reel para alcance |
 
 Fontes: whaaat.ai, carouselpost.io, Lightreel (relatório de set/2026), Krumzi. [INDICATIVO]
@@ -89,7 +89,7 @@ Fontes: whaaat.ai, carouselpost.io, Lightreel (relatório de set/2026), Krumzi. 
 1. **Formato 3:4 (1080×1440)** por padrão, com zona de segurança para quem preferir 4:5 (`--formato 4x5`).
 2. **Slide 1 = gancho; slide 2 = segundo gancho.** Por causa da "segunda chance", o slide 2 tem que funcionar sozinho para quem chega nele direto.
 3. **Uma ideia por slide**, com o prompt copiável como exceção, porque é o que as pessoas salvam.
-4. **Fio marca-texto contínuo** atravessando os slides (tendência "linha contínua") e contador de páginas.
+4. **Fio vermelho contínuo** atravessando os slides (tendência "linha contínua") e contador de páginas.
 5. **Cada carrossel tem um objetivo de métrica**: salvar (prompts), enviar (erros e alertas), comentar (captação de lead) ou seguir.
 6. **Legenda SEO + prompt copiável + até 5 hashtags + alt text** gerados junto com as imagens.
 7. **Autenticidade**: prints de uso real (slide `chat`), bastidores e o médico aparecendo; zero persona sintética.

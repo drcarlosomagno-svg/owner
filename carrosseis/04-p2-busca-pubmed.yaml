@@ -1,0 +1,106 @@
+titulo: P2 · Gerador de Busca Avançada
+arquetipo: Prompt da biblioteca
+objetivo: salvamentos
+publicar: Semana 2 · segunda
+produto: P2
+
+slides:
+  - tipo: capa
+    tag: Buscar
+    titulo: A busca do PubMed ==pronta para colar==
+    subtitulo: Termos MeSH, sinônimos e três versões (ampla, equilibrada e restrita), sem decorar sintaxe.
+
+  - tipo: texto
+    tag: O problema
+    titulo: Buscar com palavras soltas ==perde artigos== e traz ruído
+    texto: |
+      O mesmo conceito aparece com nomes diferentes: *SGLT2 inhibitors*, *gliflozins*, *empagliflozin*...
+
+      O PubMed indexa pelo **MeSH**, o vocabulário controlado dele. Quem busca sem MeSH perde o que foi indexado com outro nome.
+
+  - tipo: lista
+    tag: O método
+    titulo: Anatomia de uma boa busca
+    itens:
+      - t: Um bloco por conceito
+        d: Em geral, população e intervenção. O desfecho costuma ficar de fora para não perder artigos.
+      - t: OR dentro de cada bloco
+        d: Junta o descritor MeSH e os sinônimos no título e no resumo.
+      - t: AND entre os blocos
+        d: Exige que todos os conceitos apareçam.
+      - t: Teste antes de usar
+        d: Conte os resultados e confira se os artigos que você já conhece aparecem.
+
+  - tipo: resposta
+    tag: O que volta
+    titulo: O formato da resposta
+    rotulo: Resposta do P2
+    cortada: true
+    resposta: |
+      # P2 · Busca avançada — [tema]
+      ## Em 30 segundos
+      - **Use no PubMed:** a versão **[ampla / equilibrada / restrita]** · [N] resultados em [data]
+      - **Termos-chave:** **[Descritor MeSH 1]** + **[Descritor MeSH 2]**
+      ## Buscas prontas para o PubMed
+      - **Ampla** · encontra mais, com mais ruído
+      - **Equilibrada** · o meio-termo
+      - **Restrita** · menos ruído, pode perder artigos
+      ## Outras bases
+      Embase · Cochrane CENTRAL · Scopus
+      ## Texto para a seção de métodos
+      [até 5 linhas no padrão PRISMA-S]
+
+  - tipo: prompt
+    tag: Exemplo
+    titulo: SGLT2 na IC com fração de ejeção preservada
+    rotulo: Uma busca no formato do PubMed
+    copiavel: false
+    prompt: |
+      ("Sodium-Glucose Transporter 2 Inhibitors"[Mesh]
+        OR "SGLT2 inhibitor*"[tiab]
+        OR gliflozin*[tiab]
+        OR empagliflozin[tiab]
+        OR dapagliflozin[tiab])
+      AND
+      ("Heart Failure"[Mesh]
+        OR "heart failure"[tiab])
+      AND
+      ("preserved ejection fraction"[tiab]
+        OR HFpEF[tiab])
+    rodape: "[Mesh] busca pelo vocabulário controlado; [tiab], no título e no resumo; o * pega as variações da palavra."
+
+  - tipo: lista
+    tag: Antes de rodar
+    titulo: Confira em 3 passos
+    estilo: check
+    itens:
+      - t: Valide cada termo MeSH
+        d: Pesquise no MeSH Database do PubMed. A IA pode errar o nome do descritor.
+      - t: Teste com artigos que você já conhece
+        d: Se os estudos-chave não aparecem, a busca está estreita demais.
+      - t: Registre a estratégia
+        d: Base, data e busca exata. O P2 já entrega o texto de métodos no padrão PRISMA-S.
+    nota: Quer receber toda semana o que sair de novo nessa busca? Esse é o **P3, Vigilância Semanal**.
+
+  - tipo: cta
+    destaque: salvar
+    titulo: Salve para a sua ==próxima busca==.
+    texto: No próximo post, o erro que pode fazer você citar um artigo que não existe.
+    extra: A **Biblioteca de Prompts paper.ai__** está chegando. Lista de espera no link da bio.
+
+legenda: |
+  Como fazer uma busca avançada no PubMed com IA, com MeSH e operadores booleanos: o P2 da paper.ai__.
+
+  Buscar com palavras soltas perde os artigos indexados com outro nome e traz ruído. O P2 mapeia cada conceito no MeSH, soma os sinônimos que o MeSH não cobre e testa a busca antes de entregar.
+
+  O que volta:
+  ✅ os termos certos (descritor MeSH + sinônimos)
+  ✅ a busca pronta em três versões: ampla, equilibrada e restrita
+  ✅ versões para Embase, Cochrane CENTRAL e Scopus
+  ✅ o texto da seção de métodos, no padrão PRISMA-S
+
+  ⚠️ Antes de rodar, confira cada termo no MeSH Database e teste com artigos que você já conhece.
+
+  💾 Salve para a próxima busca e siga @paper.ai__.
+
+hashtags: [pubmed, pesquisamedica, revisaosistematica, promptsdeia, paperai]

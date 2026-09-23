@@ -1,0 +1,15 @@
+Como fazer triagem de artigos científicos com IA: em segundos, saiba se o artigo merece a sua leitura.
+
+O P4 da Biblioteca paper.ai__ julga o desenho real (não o prometido) de cada artigo e dá um semáforo:
+🟢 ler inteiro
+🟡 ler só os métodos
+🔴 descartar
+No fim, vem a ordem de leitura e a ameaça principal de cada estudo.
+
+O que passou vai para o P5, a Dissecação de um Artigo: veredito, ficha do estudo, registro × publicação, risco de viés por domínio, números absolutos, spin e GRADE. No P5, você não lê o artigo: você o interroga.
+
+⚠️ A triagem organiza. A decisão de ler, e de mudar a conduta, é sua.
+
+💾 Salve para a próxima pilha de artigos e siga @paper.ai__.
+
+#leituracritica #pesquisamedica #journalclub #promptsdeia #paperai
