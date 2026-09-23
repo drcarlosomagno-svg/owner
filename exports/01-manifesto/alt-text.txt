@@ -1,0 +1,23 @@
+01.png
+Slide 1 de 8. Você não precisa ler mais artigos. Precisa fazer perguntas melhores. Por que a paper.ai__ existe e o que você vai encontrar aqui.
+
+02.png
+Slide 2 de 8. +1 mi de artigos novos entram no PubMed todo ano. Ninguém lê tudo. Nem precisa. O que separa quem se atualiza de quem se afoga é saber o que perguntar.
+
+03.png
+Slide 3 de 8. A IA lê um artigo em segundos. ChatGPT, Claude, Gemini, NotebookLM: todas resumem, traduzem e explicam. O problema não é a ferramenta. É o que você pede para ela.
+
+04.png
+Slide 4 de 8. Pedido genérico, resposta genérica. O que quase todo mundo pede: Resume esse artigo pra mim. O que um pesquisador pede: Extraia PICO, desenho, n, desfecho primário com IC 95% e limitações. Cite a seção de cada dado. Se não constar, escreva "não consta".
+
+05.png
+Slide 5 de 8. 47% das referências geradas pelo ChatGPT-3.5 num estudo não existiam. Só 7% estavam corretas. Modelos novos erram menos. Mas erram.
+
+06.png
+Slide 6 de 8. Método, não mágica. Prompts prontos: Para cada etapa da pesquisa, da pergunta ao abstract. Leitura crítica: RoB 2, GRADE e vieses explicados sem enrolação. Estatística sem medo: NNT, RR, HR e IC 95% como um preceptor explicaria. Estudo ativo: Flashcards e revisão espaçada a partir de artigos e diretrizes. IA com ética: LGPD, declaração de uso e checagem de tudo.
+
+07.png
+Slide 7 de 8. Feito por médico. Com IA. Revisado por humano. Cada prompt daqui nasce de um framework científico (PICO, PRISMA, CONSORT, RoB 2, GRADE) e é testado em artigos reais antes de chegar até você.
+
+08.png
+Slide 8 de 8. Siga para pesquisar melhor, não mais. Toda semana, prompts prontos para copiar, testados e explicados. Estamos construindo a biblioteca paper.ai__, com um prompt para cada etapa da pesquisa. Lista de espera no link da bio.

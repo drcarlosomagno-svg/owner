@@ -1,0 +1,20 @@
+01.png
+Slide 1 de 7. Prompt comum × prompt de pesquisador. 3 pedidos que todo mundo faz para a IA e como transformar cada um em uma resposta que dá para usar.
+
+02.png
+Slide 2 de 7. A IA é tão boa quanto a pergunta que recebe. Mesma IA, mesmo artigo. O que muda o resultado é o pedido. Papel, material, tarefa, formato e regras: o método P.A.P.E.R.
+
+03.png
+Slide 3 de 7. Resumir um artigo. Prompt comum: Resume esse artigo. Prompt de pesquisador: Resuma este ECR em tabela: PICO, n, desfecho primário com IC 95%, eventos adversos e 3 limitações. Cite a seção de cada dado.
+
+04.png
+Slide 4 de 7. Entender um resultado. Prompt comum: O que significa HR 0,80?. Prompt de pesquisador: Explique o HR 0,80 (IC 95% 0,70 a 0,91) deste estudo para um residente: o que mede, se é significativo e o que NÃO dá para concluir. Use os dados da tabela que colei.
+
+05.png
+Slide 5 de 7. Estudar uma diretriz. Prompt comum: Me ensina a diretriz de hipertensão. Prompt de pesquisador: Com base só no trecho da diretriz que colei, crie 15 flashcards de pergunta e resposta, um fato por card, com a seção de origem.
+
+06.png
+Slide 6 de 7. O que os prompts bons têm em comum. Um papel claro para a IA. O material colado ou anexado. Uma tarefa com passos. Um formato de saída definido. Uma regra de checagem.
+
+07.png
+Slide 7 de 7. Manda para quem ainda pede “resume esse artigo”. E salve para reescrever os seus próximos pedidos. A biblioteca paper.ai__ traz prompts de pesquisador para cada etapa. Lista de espera no link da bio.

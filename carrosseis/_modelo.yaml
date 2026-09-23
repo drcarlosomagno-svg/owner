@@ -1,0 +1,115 @@
+# MODELO DE CARROSSEL: copie este arquivo, renomeie (ex.: 13-meu-tema.yaml) e edite.
+# Arquivos que começam com "_" não são renderizados.
+#
+# Marcação dentro dos textos:
+#   ==texto==    marca-texto amarelo (use em 1 a 3 palavras por slide)
+#   **texto**    negrito
+#   *texto*      itálico
+#   →            vira uma seta desenhada
+#   [VARIÁVEL]   dentro de prompts, em MAIÚSCULAS, fica destacada em amarelo
+#
+# Temas (opcional em qualquer slide): claro, escuro, marca (fundo amarelo).
+# Padrão: capa e cta = escuro; o resto = claro.
+#
+# Regras do playbook (estrategia/playbook-carrosseis.md):
+#   - slide 1 = gancho; slide 2 = segundo gancho (funciona sozinho)
+#   - uma ideia por slide; 7 a 10 slides; um CTA principal
+#   - até 5 hashtags; 1ª linha da legenda com a palavra-chave (até 125 caracteres)
+
+titulo: Nome interno do carrossel
+arquetipo: Prompt pronto          # Prompt pronto | Contraste | O que é…? | Erro / alerta | Fluxo / passo a passo | Bastidor / venda
+objetivo: salvamentos             # salvamentos | envios | comentários | seguidores
+publicar: Semana 5 · segunda
+# numero: "13"                    # número grande da capa (padrão: o número do nome do arquivo)
+
+slides:
+  - tipo: capa
+    tag: Prompt pronto
+    titulo: Gancho com a ==palavra-chave== do tema
+    subtitulo: Uma frase que explica a promessa.
+    comando: Opcional, o começo de um prompt com [VARIÁVEL]...
+
+  - tipo: texto
+    tag: O problema
+    titulo: Segundo gancho que ==funciona sozinho==
+    texto: |
+      Parágrafo curto.
+
+      Outro parágrafo, com **negrito** se precisar.
+    nota: Nota pequena opcional (fonte, observação).
+
+  - tipo: lista
+    tag: O método
+    titulo: Título da lista
+    estilo: numerada               # numerada | check | x   (ou use "m:" em cada item para letras/siglas)
+    # inicio: 5                    # começa a numeração em 5
+    itens:
+      - t: Item com título
+        d: E uma descrição curta.
+      - m: P
+        t: Item com letra própria
+        d: Descrição.
+      - Item só com texto
+
+  - tipo: contraste
+    tag: Antes e depois
+    titulo: Título do contraste
+    # mono: false                  # use false se os textos não forem prompts
+    ruim:
+      rotulo: Prompt comum
+      texto: O pedido fraco.
+    bom:
+      rotulo: Prompt de pesquisador
+      texto: O pedido bom, com [VARIÁVEL].
+
+  - tipo: chat
+    tag: Na prática
+    titulo: Uma conversa com a IA
+    mensagens:
+      - de: voce
+        texto: O que você perguntou.
+      - de: ia
+        texto: O que a IA respondeu.
+    nota: Exemplo ilustrativo.
+
+  - tipo: numero
+    tag: O dado
+    numero: 47%
+    titulo: o que esse número ==significa==
+    texto: Uma frase de contexto.
+    nota: Observação opcional.
+    fonte: Autor et al. Revista. Ano;volume:páginas.
+
+  - tipo: prompt
+    tag: Copie e cole
+    titulo: O prompt
+    # parte: 1/2                   # para prompts longos divididos em 2 slides
+    # rotulo: BUSCA                # troca o rótulo "PROMPT" do cartão
+    # copiavel: false              # esconde o "copie e cole"
+    prompt: |
+      Atue como [ESPECIALISTA].
+      1. Passo um.
+      2. Passo dois.
+      Regras: use só o material enviado; se não constar, escreva "não consta".
+    rodape: Troque o que está entre [colchetes].
+
+  - tipo: cta
+    destaque: salvar               # salvar | enviar | comentar | seguir
+    titulo: Salve para ==usar depois==.
+    # palavra: PICO                # mostra "Comente PICO" (para automação de DM)
+    texto: Teaser do próximo post.
+    extra: A biblioteca paper.ai__ está chegando. **Lista de espera no link da bio.**
+
+legenda: |
+  Palavra-chave + promessa em até 125 caracteres.
+
+  Contexto em 2 ou 3 linhas.
+
+  📋 PROMPT PARA COPIAR:
+  (cole aqui o prompt completo)
+
+  ⚠️ Uma linha de cuidado.
+
+  💾 CTA principal.
+
+hashtags: [pesquisamedica, medicinabaseadaemevidencias, promptsdeia, iaparamedicos, paperai]

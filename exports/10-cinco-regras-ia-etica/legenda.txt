@@ -1,0 +1,13 @@
+IA na pesquisa médica com ética: 5 coisas que você nunca deve fazer com IA se você é médico.
+
+1. Nunca cole dados que identifiquem o paciente. Dado de saúde é dado pessoal sensível pela LGPD (Lei 13.709/2018), e tirar o nome não basta.
+2. Nunca cite uma referência que você não abriu. A IA pode inventar autor, revista, DOI e PMID.
+3. Nunca esconda o uso de IA no manuscrito. O ICMJE pede a declaração e não aceita chatbot como autor.
+4. Nunca envie à IA o manuscrito que você está revisando. O ICMJE orienta revisores a não colocar manuscritos em ferramentas que não garantam confidencialidade.
+5. Nunca terceirize o julgamento clínico. A IA sugere; a decisão é sua.
+
+Em pesquisa com dados de pacientes, siga também o protocolo aprovado pelo CEP e a política da revista.
+
+📤 Manda para o seu grupo de pesquisa.
+
+#iaparamedicos #eticamedica #lgpd #pesquisamedica #paperai

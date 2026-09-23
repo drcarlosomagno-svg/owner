@@ -1,0 +1,89 @@
+titulo: A referência inventada
+arquetipo: Erro / alerta
+objetivo: envios
+publicar: Semana 2 · quarta
+
+slides:
+  - tipo: capa
+    tag: Alerta
+    titulo: A IA inventou essa referência. ==E você quase citou.==
+    subtitulo: Como evitar a armadilha mais perigosa da IA na pesquisa médica.
+
+  - tipo: numero
+    tag: O estudo
+    numero: 47%
+    titulo: das referências geradas pelo ChatGPT-3.5 ==não existiam==
+    texto: Outras 46% existiam, mas com dados errados na citação. Só **7%** estavam corretas.
+    fonte: Bhattacharyya M et al. Cureus. 2023;15(5):e39238.
+
+  - tipo: texto
+    tag: Por que acontece
+    titulo: A IA não busca. Ela ==prevê a próxima palavra==.
+    texto: |
+      Um modelo de linguagem gera o texto mais provável. Uma referência plausível (autor comum, revista famosa, ano recente) é exatamente o tipo de coisa que ele sabe imitar.
+
+      Modelos novos e ferramentas com busca erram menos. **Mas erram.**
+
+  - tipo: lista
+    tag: Nunca faça
+    titulo: 3 pedidos que geram referência falsa
+    estilo: x
+    itens:
+      - t: '"Me dê 10 referências sobre..."'
+        d: Pedir citações de memória é o gatilho clássico.
+      - t: '"Complete a bibliografia."'
+        d: A IA preenche o que falta com o que parece plausível.
+      - t: '"Qual é o DOI desse estudo?"'
+        d: Sem acesso à base, ela pode montar um DOI com cara de verdadeiro.
+
+  - tipo: lista
+    tag: Faça assim
+    titulo: Como usar IA sem citar fantasma
+    estilo: check
+    itens:
+      - t: Busque nas bases, não no chat
+        d: PubMed, Cochrane, SciELO. A IA ajuda a montar a busca, não a substitui.
+      - t: Dê o texto para a IA
+        d: Trabalhe sobre o PDF ou o resumo que você enviou.
+      - t: Abra todo DOI e PMID
+        d: Leia o resumo. Confira autores, ano e revista.
+
+  - tipo: prompt
+    tag: Copie e cole
+    titulo: A regra anti-alucinação
+    prompt: |
+      REGRAS:
+      - Use apenas as informações do material que eu enviei.
+      - Para cada afirmação, indique a seção ou a página de onde tirou.
+      - Se algo não estiver no material, escreva "não consta no texto".
+      - Nunca crie referências, DOIs ou PMIDs.
+      - Se não tiver certeza, diga que não tem certeza.
+    rodape: Cole no fim de qualquer prompt de pesquisa. Ela reduz o risco, mas não elimina. Confira sempre.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda para aquele colega que ==confia demais== na IA.
+    texto: Uma referência falsa num TCC, num artigo ou numa aula pode custar caro.
+    extra: A biblioteca paper.ai__ traz essa regra em todos os prompts. **Lista de espera no link da bio.**
+
+legenda: |
+  ChatGPT inventa referências? Em um estudo, 47% das referências geradas pelo ChatGPT-3.5 não existiam.
+
+  No mesmo estudo, 46% existiam mas tinham dados errados, e só 7% estavam corretas. Modelos novos erram menos, mas o risco continua. Referência inventada em TCC, artigo ou aula é o tipo de erro que custa caro.
+
+  📋 REGRA ANTI-ALUCINAÇÃO (cole no fim de qualquer prompt):
+
+  REGRAS:
+  - Use apenas as informações do material que eu enviei.
+  - Para cada afirmação, indique a seção ou a página de onde tirou.
+  - Se algo não estiver no material, escreva "não consta no texto".
+  - Nunca crie referências, DOIs ou PMIDs.
+  - Se não tiver certeza, diga que não tem certeza.
+
+  ⚠️ Busque nas bases (PubMed, Cochrane, SciELO) e abra todo DOI antes de citar.
+
+  📤 Manda para aquele colega que confia demais na IA.
+
+  Referência: Bhattacharyya M, Miller VM, Bhattacharyya D, Miller LE. High Rates of Fabricated and Inaccurate References in ChatGPT-Generated Medical Content. Cureus. 2023;15(5):e39238. doi:10.7759/cureus.39238
+
+hashtags: [pesquisamedica, chatgptparamedicos, integridadecientifica, promptsdeia, paperai]

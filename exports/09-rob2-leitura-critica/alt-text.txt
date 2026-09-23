@@ -1,0 +1,20 @@
+01.png
+Slide 1 de 7. O checklist que revisores usam e quase ninguém ensina. RoB 2, a ferramenta da Cochrane para avaliar o risco de viés de um ensaio clínico, com a IA como assistente.
+
+02.png
+Slide 2 de 7. Um ECR não é confiável só por ser randomizado. Randomização mal feita, perdas de seguimento e um desfecho escolhido depois de ver os dados podem distorcer qualquer resultado. O RoB 2 organiza essa avaliação em 5 domínios.
+
+03.png
+Slide 3 de 7. Os 5 domínios do RoB 2. Processo de randomização: A sequência era aleatória e oculta? Os grupos começaram parecidos?. Desvios das intervenções pretendidas: Quebra de cegamento ou troca de tratamento afetaram o resultado?. Dados de desfecho faltantes: Quantos participantes se perderam, e por quê?. Mensuração do desfecho: Quem avaliou sabia o grupo? O método foi igual nos dois braços?. Seleção do resultado relatado: O resultado segue o protocolo registrado antes?.
+
+04.png
+Slide 4 de 7. Cada domínio recebe baixo risco, algumas preocupações ou alto risco. A avaliação é feita por desfecho, não pelo artigo inteiro. E o risco geral nunca é melhor que o do pior domínio.
+
+05.png
+Slide 5 de 7. O prompt. Prompt para copiar: Atue como revisor metodológico treinado no RoB 2 (Cochrane). Anexei o ECR [ESTUDO] e, se houver, o protocolo ou registro. Desfecho a avaliar: [DESFECHO] Para cada um dos 5 domínios do RoB 2: 1. Responda às perguntas sinalizadoras com: sim, provavelmente sim, provavelmente não, não ou sem informação. 2. Cite o trecho do artigo que justifica cada resposta. 3. Proponha um julgamento: baixo risco, algumas preocupações ou alto risco. Ao final, proponha o risco geral e liste o que devo conferir pessoalmente. Se o texto não trouxer a informação, responda "sem informação". Não suponha.
+
+06.png
+Slide 6 de 7. A IA sugere. Você julga. Ela pode deixar passar um detalhe do protocolo ou interpretar mal o cegamento. Use a resposta como rascunho e confira com a ferramenta oficial em riskofbias.info. Na revisão sistemática, a avaliação continua sendo de dois revisores independentes.
+
+07.png
+Slide 7 de 7. Salve para o próximo ensaio clínico que você ler. No próximo post, as 5 regras para usar IA na pesquisa sem colocar você e o paciente em risco. A biblioteca paper.ai__ está chegando. Lista de espera no link da bio.

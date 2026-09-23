@@ -1,0 +1,111 @@
+titulo: PICO em 30 segundos
+arquetipo: Prompt pronto
+objetivo: salvamentos
+publicar: Semana 1 · sexta
+
+slides:
+  - tipo: capa
+    tag: Prompt pronto
+    titulo: Transforme uma dúvida clínica em pergunta de pesquisa em ==30 segundos==
+    subtitulo: O prompt que aplica o método PICO por você e ainda aponta o desenho de estudo ideal.
+    comando: Minha dúvida clínica é [SUA DÚVIDA]...
+
+  - tipo: texto
+    tag: O problema
+    titulo: Toda pesquisa ruim começa com uma ==pergunta vaga==
+    texto: |
+      "SGLT2 funciona na insuficiência cardíaca?" não dá para buscar, nem responder.
+
+      Uma pergunta boa diz **quem**, **o quê**, **comparado com o quê** e **qual desfecho**. Isso tem nome: PICO.
+
+  - tipo: lista
+    tag: O método
+    titulo: PICO, letra por letra
+    itens:
+      - m: P
+        t: Paciente ou população
+        d: Quem? Adultos com IC e fração de ejeção preservada.
+      - m: I
+        t: Intervenção ou exposição
+        d: O que se testa? Inibidor de SGLT2.
+      - m: C
+        t: Comparação
+        d: Contra o quê? Placebo ou tratamento padrão.
+      - m: O
+        t: Outcome (desfecho)
+        d: O que importa medir? Hospitalização por IC ou morte cardiovascular.
+
+  - tipo: contraste
+    tag: Antes e depois
+    titulo: A mesma dúvida, duas perguntas
+    mono: false
+    ruim:
+      rotulo: Pergunta vaga
+      texto: SGLT2 funciona na insuficiência cardíaca?
+    bom:
+      rotulo: Pergunta PICO
+      texto: Em adultos com IC de fração de ejeção preservada (**P**), inibidores de SGLT2 (**I**), comparados a placebo (**C**), reduzem hospitalização por IC ou morte cardiovascular (**O**)?
+
+  - tipo: prompt
+    tag: Copie e cole
+    titulo: O prompt
+    prompt: |
+      Atue como pesquisador sênior em medicina baseada em evidências.
+
+      Minha dúvida clínica: [SUA DÚVIDA]
+      Contexto: [ESPECIALIDADE / CENÁRIO]
+
+      1. Reescreva a dúvida no formato PICO (P, I, C, O). Se faltar algum elemento, pergunte antes de supor.
+      2. Classifique a pergunta: terapia, diagnóstico, prognóstico, etiologia ou prevenção.
+      3. Indique o desenho de estudo mais adequado para respondê-la e por quê.
+      4. Sugira 2 variações: uma mais ampla e uma mais específica.
+      5. Liste os termos-chave em português e inglês para a busca.
+    rodape: Troque o que está entre [colchetes]. Funciona no ChatGPT, Claude, Gemini e outras IAs.
+
+  - tipo: chat
+    tag: Na prática
+    titulo: O que a IA devolve
+    mensagens:
+      - de: voce
+        texto: "Minha dúvida clínica: vitamina D previne fratura em idoso?"
+      - de: ia
+        texto: "**P:** idosos da comunidade com 65 anos ou mais · **I:** suplementação de vitamina D · **C:** placebo · **O:** incidência de fraturas. Tipo: prevenção. Desenho ideal: ensaio clínico randomizado ou metanálise de ECRs."
+    nota: Exemplo ilustrativo. A resposta varia conforme a IA e o contexto que você der.
+
+  - tipo: texto
+    tag: Por que funciona
+    titulo: O prompt ==pensa como um preceptor==
+    texto: |
+      Ele obriga a IA a **perguntar** quando falta informação, em vez de inventar.
+
+      E já te entrega o desenho de estudo e os termos de busca: o próximo passo da pesquisa.
+
+  - tipo: cta
+    titulo: Salve para usar na sua próxima dúvida clínica.
+    destaque: salvar
+    texto: No próximo post, o prompt que transforma o PICO em uma **busca pronta no PubMed**.
+    extra: A biblioteca completa da paper.ai__ está chegando. **Lista de espera no link da bio.**
+
+legenda: |
+  Prompt de pesquisa médica: transforme uma dúvida clínica em pergunta PICO em 30 segundos.
+
+  Toda boa pesquisa começa com uma boa pergunta. O método PICO (Paciente, Intervenção, Comparação, Desfecho) organiza a dúvida para você conseguir buscar e avaliar a evidência.
+
+  📋 PROMPT PARA COPIAR:
+
+  Atue como pesquisador sênior em medicina baseada em evidências.
+
+  Minha dúvida clínica: [SUA DÚVIDA]
+  Contexto: [ESPECIALIDADE / CENÁRIO]
+
+  1. Reescreva a dúvida no formato PICO (P, I, C, O). Se faltar algum elemento, pergunte antes de supor.
+  2. Classifique a pergunta: terapia, diagnóstico, prognóstico, etiologia ou prevenção.
+  3. Indique o desenho de estudo mais adequado para respondê-la e por quê.
+  4. Sugira 2 variações: uma mais ampla e uma mais específica.
+  5. Liste os termos-chave em português e inglês para a busca.
+
+  ⚠️ A IA organiza o raciocínio; a decisão sobre a pergunta é sua. Nunca cole dados que identifiquem pacientes.
+
+  💾 Salve para usar na próxima dúvida e siga @paper.ai__ para o próximo passo: a busca no PubMed.
+
+hashtags: [pesquisamedica, medicinabaseadaemevidencias, promptsdeia, residenciamedica, paperai]

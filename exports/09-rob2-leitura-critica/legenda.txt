@@ -1,0 +1,32 @@
+Leitura crítica de ensaio clínico com IA: como usar o RoB 2 (Cochrane) para avaliar risco de viés.
+
+Os 5 domínios do RoB 2:
+1. Processo de randomização
+2. Desvios das intervenções pretendidas
+3. Dados de desfecho faltantes
+4. Mensuração do desfecho
+5. Seleção do resultado relatado
+
+Cada domínio recebe baixo risco, algumas preocupações ou alto risco, e a avaliação é feita por desfecho.
+
+📋 PROMPT PARA COPIAR:
+
+Atue como revisor metodológico treinado no RoB 2 (Cochrane).
+Anexei o ECR [ESTUDO] e, se houver, o protocolo ou registro.
+Desfecho a avaliar: [DESFECHO]
+
+Para cada um dos 5 domínios do RoB 2:
+1. Responda às perguntas sinalizadoras com: sim, provavelmente sim, provavelmente não, não ou sem informação.
+2. Cite o trecho do artigo que justifica cada resposta.
+3. Proponha um julgamento: baixo risco, algumas preocupações ou alto risco.
+
+Ao final, proponha o risco geral e liste o que devo conferir pessoalmente.
+Se o texto não trouxer a informação, responda "sem informação". Não suponha.
+
+⚠️ A IA sugere; você julga. Confira com a ferramenta oficial em riskofbias.info.
+
+Referência: Sterne JAC et al. RoB 2: a revised tool for assessing risk of bias in randomised trials. BMJ. 2019;366:l4898. doi:10.1136/bmj.l4898
+
+💾 Salve para o próximo ECR.
+
+#leituracritica #ensaioclinico #medicinabaseadaemevidencias #revisaosistematica #paperai

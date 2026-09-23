@@ -1,0 +1,104 @@
+titulo: Flashcards com IA
+arquetipo: Prompt pronto
+objetivo: salvamentos
+publicar: Semana 3 · quarta
+
+slides:
+  - tipo: capa
+    tag: Estudo ativo
+    titulo: Grifar o artigo inteiro ==não é estudar==
+    subtitulo: E quem diz isso é uma marca amarela. O prompt que transforma qualquer texto em flashcards.
+    comando: Crie flashcards a partir de [TEXTO]...
+
+  - tipo: texto
+    tag: A evidência
+    titulo: Grifar e reler estão entre as técnicas ==menos úteis==
+    texto: |
+      Uma revisão de 10 técnicas de estudo classificou grifar e reler como de **baixa utilidade**.
+
+      As duas de **alta utilidade**: testar a si mesmo e espaçar as revisões.
+    nota: Dunlosky J et al. Psychol Sci Public Interest. 2013;14(1):4-58.
+
+  - tipo: texto
+    tag: Efeito de teste
+    titulo: Tentar lembrar ==fixa mais== do que reler
+    texto: |
+      Em experimentos com textos, quem fez testes de recordação lembrou mais **uma semana depois** do que quem releu o mesmo material.
+
+      Detalhe: quem releu se sentia mais confiante.
+    nota: Roediger HL, Karpicke JD. Psychol Sci. 2006;17(3):249-55.
+
+  - tipo: lista
+    tag: O método
+    titulo: O que faz um bom flashcard
+    estilo: check
+    itens:
+      - t: Um fato por card
+        d: Card com 3 informações vira card que você erra sempre.
+      - t: Pergunta que exige lembrar
+        d: Nada de sim ou não. Prefira *qual*, *por que*, *quando*.
+      - t: Com a fonte
+        d: A seção ou a página, para você conferir.
+      - t: Revisão espaçada
+        d: Um app como o Anki agenda as revisões por você.
+
+  - tipo: prompt
+    tag: Copie e cole
+    titulo: O prompt
+    prompt: |
+      Atue como professor de medicina especialista em aprendizagem ativa.
+      Texto de estudo: [COLE O TEXTO, ARTIGO OU DIRETRIZ]
+
+      Crie [N] flashcards seguindo as regras:
+      1. Um fato por card; a pergunta exige lembrar, não reconhecer.
+      2. Priorize o que muda conduta ou cai em prova: [FOCO].
+      3. Inclua 3 cards de "por quê" (mecanismo ou justificativa).
+      4. Use só o conteúdo do texto e indique a seção de origem.
+
+      Formato: uma linha por card, assim:
+      pergunta;resposta (seção)
+      Não use ponto e vírgula dentro do texto.
+
+  - tipo: texto
+    tag: Como usar
+    titulo: Do chat para o Anki em ==1 minuto==
+    texto: |
+      Copie as linhas, salve como arquivo .txt e importe no Anki (**Arquivo → Importar**), com ponto e vírgula como separador.
+
+      Antes de estudar, **confira cada card** com o texto original.
+
+  - tipo: cta
+    destaque: salvar
+    titulo: Salve e transforme a próxima diretriz em ==revisão ativa==.
+    texto: No próximo post, o checklist de leitura crítica que os revisores usam.
+    extra: A biblioteca paper.ai__ está chegando. **Lista de espera no link da bio.**
+
+legenda: |
+  Como estudar medicina com IA: o prompt que transforma artigos e diretrizes em flashcards.
+
+  Grifar e reler estão entre as técnicas de estudo menos úteis. Testar a si mesmo e espaçar as revisões estão entre as mais úteis (Dunlosky et al., 2013). E, em experimentos, tentar lembrar fixou mais do que reler depois de uma semana (Roediger e Karpicke, 2006).
+
+  📋 PROMPT PARA COPIAR:
+
+  Atue como professor de medicina especialista em aprendizagem ativa.
+  Texto de estudo: [COLE O TEXTO, ARTIGO OU DIRETRIZ]
+
+  Crie [N] flashcards seguindo as regras:
+  1. Um fato por card; a pergunta exige lembrar, não reconhecer.
+  2. Priorize o que muda conduta ou cai em prova: [FOCO].
+  3. Inclua 3 cards de "por quê" (mecanismo ou justificativa).
+  4. Use só o conteúdo do texto e indique a seção de origem.
+
+  Formato: uma linha por card, assim:
+  pergunta;resposta (seção)
+  Não use ponto e vírgula dentro do texto.
+
+  👉 Para usar no Anki: salve as linhas em um .txt e importe (Arquivo → Importar) com ponto e vírgula como separador. Confira cada card antes de estudar.
+
+  Referências:
+  Dunlosky J et al. Psychol Sci Public Interest. 2013;14(1):4-58. doi:10.1177/1529100612453266
+  Roediger HL, Karpicke JD. Psychol Sci. 2006;17(3):249-55. doi:10.1111/j.1467-9280.2006.01693.x
+
+  💾 Salve e siga @paper.ai__.
+
+hashtags: [estudomedicina, flashcards, anki, promptsdeia, paperai]

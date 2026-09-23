@@ -1,0 +1,27 @@
+Como ler um artigo científico com IA em 10 minutos: a ficha de leitura que não pula o que importa.
+
+"Resuma esse artigo" devolve a conclusão dos autores, sem números e sem limitações. Para decidir se um estudo muda sua prática, você precisa de uma ficha de leitura.
+
+📋 PROMPT PARA COPIAR:
+
+Atue como epidemiologista clínico preparando uma ficha de leitura.
+Anexei o artigo [TÍTULO OU PDF]. Meu objetivo: [OBJETIVO].
+
+Preencha a ficha em tabela:
+1. Pergunta (PICO) e desenho do estudo
+2. População: n, critérios, cenário e seguimento
+3. Desfecho primário: resultado com medida de efeito e IC 95%
+4. Desfechos secundários (marque como exploratórios)
+5. Eventos adversos relevantes
+6. Limitações citadas pelos autores
+7. Limitações que os autores NÃO citaram
+8. Financiamento e conflitos de interesse
+9. Em 3 linhas: isso se aplica a [MEU CENÁRIO]?
+
+Regras: cite a seção ou a página de cada dado. Se não constar, escreva "não consta". Não arredonde números.
+
+⚠️ Depois, confira os números na tabela do artigo. A IA organiza; o julgamento é seu.
+
+💾 Salve para o próximo artigo e siga @paper.ai__.
+
+#leituracritica #pesquisamedica #journalclub #promptsdeia #paperai

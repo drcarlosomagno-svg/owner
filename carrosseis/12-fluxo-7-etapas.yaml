@@ -1,0 +1,90 @@
+titulo: Da dúvida ao artigo em 7 etapas
+arquetipo: Fluxo / venda
+objetivo: comentários (lista de espera)
+publicar: Semana 4 · sexta
+
+slides:
+  - tipo: capa
+    tag: Da dúvida ao artigo
+    titulo: O fluxo de pesquisa com IA em ==7 etapas==
+    subtitulo: Um prompt para cada etapa. É assim que a biblioteca paper.ai__ está sendo construída.
+
+  - tipo: texto
+    tag: O problema
+    titulo: Prompt solto resolve uma tarefa. ==Método resolve a pesquisa.==
+    texto: |
+      Cada etapa da pesquisa tem uma pergunta diferente e um tipo de erro diferente.
+
+      Por isso o prompt certo **muda de etapa para etapa**.
+
+  - tipo: lista
+    tag: O fluxo
+    titulo: Etapas 1 a 4
+    itens:
+      - t: Pergunta
+        d: Da dúvida clínica ao PICO.
+      - t: Busca
+        d: MeSH, sinônimos e operadores no PubMed.
+      - t: Triagem
+        d: Critérios de inclusão aplicados a títulos e resumos.
+      - t: Leitura
+        d: Ficha de extração com a seção de cada dado.
+
+  - tipo: lista
+    tag: O fluxo
+    titulo: Etapas 5 a 7
+    inicio: 5
+    itens:
+      - t: Avaliação crítica
+        d: RoB 2 para ensaios clínicos; GRADE para a certeza da evidência.
+      - t: Síntese
+        d: Tabela de evidências e o que ela permite concluir.
+      - t: Escrita
+        d: Estrutura IMRaD, abstract e revisão de linguagem.
+
+  - tipo: prompt
+    tag: Amostra · Etapa 3
+    titulo: O prompt de triagem
+    prompt: |
+      Atue como revisor de uma revisão sistemática.
+      Pergunta PICO: [PERGUNTA]
+      Critérios de inclusão: [CRITÉRIOS]
+      Critérios de exclusão: [CRITÉRIOS]
+
+      Para cada título e resumo abaixo, responda "incluir", "excluir" ou "dúvida", com o critério que justifica.
+      Na dúvida, não exclua.
+
+      [COLE OS TÍTULOS E RESUMOS]
+    rodape: Na revisão sistemática, a triagem continua sendo feita por dois revisores. A IA ajuda a organizar.
+
+  - tipo: texto
+    tag: A biblioteca
+    titulo: A paper.ai__ vai reunir ==um prompt testado para cada etapa==
+    texto: |
+      Em português, com base em PICO, PRISMA, CONSORT, RoB 2 e GRADE, e com regras anti-alucinação em todos.
+
+      Para estudante, residente, pós-graduando e médico que quer se atualizar.
+
+  - tipo: cta
+    destaque: comentar
+    titulo: Quer entrar na ==lista de espera==?
+    palavra: BIBLIOTECA
+    texto: Comente a palavra abaixo e eu te mando o link por DM, com acesso antecipado ao lançamento.
+    extra: Prefere o link direto? **Está na bio.**
+
+legenda: |
+  Pesquisa médica com IA, da dúvida ao artigo: o fluxo em 7 etapas, com um prompt para cada uma.
+
+  1. Pergunta: da dúvida clínica ao PICO
+  2. Busca: MeSH, sinônimos e operadores no PubMed
+  3. Triagem: critérios de inclusão aplicados a títulos e resumos
+  4. Leitura: ficha de extração com a seção de cada dado
+  5. Avaliação crítica: RoB 2 e GRADE
+  6. Síntese: tabela de evidências
+  7. Escrita: IMRaD, abstract e revisão
+
+  É exatamente assim que a biblioteca paper.ai__ está sendo construída: prompts em português, baseados em frameworks científicos, testados e com regras anti-alucinação.
+
+  💬 Comente BIBLIOTECA e eu te mando o link da lista de espera por DM, com acesso antecipado ao lançamento.
+
+hashtags: [pesquisamedica, revisaosistematica, promptsdeia, iaparamedicos, paperai]

@@ -1,0 +1,19 @@
+Prompt para pesquisa médica: a diferença entre o prompt comum e o prompt de pesquisador.
+
+Mesma IA, mesmo artigo. O que muda o resultado é o pedido.
+
+1️⃣ Resumo
+❌ "Resume esse artigo."
+✅ "Resuma este ECR em tabela: PICO, n, desfecho primário com IC 95%, eventos adversos e 3 limitações. Cite a seção de cada dado."
+
+2️⃣ Estatística
+❌ "O que significa HR 0,80?"
+✅ "Explique o HR 0,80 (IC 95% 0,70 a 0,91) deste estudo para um residente: o que mede, se é significativo e o que NÃO dá para concluir. Use os dados da tabela que colei."
+
+3️⃣ Estudo
+❌ "Me ensina a diretriz de hipertensão."
+✅ "Com base só no trecho da diretriz que colei, crie 15 flashcards de pergunta e resposta, um fato por card, com a seção de origem."
+
+📤 Manda para quem ainda pede "resume esse artigo".
+
+#promptsdeia #chatgptparamedicos #pesquisamedica #residenciamedica #paperai

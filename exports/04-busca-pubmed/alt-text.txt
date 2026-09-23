@@ -1,0 +1,20 @@
+01.png
+Slide 1 de 7. O prompt que monta sua busca no PubMed. Com termos MeSH, sinônimos e operadores booleanos, sem decorar sintaxe.
+
+02.png
+Slide 2 de 7. Buscar com palavras soltas deixa artigos importantes de fora. O mesmo conceito aparece com nomes diferentes: SGLT2 inhibitors, gliflozins, empagliflozin... A busca boa combina termos MeSH (o vocabulário oficial do PubMed) com sinônimos no título e no resumo.
+
+03.png
+Slide 3 de 7. Anatomia de uma estratégia de busca. Um bloco por conceito do PICO: Em geral, P e I. O desfecho costuma ficar de fora para não perder artigos. OR dentro de cada bloco: Junta sinônimos. Termo MeSH OR palavras no título e resumo. AND entre os blocos: Exige que todos os conceitos apareçam. Filtros só no fim: Tipo de estudo, idioma e período, com moderação.
+
+04.png
+Slide 4 de 7. O prompt. Prompt para copiar: Atue como bibliotecário especialista em buscas no PubMed. Minha pergunta PICO: [PERGUNTA PICO] 1. Identifique os conceitos principais (P e I; inclua C e O só se forem essenciais). 2. Para cada conceito, sugira o termo MeSH e de 5 a 10 sinônimos em inglês para buscar em [tiab]. 3. Monte a estratégia na sintaxe do PubMed: OR dentro de cada bloco e AND entre os blocos. 4. Sugira filtros opcionais para [TIPO DE ESTUDO]. Não invente termos MeSH. Se não tiver certeza, marque com "(verificar)".
+
+05.png
+Slide 5 de 7. SGLT2 na IC com fração de ejeção preservada. Prompt para copiar: ("Sodium-Glucose Transporter 2 Inhibitors"[Mesh] OR "SGLT2 inhibitor*"[tiab] OR gliflozin*[tiab] OR empagliflozin[tiab] OR dapagliflozin[tiab]) AND ("Heart Failure"[Mesh] OR "heart failure"[tiab]) AND ("preserved ejection fraction"[tiab] OR HFpEF[tiab])
+
+06.png
+Slide 6 de 7. Confira em 3 passos. Valide cada termo MeSH: Pesquise no MeSH Database do PubMed. A IA pode errar o nome do descritor. Teste com artigos que você já conhece: Se os estudos-chave não aparecem, a busca está estreita demais. Registre a estratégia: Base, data e a busca exata. Revisão sistemática exige isso (PRISMA 2020).
+
+07.png
+Slide 7 de 7. Salve para a sua próxima busca. No próximo post, o erro que pode fazer você citar um artigo que não existe. A biblioteca paper.ai__ está chegando. Lista de espera no link da bio.

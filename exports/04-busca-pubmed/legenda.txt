@@ -1,0 +1,22 @@
+Como fazer busca no PubMed com IA: o prompt que monta a estratégia com MeSH e operadores booleanos.
+
+Buscar com palavras soltas deixa artigos importantes de fora. A estratégia boa tem um bloco por conceito, sinônimos ligados por OR e blocos ligados por AND.
+
+📋 PROMPT PARA COPIAR:
+
+Atue como bibliotecário especialista em buscas no PubMed.
+
+Minha pergunta PICO: [PERGUNTA PICO]
+
+1. Identifique os conceitos principais (P e I; inclua C e O só se forem essenciais).
+2. Para cada conceito, sugira o termo MeSH e de 5 a 10 sinônimos em inglês para buscar em [tiab].
+3. Monte a estratégia na sintaxe do PubMed: OR dentro de cada bloco e AND entre os blocos.
+4. Sugira filtros opcionais para [TIPO DE ESTUDO].
+
+Não invente termos MeSH. Se não tiver certeza, marque com "(verificar)".
+
+⚠️ Confira todo termo no MeSH Database antes de rodar a busca e teste com artigos que você já conhece.
+
+💾 Salve para a próxima busca e siga @paper.ai__.
+
+#pubmed #pesquisamedica #revisaosistematica #promptsdeia #paperai

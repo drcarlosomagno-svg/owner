@@ -1,0 +1,23 @@
+01.png
+Slide 1 de 8. Leia um artigo de 20 páginas em 10 minutos. Sem pular o que importa. A ficha de leitura que todo preceptor gostaria que você fizesse.
+
+02.png
+Slide 2 de 8. O resumo da IA esconde o que você precisava ver. "Resuma esse artigo" devolve a conclusão dos autores. Sem números, sem limitações, sem o tamanho do efeito. Para decidir se o estudo muda sua prática, você precisa de uma ficha de leitura, não de um resumo.
+
+03.png
+Slide 3 de 8. 6 itens que não podem faltar. Pergunta e desenho: O PICO do estudo e o tipo de estudo. População: n, critérios, cenário e tempo de seguimento. Resultado principal: A medida de efeito com IC 95%, no desfecho primário. Segurança: Eventos adversos relevantes. Limitações: As declaradas pelos autores e as que eles não citaram. Financiamento: Quem pagou o estudo e os conflitos de interesse.
+
+04.png
+Slide 4 de 8. O prompt. Prompt para copiar: Atue como epidemiologista clínico preparando uma ficha de leitura. Anexei o artigo [TÍTULO OU PDF]. Meu objetivo: [OBJETIVO]. Preencha a ficha em tabela: 1. Pergunta (PICO) e desenho do estudo 2. População: n, critérios, cenário e seguimento 3. Desfecho primário: resultado com medida de efeito e IC 95% 4. Desfechos secundários (marque como exploratórios) 5. Eventos adversos relevantes
+
+05.png
+Slide 5 de 8. O prompt, continuação. Prompt para copiar: 6. Limitações citadas pelos autores 7. Limitações que os autores NÃO citaram 8. Financiamento e conflitos de interesse 9. Em 3 linhas: isso se aplica a [MEU CENÁRIO]? Regras: cite a seção ou a página de cada dado. Se não constar, escreva "não consta". Não arredonde números.
+
+06.png
+Slide 6 de 8. O item 7 separa o leitor do pesquisador. Todo artigo lista limitações. Quase nenhum lista todas. Pedir as limitações não declaradas (perda de seguimento, desfecho substituto, população muito selecionada) treina o seu olhar crítico.
+
+07.png
+Slide 7 de 8. Mais 2 minutos seus. Confira os números na tabela do artigo: Principalmente o desfecho primário e o IC. Leia os métodos: É onde moram os vieses. Decida você: A IA organiza. O julgamento é seu.
+
+08.png
+Slide 8 de 8. Salve para o próximo artigo que você precisar ler para ontem. No próximo post, os números do artigo. NNT, RR e HR explicados como um preceptor. A biblioteca paper.ai__ está chegando. Lista de espera no link da bio.

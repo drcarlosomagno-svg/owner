@@ -1,0 +1,108 @@
+titulo: NNT, RR e HR sem medo
+arquetipo: O que é…?
+objetivo: salvamentos
+publicar: Semana 3 · segunda
+
+slides:
+  - tipo: capa
+    tag: Estatística sem medo
+    titulo: NNT, RR, HR. Entenda os números do artigo ==como um preceptor explicaria==
+    subtitulo: E o prompt que faz a IA calcular e mostrar a conta.
+
+  - tipo: numero
+    tag: A pegadinha
+    numero: 25%
+    titulo: de redução do risco pode ser ==só 2,5 pontos percentuais==
+    texto: |
+      Se o evento cai de **10%** para **7,5%**, o risco relativo cai 25%. O risco absoluto cai 2,5 pontos.
+
+      As duas frases descrevem o mesmo resultado.
+    nota: Exemplo hipotético, para fins didáticos.
+
+  - tipo: lista
+    tag: As siglas
+    titulo: O que cada número diz
+    itens:
+      - m: RR
+        t: Risco relativo
+        d: Risco no tratado ÷ risco no controle. 7,5% ÷ 10% = 0,75.
+      - m: RRA
+        t: Redução absoluta do risco
+        d: Risco no controle − risco no tratado. 10% − 7,5% = 2,5 pontos.
+      - m: NNT
+        t: Número necessário para tratar
+        d: 1 ÷ RRA. 1 ÷ 0,025 = 40 tratados para evitar 1 evento, no tempo do estudo.
+
+  - tipo: lista
+    tag: As siglas
+    titulo: E as duas que mais confundem
+    itens:
+      - m: OR
+        t: Razão de chances (odds ratio)
+        d: Parecida com o RR quando o evento é raro. Se afasta dele quando o evento é comum.
+      - m: HR
+        t: Hazard ratio
+        d: Compara o risco instantâneo de evento ao longo do tempo, em análises de sobrevida.
+      - m: IC
+        t: Intervalo de confiança de 95%
+        d: Para RR, OR e HR, se o intervalo inclui 1, o resultado não é estatisticamente significativo a 5%.
+
+  - tipo: prompt
+    tag: Copie e cole
+    titulo: O prompt do preceptor
+    prompt: |
+      Atue como preceptor de medicina baseada em evidências.
+      Colei abaixo os resultados do estudo: [TABELA OU TRECHO]
+
+      Para o desfecho primário:
+      1. Identifique a medida de efeito (RR, OR ou HR) e o IC 95%.
+      2. Com as taxas de eventos de cada grupo, calcule RRA e NNT (ou NNH). Mostre a conta.
+      3. Diga se o resultado é estatisticamente significativo e se parece clinicamente relevante.
+      4. Explique em 3 frases para [PÚBLICO].
+
+      Regras: use só os números fornecidos. Se faltar dado para calcular, diga o que falta e não estime.
+
+  - tipo: texto
+    tag: Cuidado
+    titulo: Confira a conta. ==Sempre.==
+    texto: |
+      IA pode errar aritmética. Por isso o prompt pede para **mostrar a conta**: você confere em 10 segundos.
+
+      E lembre: o NNT vale para o **tempo de seguimento** do estudo. NNT de 40 em 1 ano não é o mesmo que em 5 anos.
+
+  - tipo: cta
+    destaque: salvar
+    titulo: Salve para o próximo ==journal club==.
+    texto: No próximo post, como transformar qualquer artigo ou diretriz em flashcards.
+    extra: A biblioteca paper.ai__ está chegando. **Lista de espera no link da bio.**
+
+legenda: |
+  NNT, risco relativo, odds ratio e hazard ratio: como entender a estatística do artigo com ajuda da IA.
+
+  "Reduziu o risco em 25%" pode significar uma queda de 10% para 7,5%, ou seja, 2,5 pontos percentuais e NNT de 40. As duas frases descrevem o mesmo resultado (exemplo hipotético).
+
+  RR = risco no tratado ÷ risco no controle
+  RRA = risco no controle − risco no tratado
+  NNT = 1 ÷ RRA (vale para o tempo de seguimento do estudo)
+  OR ≈ RR só quando o evento é raro
+  HR = risco instantâneo ao longo do tempo (análise de sobrevida)
+  IC 95% que inclui 1 = não significativo a 5% (para RR, OR e HR)
+
+  📋 PROMPT PARA COPIAR:
+
+  Atue como preceptor de medicina baseada em evidências.
+  Colei abaixo os resultados do estudo: [TABELA OU TRECHO]
+
+  Para o desfecho primário:
+  1. Identifique a medida de efeito (RR, OR ou HR) e o IC 95%.
+  2. Com as taxas de eventos de cada grupo, calcule RRA e NNT (ou NNH). Mostre a conta.
+  3. Diga se o resultado é estatisticamente significativo e se parece clinicamente relevante.
+  4. Explique em 3 frases para [PÚBLICO].
+
+  Regras: use só os números fornecidos. Se faltar dado para calcular, diga o que falta e não estime.
+
+  ⚠️ IA pode errar conta. Confira sempre.
+
+  💾 Salve para o próximo journal club.
+
+hashtags: [estatisticamedica, medicinabaseadaemevidencias, journalclub, promptsdeia, paperai]

@@ -1,0 +1,22 @@
+Prompt de pesquisa médica: transforme uma dúvida clínica em pergunta PICO em 30 segundos.
+
+Toda boa pesquisa começa com uma boa pergunta. O método PICO (Paciente, Intervenção, Comparação, Desfecho) organiza a dúvida para você conseguir buscar e avaliar a evidência.
+
+📋 PROMPT PARA COPIAR:
+
+Atue como pesquisador sênior em medicina baseada em evidências.
+
+Minha dúvida clínica: [SUA DÚVIDA]
+Contexto: [ESPECIALIDADE / CENÁRIO]
+
+1. Reescreva a dúvida no formato PICO (P, I, C, O). Se faltar algum elemento, pergunte antes de supor.
+2. Classifique a pergunta: terapia, diagnóstico, prognóstico, etiologia ou prevenção.
+3. Indique o desenho de estudo mais adequado para respondê-la e por quê.
+4. Sugira 2 variações: uma mais ampla e uma mais específica.
+5. Liste os termos-chave em português e inglês para a busca.
+
+⚠️ A IA organiza o raciocínio; a decisão sobre a pergunta é sua. Nunca cole dados que identifiquem pacientes.
+
+💾 Salve para usar na próxima dúvida e siga @paper.ai__ para o próximo passo: a busca no PubMed.
+
+#pesquisamedica #medicinabaseadaemevidencias #promptsdeia #residenciamedica #paperai
