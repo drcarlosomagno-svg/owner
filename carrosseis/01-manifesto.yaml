@@ -66,9 +66,11 @@ slides:
 
   - tipo: texto
     tag: Quem faz
-    titulo: Feito por médico. Com IA. ==Revisado por humano.==
+    titulo: Médico e ==residente da USP==, no maior complexo hospitalar da América Latina.
     texto: |
       Cada prompt daqui nasce de um framework científico (PICO, PRISMA, CONSORT, RoB 2, GRADE) e é testado em artigos reais antes de chegar até você.
+
+      Feito com IA. **Revisado por humano.**
 
   - tipo: cta
     destaque: seguir
@@ -88,7 +90,7 @@ legenda: |
   ✅ Estudo ativo com IA
   ✅ Uso ético: LGPD, declaração de uso e checagem
 
-  Feito por médico, com ajuda de IA, revisado por humano.
+  Feito por um médico e residente da USP, no maior complexo hospitalar da América Latina. Com ajuda de IA, revisado por humano.
 
   👉 Siga @paper.ai__ e ative as notificações. A biblioteca completa está chegando; a lista de espera está no link da bio.
 

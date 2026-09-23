@@ -23,8 +23,6 @@ Projeto de conteúdo do **@paper.ai__**, a biblioteca de prompts de IA para pesq
 4. Em *Configurações avançadas → Escrever texto alternativo*, cole o texto de cada slide que está em `alt-text.txt`.
 5. Adicione uma música instrumental discreta.
 
-Antes de postar o **01 · Manifesto**, leia o slide "Quem faz" e ajuste com a sua história real.
-
 ## Como criar ou editar um carrossel
 
 Os textos ficam em [`carrosseis/`](carrosseis/), um arquivo `.yaml` por carrossel. O [`_modelo.yaml`](carrosseis/_modelo.yaml) mostra todos os tipos de slide disponíveis:

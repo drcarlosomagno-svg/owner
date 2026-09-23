@@ -17,7 +17,7 @@ Slide 5 de 8. 47% das referências geradas pelo ChatGPT-3.5 num estudo não exis
 Slide 6 de 8. Método, não mágica. Prompts prontos: Para cada etapa da pesquisa, da pergunta ao abstract. Leitura crítica: RoB 2, GRADE e vieses explicados sem enrolação. Estatística sem medo: NNT, RR, HR e IC 95% como um preceptor explicaria. Estudo ativo: Flashcards e revisão espaçada a partir de artigos e diretrizes. IA com ética: LGPD, declaração de uso e checagem de tudo.
 
 07.png
-Slide 7 de 8. Feito por médico. Com IA. Revisado por humano. Cada prompt daqui nasce de um framework científico (PICO, PRISMA, CONSORT, RoB 2, GRADE) e é testado em artigos reais antes de chegar até você.
+Slide 7 de 8. Médico e residente da USP, no maior complexo hospitalar da América Latina. Cada prompt daqui nasce de um framework científico (PICO, PRISMA, CONSORT, RoB 2, GRADE) e é testado em artigos reais antes de chegar até você. Feito com IA. Revisado por humano.
 
 08.png
 Slide 8 de 8. Siga para pesquisar melhor, não mais. Toda semana, prompts prontos para copiar, testados e explicados. Estamos construindo a biblioteca paper.ai__, com um prompt para cada etapa da pesquisa. Lista de espera no link da bio.
