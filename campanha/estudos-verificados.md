@@ -69,3 +69,18 @@ Cada número abaixo foi lido no resumo do artigo no PubMed. Nenhum carrossel pod
 | Wellness social | Schnohr et al. Mayo Clin Proc 2018 | 8.577 pessoas, até 25 anos; tênis +9,7 anos, badminton +6,2, futebol +4,7, ciclismo +3,7, natação +3,4, corrida +3,2, calistenia +3,1, academia +1,5; observacional | 10.1016/j.mayocp.2018.06.025 |
 | 49 ensaios | Morton et al. Br J Sports Med 2018 | 49 ECRs, 1.863 pessoas; proteína +2,49 kg no 1RM e +0,30 kg de massa magra; sem ganho extra acima de ~1,6 g/kg/dia | 10.1136/bjsports-2017-097608 |
 | Condicionamento vs cigarro | Mandsager et al. JAMA Netw Open 2018 | 122.007 pacientes encaminhados a teste de esteira (Cleveland Clinic); baixo vs elite HR 5,04; tabagismo HR 1,41 | 10.1001/jamanetworkopen.2018.3605 |
+
+## Reels de demonstração (o que aparece nas telas)
+
+As respostas mostradas nos Reels de demonstração são exemplos resumidos do formato de cada prompt. Todo artigo, número e identificador que aparece nelas foi conferido no PubMed em 24/09/2026.
+
+| Reel | Estudo | O que o resumo diz | PMID / DOI |
+|---|---|---|---|
+| P1 | Bolland, Grey, Avenell. Lancet Diabetes Endocrinol 2018;6(11):847-58 | Revisão sistemática com metanálise: 81 ECRs, 53.537 participantes; vitamina D sem efeito em fratura total (36 ensaios; RR 1,00; IC 95% 0,93–1,07), fratura de quadril (20 ensaios; 1,11; 0,97–1,26) e quedas (0,97; 0,93–1,02); sem texto completo no PMC | 30293909 · 10.1016/S2213-8587(18)30265-1 |
+| P1 | LeBoff et al. N Engl J Med 2022;387(4):299-309 (VITAL) | ECR, 25.871 adultos (homens ≥50, mulheres ≥55) não selecionados por deficiência; vitamina D 2.000 UI/dia vs placebo, mediana 5,3 anos; fraturas totais em 769 de 12.927 vs 782 de 12.944 (HR 0,98; IC 95% 0,89–1,08); quadril HR 1,01 (0,70–1,47); texto completo grátis PMC9716639 | 35939577 · 10.1056/NEJMoa2202106 |
+| P8 | Walters e Wilder. Sci Rep 2023;13(1):14045 | 636 referências em 84 revisões curtas sobre 42 temas; 55% das referências do GPT-3.5 e 18% das do GPT-4 eram inventadas; entre as reais, 43% (GPT-3.5) e 24% (GPT-4) tinham erro substantivo | 37679503 · 10.1038/s41598-023-41032-5 |
+| P8 | Hviid et al. Ann Intern Med 2019;170(8):513-20 | Coorte nacional dinamarquesa, 657.461 crianças; tríplice viral e autismo HR 0,93 (IC 95% 0,85–1,02) | 30831578 · 10.7326/M18-2101 |
+| P8 | Taylor, Swerdfeger, Eslick. Vaccine 2014;32(29):3623-9 | Metanálise de coortes e caso-controle; vacinação não associada a autismo (OR 0,99; IC 95% 0,92–1,06). No Reel aparece citada com o ano errado (2016) como exemplo de referência PARCIAL | 24814559 · 10.1016/j.vaccine.2014.04.085 |
+| P8 | Wakefield et al. Lancet 1998;351(9103):637-41 | Marcado no PubMed como "Retracted Publication"; retratação publicada em Lancet 2010;375(9713):445 (PMID 20137807) | 9500320 · 10.1016/s0140-6736(97)11096-0 |
+| P2 | Busca no PubMed em 24/09/2026 | Creatina + força muscular + idosos: versão ampla (`strength[tiab]`) 443 resultados; equilibrada (`"muscle strength"[tiab] OR "muscular strength"[tiab]`) 293; restrita (equilibrada + ECR, revisão sistemática ou metanálise) 98. Descritores MeSH usados: Creatine, Muscle Strength, Aged | — |
+| P11 | Araújo et al. Eur J Prev Cardiol 2026 (linha Q acima) | Mortalidade de 3,7% no grupo de nota 10 e 42,1% no de nota 0–4, seguimento mediano 12,3 anos | 10.1093/eurjpc/zwaf325 |

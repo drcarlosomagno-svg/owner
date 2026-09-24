@@ -1,0 +1,17 @@
+Sessão de artigos às 7h e nada lido às 23h? É para isso que existe a Biblioteca de Prompts paper.ai__.
+
+1. Você escreve o tema do jeito que perguntaria a um colega.
+2. A Biblioteca monta o prompt e você copia.
+3. Cola numa conversa nova do Claude, do ChatGPT ou do Gemini.
+
+A resposta vem com os melhores artigos do tema, o nível de evidência de cada um (Oxford 2011), o DOI e o link do PubMed.
+
+No exemplo do vídeo, vitamina D e fraturas: nem a revisão de 81 ensaios (Bolland, 2018) nem o VITAL, com 25.871 adultos (LeBoff, NEJM 2022), mostraram menos fraturas com a suplementação.
+
+⚠️ Abra cada link antes de citar. A IA também erra, e o prompt marca como [não verificado] o que não conseguiu conferir na fonte.
+
+Fontes do exemplo: Bolland MJ et al. Lancet Diabetes Endocrinol. 2018;6(11):847-58. doi:10.1016/S2213-8587(18)30265-1 · LeBoff MS et al. N Engl J Med. 2022;387(4):299-309. doi:10.1056/NEJMoa2202106
+
+🔗 A Biblioteca está no link da bio. Salve para a próxima madrugada.
+
+#residenciamedica #medicina #pesquisacientifica #inteligenciaartificial #paperai

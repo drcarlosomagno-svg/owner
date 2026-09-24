@@ -1,0 +1,13 @@
+O orientador pediu a estratégia de busca e você só tinha três palavras no PubMed?
+
+O P2, Gerador de Busca Avançada, foi feito para essa parte.
+
+Você escreve o tema e o objetivo (TCC, revisão, projeto). A resposta traz os termos certos do MeSH, o vocabulário que o PubMed usa para indexar os artigos, os sinônimos em texto livre e a busca pronta em três versões, com o número de resultados de cada uma. Vem também o texto para a seção de métodos.
+
+No vídeo, creatina e força muscular em idosos. Rodamos as três versões no PubMed em 24/09/2026: ampla, 443 resultados; equilibrada, 293; restrita (só ensaios randomizados, revisões sistemáticas e metanálises), 98. O número muda com o tempo, porque artigos novos entram toda semana.
+
+⚠️ Antes de usar, rode a busca e confira se os artigos que você já conhece aparecem. Se algum importante ficou de fora, a busca precisa de ajuste.
+
+💾 Salve para a sua próxima revisão. A Biblioteca está no link da bio.
+
+#tcc #pubmed #pesquisacientifica #mestrado #paperai

@@ -1,0 +1,7 @@
+O orientador pediu a estratégia de busca
+
+1. · TCC · O orientador pediu a estratégia de busca. · E você tinha três palavras no PubMed.
+2. · 1 · Abre o P2 e escreve o tema. · [celular: toca o campo Tema, digita "creatina e força muscular em idosos", toca "Ajustar opções", toca o campo Objetivo, digita "TCC", rola até "Copiar e abrir", toca "Copiar e abrir"]
+3. · 2 · Volta a busca pronta para colar. · [conversa com a IA: P2 · Busca avançada — creatina e força muscular em idosos …]
+4. · Colou no PubMed. Achou a busca. · Confira se os artigos que você já conhece aparecem nos resultados.
+5. · Biblioteca de Prompts no link da bio. · Salve para a sua próxima revisão.

@@ -6,7 +6,7 @@ Cada pasta tem o vídeo (`reel.mp4`), a capa (`capa.jpg`), a legenda pronta para
 
 **Antes de publicar, escolha um áudio em alta no próprio Instagram** (instrumental, volume baixo). O vídeo sai sem música de propósito: música com direitos só pode entrar pela biblioteca do app.
 
-| Reel | Duração | Carrossel do mesmo tema | Estudo | Quando postar |
+| Reel | Duração | Ligado a | Estudo | Quando postar |
 |---|---|---|---|---|
 | [O que acontece quando você para a caneta](#01-canetas) | 29.8 s | [01-canetas-o-que-acontece-quando-para](../campanha/01-canetas-o-que-acontece-quando-para/) | STEP 1 e extensão (NEJM 2021; Diabetes Obes Metab 2022) | Semana 1 · domingo |
 | [O teste de sentar e levantar do chão](#02-sentar-e-levantar) | 28 s | [02-sentar-e-levantar](../campanha/02-sentar-e-levantar/) | Araújo et al. (Eur J Prev Cardiol, 2026) | Semana 1 · sábado |
@@ -18,6 +18,10 @@ Cada pasta tem o vídeo (`reel.mp4`), a capa (`capa.jpg`), a legenda pronta para
 | [5 minutos de corrida já contavam](#14-corrida) | 25.4 s | [14-corrida](../campanha/14-corrida/) | Lee et al. (J Am Coll Cardiol, 2014) | Semana 3 · domingo |
 | [O calor assusta, o frio matou mais](#17-calor-e-frio) | 25.9 s | [17-calor-e-frio](../campanha/17-calor-e-frio/) | Gasparrini et al. (The Lancet, 2015) | Semana 4 · sábado |
 | [1 minuto, 3 vezes ao dia](#20-um-minuto) | 25.3 s | [20-um-minuto](../campanha/20-um-minuto/) | Stamatakis et al. (Nature Medicine, 2022) | Semana 4 · domingo |
+| [23h, sessão de artigos às 7h](#demo-01-sessao-das-7h) | 28.3 s | P1 (demonstração) | Bolland et al. (Lancet Diabetes Endocrinol, 2018) e LeBoff et al. (N Engl J Med, 2022) | Semana 1 · quinta |
+| [A IA me deu as referências do TCC](#demo-02-referencias-da-ia) | 30.4 s | P8 (demonstração) | Walters e Wilder (Sci Rep, 2023) | Semana 2 · quinta |
+| [O orientador pediu a estratégia de busca](#demo-03-busca-do-tcc) | 26.2 s | P2 (demonstração) | Busca no PubMed conferida em 24/09/2026 | Semana 3 · quinta |
+| [O paciente chegou com a notícia](#demo-04-pergunta-do-paciente) | 25.6 s | P11 (demonstração) · [02-sentar-e-levantar](../campanha/02-sentar-e-levantar/) | Araújo et al. (Eur J Prev Cardiol, 2026) | Semana 4 · quinta |
 
 <a id="01-canetas"></a>
 ## O que acontece quando você para a caneta
@@ -88,3 +92,31 @@ Cada pasta tem o vídeo (`reel.mp4`), a capa (`capa.jpg`), a legenda pronta para
 **vibrante** · 25.3 s · 6 cenas · Semana 4 · domingo · [vídeo](20-um-minuto/reel.mp4) · [legenda](20-um-minuto/legenda.txt) · [texto na tela](20-um-minuto/roteiro.txt)
 
 <img src="20-um-minuto/capa.jpg" width="270" alt="Capa: 1 minuto, 3 vezes ao dia">
+
+<a id="demo-01-sessao-das-7h"></a>
+## 23h, sessão de artigos às 7h
+
+**escuro** · 28.3 s · 6 cenas · Semana 1 · quinta · [vídeo](demo-01-sessao-das-7h/reel.mp4) · [legenda](demo-01-sessao-das-7h/legenda.txt) · [texto na tela](demo-01-sessao-das-7h/roteiro.txt)
+
+<img src="demo-01-sessao-das-7h/capa.jpg" width="270" alt="Capa: 23h, sessão de artigos às 7h">
+
+<a id="demo-02-referencias-da-ia"></a>
+## A IA me deu as referências do TCC
+
+**vibrante** · 30.4 s · 6 cenas · Semana 2 · quinta · [vídeo](demo-02-referencias-da-ia/reel.mp4) · [legenda](demo-02-referencias-da-ia/legenda.txt) · [texto na tela](demo-02-referencias-da-ia/roteiro.txt)
+
+<img src="demo-02-referencias-da-ia/capa.jpg" width="270" alt="Capa: A IA me deu as referências do TCC">
+
+<a id="demo-03-busca-do-tcc"></a>
+## O orientador pediu a estratégia de busca
+
+**claro** · 26.2 s · 5 cenas · Semana 3 · quinta · [vídeo](demo-03-busca-do-tcc/reel.mp4) · [legenda](demo-03-busca-do-tcc/legenda.txt) · [texto na tela](demo-03-busca-do-tcc/roteiro.txt)
+
+<img src="demo-03-busca-do-tcc/capa.jpg" width="270" alt="Capa: O orientador pediu a estratégia de busca">
+
+<a id="demo-04-pergunta-do-paciente"></a>
+## O paciente chegou com a notícia
+
+**claro** · 25.6 s · 5 cenas · Semana 4 · quinta · [vídeo](demo-04-pergunta-do-paciente/reel.mp4) · [legenda](demo-04-pergunta-do-paciente/legenda.txt) · [texto na tela](demo-04-pergunta-do-paciente/roteiro.txt)
+
+<img src="demo-04-pergunta-do-paciente/capa.jpg" width="270" alt="Capa: O paciente chegou com a notícia">

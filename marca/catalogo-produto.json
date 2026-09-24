@@ -39,7 +39,48 @@
       "curto": "Os melhores artigos do tema, com nível de evidência, DOI e link.",
       "quando": "Você quer saber o que os melhores artigos dizem sobre um tema, com cada referência pronta para abrir.",
       "saida": "uma resposta curta e a lista dos melhores artigos do tema, cada um com o nível de evidência, o que encontrou, o DOI e o link",
-      "porque": "Três escolhas sustentam este prompt. Nenhum artigo entra sem ter sido aberto, e o link é montado com o PMID lido na página, o que elimina a referência inventada. O nível de evidência segue a escala de Oxford na coluna do tipo de pergunta, com o motivo de cada rebaixamento, em vez de uma nota subjetiva. E a seleção pesa evidência, relevância e influência na área, incluindo os estudos que não encontraram efeito."
+      "porque": "Três escolhas sustentam este prompt. Nenhum artigo entra sem ter sido aberto, e o link é montado com o PMID lido na página, o que elimina a referência inventada. O nível de evidência segue a escala de Oxford na coluna do tipo de pergunta, com o motivo de cada rebaixamento, em vez de uma nota subjetiva. E a seleção pesa evidência, relevância e influência na área, incluindo os estudos que não encontraram efeito.",
+      "campos": [
+        {
+          "chave": "TEMA",
+          "rotulo": "Tema",
+          "dica": "sua pergunta ou tema em linguagem livre, ex.: creatina e função cognitiva em idosos",
+          "obrigatorio": true,
+          "longo": false
+        },
+        {
+          "chave": "QUANTIDADE",
+          "rotulo": "Quantidade de artigos",
+          "dica": "padrão: 8 artigos (de 5 a 12)",
+          "obrigatorio": false,
+          "longo": false
+        },
+        {
+          "chave": "JANELA",
+          "rotulo": "Período",
+          "dica": "padrão: sem limite de data, com prioridade para os últimos 10 anos",
+          "obrigatorio": false,
+          "longo": false
+        }
+      ],
+      "proximo": [
+        [
+          "P5",
+          "aprofundar um artigo da lista"
+        ],
+        [
+          "P6",
+          "comparar os que discordam"
+        ],
+        [
+          "P8",
+          "conferir as referências"
+        ],
+        [
+          "P3",
+          "transformar a busca em alerta"
+        ]
+      ]
     },
     {
       "id": "P2",
@@ -48,7 +89,44 @@
       "curto": "Os termos certos e a busca pronta para colar no PubMed.",
       "quando": "Você quer fazer a sua própria busca no PubMed e não sabe quais termos usar, ou precisa de uma busca bem feita e reprodutível para uma revisão, um TCC ou um projeto.",
       "saida": "os termos certos (MeSH e sinônimos) e a busca pronta em três versões para o PubMed, mais as versões para Embase, Cochrane e Scopus e o texto para a seção de métodos",
-      "porque": "Buscar só com palavras soltas perde os artigos indexados com outro nome e traz ruído. O P2 mapeia cada conceito no MeSH, que é o vocabulário que o PubMed usa para indexar os artigos, soma os sinônimos que o MeSH não cobre e testa a busca antes de entregar. Você recebe só o que vai colar, em três versões, e o texto de métodos pronto."
+      "porque": "Buscar só com palavras soltas perde os artigos indexados com outro nome e traz ruído. O P2 mapeia cada conceito no MeSH, que é o vocabulário que o PubMed usa para indexar os artigos, soma os sinônimos que o MeSH não cobre e testa a busca antes de entregar. Você recebe só o que vai colar, em três versões, e o texto de métodos pronto.",
+      "campos": [
+        {
+          "chave": "TEMA",
+          "rotulo": "Tema",
+          "dica": "o tema ou a pergunta, em linguagem livre, ex.: creatina e força muscular em idosos",
+          "obrigatorio": true,
+          "longo": false
+        },
+        {
+          "chave": "OBJETIVO",
+          "rotulo": "Objetivo",
+          "dica": "padrão: se atualizar no tema; outras opções: revisão sistemática, TCC, projeto de pesquisa",
+          "obrigatorio": false,
+          "longo": false
+        },
+        {
+          "chave": "SEMENTES",
+          "rotulo": "Artigos que a busca deve encontrar",
+          "dica": "2 ou 3 artigos que a busca precisa encontrar (título, DOI ou PMID)",
+          "obrigatorio": false,
+          "longo": false
+        }
+      ],
+      "proximo": [
+        [
+          "P1",
+          "ver os melhores artigos do tema"
+        ],
+        [
+          "P3",
+          "transformar a busca em alerta semanal"
+        ],
+        [
+          "P4",
+          "triar os resultados"
+        ]
+      ]
     },
     {
       "id": "P3",
@@ -57,7 +135,29 @@
       "curto": "Receba toda semana o que saiu de novo no seu tema.",
       "quando": "Você quer parar de correr atrás do que saiu de novo no seu tema.",
       "saida": "string testada com o volume semanal medido, links prontos, passo a passo do alerta e o prompt de resumo semanal",
-      "porque": "Alerta mal calibrado é o motivo pelo qual quase todo médico desliga o alerta do PubMed. O prompt mede o volume antes de entregar e só aceita a faixa que uma pessoa consegue ler toda semana."
+      "porque": "Alerta mal calibrado é o motivo pelo qual quase todo médico desliga o alerta do PubMed. O prompt mede o volume antes de entregar e só aceita a faixa que uma pessoa consegue ler toda semana.",
+      "campos": [
+        {
+          "chave": "TEMA",
+          "rotulo": "Tema",
+          "dica": "o tema que você quer acompanhar, ex.: tendinopatia patelar em atletas",
+          "obrigatorio": true,
+          "longo": false
+        },
+        {
+          "chave": "FOCO",
+          "rotulo": "Foco",
+          "dica": "padrão: todos os desenhos, priorizando revisões e ensaios",
+          "obrigatorio": false,
+          "longo": false
+        }
+      ],
+      "proximo": [
+        [
+          "P4",
+          "triar o que chegou"
+        ]
+      ]
     },
     {
       "id": "P4",
@@ -66,7 +166,26 @@
       "curto": "Em segundos, saiba se o artigo merece sua leitura.",
       "quando": "Chegou um artigo pelo grupo, pelo alerta ou pelo colega. Antes de ler, você decide se vale a pena. Serve para um artigo ou para uma pilha de dez.",
       "saida": "semáforo por artigo, a ameaça principal de cada um e a ordem de leitura",
-      "porque": "A maior parte do tempo perdido em leitura científica vai para artigos que não deveriam ter passado da primeira página. O prompt julga o desenho real, não o prometido, e trata ausência de dado como informação, que é o que um revisor experiente faz."
+      "porque": "A maior parte do tempo perdido em leitura científica vai para artigos que não deveriam ter passado da primeira página. O prompt julga o desenho real, não o prometido, e trata ausência de dado como informação, que é o que um revisor experiente faz.",
+      "campos": [
+        {
+          "chave": "ARTIGOS",
+          "rotulo": "Artigos",
+          "dica": "cole título e resumo, DOI, PMID ou link; vários itens separados por uma linha com ---",
+          "obrigatorio": true,
+          "longo": true
+        }
+      ],
+      "proximo": [
+        [
+          "P5",
+          "ler a fundo os 🟢"
+        ],
+        [
+          "P7",
+          "auditar um resultado bom demais"
+        ]
+      ]
     },
     {
       "id": "P5",
@@ -75,7 +194,33 @@
       "curto": "A leitura crítica completa de um único estudo.",
       "quando": "O artigo passou na triagem e vai virar conduta ou aula. Aqui você não lê o artigo: você o interroga.",
       "saida": "veredito, ficha metodológica, registro vs. publicação, risco de viés por domínio, números absolutos, spin e GRADE",
-      "porque": "Três movimentos que quase nenhum leitor faz sozinho: reconstruir o estudo sem usar o resumo, abrir o registro para caçar troca de desfecho e pôr resultado, conclusão e título lado a lado para expor o spin. Somados ao instrumento formal de viés, transformam leitura em auditoria."
+      "porque": "Três movimentos que quase nenhum leitor faz sozinho: reconstruir o estudo sem usar o resumo, abrir o registro para caçar troca de desfecho e pôr resultado, conclusão e título lado a lado para expor o spin. Somados ao instrumento formal de viés, transformam leitura em auditoria.",
+      "campos": [
+        {
+          "chave": "ARTIGO",
+          "rotulo": "Artigo",
+          "dica": "DOI, PMID, link ou o texto colado; se anexar o PDF, escreva PDF anexado",
+          "obrigatorio": true,
+          "longo": true
+        },
+        {
+          "chave": "DECISAO",
+          "rotulo": "O que você quer decidir",
+          "dica": "padrão: avaliar se o estudo é confiável para a prática",
+          "obrigatorio": false,
+          "longo": false
+        }
+      ],
+      "proximo": [
+        [
+          "P10",
+          "traduzir para o consultório"
+        ],
+        [
+          "P7",
+          "procurar vieses a fundo"
+        ]
+      ]
     },
     {
       "id": "P6",
@@ -84,7 +229,33 @@
       "curto": "Entenda por que os estudos discordam entre si.",
       "quando": "Os estudos sobre o mesmo tema apontam para lados diferentes e você precisa saber se a briga é real ou só aparente.",
       "saida": "quadro-resumo, pontos de concordância e discordância, a causa da briga e quem pesa mais",
-      "porque": "O erro mais comum ao comparar estudos é supor que mediram a mesma coisa. O prompt confere a definição do desfecho antes de comparar resultados e separa a discordância estatística real da discordância de narrativa."
+      "porque": "O erro mais comum ao comparar estudos é supor que mediram a mesma coisa. O prompt confere a definição do desfecho antes de comparar resultados e separa a discordância estatística real da discordância de narrativa.",
+      "campos": [
+        {
+          "chave": "ESTUDOS",
+          "rotulo": "Estudos",
+          "dica": "de 3 a 10 DOIs, PMIDs ou links, um por linha (ou anexe os PDFs)",
+          "obrigatorio": true,
+          "longo": true
+        },
+        {
+          "chave": "PERGUNTA",
+          "rotulo": "Pergunta",
+          "dica": "a pergunta que esses estudos deveriam responder",
+          "obrigatorio": true,
+          "longo": false
+        }
+      ],
+      "proximo": [
+        [
+          "P9",
+          "confrontar com a diretriz"
+        ],
+        [
+          "P10",
+          "levar para o consultório"
+        ]
+      ]
     },
     {
       "id": "P7",
@@ -93,7 +264,26 @@
       "curto": "Encontre onde um resultado bom demais pode falhar.",
       "quando": "O resultado é bom demais, o estudo é patrocinado ou algo não fecha, e você quer saber onde está o problema.",
       "saida": "achados por gravidade com a evidência de cada um, domínios limpos e veredito técnico",
-      "porque": "Auditoria de verdade separa gravidade e registra o que está limpo. Listar os domínios sem achado evita o efeito \"tudo é viés\", que destrói a credibilidade de quem critica artigo por esporte."
+      "porque": "Auditoria de verdade separa gravidade e registra o que está limpo. Listar os domínios sem achado evita o efeito \"tudo é viés\", que destrói a credibilidade de quem critica artigo por esporte.",
+      "campos": [
+        {
+          "chave": "ESTUDO",
+          "rotulo": "Estudo",
+          "dica": "DOI, PMID, link ou o texto colado",
+          "obrigatorio": true,
+          "longo": true
+        }
+      ],
+      "proximo": [
+        [
+          "P5",
+          "leitura crítica completa"
+        ],
+        [
+          "P9",
+          "confrontar com a diretriz"
+        ]
+      ]
     },
     {
       "id": "P8",
@@ -102,7 +292,22 @@
       "curto": "Confira se cada referência existe de verdade.",
       "quando": "Sempre que qualquer IA entregar uma lista de referências. Serve também para a bibliografia de um TCC, artigo ou aula.",
       "saida": "veredito por referência (verificada, parcial, inexistente, retratada), a correção e o padrão de erro",
-      "porque": "A alucinação típica não inventa do nada: recombina pedaços reais, como título verdadeiro com autor errado ou DOI real em artigo inexistente. Conferir os cinco campos separadamente é o único jeito de pegar isso, e é por isso que o veredito PARCIAL existe."
+      "porque": "A alucinação típica não inventa do nada: recombina pedaços reais, como título verdadeiro com autor errado ou DOI real em artigo inexistente. Conferir os cinco campos separadamente é o único jeito de pegar isso, e é por isso que o veredito PARCIAL existe.",
+      "campos": [
+        {
+          "chave": "REFERENCIAS",
+          "rotulo": "Referências",
+          "dica": "cole a lista, em qualquer formato",
+          "obrigatorio": true,
+          "longo": true
+        }
+      ],
+      "proximo": [
+        [
+          "P1",
+          "refazer a busca do jeito certo"
+        ]
+      ]
     },
     {
       "id": "P9",
@@ -111,7 +316,40 @@
       "curto": "Descubra se o estudo novo muda mesmo a diretriz.",
       "quando": "Saiu um estudo grande e todo mundo diz que a conduta mudou. Você quer saber se mudou mesmo.",
       "saida": "a recomendação literal, o encaixe do estudo no corpo de evidência e o veredito sobre a recomendação",
-      "porque": "Transfere para a IA a régua que painéis de diretriz usam de verdade: a recomendação se sustenta sobre um corpo de evidência. Isso impede que a manchete de \"novo estudo muda tudo\" vire conduta antes da hora."
+      "porque": "Transfere para a IA a régua que painéis de diretriz usam de verdade: a recomendação se sustenta sobre um corpo de evidência. Isso impede que a manchete de \"novo estudo muda tudo\" vire conduta antes da hora.",
+      "campos": [
+        {
+          "chave": "TEMA",
+          "rotulo": "Tema",
+          "dica": "a recomendação ou conduta em questão, ex.: aspirina na prevenção primária",
+          "obrigatorio": true,
+          "longo": false
+        },
+        {
+          "chave": "ESTUDO",
+          "rotulo": "Estudo",
+          "dica": "DOI, PMID ou link do estudo novo",
+          "obrigatorio": true,
+          "longo": false
+        },
+        {
+          "chave": "DIRETRIZ",
+          "rotulo": "Diretriz",
+          "dica": "padrão: a diretriz vigente mais recente, brasileira e internacional",
+          "obrigatorio": false,
+          "longo": false
+        }
+      ],
+      "proximo": [
+        [
+          "P10",
+          "o que muda para o paciente"
+        ],
+        [
+          "P11",
+          "explicar para o público"
+        ]
+      ]
     },
     {
       "id": "P10",
@@ -120,7 +358,29 @@
       "curto": "Risco absoluto, NNT e danos, prontos para a consulta.",
       "quando": "O estudo é bom, mas você precisa saber o que ele significa em número absoluto para o seu paciente.",
       "saida": "números absolutos com a conta, relevância do desfecho, danos, aplicabilidade e três frases para a consulta",
-      "porque": "A maior parte da desinformação médica nasce de risco relativo sem risco absoluto. O prompt obriga a conversão, mostra a conta e dá aos danos o mesmo espaço dos benefícios, que é o que separa leitura crítica de propaganda."
+      "porque": "A maior parte da desinformação médica nasce de risco relativo sem risco absoluto. O prompt obriga a conversão, mostra a conta e dá aos danos o mesmo espaço dos benefícios, que é o que separa leitura crítica de propaganda.",
+      "campos": [
+        {
+          "chave": "ESTUDO",
+          "rotulo": "Estudo",
+          "dica": "DOI, PMID, link ou o texto colado",
+          "obrigatorio": true,
+          "longo": true
+        },
+        {
+          "chave": "PERFIL",
+          "rotulo": "Perfil do paciente",
+          "dica": "perfil genérico sem dado identificável, ex.: mulher, 60 anos, sedentária, hipertensa controlada",
+          "obrigatorio": false,
+          "longo": false
+        }
+      ],
+      "proximo": [
+        [
+          "P11",
+          "explicar para o paciente"
+        ]
+      ]
     },
     {
       "id": "P11",
@@ -129,7 +389,46 @@
       "curto": "Explique um estudo sem exagerar e sem jargão.",
       "quando": "Você precisa explicar um estudo para paciente, família ou aluno, sem sensacionalismo e sem aula chata.",
       "saida": "a ideia central, os números em linguagem de gente, o que o estudo não quer dizer e o texto pronto",
-      "porque": "O bloco \"o que isso não quer dizer\" é o que impede a tradução de virar manchete. E converter para \"de cada 100 pessoas\" elimina de uma vez o truque do risco relativo."
+      "porque": "O bloco \"o que isso não quer dizer\" é o que impede a tradução de virar manchete. E converter para \"de cada 100 pessoas\" elimina de uma vez o truque do risco relativo.",
+      "campos": [
+        {
+          "chave": "ESTUDO",
+          "rotulo": "Estudo",
+          "dica": "DOI, PMID, link ou o texto colado",
+          "obrigatorio": true,
+          "longo": true
+        },
+        {
+          "chave": "PUBLICO",
+          "rotulo": "Público",
+          "dica": "ex.: paciente no consultório, familiar preocupado, alunos do 3º ano",
+          "obrigatorio": true,
+          "longo": false
+        },
+        {
+          "chave": "TAMANHO",
+          "rotulo": "Tamanho",
+          "dica": "padrão: 3 parágrafos curtos",
+          "obrigatorio": false,
+          "longo": false
+        }
+      ],
+      "proximo": [
+        [
+          "P8",
+          "conferir as referências antes de compartilhar"
+        ]
+      ]
     }
-  ]
+  ],
+  "nomesIa": {
+    "claude": "Claude",
+    "chatgpt": "ChatGPT",
+    "gemini": "Gemini"
+  },
+  "dicasIa": {
+    "claude": "Antes de colar, ligue a pesquisa na web e, se você tiver, o conector PubMed. Em temas longos, ative o pensamento estendido.",
+    "chatgpt": "Antes de colar, ligue o raciocínio (no plano gratuito, \"Pense bem\" no botão +): nesse modo ele já pesquisa na web. Em temas amplos, use o Deep Research.",
+    "gemini": "Veja no topo do Gemini qual modelo está ativo: Flash pede a versão curta; Pro, Raciocínio complexo ou Deep Research, a completa. Se a resposta vier com o aviso \"Sem pesquisa na web\", mande a frase de continuação que ela sugere. O Gemini às vezes troca referências: abra cada link antes de usar, ou confira a lista com o P8."
+  }
 }

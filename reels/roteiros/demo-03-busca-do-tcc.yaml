@@ -1,0 +1,94 @@
+titulo: O orientador pediu a estratégia de busca
+produto: P2
+estudo: Busca no PubMed conferida em 24/09/2026
+paleta: claro
+cenario: dia
+relogio: "15:20"
+hora: "15:24"
+tema: claro
+pessoa:
+  pele: escura
+  cabelo: coque
+  roupa: moletom
+  cor: azul
+  oculos: true
+publicar: Semana 3 · quinta
+
+cenas:
+  - tipo: personagem
+    selo: TCC
+    titulo: O orientador pediu ==a estratégia de busca.==
+    texto: E você tinha três palavras no PubMed.
+    expressao: preocupado
+
+  - tipo: tela
+    selo: "1"
+    titulo: Abre o P2 e ==escreve o tema.==
+    pagina: P2
+    expressao: focado
+    passos:
+      - tocar: campo-TEMA
+      - digitar: creatina e força muscular em idosos
+      - tocar: ajustes
+      - tocar: campo-OBJETIVO
+      - digitar: TCC
+      - rolar: abrir
+      - tocar: abrir
+      - esperar: 0.3
+
+  - tipo: chat
+    selo: "2"
+    titulo: Volta a busca ==pronta para colar.==
+    expressao: focado
+    reacao: feliz
+    colado:
+      prompt: P2
+      valores:
+        TEMA: creatina e força muscular em idosos
+        OBJETIVO: TCC
+    resposta: |
+      **P2 · Busca avançada** — creatina e força muscular em idosos
+      ## Em 30 segundos
+      - **Use no PubMed:** a versão **equilibrada**, indicada para TCC · 293 resultados em 24 de setembro de 2026
+      - **Termos-chave:** **Creatine** + **Muscle Strength** + **Aged**, com sinônimos em texto livre
+      ## Os termos da busca
+      | Conceito | Descritor MeSH | Sinônimos em texto livre |
+      |---|---|---|
+      | Creatina | **Creatine** | creatine |
+      | Força | **Muscle Strength** | muscle strength, muscular strength |
+      | Idosos | **Aged** | elderly, older adults |
+      ## Buscas prontas para o PubMed
+      **Equilibrada** · recomendada · 293 resultados
+      ```
+      ("Creatine"[Mesh] OR creatine[tiab]) AND ("Muscle Strength"[Mesh] OR "muscle strength"[tiab] OR "muscular strength"[tiab]) AND ("Aged"[Mesh] OR elderly[tiab] OR "older adults"[tiab])
+      ```
+      **Ampla** · 443 resultados · **Restrita** · 98 resultados
+      ## Texto para a seção de métodos
+      A busca foi feita no PubMed em 24 de setembro de 2026, com descritores MeSH e termos livres para creatina, força muscular e idosos, sem limite de data ou de idioma. Foram preparadas estratégias equivalentes para Embase, Cochrane CENTRAL e Scopus.
+
+  - tipo: personagem
+    titulo: Colou no PubMed. ==Achou a busca.==
+    texto: Confira se os artigos que você já conhece aparecem nos resultados.
+    expressao: aliviado
+
+  - tipo: personagem
+    acao: apontar
+    marca: true
+    titulo: Biblioteca de Prompts ==no link da bio.==
+    texto: Salve para a sua próxima revisão.
+    expressao: feliz
+
+legenda: |
+  O orientador pediu a estratégia de busca e você só tinha três palavras no PubMed?
+
+  O P2, Gerador de Busca Avançada, foi feito para essa parte.
+
+  Você escreve o tema e o objetivo (TCC, revisão, projeto). A resposta traz os termos certos do MeSH, o vocabulário que o PubMed usa para indexar os artigos, os sinônimos em texto livre e a busca pronta em três versões, com o número de resultados de cada uma. Vem também o texto para a seção de métodos.
+
+  No vídeo, creatina e força muscular em idosos. Rodamos as três versões no PubMed em 24/09/2026: ampla, 443 resultados; equilibrada, 293; restrita (só ensaios randomizados, revisões sistemáticas e metanálises), 98. O número muda com o tempo, porque artigos novos entram toda semana.
+
+  ⚠️ Antes de usar, rode a busca e confira se os artigos que você já conhece aparecem. Se algum importante ficou de fora, a busca precisa de ajuste.
+
+  💾 Salve para a sua próxima revisão. A Biblioteca está no link da bio.
+
+hashtags: [tcc, pubmed, pesquisacientifica, mestrado, paperai]

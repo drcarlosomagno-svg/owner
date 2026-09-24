@@ -7,6 +7,10 @@
 // números contando, zoom lento na foto, grão de filme) é calculada quadro a quadro,
 // capturada com o Playwright e codificada em H.264 pelo ffmpeg. Saída em exports/reels/<id>/:
 // reel.mp4, capa.jpg, legenda.txt e roteiro.txt.
+//
+// Os Reels de demonstração usam mais três tipos de cena: personagem (uma pessoa comum,
+// ilustrada, segurando o celular), tela (a Biblioteca no celular, com toques e digitação) e
+// chat (a resposta da IA chegando no formato do prompt). Veja reels/README.md.
 import { chromium } from 'playwright';
 import { spawn } from 'node:child_process';
 import { createRequire } from 'node:module';
@@ -17,6 +21,8 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parse as parseYaml } from 'yaml';
 import { escapeHtml, inline, plain } from './lib/markup.mjs';
 import { acharFoto, PALETAS } from './lib/campanha.mjs';
+import { CENARIOS, cenarioSvg, defsSvg, rostoSvg } from './lib/personagem.mjs';
+import { blocosResposta, CATALOGO, celularHtml, textoCampo } from './lib/biblioteca-ui.mjs';
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const PASTA_ROTEIROS = path.join(RAIZ, 'reels', 'roteiros');
@@ -29,7 +35,9 @@ const PASTA_MONTAGEM = path.join(PASTA_BUILD, 'reels');
 const FPS = 30;
 const W = 1080;
 const H = 1920;
-const TIPOS = ['gancho', 'texto', 'foto', 'numero', 'limite', 'cta'];
+const TIPOS = ['gancho', 'texto', 'foto', 'numero', 'limite', 'cta', 'personagem', 'tela', 'chat'];
+const CENARIO_DA_PALETA = { escuro: 'noite', claro: 'dia', vibrante: 'tarde' };
+const EXPRESSOES = ['focado', 'cansado', 'preocupado', 'surpreso', 'feliz', 'aliviado'];
 
 function caminhoFfmpeg() {
   if (process.env.FFMPEG_PATH) return process.env.FFMPEG_PATH;
@@ -68,6 +76,9 @@ function duracao(c) {
   const n = contarPalavras(c.selo, c.titulo, c.texto);
   const faixa = (min, base, porPalavra, max) => Math.min(max, Math.max(min, base + porPalavra * n));
   switch (c.tipo) {
+    case 'tela': return c._fim + 1.0;
+    case 'chat': return c._inicio + c._blocos * c._ritmo + 1.9;
+    case 'personagem': return c.acao === 'apontar' ? faixa(3.6, 2.8, 0.12, 4.4) : faixa(2.6, 2.0, 0.14, 3.6);
     case 'gancho': return faixa(2.2, 2.0, 0.12, 3.0);
     case 'numero': return faixa(2.6, 1.6, 0.2, 4.2);
     case 'limite': return faixa(2.8, 1.2, 0.24, 5.2);
@@ -94,7 +105,43 @@ function fotoHtml(nome, enquadre = {}) {
   return `<div class="foto"><img src="${url}" alt="" ${dados}${estilo ? ` style="${escapeHtml(estilo)}"` : ''}></div><div class="veu"></div>`;
 }
 
+// Configuração da animação das cenas de demonstração (lida por reels-demo-runtime.js).
+function demoCfg(c) {
+  const cfg = { tipo: c.tipo, expr: c.expressao || (c.tipo === 'personagem' ? 'focado' : 'focado'), acao: c.acao };
+  if (c.reacao) {
+    cfg.reacao = c.reacao;
+    cfg.reacaoEm = Number(c.reacao_em ?? (c.tipo === 'chat' ? c._inicio + 0.25 : 1.2));
+  }
+  if (c.tipo === 'tela') Object.assign(cfg, { passos: c._passos, paginaInicial: c._paginas[0], acao: c.acao || 'digitar' });
+  if (c.tipo === 'chat') Object.assign(cfg, { inicio: c._inicio, ritmo: c._ritmo });
+  return ` data-demo="${escapeHtml(JSON.stringify(cfg))}"`;
+}
+
+function cenaDemoHtml(c, i, r) {
+  const selo = c.selo ? `<div class="selo a">${inline(c.selo)}</div>` : '';
+  const titulo = c.titulo ? `<h2 class="titulo">${cinetico(c.titulo)}</h2>` : '';
+  const texto = c.texto ? `<p class="texto a d">${inline(c.texto)}</p>` : '';
+  const cenario = c.cenario || r.cenario;
+  if (c.tipo === 'personagem') {
+    const acoes = { salvar: 'Salve', enviar: 'Envie', seguir: 'Siga' };
+    const barra = c.destaque
+      ? `<div class="acoes a d">${Object.entries(acoes).map(([k, v]) => `<span class="${k === c.destaque ? 'ativa' : ''}">${v}</span>`).join('')}</div>`
+      : '';
+    const ilustracao = cenarioSvg({ cenario, relogio: c.relogio || r.relogio, pessoa: r.pessoa, pose: c.acao === 'apontar' ? 'apontar' : 'segurar' });
+    const marca = c.marca ? '<div class="logo-marca a">paper<span>.ai__</span></div>' : '';
+    return `<section class="cena tipo-personagem" data-i="${i}"${demoCfg(c)}>${ilustracao}<div class="grao"></div><main class="conteudo">${marca}${selo}${titulo}${texto}${barra}</main></section>`;
+  }
+  const hora = c.hora || r.hora;
+  const celular = c.tipo === 'chat'
+    ? celularHtml({ chat: { colado: c.colado, resposta: c.resposta }, tema: c.tema || r.tema, hora })
+    : celularHtml({ paginas: c._paginas, valores: c._valores, ia: c.ia || r.ia, tema: c.tema || r.tema, hora });
+  return `<section class="cena tipo-${c.tipo}" data-i="${i}"${demoCfg(c)}><div class="luz"></div>${celular}`
+    + `<div class="rosto">${rostoSvg({ cenario, pessoa: r.pessoa })}</div><div class="toque"></div><div class="toque-onda"></div>`
+    + `<div class="grao"></div><main class="conteudo">${selo}${titulo}</main></section>`;
+}
+
 function cenaHtml(c, i, r) {
+  if (['personagem', 'tela', 'chat'].includes(c.tipo)) return cenaDemoHtml(c, i, r);
   const temFoto = c.tipo === 'gancho' || c.tipo === 'foto';
   const fundo = temFoto ? fotoHtml(c.foto || r.foto, c.enquadre || (c.tipo === 'gancho' ? r.enquadre : undefined)) : '<div class="luz"></div>';
   const selo = c.selo ? `<div class="selo a">${inline(c.selo)}</div>` : '';
@@ -125,11 +172,14 @@ function cenaHtml(c, i, r) {
 
 function paginaHtml(r) {
   const css = pathToFileURL(path.join(RAIZ, 'templates', 'reels.css')).href;
+  const demo = r.cenas.some((c) => ['personagem', 'tela', 'chat'].includes(c.tipo));
+  const cssDemo = demo ? `\n<link rel="stylesheet" href="${pathToFileURL(path.join(RAIZ, 'templates', 'reels-demo.css')).href}">` : '';
+  const jsDemo = demo ? `\n<script src="${pathToFileURL(path.join(RAIZ, 'scripts', 'lib', 'reels-demo-runtime.js')).href}"></script>` : '';
   const segmentos = r.cenas.map(() => '<span><i></i></span>').join('');
   return `<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><title>${escapeHtml(r.titulo)}</title>
-<link rel="stylesheet" href="${css}"></head>
-<body><div class="reel c-${r.paleta}">
+<link rel="stylesheet" href="${css}">${cssDemo}${jsDemo}</head>
+<body>${demo ? defsSvg() : ''}<div class="reel c-${r.paleta}">
 ${r.cenas.map((c, i) => cenaHtml(c, i, r)).join('\n')}
 <div class="topo"><div class="barra">${segmentos}</div><div class="assinatura"><span class="marca-circulo">p</span>@paper.ai__</div></div>
 </div></body></html>`;
@@ -178,8 +228,8 @@ function prepararPagina(tempos) {
     }
     const kt = reduzir('--kt', () => cabeLargura('.titulo .p'), 0.45) * (Number(conteudo.style.getPropertyValue('--kt')) || 1);
     const kn = reduzir('--kn', () => cabeLargura('.numero'), 0.45);
-    const k = reduzir('--k', () => cabeAltura() && cabeLargura('.p, .numero, .selo, .acoes'), 0.55);
-    const cabe = cabeAltura() && cabeLargura('.p, .numero, .selo, .acoes');
+    const k = reduzir('--k', () => cabeAltura() && cabeLargura('.p, .numero, .selo, .acoes, .logo-marca'), 0.55);
+    const cabe = cabeAltura() && cabeLargura('.p, .numero, .selo, .acoes, .logo-marca');
     cena.classList.remove('ativa');
     return { k, kt, kn, cabe };
   });
@@ -188,7 +238,7 @@ function prepararPagina(tempos) {
   const roteiro = cenas.map((cena) => {
     const itens = [];
     let t = 0.05;
-    for (const el of cena.querySelectorAll('.selo.a, .rotulo.a, .numero.a')) itens.push({ el, t0: el.classList.contains('numero') ? 0.12 : 0 });
+    for (const el of cena.querySelectorAll('.selo.a, .rotulo.a, .numero.a, .logo-marca.a')) itens.push({ el, t0: el.classList.contains('numero') ? 0.12 : 0 });
     const palavras = [...cena.querySelectorAll('.titulo .p')];
     palavras.forEach((el, j) => itens.push({ el, t0: 0.12 + j * 0.06 }));
     // A tarja do destaque entra junto com a primeira palavra marcada.
@@ -211,6 +261,8 @@ function prepararPagina(tempos) {
   });
 
   const formatar = (v, casas) => v.toLocaleString('pt-BR', { minimumFractionDigits: casas, maximumFractionDigits: casas });
+  // Cenas de demonstração: personagem, tela do celular e conversa (scripts/lib/reels-demo-runtime.js).
+  const demo = window.__demo ? window.__demo.preparar(cenas, tempos) : [];
 
   window.__quadro = (t, quadro) => {
     cenas.forEach((cena, i) => {
@@ -242,6 +294,7 @@ function prepararPagina(tempos) {
         const p = expo(clamp((lt - 0.12) / 1.2));
         r.contar.el.textContent = `${r.contar.sinal}${formatar(r.contar.alvo * p, r.contar.casas)}${r.contar.resto}`;
       }
+      if (demo[i]) demo[i](lt);
     });
     // Grão de filme que muda a cada quadro, como película.
     const a = Math.sin(quadro * 12.9898) * 43758.5453;
@@ -272,18 +325,99 @@ const escrever = (stream, dados) => new Promise((ok) => (stream.write(dados) ? o
 
 // ---------- roteiro ----------
 
+// Transforma os passos de uma cena de tela (tocar, digitar, colar, rolar, ir, esperar) numa
+// linha do tempo, resolvendo em que página e em que campo cada passo acontece.
+function prepararPassos(c, i) {
+  const erro = (m) => new Error(`cena ${i + 1}: ${m}`);
+  let t = Number(c.inicio ?? 0.55);
+  let pagina = String(c.pagina || 'inicio');
+  const paginas = [pagina];
+  const valores = structuredClone(c.valores || {});
+  let campo = null;
+  let digitadoNaPergunta = null;
+  const passos = [];
+  for (const bruto of c.passos || []) {
+    const [acao, arg] = Object.entries(bruto)[0] || [];
+    const s = { acao, t0: Math.round(t * 1000) / 1000, pagina };
+    switch (acao) {
+      case 'tocar':
+        s.alvo = String(arg);
+        if (/^(pergunta|campo-)/.test(s.alvo)) campo = s.campo = s.alvo;
+        s.t1 = t + 0.55;
+        break;
+      case 'digitar':
+        if (!campo) throw erro('"digitar" precisa de um "tocar" num campo antes');
+        s.campo = campo;
+        s.texto = String(arg);
+        s.t1 = t + Math.min(2.8, 0.3 + s.texto.length * 0.048);
+        if (campo === 'pergunta') digitadoNaPergunta = s.texto;
+        break;
+      case 'colar':
+        if (!campo) throw erro('"colar" precisa de um "tocar" num campo antes');
+        s.alvo = s.campo = campo;
+        s.html = textoCampo(arg);
+        s.t1 = t + 1.0;
+        break;
+      case 'rolar':
+        s.alvo = String(arg);
+        s.t1 = t + 0.75;
+        break;
+      case 'ir':
+        s.pagina = pagina = String(arg);
+        if (pagina !== 'inicio' && !CATALOGO.prompts.some((p) => p.id === pagina)) throw erro(`página "${pagina}" não existe (inicio ou P1–P11)`);
+        paginas.push(pagina);
+        campo = null;
+        // O tema escrito no início chega preenchido na página do prompt, como no produto.
+        if (digitadoNaPergunta) valores[pagina] = { TEMA: digitadoNaPergunta, ...(valores[pagina] || {}) };
+        s.t1 = t + 0.5;
+        break;
+      case 'esperar':
+        s.t1 = t + Number(arg);
+        break;
+      default:
+        throw erro(`passo "${acao}" não existe (tocar, digitar, colar, rolar, ir, esperar)`);
+    }
+    passos.push(s);
+    t = s.t1 + 0.08;
+  }
+  c._passos = passos;
+  c._paginas = [...new Set(paginas)];
+  c._valores = valores;
+  c._fim = t;
+}
+
 async function lerRoteiro(arquivo) {
   const id = arquivo.replace(/\.ya?ml$/, '');
   const r = parseYaml(await readFile(path.join(PASTA_ROTEIROS, arquivo), 'utf8'));
   r.id = id;
   const erros = [];
   if (!PALETAS.includes(r.paleta)) erros.push(`paleta "${r.paleta}" inválida (${PALETAS.join(', ')})`);
+  r.cenario = r.cenario || CENARIO_DA_PALETA[r.paleta];
+  if (!CENARIOS.includes(r.cenario)) erros.push(`cenário "${r.cenario}" inválido (${CENARIOS.join(', ')})`);
+  r.relogio = r.relogio || '23:14';
+  r.hora = r.hora || r.relogio;
+  r.tema = r.tema || 'claro';
+  r.ia = r.ia || 'claude';
   if (!Array.isArray(r.cenas) || r.cenas.length < 3) erros.push('precisa de pelo menos 3 cenas');
   (r.cenas || []).forEach((c, i) => {
     if (!TIPOS.includes(c.tipo)) erros.push(`cena ${i + 1}: tipo "${c.tipo}" não existe (${TIPOS.join(', ')})`);
     if (c.tipo === 'numero' && !c.numero) erros.push(`cena ${i + 1}: falta o número`);
+    for (const e of [c.expressao, c.reacao].filter(Boolean)) {
+      if (!EXPRESSOES.includes(e)) erros.push(`cena ${i + 1}: expressão "${e}" não existe (${EXPRESSOES.join(', ')})`);
+    }
+    try {
+      if (c.tipo === 'tela') prepararPassos(c, i);
+    } catch (e) {
+      erros.push(e.message);
+    }
+    if (c.tipo === 'chat') {
+      if (!c.resposta) erros.push(`cena ${i + 1}: a conversa precisa de "resposta"`);
+      c._inicio = Number(c.inicio ?? 1.3);
+      c._ritmo = Number(c.ritmo ?? 0.3);
+      c._blocos = blocosResposta(c.resposta).length;
+    }
   });
-  if (r.cenas?.[0]?.tipo !== 'gancho') erros.push('a primeira cena precisa ser o gancho');
+  if (!['gancho', 'personagem'].includes(r.cenas?.[0]?.tipo)) erros.push('a primeira cena precisa ser o gancho (ou um personagem)');
   if ((r.hashtags || []).length > 5) erros.push(`${r.hashtags.length} hashtags (máximo 5)`);
   if (erros.length) throw new Error(`${arquivo}: ${erros.join('; ')}`);
   let t = 0;
@@ -296,14 +430,65 @@ async function lerRoteiro(arquivo) {
   return r;
 }
 
+// Resumo do que acontece no celular, para o roteiro.txt.
+function resumoTela(c) {
+  if (c.tipo === 'chat') {
+    const primeira = String(c.resposta).split('\n').find((l) => l.trim()) || '';
+    return `[conversa com a IA: ${plain(primeira.replace(/\*\*/g, ''))} …]`;
+  }
+  if (c.tipo !== 'tela') return '';
+  const nomes = { tocar: 'toca', digitar: 'digita', colar: 'cola o texto', rolar: 'rola até', ir: 'abre', esperar: '' };
+  const botoes = { pergunta: 'o campo do tema', criar: '"Criar prompt"', abrir: '"Copiar e abrir"', copiar: '"Copiar prompt"', ajustes: '"Ajustar opções"', tema: 'o tema escuro' };
+  const legivel = (s) => {
+    if (botoes[s.alvo]) return botoes[s.alvo];
+    const chave = String(s.alvo || '').replace(/^campo-/, '');
+    const rotulo = CATALOGO.prompts.find((p) => p.id === s.pagina)?.campos.find((x) => x.chave === chave)?.rotulo;
+    return rotulo ? `o campo ${rotulo}` : s.alvo;
+  };
+  const passo = (s) => {
+    if (s.acao === 'digitar') return `digita "${s.texto}"`;
+    if (s.acao === 'ir') return `abre ${s.pagina === 'inicio' ? 'o início' : s.pagina}`;
+    if (s.acao === 'colar' || s.acao === 'esperar') return nomes[s.acao];
+    return `${nomes[s.acao]} ${legivel(s)}`;
+  };
+  return `[celular: ${c._passos.map(passo).filter(Boolean).join(', ')}]`;
+}
+
 function textoNaTela(r) {
   return r.cenas
-    .map((c, i) => [`${i + 1}.`, c.selo, c.tipo === 'limite' ? c.rotulo || 'O que não dá para dizer' : '', c.numero, c.titulo, c.texto, c.fonte]
+    .map((c, i) => [`${i + 1}.`, c.selo, c.tipo === 'limite' ? c.rotulo || 'O que não dá para dizer' : '', c.numero, c.titulo, c.texto, c.fonte, resumoTela(c)]
       .filter(Boolean).map((v) => plain(String(v))).join(' · '))
     .join('\n');
 }
 
-async function gerar(browser, arquivo) {
+// Prévia: alguns quadros de cada cena numa prancha, sem gerar o vídeo (npm run reels -- 07 --previa).
+async function previa(page, r) {
+  const pasta = path.join(PASTA_BUILD, 'previa');
+  await mkdir(pasta, { recursive: true });
+  const quadros = [];
+  // --quadros=1.2,5.5 salva esses instantes em tamanho real, além da prancha.
+  const pedidos = (process.argv.find((a) => a.startsWith('--quadros=')) || '').slice(10).split(',').filter(Boolean).map(Number);
+  for (const t of pedidos) {
+    await page.evaluate(([tt]) => window.__quadro(tt, Math.round(tt * 30)), [t]);
+    await page.screenshot({ path: path.join(pasta, `${r.id}-${t.toFixed(1)}s.jpg`), type: 'jpeg', quality: 88 });
+  }
+  for (const [i, { ini, fim }] of r.tempos.entries()) {
+    for (const f of r.cenas[i].tipo === 'chat' || r.cenas[i].tipo === 'tela' ? [0.2, 0.45, 0.7, 0.97] : [0.3, 0.97]) {
+      const t = ini + (fim - ini) * f;
+      await page.evaluate(([tt]) => window.__quadro(tt, Math.round(tt * 30)), [t]);
+      quadros.push({ rotulo: `cena ${i + 1} · ${t.toFixed(1)} s`, img: (await page.screenshot({ type: 'jpeg', quality: 80 })).toString('base64') });
+    }
+  }
+  const html = `<!doctype html><body style="margin:0;background:#222;font:14px sans-serif;color:#ddd;display:grid;grid-template-columns:repeat(6,270px);gap:8px;padding:8px;width:${6 * 278 + 8}px">`
+    + quadros.map((q) => `<figure style="margin:0"><img src="data:image/jpeg;base64,${q.img}" width="270" height="480"><figcaption>${q.rotulo}</figcaption></figure>`).join('') + '</body>';
+  const folha = await page.context().browser().newPage({ viewport: { width: 6 * 278 + 16, height: 600 } });
+  await folha.setContent(html);
+  await folha.screenshot({ path: path.join(pasta, `${r.id}.jpg`), type: 'jpeg', quality: 85, fullPage: true });
+  await folha.close();
+  return path.join(pasta, `${r.id}.jpg`);
+}
+
+async function gerar(browser, arquivo, { soPrevia = false } = {}) {
   const r = await lerRoteiro(arquivo);
   const saida = path.join(PASTA_MONTAGEM, r.id);
   await rm(saida, { recursive: true, force: true });
@@ -331,6 +516,11 @@ async function gerar(browser, arquivo) {
   }, [g.fim - 0.05]);
   await writeFile(path.join(saida, 'capa.jpg'), await page.screenshot({ type: 'jpeg', quality: 92 }));
   await page.evaluate(() => (document.querySelector('.barra').style.visibility = 'visible'));
+  if (soPrevia) {
+    const arquivoPrevia = await previa(page, r);
+    await page.close();
+    return { r, avisos, arquivoPrevia };
+  }
 
   const total = Math.round(r.segundos * FPS);
   const video = abrirFfmpeg(path.join(saida, 'reel.mp4'), r.segundos);
@@ -347,7 +537,7 @@ async function gerar(browser, arquivo) {
   await writeFile(path.join(saida, 'roteiro.txt'), `${r.titulo}\n\n${textoNaTela(r)}\n`);
   await writeFile(
     path.join(saida, 'meta.json'),
-    JSON.stringify({ id: r.id, titulo: r.titulo, paleta: r.paleta, carrossel: r.carrossel, estudo: r.estudo, publicar: r.publicar, segundos: r.segundos, cenas: r.cenas.length }, null, 2) + '\n',
+    JSON.stringify({ id: r.id, titulo: r.titulo, paleta: r.paleta, carrossel: r.carrossel, produto: r.produto, estudo: r.estudo, publicar: r.publicar, segundos: r.segundos, cenas: r.cenas.length }, null, 2) + '\n',
   );
   return { r, avisos };
 }
@@ -368,9 +558,12 @@ async function galeria() {
     '',
     '**Antes de publicar, escolha um áudio em alta no próprio Instagram** (instrumental, volume baixo). O vídeo sai sem música de propósito: música com direitos só pode entrar pela biblioteca do app.',
     '',
-    '| Reel | Duração | Carrossel do mesmo tema | Estudo | Quando postar |',
+    '| Reel | Duração | Ligado a | Estudo | Quando postar |',
     '|---|---|---|---|---|',
-    ...metas.map((m) => `| [${m.titulo}](#${m.id}) | ${m.segundos} s | ${m.carrossel ? `[${m.carrossel}](../campanha/${m.carrossel}/)` : '—'} | ${m.estudo || ''} | ${m.publicar || ''} |`),
+    ...metas.map((m) => {
+      const ligado = [m.produto ? `${m.produto} (demonstração)` : '', m.carrossel ? `[${m.carrossel}](../campanha/${m.carrossel}/)` : ''].filter(Boolean).join(' · ') || '—';
+      return `| [${m.titulo}](#${m.id}) | ${m.segundos} s | ${ligado} | ${m.estudo || ''} | ${m.publicar || ''} |`;
+    }),
     '',
   ];
   for (const m of metas) {
@@ -382,6 +575,8 @@ async function galeria() {
 async function main() {
   // Filtros: um ou mais trechos do nome (npm run reels -- 08 10 11).
   const filtros = process.argv.slice(2).filter((a) => !a.startsWith('--'));
+  const soPrevia = process.argv.includes('--previa');
+  if (process.argv.includes('--galeria')) return galeria(); // só refaz exports/reels/README.md
   const arquivos = (await readdir(PASTA_ROTEIROS))
     .filter((f) => /\.ya?ml$/.test(f) && !f.startsWith('_') && (!filtros.length || filtros.some((t) => f.includes(t))))
     .sort();
@@ -393,7 +588,12 @@ async function main() {
     // Um navegador por Reel: se um cair, os outros seguem.
     const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
     try {
-      const { r, avisos } = await gerar(browser, arquivo);
+      const { r, avisos, arquivoPrevia } = await gerar(browser, arquivo, { soPrevia });
+      if (soPrevia) {
+        console.log(`✓ prévia de ${r.id} (${r.segundos} s): ${path.relative(RAIZ, arquivoPrevia)}`);
+        avisos.forEach((a) => console.log(`    - ${a}`));
+        continue;
+      }
       // O vídeo só entra em exports/reels/ depois de pronto.
       await rm(path.join(PASTA_SAIDA, r.id), { recursive: true, force: true });
       await cp(path.join(PASTA_MONTAGEM, r.id), path.join(PASTA_SAIDA, r.id), { recursive: true });
@@ -407,6 +607,7 @@ async function main() {
       await browser.close().catch(() => {});
     }
   }
+  if (soPrevia) return;
   await galeria();
   console.log('Vídeos em exports/reels/');
   if (falhas) process.exitCode = 1;

@@ -1,0 +1,8 @@
+A IA me deu as referências do TCC
+
+1. · TCC · Pedi as referências para a IA. · Quatro artigos, tudo formatado. Parecia pronto.
+2. · Sci Rep · 636 referências · 55% · das referências do GPT-3.5 não existiam. · No GPT-4, 18%. · Walters e Wilder. Sci Rep, 2023
+3. · 1 · Abre o P8 e cola a lista. · [celular: toca o campo Referências, cola o texto, rola até "Copiar e abrir", toca "Copiar e abrir"]
+4. · 2 · A IA confere uma por uma. · [conversa com a IA: P8 · Conferência de referências — 4 referências …]
+5. · O que não dá para dizer · O estudo é de 2023. · Os modelos mudaram desde então e a taxa de hoje pode ser outra. O hábito de conferir continua valendo.
+6. · Biblioteca de Prompts no link da bio. · Manda para quem está fazendo o TCC.

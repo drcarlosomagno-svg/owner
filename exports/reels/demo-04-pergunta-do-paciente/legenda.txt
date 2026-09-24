@@ -1,0 +1,17 @@
+“Doutor, esse teste no chão prevê a morte?” Como explicar sem assustar e sem exagerar?
+
+O paciente leu a notícia do estudo brasileiro sobre o teste de sentar e levantar do chão.
+
+O P11, Tradutor para Leigos, pega o estudo e o público e devolve a ideia central, os números em "de cada 100 pessoas", o que o estudo não quer dizer e um texto pronto para a conversa.
+
+No exemplo, o estudo brasileiro publicado em setembro de 2026 no European Journal of Preventive Cardiology: 4.282 adultos de 46 a 75 anos, acompanhados por cerca de 12 anos. Morreram 3,7% dos que tiraram nota 10 e 42,1% dos que tiraram de 0 a 4.
+
+É um estudo observacional: mostra associação, não prova que o teste, ou treinar para ele, muda quanto tempo alguém vive.
+
+⚠️ Nunca cole dados do paciente na IA. O P11 só precisa do estudo (DOI, PMID ou link) e de quem vai ouvir.
+
+Fonte: Araújo CGS et al. Eur J Prev Cardiol. 2026. doi:10.1093/eurjpc/zwaf325
+
+📤 Manda para um colega de consultório. A Biblioteca está no link da bio.
+
+#medicina #consultorio #comunicacaoemsaude #pesquisacientifica #paperai

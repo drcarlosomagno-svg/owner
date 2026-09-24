@@ -1,0 +1,102 @@
+titulo: A IA me deu as referências do TCC
+produto: P8
+estudo: Walters e Wilder (Sci Rep, 2023)
+paleta: vibrante
+cenario: tarde
+relogio: "17:36"
+hora: "17:41"
+tema: claro
+pessoa:
+  pele: clara
+  cabelo: longo
+  roupa: moletom
+  cor: verde
+  oculos: false
+publicar: Semana 2 · quinta
+
+cenas:
+  - tipo: personagem
+    selo: TCC
+    titulo: Pedi as referências ==para a IA.==
+    texto: Quatro artigos, tudo formatado. Parecia pronto.
+    expressao: feliz
+
+  - tipo: numero
+    selo: Sci Rep · 636 referências
+    numero: 55%
+    titulo: das referências do GPT-3.5 ==não existiam.==
+    texto: No GPT-4, 18%.
+    fonte: Walters e Wilder. Sci Rep, 2023
+
+  - tipo: tela
+    selo: "1"
+    titulo: Abre o P8 e ==cola a lista.==
+    pagina: P8
+    expressao: preocupado
+    passos:
+      - tocar: campo-REFERENCIAS
+      - colar: |-
+          1. Hviid A et al. Ann Intern Med. 2019;170(8):513-20.
+          2. Taylor LE et al. Vaccine. 2016;32(29):3623-9.
+          3. ~~Xxxxxx X et al. Xxxxx Xxx. 2020;00(0):000-00.~~
+          4. Wakefield AJ et al. Lancet. 1998;351(9103):637-41.
+      - rolar: abrir
+      - tocar: abrir
+      - esperar: 0.4
+
+  - tipo: chat
+    selo: "2"
+    titulo: A IA confere ==uma por uma.==
+    expressao: preocupado
+    reacao: surpreso
+    ritmo: 0.27
+    colado:
+      prompt: P8
+      valores:
+        REFERENCIAS: "1. Hviid A et al. … (4 referências)"
+    resposta: |
+      **P8 · Conferência de referências** — 4 referências
+      ## Em 30 segundos
+      ✔ 1 verificada · ◐ 1 parcial · ✖ 1 inexistente · ⊘ 1 retratada · ? 0 não verificáveis
+      ## Referência por referência
+      ### [1] ✔ VERIFICADA
+      - **Como veio:** Hviid A et al. Ann Intern Med. 2019;170(8):513-20.
+      - **Fonte:** https://pubmed.gov/30831578
+      ### [2] ◐ PARCIAL
+      - **Como veio:** Taylor LE et al. Vaccine. 2016;32(29):3623-9.
+      - **O erro:** o ano. Na fonte, 2014.
+      - **Versão correta:** Taylor LE, Swerdfeger AL, Eslick GD. Vaccines are not associated with autism: an evidence-based meta-analysis of case-control and cohort studies. Vaccine. 2014;32(29):3623-9.
+      ### [3] ✖ INEXISTENTE
+      - **Como veio:** ~~Xxxxxx X et al. Xxxxx Xxx. 2020;00(0):000-00.~~
+      - **O erro:** nenhum artigo com esse título, autor ou DOI.
+      ### [4] ⊘ RETRATADA
+      - **Como veio:** Wakefield AJ et al. Lancet. 1998;351(9103):637-41.
+      - **O erro:** retratado pela revista em 2010 (Lancet. 2010;375(9713):445).
+
+  - tipo: limite
+    titulo: O estudo é de 2023.
+    texto: Os modelos mudaram desde então e a taxa de hoje pode ser outra. O hábito de conferir continua valendo.
+
+  - tipo: personagem
+    acao: apontar
+    marca: true
+    titulo: Biblioteca de Prompts ==no link da bio.==
+    texto: Manda para quem está fazendo o TCC.
+    expressao: feliz
+
+legenda: |
+  A IA te entregou as referências do TCC? Confira uma por uma antes de entregar.
+
+  Num estudo publicado na Scientific Reports em 2023, 55% das referências geradas pelo GPT-3.5 e 18% das geradas pelo GPT-4 não existiam. Entre as que existiam, 43% e 24% tinham erros importantes na citação.
+
+  E nem todo erro é uma referência inventada do nada: muitas vezes é um pedaço real no lugar errado, como o ano trocado ou o DOI de outro artigo. Por isso o P8, Detector de Referência Falsa, confere título, autor, periódico, ano e identificador separadamente e dá um veredito para cada uma: verificada, parcial, inexistente ou retratada.
+
+  No vídeo: a metanálise de Taylor veio com o ano errado (é de 2014) e o artigo de Wakefield de 1998 foi retratado pela Lancet em 2010. A referência 3 aparece borrada porque é o exemplo de citação inventada.
+
+  O limite: o estudo é de 2023, e os modelos mudaram desde então. A taxa de hoje pode ser outra; conferir continua valendo.
+
+  Fonte: Walters WH, Wilder EI. Sci Rep. 2023;13(1):14045. doi:10.1038/s41598-023-41032-5
+
+  📤 Manda para quem está fazendo o TCC. A Biblioteca está no link da bio.
+
+hashtags: [tcc, pesquisacientifica, inteligenciaartificial, medicina, paperai]

@@ -6,7 +6,7 @@ São duas coleções:
 
 - **12 carrosséis educativos** em [`exports/`](exports/), cada um ligado a um prompt da biblioteca (P1 a P11), com legenda e texto alternativo.
 - **20 carrosséis da campanha de crescimento** em [`exports/campanha/`](exports/campanha/README.md): foto na capa, gancho num assunto do momento e um grande estudo contado como história. Veja [`campanha/`](campanha/README.md).
-- **10 Reels** (vídeo 9:16) em [`exports/reels/`](exports/reels/README.md), feitos a partir da campanha para alcançar quem ainda não segue. Veja [`reels/`](reels/README.md).
+- **14 Reels** (vídeo 9:16) em [`exports/reels/`](exports/reels/README.md): 10 feitos a partir da campanha, para alcançar quem ainda não segue, e 4 de demonstração, com uma pessoa comum (ilustrada) usando a Biblioteca no celular. Veja [`reels/`](reels/README.md).
 
 ## Por onde começar
 

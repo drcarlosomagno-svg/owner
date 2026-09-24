@@ -1,0 +1,104 @@
+titulo: 23h, sessão de artigos às 7h
+produto: P1
+estudo: Bolland et al. (Lancet Diabetes Endocrinol, 2018) e LeBoff et al. (N Engl J Med, 2022)
+paleta: escuro
+cenario: noite
+relogio: "23:08"
+hora: "23:11"
+tema: escuro
+pessoa:
+  pele: media
+  cabelo: cacheado
+  roupa: moletom
+  oculos: true
+publicar: Semana 1 · quinta
+
+cenas:
+  - tipo: personagem
+    selo: POV
+    titulo: 23h. Sessão de artigos ==às 7h.==
+    texto: E nenhum artigo lido.
+    expressao: cansado
+
+  - tipo: tela
+    selo: "1"
+    titulo: Escreve o tema ==do seu jeito.==
+    pagina: inicio
+    expressao: focado
+    passos:
+      - tocar: pergunta
+      - digitar: vitamina D e fraturas em idosos
+      - tocar: criar
+      - ir: P1
+
+  - tipo: tela
+    selo: "2"
+    titulo: Ela monta o prompt. ==Você copia.==
+    pagina: P1
+    valores:
+      P1:
+        TEMA: vitamina D e fraturas em idosos
+    expressao: focado
+    passos:
+      - esperar: 0.3
+      - rolar: abrir
+      - tocar: abrir
+      - esperar: 0.5
+
+  - tipo: chat
+    selo: "3"
+    titulo: Cola na IA. ==Chega assim:==
+    expressao: focado
+    reacao: surpreso
+    colado:
+      prompt: P1
+      valores:
+        TEMA: vitamina D e fraturas em idosos
+    resposta: |
+      **P1 · Busca de referências** — vitamina D e fraturas em idosos
+      Pergunta: suplementar vitamina D previne fratura em idosos? · Tipo: tratamento
+      ## Em 30 segundos
+      Suplementar vitamina D não reduziu fraturas: nem na revisão de 81 ensaios [1], nem no VITAL, com 25.871 adultos não selecionados por deficiência [2].
+      ## Os melhores artigos
+      ### Nível 1
+      **1. Effects of vitamin D supplementation on musculoskeletal health: a systematic review, meta-analysis, and trial sequential analysis**
+      Bolland et al. · Lancet Diabetes Endocrinol · 2018 · revisão sistemática, 81 ECRs
+      Nível de evidência: **1** (Oxford 2011) · O que encontrou: sem efeito em fratura total (RR 1,00; IC 95% 0,93–1,07)
+      DOI: 10.1016/S2213-8587(18)30265-1 · Link: https://pubmed.gov/30293909
+      ### Nível 2
+      **2. Supplemental Vitamin D and Incident Fractures in Midlife and Older Adults**
+      LeBoff et al. · N Engl J Med · 2022 · ECR, 25.871
+      Nível de evidência: **2** (Oxford 2011) · O que encontrou: sem diferença em fraturas totais (HR 0,98; IC 95% 0,89–1,08)
+      DOI: 10.1056/NEJMoa2202106 · Link: https://pubmed.gov/35939577
+
+  - tipo: personagem
+    relogio: "23:40"
+    titulo: Artigos na mão. ==Dá pra dormir.==
+    texto: Antes de citar, abra cada link. A IA também erra.
+    expressao: aliviado
+
+  - tipo: personagem
+    acao: apontar
+    marca: true
+    titulo: Biblioteca de Prompts ==no link da bio.==
+    texto: Salve para a próxima madrugada.
+    expressao: feliz
+
+legenda: |
+  Sessão de artigos às 7h e nada lido às 23h? É para isso que existe a Biblioteca de Prompts paper.ai__.
+
+  1. Você escreve o tema do jeito que perguntaria a um colega.
+  2. A Biblioteca monta o prompt e você copia.
+  3. Cola numa conversa nova do Claude, do ChatGPT ou do Gemini.
+
+  A resposta vem com os melhores artigos do tema, o nível de evidência de cada um (Oxford 2011), o DOI e o link do PubMed.
+
+  No exemplo do vídeo, vitamina D e fraturas: nem a revisão de 81 ensaios (Bolland, 2018) nem o VITAL, com 25.871 adultos (LeBoff, NEJM 2022), mostraram menos fraturas com a suplementação.
+
+  ⚠️ Abra cada link antes de citar. A IA também erra, e o prompt marca como [não verificado] o que não conseguiu conferir na fonte.
+
+  Fontes do exemplo: Bolland MJ et al. Lancet Diabetes Endocrinol. 2018;6(11):847-58. doi:10.1016/S2213-8587(18)30265-1 · LeBoff MS et al. N Engl J Med. 2022;387(4):299-309. doi:10.1056/NEJMoa2202106
+
+  🔗 A Biblioteca está no link da bio. Salve para a próxima madrugada.
+
+hashtags: [residenciamedica, medicina, pesquisacientifica, inteligenciaartificial, paperai]

@@ -1,0 +1,15 @@
+A IA te entregou as referências do TCC? Confira uma por uma antes de entregar.
+
+Num estudo publicado na Scientific Reports em 2023, 55% das referências geradas pelo GPT-3.5 e 18% das geradas pelo GPT-4 não existiam. Entre as que existiam, 43% e 24% tinham erros importantes na citação.
+
+E nem todo erro é uma referência inventada do nada: muitas vezes é um pedaço real no lugar errado, como o ano trocado ou o DOI de outro artigo. Por isso o P8, Detector de Referência Falsa, confere título, autor, periódico, ano e identificador separadamente e dá um veredito para cada uma: verificada, parcial, inexistente ou retratada.
+
+No vídeo: a metanálise de Taylor veio com o ano errado (é de 2014) e o artigo de Wakefield de 1998 foi retratado pela Lancet em 2010. A referência 3 aparece borrada porque é o exemplo de citação inventada.
+
+O limite: o estudo é de 2023, e os modelos mudaram desde então. A taxa de hoje pode ser outra; conferir continua valendo.
+
+Fonte: Walters WH, Wilder EI. Sci Rep. 2023;13(1):14045. doi:10.1038/s41598-023-41032-5
+
+📤 Manda para quem está fazendo o TCC. A Biblioteca está no link da bio.
+
+#tcc #pesquisacientifica #inteligenciaartificial #medicina #paperai

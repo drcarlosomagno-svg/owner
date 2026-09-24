@@ -1,0 +1,7 @@
+O paciente chegou com a notícia
+
+1. · Consultório · “Doutor, um teste no chão prevê a morte?” · O paciente leu a notícia do estudo brasileiro.
+2. · 1 · Cola o estudo e diz para quem é. · [celular: toca o campo Estudo, cola o texto, toca o campo Público, digita "paciente no consultório", rola até "Copiar e abrir", toca "Copiar e abrir"]
+3. · 2 · Volta em linguagem de gente. · [conversa com a IA: P11 · Para leigos — teste de sentar e levantar do chão …]
+4. · Explicou sem assustar. · E sem colar nenhum dado do paciente. O P11 só pede o estudo e o público.
+5. · Biblioteca de Prompts no link da bio. · Manda para um colega de consultório.
