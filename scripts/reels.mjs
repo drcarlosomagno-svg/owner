@@ -137,24 +137,33 @@ function prepararPagina(tempos) {
   const saida = (p) => 1 - Math.pow(1 - p, 3);
   const expo = (p) => (p >= 1 ? 1 : 1 - Math.pow(2, -10 * p));
 
-  // Ajusta o tamanho do texto de cada cena para caber na área segura.
+  // Ajusta o texto de cada cena para caber na área segura, em três passos: o título encolhe
+  // só o necessário para a palavra mais longa caber na largura, o número grande também, e só
+  // então, se a cena ainda passar da altura, tudo diminui junto.
   const ajustes = cenas.map((cena) => {
     cena.classList.add('ativa');
     const conteudo = cena.querySelector('.conteudo');
-    const cabe = () => {
+    const limite = () => conteudo.getBoundingClientRect().right + 2;
+    const cabeLargura = (sel) => [...conteudo.querySelectorAll(sel)].every((e) => e.getBoundingClientRect().right <= limite());
+    const cabeAltura = () => {
       const r = conteudo.getBoundingClientRect();
       const filhos = [...conteudo.children].map((e) => e.getBoundingClientRect());
-      const altura = Math.max(...filhos.map((b) => b.bottom)) - Math.min(...filhos.map((b) => b.top));
-      const largura = [...conteudo.querySelectorAll('.p, .numero, .selo, .acoes')].every((e) => e.getBoundingClientRect().right <= r.right + 2);
-      return altura <= r.height + 1 && largura;
+      return Math.max(...filhos.map((b) => b.bottom)) - Math.min(...filhos.map((b) => b.top)) <= r.height + 1;
     };
-    let k = 1;
-    while (!cabe() && k > 0.55) {
-      k = Math.round((k - 0.03) * 100) / 100;
-      conteudo.style.setProperty('--k', k);
-    }
+    const reduzir = (variavel, cabe, minimo) => {
+      let v = 1;
+      while (!cabe() && v > minimo) {
+        v = Math.round((v - 0.02) * 100) / 100;
+        conteudo.style.setProperty(variavel, v);
+      }
+      return v;
+    };
+    const kt = reduzir('--kt', () => cabeLargura('.titulo .p'), 0.45);
+    const kn = reduzir('--kn', () => cabeLargura('.numero'), 0.45);
+    const k = reduzir('--k', () => cabeAltura() && cabeLargura('.p, .numero, .selo, .acoes'), 0.55);
+    const cabe = cabeAltura() && cabeLargura('.p, .numero, .selo, .acoes');
     cena.classList.remove('ativa');
-    return { k, cabe: cabe() };
+    return { k, kt, kn, cabe };
   });
 
   // Ordem de entrada: selo, palavras do título uma a uma, depois o resto.
@@ -289,9 +298,10 @@ async function gerar(browser, arquivo) {
   await page.evaluate(() => Promise.all([document.fonts.ready, ...[...document.images].map((i) => i.decode().catch(() => {}))]));
   const ajustes = await page.evaluate(prepararPagina, r.tempos);
   const avisos = [];
-  ajustes.forEach(({ k, cabe }, i) => {
+  ajustes.forEach(({ k, kt, cabe }, i) => {
     if (!cabe) avisos.push(`cena ${i + 1}: o texto NÃO coube; corte texto`);
-    else if (k < 0.8) avisos.push(`cena ${i + 1}: texto reduzido para ${Math.round(k * 100)}%`);
+    else if (k < 0.85) avisos.push(`cena ${i + 1}: texto demais, tudo reduzido para ${Math.round(k * 100)}%; corte palavras`);
+    if (kt < 0.6) avisos.push(`cena ${i + 1}: palavra longa deixou o título em ${Math.round(kt * 100)}%`);
   });
 
   // Capa: o gancho já completo, sem a barra de progresso.

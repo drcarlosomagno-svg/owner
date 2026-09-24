@@ -35,7 +35,7 @@ cenas:
 
   - tipo: limite
     titulo: É observacional.
-    texto: Mostra associação, não prova causa. Doença do coração ou dor no peito ao esforço? Fale antes com o seu médico.
+    texto: Mostra associação, não causa. Doença do coração ou dor no peito ao esforço? Fale antes com o seu médico.
 
   - tipo: cta
     titulo: Manda pra quem ==não tem tempo pra nada.==
