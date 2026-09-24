@@ -11,7 +11,7 @@ import { chromium } from 'playwright';
 import { spawn } from 'node:child_process';
 import { createRequire } from 'node:module';
 import { existsSync } from 'node:fs';
-import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { cp, mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parse as parseYaml } from 'yaml';
@@ -23,6 +23,9 @@ const PASTA_ROTEIROS = path.join(RAIZ, 'reels', 'roteiros');
 const PASTA_FOTOS = path.join(RAIZ, 'campanha', 'fotos');
 const PASTA_SAIDA = path.join(RAIZ, 'exports', 'reels');
 const PASTA_BUILD = path.join(RAIZ, '.build');
+// Os vídeos são montados aqui e só vão para exports/reels/ quando a geração inteira termina,
+// para o repositório nunca ficar com um vídeo pela metade.
+const PASTA_MONTAGEM = path.join(PASTA_BUILD, 'reels');
 const FPS = 30;
 const W = 1080;
 const H = 1920;
@@ -287,7 +290,8 @@ function textoNaTela(r) {
 
 async function gerar(browser, arquivo) {
   const r = await lerRoteiro(arquivo);
-  const saida = path.join(PASTA_SAIDA, r.id);
+  const saida = path.join(PASTA_MONTAGEM, r.id);
+  await rm(saida, { recursive: true, force: true });
   await mkdir(saida, { recursive: true });
   await mkdir(PASTA_BUILD, { recursive: true });
   const htmlPath = path.join(PASTA_BUILD, `reel-${r.id}.html`);
@@ -366,10 +370,12 @@ async function main() {
   if (!arquivos.length) throw new Error('nenhum roteiro encontrado');
   const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
   let falhas = 0;
+  const prontos = [];
   for (const arquivo of arquivos) {
     const inicio = Date.now();
     try {
       const { r, avisos } = await gerar(browser, arquivo);
+      prontos.push(r.id);
       console.log(`✓ ${r.id}  (${r.segundos} s, ${r.cenas.length} cenas, ${Math.round((Date.now() - inicio) / 1000)} s para gerar)${avisos.length ? `  ⚠ ${avisos.length} aviso(s)` : ''}`);
       avisos.forEach((a) => console.log(`    - ${a}`));
     } catch (e) {
@@ -378,6 +384,11 @@ async function main() {
     }
   }
   await browser.close();
+  await mkdir(PASTA_SAIDA, { recursive: true });
+  for (const id of prontos) {
+    await rm(path.join(PASTA_SAIDA, id), { recursive: true, force: true });
+    await cp(path.join(PASTA_MONTAGEM, id), path.join(PASTA_SAIDA, id), { recursive: true });
+  }
   await galeria();
   console.log('Vídeos em exports/reels/');
   if (falhas) process.exitCode = 1;
