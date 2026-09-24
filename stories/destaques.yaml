@@ -1,0 +1,200 @@
+# Stories dos destaques do Instagram da paper.ai__ (1080×1920).
+# Gerados com `npm run stories`; saída em exports/stories/.
+#
+# Tipos de Story: abertura, titulo, numero, enquete, passo, resposta, marcas, lista,
+# pergunta, caixa, recebe, oferta, garantia, cta, video. Veja scripts/stories.mjs.
+# Marcação: ==destaque em vermelho==, **negrito**.
+# Regras: as mesmas da página de vendas. Número só de campanha/estudos-verificados.md,
+# nenhum depoimento inventado, nunca o texto dos prompts.
+
+pagina: https://bibliotecapaperai.netlify.app
+checkout: https://pay.kiwify.com.br/Kxd6DTl
+preco: R$ 39,90
+precoDe: R$ 119,90
+
+destaques:
+  - id: comece-aqui
+    nome: Comece aqui
+    icone: play
+    stories:
+      - tipo: abertura
+        selo: Comece aqui
+        titulo: Pesquisa com IA, ==com a fonte à vista.==
+        texto: A paper.ai__ faz prompts para buscar, ler, checar e usar evidência científica com IA.
+
+      - tipo: titulo
+        rotulo: O problema
+        titulo: A IA responde rápido. ==De onde veio isso?==
+        texto: Ela escreve bem e cita com confiança. Às vezes, cita artigo que não existe.
+
+      - tipo: numero
+        numero: 55%
+        titulo: das referências do GPT-3.5 ==não existiam.==
+        texto: No GPT-4, 18%. Estudo de 2023 com 636 referências; os modelos mudaram desde então.
+        fonte: Walters e Wilder. Scientific Reports, 2023
+
+      - tipo: enquete
+        titulo: Já aconteceu ==com você?==
+        texto: A IA te deu uma referência que você não achou em lugar nenhum.
+        sticker: "Enquete: Já aconteceu / Ainda não"
+
+      - tipo: titulo
+        rotulo: A solução
+        titulo: 11 prompts que fazem a IA ==mostrar a fonte.==
+        texto: Você escreve o tema. A IA volta com os melhores artigos do PubMed, o nível de evidência, o DOI e o link de cada um.
+
+      - tipo: titulo
+        rotulo: Onde funciona
+        titulo: Claude, ChatGPT ==e Gemini.==
+        texto: Uma versão própria para cada IA, com dica de uso. Funciona no computador e no celular.
+        chips: [Claude, ChatGPT, Gemini]
+
+      - tipo: titulo
+        rotulo: Quem faz
+        titulo: Feita por um ==médico residente.==
+        texto: Médico e residente da USP, no Hospital das Clínicas da FMUSP. Escrita com ajuda de IA e revisada por humano.
+
+      - tipo: cta
+        titulo: Conheça a ==Biblioteca.==
+        texto: De R$ 119,90 por **R$ 39,90**, com 7 dias de garantia.
+        link: pagina
+        utm: comece-aqui
+
+  - id: como-funciona
+    nome: Como funciona
+    icone: passos
+    stories:
+      - tipo: abertura
+        selo: Como funciona
+        titulo: 3 passos, ==na IA que você já usa.==
+        texto: Sem instalar nada e sem saber programar.
+
+      - tipo: passo
+        n: "01"
+        titulo: Escreva o tema
+        texto: Em linguagem livre, do jeito que você perguntaria a um colega.
+        mock: tema
+
+      - tipo: passo
+        n: "02"
+        titulo: Copie o prompt
+        texto: Ele sai pronto para o Claude, o ChatGPT ou o Gemini, com o seu tema já dentro.
+        mock: copiado
+
+      - tipo: passo
+        n: "03"
+        titulo: Cole numa conversa nova
+        texto: A resposta chega com os melhores artigos, o nível de evidência e o link de cada um.
+        mock: resposta
+
+      - tipo: video
+        arquivo: exports/reels/demo-01-sessao-das-7h/reel.mp4
+        titulo: Os 3 passos em 28 segundos
+
+      - tipo: cta
+        titulo: Teste com ==o seu tema.==
+        texto: Na página tem um teste grátis. Você escreve o tema e vê o formato da resposta.
+        link: pagina
+        ancora: teste
+        utm: como-funciona
+
+  - id: os-prompts
+    nome: Os 11 prompts
+    icone: grade
+    stories:
+      - tipo: abertura
+        selo: Os 11 prompts
+        titulo: Um prompt ==para cada momento.==
+        texto: Buscar, ler, checar e usar. Na ordem em que o trabalho acontece.
+
+      - tipo: lista
+        grupo: buscar
+      - tipo: lista
+        grupo: ler
+      - tipo: lista
+        grupo: checar
+      - tipo: lista
+        grupo: usar
+
+      - tipo: cta
+        titulo: Qual é a sua ==situação agora?==
+        texto: Na página, você escolhe a situação e vê o prompt certo, o que ele entrega e o próximo passo.
+        link: pagina
+        ancora: prompts
+        utm: os-prompts
+
+  - id: na-pratica
+    nome: Na prática
+    icone: lupa
+    stories:
+      - tipo: abertura
+        selo: Na prática
+        titulo: Uma resposta ==de verdade.==
+        texto: "Tema: vitamina D e fraturas em idosos. Resumida, com artigos e números conferidos no PubMed."
+
+      - tipo: resposta
+
+      - tipo: marcas
+
+      - tipo: video
+        arquivo: exports/reels/demo-02-referencias-da-ia/reel.mp4
+        titulo: O P8 conferindo as referências de um TCC
+
+      - tipo: cta
+        titulo: Veja mais ==exemplos.==
+        texto: Na página, o mesmo tema em dois pedidos, lado a lado, e os vídeos de cada situação.
+        link: pagina
+        ancora: diferenca
+        utm: na-pratica
+
+  - id: duvidas
+    nome: Dúvidas
+    icone: pergunta
+    stories:
+      - tipo: abertura
+        selo: Dúvidas
+        titulo: As perguntas ==que mais chegam.==
+        texto: Toque para passar.
+
+      - tipo: pergunta
+        pergunta: Preciso pagar uma IA para usar?
+        resposta: Não necessariamente. Tem versão e dica para o ChatGPT gratuito e para o Gemini Flash. Para buscar artigos, ligue a pesquisa na web.
+      - tipo: pergunta
+        pergunta: Como recebo o acesso?
+        resposta: Pelo e-mail da compra, assim que a Kiwify confirmar o pagamento. No Pix e no cartão costuma ser na hora.
+      - tipo: pergunta
+        pergunta: Funciona no celular?
+        resposta: Funciona. A Biblioteca abre no navegador, e o prompt vai colado no aplicativo da IA que você usa.
+      - tipo: pergunta
+        pergunta: Preciso saber inglês?
+        resposta: Não. Você escreve em português e a resposta vem em português. Só os títulos dos artigos ficam no original.
+      - tipo: pergunta
+        pergunta: A IA ainda pode errar?
+        resposta: Pode. Por isso cada artigo vem com o link do PubMed, e o que a IA não conferiu aparece como [não verificado]. Abra antes de citar.
+      - tipo: pergunta
+        pergunta: Posso colar dados de paciente?
+        resposta: Não. Nada de nome, prontuário ou documento. Os prompts pedem o tema, o estudo ou um perfil genérico.
+      - tipo: pergunta
+        pergunta: E se eu não gostar?
+        resposta: Você tem 7 dias de garantia. Peça o reembolso pela Kiwify dentro do prazo, sem precisar explicar.
+
+      - tipo: caixa
+        titulo: Ficou alguma ==dúvida?==
+        texto: Manda aqui. Eu respondo nos Stories.
+        sticker: "Caixa de perguntas: Qual é a sua dúvida sobre a Biblioteca?"
+
+  - id: acesso
+    nome: Acesso
+    icone: etiqueta
+    stories:
+      - tipo: recebe
+
+      - tipo: oferta
+
+      - tipo: garantia
+
+      - tipo: cta
+        titulo: Garanta ==o seu acesso.==
+        texto: Pagamento pela Kiwify, com Pix, cartão ou boleto.
+        link: checkout
+        utm: acesso

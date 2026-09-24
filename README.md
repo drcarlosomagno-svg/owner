@@ -7,6 +7,7 @@ São duas coleções:
 - **12 carrosséis educativos** em [`exports/`](exports/), cada um ligado a um prompt da biblioteca (P1 a P11), com legenda e texto alternativo.
 - **20 carrosséis da campanha de crescimento** em [`exports/campanha/`](exports/campanha/README.md): foto na capa, gancho num assunto do momento e um grande estudo contado como história. Veja [`campanha/`](campanha/README.md).
 - **14 Reels** (vídeo 9:16) em [`exports/reels/`](exports/reels/README.md): 10 feitos a partir da campanha, para alcançar quem ainda não segue, e 4 de demonstração, com uma pessoa comum (ilustrada) usando a Biblioteca no celular. Veja [`reels/`](reels/README.md).
+- **Stories dos destaques** em [`exports/stories/`](exports/stories/README.md): 6 destaques (Comece aqui, Como funciona, Os 11 prompts, Na prática, Dúvidas, Acesso), com capas e o guia de onde pôr cada sticker e link.
 - **Página de vendas** para a Kiwify em [`landing/`](landing/README.md): um arquivo HTML pronto para hospedar, com a Biblioteca animada no topo, teste grátis, explorador dos 11 prompts, os vídeos de demonstração e a oferta.
 
 ## Por onde começar
@@ -18,6 +19,7 @@ São duas coleções:
 | A avaliação dos posts de crescimento atuais | [`campanha/avaliacao-posts-atuais.md`](campanha/avaliacao-posts-atuais.md) |
 | Como escrever com cara de gente e sem inventar | [`campanha/guia-de-escrita.md`](campanha/guia-de-escrita.md) |
 | Postar os Reels (calendário, áudio, capa) | [`reels/README.md`](reels/README.md) |
+| Postar os Stories dos destaques | [`exports/stories/README.md`](exports/stories/README.md) |
 | Colocar a página de vendas no ar e ligar à Kiwify | [`landing/README.md`](landing/README.md) |
 | Entender o que está funcionando no Instagram em 2026 | [`pesquisa/tendencias-instagram-2026.md`](pesquisa/tendencias-instagram-2026.md) |
 | Ver concorrentes e como se diferenciar | [`pesquisa/concorrentes-e-referencias.md`](pesquisa/concorrentes-e-referencias.md) |

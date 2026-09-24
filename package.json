@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "render": "node scripts/render.mjs",
-    "reels": "node scripts/reels.mjs"
+    "reels": "node scripts/reels.mjs",
+    "stories": "node scripts/stories.mjs"
   },
   "dependencies": {
     "playwright": "1.56.1",
