@@ -1,0 +1,53 @@
+titulo: 5 minutos de corrida já contavam
+carrossel: 14-corrida
+estudo: Lee et al. (J Am Coll Cardiol, 2014)
+paleta: vibrante
+foto: 14-corrida
+publicar: Semana 3 · domingo
+
+cenas:
+  - tipo: gancho
+    selo: JACC · 55.137 adultos
+    titulo: 5 minutos de corrida por dia ==já contavam.==
+
+  - tipo: texto
+    selo: O estudo
+    titulo: 15 anos de ==acompanhamento.==
+    texto: Quem corria no tempo livre comparado com quem não corria.
+
+  - tipo: numero
+    selo: Quem corria
+    numero: "−30%"
+    titulo: de risco de morte ==por qualquer causa.==
+    texto: E 45% menos de morte cardiovascular.
+
+  - tipo: foto
+    foto: 14-corrida-2
+    enquadre:
+      zoom: 2
+      y: "-54%"
+    titulo: Não precisou ==ser muito.==
+    texto: Menos de 51 minutos por semana, 1 a 2 vezes, abaixo de 9,6 km/h.
+
+  - tipo: limite
+    titulo: É observacional.
+    texto: Quem corre pode ter outros hábitos saudáveis. Com doença do coração ou parado há muito tempo, comece com avaliação médica.
+
+  - tipo: cta
+    titulo: Manda pro amigo que acha ==que 5 km é pouco.==
+    fonte: Lee et al. J Am Coll Cardiol, 2014
+
+legenda: |
+  Quanto de corrida faz diferença? Num estudo com 55 mil adultos, 5 a 10 minutos por dia já apareceram com menos mortalidade.
+
+  Em 15 anos de acompanhamento, quem corria no tempo livre teve 30% menos risco de morte por qualquer causa e 45% menos de morte cardiovascular. O benefício apareceu mesmo com menos de 51 minutos por semana, 1 a 2 vezes, abaixo de 9,6 km/h.
+
+  É observacional: quem corre pode ter outros hábitos saudáveis.
+
+  ⚠️ Doença do coração, dor ou muito tempo parado? Comece com uma avaliação médica.
+
+  Fonte: Lee DC et al. J Am Coll Cardiol. 2014;64(5):472-81. doi:10.1016/j.jacc.2014.04.058
+
+  📤 Manda pro amigo que acha que 5 km é pouco.
+
+hashtags: [corrida, corridaderua, cardiologia, saude, paperai]

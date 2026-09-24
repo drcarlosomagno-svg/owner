@@ -1,0 +1,63 @@
+titulo: O que acontece quando você para a caneta
+carrossel: 01-canetas-o-que-acontece-quando-para
+estudo: STEP 1 e extensão (NEJM 2021; Diabetes Obes Metab 2022)
+paleta: escuro
+foto: 01-canetas-o-que-acontece-quando-para
+enquadre:
+  y: "-6%"
+publicar: Semana 1 · domingo
+
+cenas:
+  - tipo: gancho
+    selo: NEJM · 1.961 adultos
+    titulo: O que acontece quando você ==para== a caneta?
+
+  - tipo: texto
+    selo: Março de 2026
+    titulo: A patente ==caiu.==
+    texto: A semaglutida ficou mais barata no Brasil. E a pergunta virou comum no consultório.
+
+  - tipo: numero
+    selo: Em 68 semanas
+    numero: "−14,9%"
+    titulo: de peso com a ==semaglutida.==
+    texto: Contra 2,4% no placebo.
+
+  - tipo: foto
+    enquadre:
+      zoom: 1.5
+      y: "8%"
+    titulo: Aí o tratamento ==acabou.==
+    texto: Os pesquisadores seguiram 327 pessoas por mais um ano, sem o remédio e sem o acompanhamento.
+
+  - tipo: numero
+    selo: Um ano depois
+    numero: 2/3
+    titulo: do peso perdido ==voltou.==
+    texto: E a maior parte das melhoras do metabolismo também.
+
+  - tipo: limite
+    titulo: Não é motivo para ter medo do remédio.
+    texto: É motivo para começar sabendo que obesidade é doença crônica. Começar e parar, só com o seu médico.
+
+  - tipo: cta
+    titulo: Manda pra quem ==vai começar== a caneta.
+    texto: O estudo inteiro está no carrossel do perfil.
+    fonte: Wilding et al. NEJM, 2021 · Diabetes Obes Metab, 2022
+
+legenda: |
+  O que acontece quando você para a semaglutida? A segunda parte do estudo STEP 1 que quase ninguém conta.
+
+  Com a patente vencida em março de 2026, a caneta ficou mais barata no Brasil. No STEP 1, quem usou semaglutida 2,4 mg perdeu 14,9% do peso em 68 semanas, contra 2,4% no placebo.
+
+  Depois, tudo foi suspenso. Um ano mais tarde, os 327 participantes acompanhados tinham recuperado dois terços do peso perdido, e a maior parte das melhoras metabólicas também voltou.
+
+  Não é motivo para ter medo do remédio. É motivo para começar sabendo que obesidade é doença crônica.
+
+  ⚠️ Não comece nem pare nenhum medicamento sem conversar com o seu médico.
+
+  Fontes: Wilding JPH et al. N Engl J Med. 2021. doi:10.1056/NEJMoa2032183 · Wilding JPH et al. Diabetes Obes Metab. 2022. doi:10.1111/dom.14725
+
+  📤 Manda pra quem vai começar a caneta.
+
+hashtags: [semaglutida, ozempic, obesidade, medicinabaseadaemevidencias, paperai]

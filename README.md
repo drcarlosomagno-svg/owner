@@ -6,6 +6,7 @@ São duas coleções:
 
 - **12 carrosséis educativos** em [`exports/`](exports/), cada um ligado a um prompt da biblioteca (P1 a P11), com legenda e texto alternativo.
 - **20 carrosséis da campanha de crescimento** em [`exports/campanha/`](exports/campanha/README.md): foto na capa, gancho num assunto do momento e um grande estudo contado como história. Veja [`campanha/`](campanha/README.md).
+- **10 Reels** (vídeo 9:16) em [`exports/reels/`](exports/reels/README.md), feitos a partir da campanha para alcançar quem ainda não segue. Veja [`reels/`](reels/README.md).
 
 ## Por onde começar
 
@@ -15,6 +16,7 @@ São duas coleções:
 | Entender a campanha de crescimento e que fotos buscar | [`campanha/README.md`](campanha/README.md) e [`campanha/fotos/LISTA.md`](campanha/fotos/LISTA.md) |
 | A avaliação dos posts de crescimento atuais | [`campanha/avaliacao-posts-atuais.md`](campanha/avaliacao-posts-atuais.md) |
 | Como escrever com cara de gente e sem inventar | [`campanha/guia-de-escrita.md`](campanha/guia-de-escrita.md) |
+| Postar os Reels (calendário, áudio, capa) | [`reels/README.md`](reels/README.md) |
 | Entender o que está funcionando no Instagram em 2026 | [`pesquisa/tendencias-instagram-2026.md`](pesquisa/tendencias-instagram-2026.md) |
 | Ver concorrentes e como se diferenciar | [`pesquisa/concorrentes-e-referencias.md`](pesquisa/concorrentes-e-referencias.md) |
 | As regras para criar um carrossel (ganchos, CTAs, legenda) | [`estrategia/playbook-carrosseis.md`](estrategia/playbook-carrosseis.md) |
@@ -47,6 +49,7 @@ npm run render                    # gera todos os carrosséis
 npm run render -- 03              # gera só os que têm "03" no nome
 npm run render -- --formato 4x5   # versão 1080×1350, em exports-4x5/
 npm run render -- --campanha      # só a campanha (ou --educativos)
+npm run reels                     # gera os Reels (vídeo), em exports/reels/
 ```
 
 O gerador:
@@ -70,6 +73,7 @@ O Claude escreve o carrossel seguindo o playbook e a identidade, gera as imagens
 
 ```
 campanha/       campanha de crescimento: textos, estudos conferidos, fotos, guia de escrita
+reels/          roteiros dos Reels (YAML)
 carrosseis/     textos dos carrosséis educativos (YAML)
 exports/        slides, legendas e alt text gerados (a campanha fica em exports/campanha/)
 templates/      estilo visual dos slides (CSS)

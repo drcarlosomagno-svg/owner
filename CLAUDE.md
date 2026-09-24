@@ -8,6 +8,7 @@ Conteúdo de Instagram da paper.ai__ (biblioteca de prompts de IA para pesquisa 
 - `npm run render -- 03`: só os arquivos com "03" no nome.
 - `npm run render -- --formato 4x5`: versão 1080×1350 em `exports-4x5/`.
 - `npm run render -- --campanha` (ou `--educativos`): só uma das coleções.
+- `npm run reels` (ou `npm run reels -- 07`): gera os Reels em `exports/reels/` (MP4 9:16, 30 fps). O ffmpeg vem do pacote `@ffmpeg-installer/ffmpeg` (ou defina `FFMPEG_PATH`).
 - Fora do ambiente em nuvem: `npx playwright install chromium` uma vez, ou defina `CHROMIUM_PATH`.
 
 ## Estrutura
@@ -18,6 +19,7 @@ Conteúdo de Instagram da paper.ai__ (biblioteca de prompts de IA para pesquisa 
 - `templates/slide.css`: todo o visual, com os tokens do produto (vermelho `#D0112B`, Anton, IBM Plex). Tamanhos dentro de `.corpo` usam `calc(Npx * var(--k))`.
 - `marca/catalogo-produto.json`: os onze prompts da Biblioteca de Prompts (P1–P11), extraídos do artefato do produto. `produto: P8` no YAML liga o carrossel a um prompt.
 - `exports/`: saída gerada e versionada (o usuário baixa daqui). Sempre regenere depois de editar um YAML.
+- `reels/roteiros/*.yaml`: roteiros dos Reels (cenas `gancho`, `texto`, `foto`, `numero`, `limite`, `cta`), com fotos de `campanha/fotos/`. Gerador em `scripts/reels.mjs`, visual em `templates/reels.css`; animação calculada quadro a quadro. Texto só dentro da área segura (longe dos botões e da legenda do Instagram). Vídeo sai sem música: o áudio em alta é escolhido no app.
 - `campanha/`: campanha de crescimento (20 carrosséis com foto). `campanha/carrosseis/*.yaml` → `exports/campanha/` (JPG). Visual em `templates/campanha.css` e `scripts/lib/campanha.mjs`, com três paletas (`escuro`, `vibrante`, `claro`). Fotos em `campanha/fotos/<id>.jpg`; o gerador escreve `campanha/fotos/LISTA.md` com o que falta.
 
 ## Regras de conteúdo

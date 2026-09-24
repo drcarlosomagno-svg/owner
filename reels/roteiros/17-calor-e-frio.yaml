@@ -1,0 +1,53 @@
+titulo: O calor assusta, o frio matou mais
+carrossel: 17-calor-e-frio
+estudo: Gasparrini et al. (The Lancet, 2015)
+paleta: vibrante
+foto: 17-calor-e-frio
+enquadre:
+  y: "-10%"
+publicar: Semana 4 · sábado
+
+cenas:
+  - tipo: gancho
+    selo: Lancet · 74 milhões de mortes
+    titulo: O calor assusta. ==O frio matou mais.==
+
+  - tipo: texto
+    selo: 13 países, incluindo o Brasil
+    titulo: De 1985 a ==2012.==
+    texto: Com pesquisadores da Faculdade de Medicina da USP.
+
+  - tipo: numero
+    selo: Temperatura fora do ideal
+    numero: "7,71%"
+    titulo: das mortes.
+
+  - tipo: numero
+    selo: Só o frio
+    numero: "7,29%"
+    titulo: ==Do calor, 0,42%.==
+
+  - tipo: texto
+    titulo: E não foram ==os dias extremos.==
+    texto: Frio e calor extremos somaram 0,86%. O peso veio de dias moderadamente fora do ideal.
+
+  - tipo: limite
+    titulo: Dados até 2012.
+    texto: E o estudo não diz que o aquecimento global é bom.
+
+  - tipo: cta
+    titulo: Manda pra quem só se preocupa ==no verão.==
+    fonte: Gasparrini et al. Lancet, 2015
+
+legenda: |
+  Calor ou frio: qual mata mais? Um estudo com 74 milhões de mortes em 13 países, incluindo o Brasil, respondeu.
+
+  Com dados de 1985 a 2012 e pesquisadores da Faculdade de Medicina da USP, 7,71% das mortes foram ligadas a temperaturas fora do ideal: 7,29% pelo frio e 0,42% pelo calor. Os extremos somaram só 0,86%; o peso maior veio de dias moderadamente fora do ideal.
+
+  O estudo é observacional, os dados vão até 2012 e ele não diz que o aquecimento global é bom.
+
+  Fonte: Gasparrini A et al. Lancet. 2015;386(9991):369-75. doi:10.1016/S0140-6736(14)62114-0
+
+  📤 Manda pra quem só se preocupa no verão.
+
+hashtags: [calor, frio, clima, saudepublica, paperai]

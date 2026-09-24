@@ -1,0 +1,59 @@
+titulo: A meta de 10 mil passos
+carrossel: 06-dez-mil-passos
+estudo: Paluch et al. (Lancet Public Health, 2022)
+paleta: claro
+foto: 06-dez-mil-passos
+enquadre:
+  y: "-22%"
+publicar: Semana 3 · quarta
+
+cenas:
+  - tipo: gancho
+    selo: Lancet Public Health
+    titulo: A meta de 10 mil passos ==era nome de produto.==
+
+  - tipo: texto
+    selo: Japão, 1965
+    titulo: Um pedômetro chamado ==manpo-kei.==
+    texto: Em japonês, "medidor de 10 mil passos". O número pegou sem ninguém testar.
+
+  - tipo: texto
+    selo: O estudo
+    titulo: 47.471 adultos. ==15 estudos.==
+    texto: Quatro grupos, do que menos andava ao que mais andava, por cerca de 7 anos.
+
+  - tipo: numero
+    selo: Cerca de 5.800 passos
+    numero: "−40%"
+    titulo: de risco de ==morte.==
+    texto: Comparado a quem andava cerca de 3.500 por dia.
+
+  - tipo: foto
+    enquadre:
+      zoom: 1.35
+      y: "-30%"
+    titulo: O maior salto ==foi o primeiro.==
+    texto: Com 60 anos ou mais, o risco parou de cair entre 6 mil e 8 mil passos.
+
+  - tipo: limite
+    titulo: É associação.
+    texto: Quem anda mais pode já ter mais saúde por outros motivos.
+
+  - tipo: cta
+    titulo: Manda pra quem ==se culpa== por não bater 10 mil.
+    fonte: Paluch et al. Lancet Public Health, 2022
+
+legenda: |
+  Quantos passos por dia? A meta de 10 mil era nome de um pedômetro japonês. O que um estudo com 47 mil adultos mostrou.
+
+  Em 1965, um aparelho japonês foi vendido como manpo-kei, "medidor de 10 mil passos". O número virou regra sem ter sido testado.
+
+  Numa metanálise de 15 estudos, quem andava cerca de 5.800 passos por dia teve 40% menos risco de morte do que quem andava cerca de 3.500. O maior salto foi esse primeiro degrau. Com 60 anos ou mais, o risco parou de cair entre 6 mil e 8 mil passos; com menos de 60, entre 8 mil e 10 mil.
+
+  É associação: quem anda mais pode já ter mais saúde por outros motivos.
+
+  Fonte: Paluch AE et al. Lancet Public Health. 2022;7(3):e219-28. doi:10.1016/S2468-2667(21)00302-9
+
+  📤 Manda pra quem se culpa por não bater 10 mil.
+
+hashtags: [caminhada, passos, atividadefisica, saude, paperai]

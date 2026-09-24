@@ -1,0 +1,58 @@
+titulo: 1 minuto, 3 vezes ao dia
+carrossel: 20-um-minuto
+estudo: Stamatakis et al. (Nature Medicine, 2022)
+paleta: vibrante
+foto: 20-um-minuto
+enquadre:
+  posicao: "70% 50%"
+  zoom: 1.3
+  y: "-8%"
+publicar: Semana 4 · domingo
+
+cenas:
+  - tipo: gancho
+    selo: Nature Medicine
+    titulo: 1 minuto, 3 vezes ao dia. ==Sem academia.==
+
+  - tipo: texto
+    selo: O estudo
+    titulo: 25.241 pessoas que ==não treinam.==
+    texto: Um sensor no pulso mediu surtos curtos de esforço no dia a dia.
+
+  - tipo: foto
+    enquadre:
+      posicao: "72% 50%"
+      zoom: 1.9
+      y: "-2%"
+    titulo: Subir escada rápido. ==Apertar o passo.==
+    texto: Um ou dois minutos de cada vez.
+
+  - tipo: numero
+    selo: 3 surtos por dia
+    numero: 38–40%
+    titulo: menos risco de morte ==geral e por câncer.==
+    texto: E 48–49% menos de morte cardiovascular.
+
+  - tipo: limite
+    titulo: É observacional.
+    texto: Mostra associação, não prova causa. Doença do coração ou dor no peito ao esforço? Fale antes com o seu médico.
+
+  - tipo: cta
+    titulo: Manda pra quem ==não tem tempo pra nada.==
+    texto: Um minuto essa pessoa tem.
+    fonte: Stamatakis et al. Nat Med, 2022
+
+legenda: |
+  Sem tempo para academia? Um estudo com 25 mil pessoas que não treinam mediu o efeito de 1 minuto de esforço, 3 vezes ao dia.
+
+  Pesquisadores da Universidade de Sydney usaram sensores no pulso para medir surtos curtos de atividade vigorosa do dia a dia, como subir escada rápido ou apertar o passo. Quem tinha 3 surtos por dia, de 1 a 2 minutos, apresentou 38–40% menos risco de morte geral e por câncer e 48–49% menos de morte cardiovascular.
+
+  É um estudo observacional: mostra associação, não prova causa.
+
+  ⚠️ Doença do coração ou dor no peito com esforço? Converse antes com o seu médico.
+
+  Fonte: Stamatakis E et al. Nat Med. 2022;28(12):2521-9. doi:10.1038/s41591-022-02100-x
+
+  📤 Manda pra quem não tem tempo pra nada.
+
+hashtags: [atividadefisica, longevidade, semtempo, saude, paperai]

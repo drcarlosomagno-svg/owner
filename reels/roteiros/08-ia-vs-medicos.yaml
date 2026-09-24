@@ -1,0 +1,65 @@
+titulo: Deram IA para os médicos
+carrossel: 08-ia-vs-medicos
+estudo: Goh et al. (JAMA Network Open, 2024)
+paleta: vibrante
+foto: 08-ia-vs-medicos
+enquadre:
+  zoom: 1.25
+  posicao: "62% 50%"
+publicar: Semana 2 · sábado
+
+cenas:
+  - tipo: gancho
+    selo: JAMA · ensaio randomizado
+    titulo: Deram IA para os médicos. ==A IA sozinha foi melhor.==
+
+  - tipo: texto
+    selo: O experimento
+    titulo: 50 médicos. 6 casos. ==60 minutos.==
+    texto: Metade podia usar um modelo de linguagem. A outra metade, só as fontes de sempre.
+
+  - tipo: numero
+    selo: Com IA vs sem IA
+    numero: "+2"
+    titulo: pontos. ==Dentro do acaso.==
+    texto: 76% contra 74% de nota no raciocínio.
+
+  - tipo: numero
+    selo: A IA sozinha
+    numero: "+16"
+    titulo: pontos acima dos ==médicos sem IA.==
+    texto: Numa análise exploratória.
+
+  - tipo: foto
+    enquadre:
+      zoom: 1.9
+      posicao: "75% 50%"
+      y: "-6%"
+    selo: Nossa leitura, não do estudo
+    titulo: Ter a ferramenta ==não bastou.==
+    texto: O jeito de perguntar provavelmente pesa. O estudo não mediu isso.
+
+  - tipo: limite
+    titulo: Casos escritos. Modelo de 2023.
+    texto: E a vantagem da IA sozinha ainda precisa ser confirmada.
+
+  - tipo: cta
+    destaque: salvar
+    titulo: Pergunte ==com método.==
+    texto: Contexto, raciocínio, o que falaria contra e checagem na fonte. Nunca dados de paciente.
+    fonte: Goh et al. JAMA Netw Open, 2024
+
+legenda: |
+  IA melhora o raciocínio do médico? Num ensaio randomizado com 50 médicos, a IA sozinha foi melhor que os dois grupos.
+
+  Pesquisadores de Stanford, Harvard e outras universidades sortearam os médicos: metade usou um modelo de linguagem além das fontes de sempre, metade só as fontes de sempre. A nota de raciocínio ficou em 76% com IA e 74% sem, diferença que não se separou do acaso. Numa análise exploratória, o modelo sozinho fez 16 pontos a mais que o grupo sem IA.
+
+  Nossa leitura, não do estudo: o jeito de perguntar provavelmente pesa. O estudo usou casos escritos e um modelo de 2023.
+
+  Para estudar ou pesquisar com IA: dê contexto, peça o raciocínio, peça o que falaria contra e confira tudo na fonte. Nunca cole dados de pacientes. É esse o método dos prompts da Biblioteca paper.ai__ (link na bio).
+
+  Fonte: Goh E et al. JAMA Netw Open. 2024;7(10):e2440969. doi:10.1001/jamanetworkopen.2024.40969
+
+  💾 Salva pra usar antes de abrir o chat.
+
+hashtags: [inteligenciaartificial, medicina, residenciamedica, chatgpt, paperai]

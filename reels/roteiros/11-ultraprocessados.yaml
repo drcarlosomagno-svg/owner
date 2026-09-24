@@ -1,0 +1,62 @@
+titulo: A palavra ultraprocessado nasceu no Brasil
+carrossel: 11-ultraprocessados
+estudo: Hall et al. (Cell Metabolism, 2019)
+paleta: vibrante
+foto: 11-ultraprocessados
+enquadre:
+  zoom: 1.3
+  y: "-8%"
+publicar: Semana 3 · sábado
+
+cenas:
+  - tipo: gancho
+    selo: Cell Metabolism · NIH
+    titulo: A palavra ultraprocessado ==nasceu no Brasil.==
+
+  - tipo: texto
+    selo: USP
+    titulo: A classificação ==NOVA.==
+    texto: Criada por pesquisadores da USP liderados por Carlos Monteiro. Está na base do Guia Alimentar brasileiro.
+
+  - tipo: texto
+    selo: O teste do NIH
+    titulo: 20 adultos internados ==por 4 semanas.==
+    texto: Duas de comida ultraprocessada, duas de não processada. Pratos com as mesmas calorias, açúcar, sódio e fibra.
+
+  - tipo: numero
+    selo: Na fase ultraprocessada
+    numero: "+508"
+    titulo: calorias por dia. ==Sem ninguém mandar.==
+    texto: Cada um comia o quanto quisesse.
+
+  - tipo: foto
+    enquadre:
+      zoom: 1.9
+      y: "-12%"
+    titulo: +0,9 kg contra ==−0,9 kg.==
+    texto: Em duas semanas de cada dieta.
+
+  - tipo: limite
+    titulo: Poucos participantes, pouco tempo.
+    texto: E não diz que todo alimento industrializado é igual.
+
+  - tipo: cta
+    destaque: salvar
+    titulo: Salva e manda ==pro grupo da família.==
+    texto: Ingrediente de nome estranho, que você não usaria na cozinha, é pista de ultraprocessado.
+    fonte: Hall et al. Cell Metab, 2019
+
+legenda: |
+  Ultraprocessados engordam mesmo com as mesmas calorias? O teste do NIH com a classificação criada na USP.
+
+  A classificação NOVA, que deu nome aos ultraprocessados, foi criada por pesquisadores da USP liderados por Carlos Monteiro e está na base do Guia Alimentar brasileiro.
+
+  Em 2019, o NIH internou 20 adultos por 4 semanas: duas de dieta ultraprocessada e duas de não processada, com pratos pareados em calorias, açúcar, sódio, fibra e macronutrientes. Na fase ultraprocessada, comeram 508 calorias a mais por dia e ganharam 0,9 kg; na outra, perderam 0,9 kg.
+
+  Foram poucos participantes e pouco tempo, e o estudo não diz que todo industrializado é igual.
+
+  Fonte: Hall KD et al. Cell Metab. 2019;30(1):67-77. doi:10.1016/j.cmet.2019.05.008
+
+  💾 Salva e manda pro grupo da família.
+
+hashtags: [ultraprocessados, alimentacao, nutricao, guiaalimentar, paperai]

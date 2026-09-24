@@ -1,0 +1,62 @@
+titulo: O teste de sentar e levantar do chão
+carrossel: 02-sentar-e-levantar
+estudo: Araújo et al. (Eur J Prev Cardiol, 2026)
+paleta: vibrante
+foto: 02-sentar-e-levantar
+enquadre:
+  y: "-18%"
+publicar: Semana 1 · sábado
+
+cenas:
+  - tipo: gancho
+    selo: Estudo brasileiro · 2026
+    titulo: Sente no chão e levante ==sem as mãos.==
+
+  - tipo: foto
+    enquadre:
+      zoom: 1.6
+      y: "-4%"
+    selo: Como pontuar
+    titulo: Você começa ==com 10.==
+    texto: Perde 1 ponto a cada apoio de mão ou joelho. Meio ponto se desequilibrar.
+
+  - tipo: texto
+    selo: Rio de Janeiro
+    titulo: 4.282 adultos. ==12 anos.==
+    texto: De 46 a 75 anos, acompanhados depois do teste.
+
+  - tipo: numero
+    selo: Quem tirou nota 10
+    numero: "3,7%"
+    titulo: morreram no período.
+
+  - tipo: numero
+    selo: Quem tirou de 0 a 4
+    numero: "42,1%"
+    titulo: morreram ==no período.==
+
+  - tipo: limite
+    titulo: É associação.
+    texto: Não testou se treinar para melhorar a nota reduz o risco. Dor no joelho, no quadril ou já caiu? Faça com médico ou fisioterapeuta.
+
+  - tipo: cta
+    titulo: Faça com alguém do lado e ==comente a sua nota.==
+    texto: E manda pro seu pai fazer também.
+    fonte: Araújo et al. Eur J Prev Cardiol, 2026
+
+legenda: |
+  Teste de sentar e levantar do chão: qual é a sua nota? O estudo brasileiro de 2026 que ligou a nota a 12 anos de acompanhamento.
+
+  Você começa com 10 pontos. Perde 1 a cada apoio de mão ou joelho e meio ponto se desequilibrar.
+
+  No estudo da clínica CLINIMEX, no Rio, com 4.282 adultos de 46 a 75 anos, morreram 3,7% de quem tirou 10 e 42,1% de quem tirou de 0 a 4. É associação: o estudo não testou se treinar para melhorar a nota reduz o risco.
+
+  ⚠️ Dor no joelho, no quadril ou histórico de queda? Faça o teste com o seu médico ou fisioterapeuta.
+
+  O carrossel completo, com o estudo, está no perfil.
+
+  Fonte: Araújo CGS et al. Sitting-rising test scores predict natural and cardiovascular causes of deaths. Eur J Prev Cardiol. 2026. doi:10.1093/eurjpc/zwaf325
+
+  💬 Comente a sua nota.
+
+hashtags: [longevidade, medicinadoexercicio, envelhecimento, saude, paperai]

@@ -1,0 +1,50 @@
+titulo: A dose de álcool que menos faz mal
+carrossel: 10-alcool
+estudo: GBD 2016 Alcohol Collaborators (The Lancet, 2018)
+paleta: escuro
+foto: 10-alcool
+publicar: Semana 4 · quarta
+
+cenas:
+  - tipo: gancho
+    selo: Lancet · 195 países
+    titulo: A dose de álcool ==que menos faz mal== é zero.
+
+  - tipo: texto
+    titulo: “Uma taça por dia ==faz bem.==”
+    texto: O maior levantamento sobre álcool colocou essa ideia na balança, com os possíveis benefícios incluídos.
+
+  - tipo: numero
+    selo: O resultado
+    numero: "0"
+    titulo: doses por semana. ==O nível de menor dano.==
+
+  - tipo: foto
+    enquadre:
+      zoom: 1.6
+      y: "10%"
+    selo: Entre 15 e 49 anos
+    titulo: O principal fator de risco de ==morte e incapacidade.==
+    texto: Em 2016, no mundo.
+
+  - tipo: limite
+    titulo: É modelagem.
+    texto: Não diz que uma taça vai te matar. Diz que ela não entra na conta como proteção.
+
+  - tipo: cta
+    titulo: Manda pra quem usa ==o vinho como remédio.==
+    texto: Sem sermão. Só a conta.
+    fonte: GBD 2016 Alcohol Collaborators. Lancet, 2018
+
+legenda: |
+  Uma taça de vinho faz bem ao coração? O maior levantamento sobre álcool, com 195 países, diz que a dose mais segura é zero.
+
+  O estudo Global Burden of Disease pesou 23 problemas de saúde, incluindo os possíveis efeitos protetores. O nível de consumo que minimizou o dano foi zero dose por semana. Entre 15 e 49 anos, o álcool foi o principal fator de risco de morte e incapacidade em 2016.
+
+  É modelagem, com margem de incerteza. Não diz que uma taça vai te matar. Diz que ela não entra na conta como proteção.
+
+  Fonte: GBD 2016 Alcohol Collaborators. Lancet. 2018;392(10152):1015-35. doi:10.1016/S0140-6736(18)31310-2
+
+  📤 Manda pra quem usa o vinho como remédio.
+
+hashtags: [alcool, vinho, cancer, saude, paperai]
