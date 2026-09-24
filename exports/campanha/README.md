@@ -32,49 +32,49 @@ Fotos: veja a lista do que buscar em [`campanha/fotos/LISTA.md`](../../campanha/
 <a id="01-canetas-o-que-acontece-quando-para"></a>
 ## O que acontece quando você para a caneta
 
-**escuro** · Semaglutida genérica chega ao Brasil (patente caiu em mar/2026) · Semana 1 · segunda · 9 slides · 1 foto(s) pendente(s) · [slides](01-canetas-o-que-acontece-quando-para/) · [legenda](01-canetas-o-que-acontece-quando-para/legenda.txt) · [alt text](01-canetas-o-que-acontece-quando-para/alt-text.txt)
+**escuro** · Semaglutida genérica chega ao Brasil (patente caiu em mar/2026) · Semana 1 · segunda · 9 slides · [slides](01-canetas-o-que-acontece-quando-para/) · [legenda](01-canetas-o-que-acontece-quando-para/legenda.txt) · [alt text](01-canetas-o-que-acontece-quando-para/alt-text.txt)
 
 ![O que acontece quando você para a caneta](01-canetas-o-que-acontece-quando-para/_prancha.jpg)
 
 <a id="02-sentar-e-levantar"></a>
 ## Sentar no chão e levantar sem as mãos
 
-**vibrante** · Estudo brasileiro sobre o teste de sentar e levantar, publicado em set/2026 · Semana 1 · terça · 9 slides · 1 foto(s) pendente(s) · [slides](02-sentar-e-levantar/) · [legenda](02-sentar-e-levantar/legenda.txt) · [alt text](02-sentar-e-levantar/alt-text.txt)
+**vibrante** · Estudo brasileiro sobre o teste de sentar e levantar, publicado em set/2026 · Semana 1 · terça · 9 slides · [slides](02-sentar-e-levantar/) · [legenda](02-sentar-e-levantar/legenda.txt) · [alt text](02-sentar-e-levantar/alt-text.txt)
 
 ![Sentar no chão e levantar sem as mãos](02-sentar-e-levantar/_prancha.jpg)
 
 <a id="03-cafe"></a>
 ## O cafezinho não é o vilão
 
-**claro** · Café no dia a dia do brasileiro (maior produtor do mundo) · Semana 1 · quarta · 9 slides · 1 foto(s) pendente(s) · [slides](03-cafe/) · [legenda](03-cafe/legenda.txt) · [alt text](03-cafe/alt-text.txt)
+**claro** · Café no dia a dia do brasileiro (maior produtor do mundo) · Semana 1 · quarta · 9 slides · [slides](03-cafe/) · [legenda](03-cafe/legenda.txt) · [alt text](03-cafe/alt-text.txt)
 
 ![O cafezinho não é o vilão](03-cafe/_prancha.jpg)
 
 <a id="04-solidao"></a>
 ## Solidão e 100 mortes por hora
 
-**escuro** · Relatório da OMS sobre conexão social (871 mil mortes por ano) · Semana 1 · quinta · 9 slides · 1 foto(s) pendente(s) · [slides](04-solidao/) · [legenda](04-solidao/legenda.txt) · [alt text](04-solidao/alt-text.txt)
+**escuro** · Relatório da OMS sobre conexão social (871 mil mortes por ano) · Semana 1 · quinta · 9 slides · [slides](04-solidao/) · [legenda](04-solidao/legenda.txt) · [alt text](04-solidao/alt-text.txt)
 
 ![Solidão e 100 mortes por hora](04-solidao/_prancha.jpg)
 
 <a id="05-celular-na-escola"></a>
 ## Proibir o celular na escola não bastou
 
-**vibrante** · Lei 15.100 (celular nas escolas) completou um ano; MEC mede o impacto · Semana 1 · sexta · 9 slides · 1 foto(s) pendente(s) · [slides](05-celular-na-escola/) · [legenda](05-celular-na-escola/legenda.txt) · [alt text](05-celular-na-escola/alt-text.txt)
+**vibrante** · Lei 15.100 (celular nas escolas) completou um ano; MEC mede o impacto · Semana 1 · sexta · 9 slides · [slides](05-celular-na-escola/) · [legenda](05-celular-na-escola/legenda.txt) · [alt text](05-celular-na-escola/alt-text.txt)
 
 ![Proibir o celular na escola não bastou](05-celular-na-escola/_prancha.jpg)
 
 <a id="06-dez-mil-passos"></a>
 ## A meta de 10 mil passos era nome de produto
 
-**claro** · A meta de passos do relógio e do celular (e de onde veio o número 10 mil) · Semana 2 · segunda · 9 slides · 1 foto(s) pendente(s) · [slides](06-dez-mil-passos/) · [legenda](06-dez-mil-passos/legenda.txt) · [alt text](06-dez-mil-passos/alt-text.txt)
+**claro** · A meta de passos do relógio e do celular (e de onde veio o número 10 mil) · Semana 2 · segunda · 9 slides · [slides](06-dez-mil-passos/) · [legenda](06-dez-mil-passos/legenda.txt) · [alt text](06-dez-mil-passos/alt-text.txt)
 
 ![A meta de 10 mil passos era nome de produto](06-dez-mil-passos/_prancha.jpg)
 
 <a id="07-bets"></a>
 ## O quase ganhar é o que prende
 
-**escuro** · Bets custam R$ 30,6 bi por ano ao SUS; 574 mil pessoas já pediram autoexclusão · Semana 2 · terça · 10 slides · 2 foto(s) pendente(s) · [slides](07-bets/) · [legenda](07-bets/legenda.txt) · [alt text](07-bets/alt-text.txt)
+**escuro** · Bets custam R$ 30,6 bi por ano ao SUS; 574 mil pessoas já pediram autoexclusão · Semana 2 · terça · 10 slides · [slides](07-bets/) · [legenda](07-bets/legenda.txt) · [alt text](07-bets/alt-text.txt)
 
 ![O quase ganhar é o que prende](07-bets/_prancha.jpg)
 
@@ -88,83 +88,83 @@ Fotos: veja a lista do que buscar em [`campanha/fotos/LISTA.md`](../../campanha/
 <a id="09-genes-vs-estilo-de-vida"></a>
 ## Seus genes explicam menos do que você pensa
 
-**claro** · "Na minha família todo mundo tem": genética, longevidade e o expossoma · Semana 2 · quinta · 9 slides · 1 foto(s) pendente(s) · [slides](09-genes-vs-estilo-de-vida/) · [legenda](09-genes-vs-estilo-de-vida/legenda.txt) · [alt text](09-genes-vs-estilo-de-vida/alt-text.txt)
+**claro** · "Na minha família todo mundo tem": genética, longevidade e o expossoma · Semana 2 · quinta · 9 slides · [slides](09-genes-vs-estilo-de-vida/) · [legenda](09-genes-vs-estilo-de-vida/legenda.txt) · [alt text](09-genes-vs-estilo-de-vida/alt-text.txt)
 
 ![Seus genes explicam menos do que você pensa](09-genes-vs-estilo-de-vida/_prancha.jpg)
 
 <a id="10-alcool"></a>
 ## A dose de álcool que menos faz mal é zero
 
-**escuro** · Uma taça de vinho por dia faz bem ao coração? · Semana 2 · sexta · 10 slides · 1 foto(s) pendente(s) · [slides](10-alcool/) · [legenda](10-alcool/legenda.txt) · [alt text](10-alcool/alt-text.txt)
+**escuro** · Uma taça de vinho por dia faz bem ao coração? · Semana 2 · sexta · 10 slides · [slides](10-alcool/) · [legenda](10-alcool/legenda.txt) · [alt text](10-alcool/alt-text.txt)
 
 ![A dose de álcool que menos faz mal é zero](10-alcool/_prancha.jpg)
 
 <a id="11-ultraprocessados"></a>
 ## A palavra ultraprocessado nasceu no Brasil
 
-**vibrante** · Ultraprocessados no centro do debate sobre alimentação (rótulos, Guia Alimentar, classificação NOVA) · Semana 3 · segunda · 9 slides · 1 foto(s) pendente(s) · [slides](11-ultraprocessados/) · [legenda](11-ultraprocessados/legenda.txt) · [alt text](11-ultraprocessados/alt-text.txt)
+**vibrante** · Ultraprocessados no centro do debate sobre alimentação (rótulos, Guia Alimentar, classificação NOVA) · Semana 3 · segunda · 9 slides · [slides](11-ultraprocessados/) · [legenda](11-ultraprocessados/legenda.txt) · [alt text](11-ultraprocessados/alt-text.txt)
 
 ![A palavra ultraprocessado nasceu no Brasil](11-ultraprocessados/_prancha.jpg)
 
 <a id="12-fita-na-boca"></a>
 ## A fita na boca que viralizou
 
-**claro** · Trend de dormir com fita na boca (mouth taping) · Semana 3 · terça · 9 slides · 1 foto(s) pendente(s) · [slides](12-fita-na-boca/) · [legenda](12-fita-na-boca/legenda.txt) · [alt text](12-fita-na-boca/alt-text.txt)
+**claro** · Trend de dormir com fita na boca (mouth taping) · Semana 3 · terça · 9 slides · [slides](12-fita-na-boca/) · [legenda](12-fita-na-boca/legenda.txt) · [alt text](12-fita-na-boca/alt-text.txt)
 
 ![A fita na boca que viralizou](12-fita-na-boca/_prancha.jpg)
 
 <a id="13-chatgpt-terapeuta"></a>
 ## 3 da manhã, você desabafou com um chatbot
 
-**escuro** · Gente usando IA como terapeuta, principalmente de madrugada · Semana 3 · quarta · 10 slides · 1 foto(s) pendente(s) · [slides](13-chatgpt-terapeuta/) · [legenda](13-chatgpt-terapeuta/legenda.txt) · [alt text](13-chatgpt-terapeuta/alt-text.txt)
+**escuro** · Gente usando IA como terapeuta, principalmente de madrugada · Semana 3 · quarta · 10 slides · [slides](13-chatgpt-terapeuta/) · [legenda](13-chatgpt-terapeuta/legenda.txt) · [alt text](13-chatgpt-terapeuta/alt-text.txt)
 
 ![3 da manhã, você desabafou com um chatbot](13-chatgpt-terapeuta/_prancha.jpg)
 
 <a id="14-corrida"></a>
 ## 70 mil inscritos no Rio. 5 minutos já contavam.
 
-**vibrante** · O boom da corrida de rua (Maratona do Rio 2026 com recorde de cerca de 70 mil inscritos) · Semana 3 · quinta · 10 slides · 2 foto(s) pendente(s) · [slides](14-corrida/) · [legenda](14-corrida/legenda.txt) · [alt text](14-corrida/alt-text.txt)
+**vibrante** · O boom da corrida de rua (Maratona do Rio 2026 com recorde de cerca de 70 mil inscritos) · Semana 3 · quinta · 10 slides · [slides](14-corrida/) · [legenda](14-corrida/legenda.txt) · [alt text](14-corrida/alt-text.txt)
 
 ![70 mil inscritos no Rio. 5 minutos já contavam.](14-corrida/_prancha.jpg)
 
 <a id="15-jejum-intermitente"></a>
 ## O jejum intermitente empatou com o básico
 
-**claro** · Jejum intermitente e "janela de alimentação" como estratégia para emagrecer · Semana 3 · sexta · 9 slides · 1 foto(s) pendente(s) · [slides](15-jejum-intermitente/) · [legenda](15-jejum-intermitente/legenda.txt) · [alt text](15-jejum-intermitente/alt-text.txt)
+**claro** · Jejum intermitente e "janela de alimentação" como estratégia para emagrecer · Semana 3 · sexta · 9 slides · [slides](15-jejum-intermitente/) · [legenda](15-jejum-intermitente/legenda.txt) · [alt text](15-jejum-intermitente/alt-text.txt)
 
 ![O jejum intermitente empatou com o básico](15-jejum-intermitente/_prancha.jpg)
 
 <a id="16-microplastico"></a>
 ## Tem plástico no cérebro humano
 
-**escuro** · Microplásticos no corpo humano (manchetes que viralizaram) · Semana 4 · segunda · 10 slides · 1 foto(s) pendente(s) · [slides](16-microplastico/) · [legenda](16-microplastico/legenda.txt) · [alt text](16-microplastico/alt-text.txt)
+**escuro** · Microplásticos no corpo humano (manchetes que viralizaram) · Semana 4 · segunda · 10 slides · [slides](16-microplastico/) · [legenda](16-microplastico/legenda.txt) · [alt text](16-microplastico/alt-text.txt)
 
 ![Tem plástico no cérebro humano](16-microplastico/_prancha.jpg)
 
 <a id="17-calor-e-frio"></a>
 ## O calor assusta. O frio matou mais.
 
-**vibrante** · Ondas de calor e recordes de temperatura · Semana 4 · terça · 9 slides · 1 foto(s) pendente(s) · [slides](17-calor-e-frio/) · [legenda](17-calor-e-frio/legenda.txt) · [alt text](17-calor-e-frio/alt-text.txt)
+**vibrante** · Ondas de calor e recordes de temperatura · Semana 4 · terça · 9 slides · [slides](17-calor-e-frio/) · [legenda](17-calor-e-frio/legenda.txt) · [alt text](17-calor-e-frio/alt-text.txt)
 
 ![O calor assusta. O frio matou mais.](17-calor-e-frio/_prancha.jpg)
 
 <a id="18-multivitaminico"></a>
 ## O multivitamínico não te fez viver mais
 
-**claro** · Febre de suplementos e "rotinas de vitaminas" nas redes · Semana 4 · quarta · 9 slides · 1 foto(s) pendente(s) · [slides](18-multivitaminico/) · [legenda](18-multivitaminico/legenda.txt) · [alt text](18-multivitaminico/alt-text.txt)
+**claro** · Febre de suplementos e "rotinas de vitaminas" nas redes · Semana 4 · quarta · 9 slides · [slides](18-multivitaminico/) · [legenda](18-multivitaminico/legenda.txt) · [alt text](18-multivitaminico/alt-text.txt)
 
 ![O multivitamínico não te fez viver mais](18-multivitaminico/_prancha.jpg)
 
 <a id="19-aperto-de-mao"></a>
 ## Seu aperto de mão prevê mais que a sua pressão
 
-**escuro** · Força muscular e longevidade (a onda do treino de força) · Semana 4 · quinta · 9 slides · 1 foto(s) pendente(s) · [slides](19-aperto-de-mao/) · [legenda](19-aperto-de-mao/legenda.txt) · [alt text](19-aperto-de-mao/alt-text.txt)
+**escuro** · Força muscular e longevidade (a onda do treino de força) · Semana 4 · quinta · 9 slides · [slides](19-aperto-de-mao/) · [legenda](19-aperto-de-mao/legenda.txt) · [alt text](19-aperto-de-mao/alt-text.txt)
 
 ![Seu aperto de mão prevê mais que a sua pressão](19-aperto-de-mao/_prancha.jpg)
 
 <a id="20-um-minuto"></a>
 ## 1 minuto, 3 vezes ao dia, sem academia
 
-**vibrante** · "Não tenho tempo pra academia" e a moda dos treinos curtos · Semana 4 · sexta · 10 slides · 1 foto(s) pendente(s) · [slides](20-um-minuto/) · [legenda](20-um-minuto/legenda.txt) · [alt text](20-um-minuto/alt-text.txt)
+**vibrante** · "Não tenho tempo pra academia" e a moda dos treinos curtos · Semana 4 · sexta · 10 slides · [slides](20-um-minuto/) · [legenda](20-um-minuto/legenda.txt) · [alt text](20-um-minuto/alt-text.txt)
 
 ![1 minuto, 3 vezes ao dia, sem academia](20-um-minuto/_prancha.jpg)

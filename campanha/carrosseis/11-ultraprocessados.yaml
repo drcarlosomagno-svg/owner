@@ -10,6 +10,8 @@ foto:
 
 slides:
   - tipo: capa
+    enquadre:
+      y: "-24%"
     selo: Cell Metabolism · NIH · 20 voluntários internados
     titulo: A palavra ultraprocessado ==nasceu no Brasil.==
     subtitulo: Depois, o governo americano internou 20 voluntários para testar a ideia.

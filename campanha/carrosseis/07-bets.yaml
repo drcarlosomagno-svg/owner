@@ -5,11 +5,13 @@ paleta: escuro
 objetivo: envios
 publicar: Semana 2 · terça
 foto:
-  busca: "empty football stadium night floodlights, soccer field dark fog lights, stadium lights night moody"
-  descricao: Estádio de futebol vazio à noite, refletores acesos, névoa ou fumaça no ar, arquibancada no escuro. Nenhuma marca ou escudo visível.
+  busca: "slot machines dark casino empty chairs"
+  descricao: Caça-níqueis acesos num cassino escuro, cadeiras vazias na frente. A mesma foto aparece desfocada no slide 6.
 
 slides:
   - tipo: capa
+    enquadre:
+      desfoque: "1.5px"
     selo: Neuron · Universidade de Cambridge · 2009
     titulo: O ==quase== ganhar é o que prende.
     subtitulo: Na derrota por um triz, o cérebro de quem aposta acende as mesmas áreas da vitória.
@@ -44,9 +46,13 @@ slides:
 
   - tipo: foto
     foto: 2
+    enquadre:
+      zoom: 1.8
+      y: "40%"
+      desfoque: "5px"
     foto_brief:
-      busca: "slot machine lights dark close up, neon reels dark red, casino lights bokeh night"
-      descricao: Luzes de máquina ou de cassino desfocadas no escuro, vermelho e âmbar. Abstrato, sem logo e sem pessoas.
+      busca: "slot machines dark casino (a mesma foto da capa)"
+      descricao: A foto da capa, aproximada nas luzes do alto e desfocada. Pode ser o mesmo arquivo.
     selo: No cérebro
     titulo: Acendeu o circuito ==da vitória.==
     texto: |

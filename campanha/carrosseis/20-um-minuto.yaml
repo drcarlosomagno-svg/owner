@@ -10,6 +10,10 @@ foto:
 
 slides:
   - tipo: capa
+    enquadre:
+      posicao: "70% 50%"
+      zoom: 1.3
+      y: "-25%"
     selo: Nature Medicine · 25.241 pessoas que não treinam
     titulo: 1 minuto, 3 vezes ao dia. ==Sem academia.==
     subtitulo: Sensores no pulso de gente que não se exercita mostraram o peso dos minutos do dia a dia.

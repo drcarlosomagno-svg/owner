@@ -10,6 +10,9 @@ foto:
 
 slides:
   - tipo: capa
+    enquadre:
+      posicao: "55% 50%"
+      y: "-35%"
     selo: PLoS One · 10 estudos · 213 pacientes
     titulo: A fita na boca ==viralizou.== A ciência foi olhar.
     subtitulo: Dormir com a boca colada promete sono profundo e fim do ronco.

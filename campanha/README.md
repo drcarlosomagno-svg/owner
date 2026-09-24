@@ -2,7 +2,7 @@
 
 Posts feitos para alcance e envios: gancho num assunto que o Brasil está discutindo, uma história contada slide a slide e um grande estudo científico explicando o fato, sem inventar nada. Cada carrossel termina mostrando o que o estudo **não** permite dizer, que é a mesma regra dos prompts da Biblioteca paper.ai__.
 
-**Os 20 estão prontos em [`exports/campanha/`](../exports/campanha/README.md)**, com slides em JPG (3:4), legenda e texto alternativo. Falta só colocar as fotos (veja abaixo).
+**Os 20 estão prontos em [`exports/campanha/`](../exports/campanha/README.md)**, com slides em JPG (3:4), legenda e texto alternativo. Todas as capas já têm foto, menos a do 08 (IA contra médicos). Créditos em [`fotos/CREDITOS.md`](fotos/CREDITOS.md).
 
 ## Os 20 carrosséis
 

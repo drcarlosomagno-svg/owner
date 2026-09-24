@@ -10,6 +10,8 @@ foto:
 
 slides:
   - tipo: capa
+    enquadre:
+      y: "-22%"
     selo: JMIR · 14 estudos · 10 anos de pesquisa
     titulo: 3 da manhã. ==Você desabafou com um chatbot.==
     subtitulo: Muita gente faz. Pouca gente sabe o que os estudos mostram.

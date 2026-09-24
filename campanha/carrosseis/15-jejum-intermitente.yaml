@@ -10,6 +10,9 @@ foto:
 
 slides:
   - tipo: capa
+    enquadre:
+      posicao: "70% 50%"
+      y: "-32%"
     selo: NEJM · 139 pessoas · 12 meses
     titulo: O jejum intermitente ==empatou com o básico.==
     subtitulo: Um ano de estudo. A mesma meta de calorias. Só mudou o relógio.

@@ -10,6 +10,9 @@ foto:
 
 slides:
   - tipo: capa
+    enquadre:
+      posicao: "60% 50%"
+      y: "-20%"
     selo: Nature Medicine · 492.567 pessoas
     titulo: Seus genes explicam ==menos do que você pensa.==
     subtitulo: Oxford comparou o peso do DNA e o do ambiente no risco de morrer. A distância foi grande.

@@ -10,6 +10,8 @@ foto:
 
 slides:
   - tipo: capa
+    enquadre:
+      y: "-10%"
     selo: NEJM · 1.961 adultos · 68 semanas
     titulo: O que acontece quando você ==para== a caneta.
     subtitulo: A patente caiu e a semaglutida ficou mais barata. Quase ninguém comenta a segunda parte do estudo.

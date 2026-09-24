@@ -10,6 +10,8 @@ foto:
 
 slides:
   - tipo: capa
+    enquadre:
+      y: "-22%"
     selo: Lancet · 74 milhões de mortes · 13 países
     titulo: O calor assusta. ==O frio matou mais.==
     subtitulo: Um estudo com dados do Brasil e de outros 12 países mediu qual temperatura pesa mais nas mortes.

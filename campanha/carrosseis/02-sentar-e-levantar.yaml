@@ -10,6 +10,8 @@ foto:
 
 slides:
   - tipo: capa
+    enquadre:
+      y: "-33%"
     selo: Eur J Prev Cardiol · 4.282 adultos · 12 anos
     titulo: Sentar no chão e levantar ==sem as mãos.==
     subtitulo: Um teste criado no Rio de Janeiro acabou de ganhar um novo estudo. Ele diz muito sobre os próximos anos.

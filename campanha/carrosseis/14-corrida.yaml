@@ -5,8 +5,8 @@ paleta: vibrante
 objetivo: envios
 publicar: Semana 3 · quinta
 foto:
-  busca: "runners street race sunset orange motion blur, running crowd golden hour city, runner legs asphalt orange light"
-  descricao: Corredores numa rua ao pôr do sol, movimento borrado, luz laranja forte. Ninguém identificável, sem número de peito legível.
+  busca: "man running on street during sunset backlit"
+  descricao: Uma pessoa correndo na rua contra o sol baixo, em silhueta. Luz forte, sem rosto nítido.
 
 slides:
   - tipo: capa
@@ -41,9 +41,12 @@ slides:
 
   - tipo: foto
     foto: 2
+    enquadre:
+      zoom: 2
+      y: "-54%"
     foto_brief:
-      busca: "single runner silhouette sunrise street red orange, lone jogger backlit city morning"
-      descricao: Uma pessoa correndo sozinha, em contraluz, numa rua de manhã cedo. Silhueta, céu laranja ou vermelho.
+      busca: "runners race street, recorte nas pernas"
+      descricao: Corredores numa prova de rua. O enquadramento aproxima nas pernas e nos tênis, sem rostos e sem número de peito.
     selo: O detalhe
     titulo: Não precisou ==ser muito.==
     texto: |

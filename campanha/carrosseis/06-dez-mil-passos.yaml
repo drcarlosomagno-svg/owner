@@ -10,6 +10,9 @@ foto:
 
 slides:
   - tipo: capa
+    enquadre:
+      y: "-48%"
+      esmaecer: "86% 100%"
     selo: Lancet Public Health · 15 estudos · 47.471 adultos
     titulo: A meta de 10 mil passos ==era nome de produto.==
     subtitulo: Não saiu de um laboratório. Saiu da caixa de um aparelho japonês.

@@ -20,9 +20,31 @@ export function acharFoto(pastaFotos, nome) {
   return null;
 }
 
-const fundoFoto = (url, nome) =>
+// Enquadramento opcional da foto, no slide: enquadre: { posicao: "60% 40%", zoom: 1.3, x: "0%", y: "-10%", desfoque: "6px", inteira: true }.
+// inteira mostra a foto toda, sem cortar (bom para foto horizontal com a cena inteira).
+// posicao escolhe o recorte (object-position); zoom e x/y aproximam e deslocam a foto
+// (percentuais do tamanho do slide). O que sobra na borda cai no véu da paleta.
+function estiloEnquadre(e) {
+  if (!e) return '';
+  const regras = [];
+  if (e.inteira) regras.push('object-fit:contain');
+  if (e.inteira || e.esmaecer) {
+    // Quando a foto não cobre o slide até embaixo, a borda de baixo some num degradê.
+    const [de, ate] = (e.esmaecer || '60% 75%').split(' ');
+    const mascara = `linear-gradient(to bottom,#000 ${de},transparent ${ate})`;
+    regras.push(`-webkit-mask-image:${mascara}`, `mask-image:${mascara}`);
+  }
+  if (e.posicao) regras.push(`object-position:${e.posicao}`);
+  const mover = e.x || e.y ? `translate(${e.x || '0%'},${e.y || '0%'})` : '';
+  const zoom = e.zoom && e.zoom !== 1 ? `scale(${Number(e.zoom)})` : '';
+  if (mover || zoom) regras.push(`transform:${[mover, zoom].filter(Boolean).join(' ')}`);
+  if (e.desfoque) regras.push(`--desfoque:${e.desfoque}`);
+  return regras.length ? ` style="${escapeHtml(regras.join(';'))}"` : '';
+}
+
+const fundoFoto = (url, nome, enquadre) =>
   url
-    ? `<div class="foto"><img src="${url}" alt=""></div><div class="veu"></div>`
+    ? `<div class="foto"><img src="${url}" alt=""${estiloEnquadre(enquadre)}></div><div class="veu"></div>`
     : `<div class="foto provisoria"></div><div class="veu"></div><div class="pendente">foto pendente · campanha/fotos/${escapeHtml(nome)}.jpg</div>`;
 
 const selo = (t) => (t ? `<div class="selo">${inline(t)}</div>` : '');
@@ -109,7 +131,7 @@ export function slideCampanha(s, i, total, { id, paleta, pastaFotos, W, H }) {
   const tema = s.paleta || paleta;
   const temFoto = s.tipo === 'capa' || s.tipo === 'foto';
   const nomeFoto = s.tipo === 'capa' ? id : `${id}-${s.foto || i + 1}`;
-  const fundo = temFoto ? fundoFoto(acharFoto(pastaFotos, nomeFoto), nomeFoto) : '';
+  const fundo = temFoto ? fundoFoto(acharFoto(pastaFotos, nomeFoto), nomeFoto, s.enquadre) : '';
   const pag = `<div class="pag">${String(i + 1).padStart(2, '0')}/${String(total).padStart(2, '0')}</div>`;
   const rodape = s.tipo === 'capa' ? '' : `<div class="rodape"><span>@paper.ai__</span>${i < total - 1 ? '<span>arraste</span>' : '<span>paper.ai__</span>'}</div>`;
   return `

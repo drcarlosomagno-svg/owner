@@ -10,6 +10,9 @@ foto:
 
 slides:
   - tipo: capa
+    enquadre:
+      inteira: true
+      y: "-25%"
     selo: PLoS Med · 148 estudos · 308.849 pessoas
     titulo: A solidão está ligada a ==100 mortes por hora.==
     subtitulo: A conta é da OMS. A explicação vem de um estudo que juntou 148 pesquisas.

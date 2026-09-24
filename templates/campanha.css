@@ -47,14 +47,14 @@ body { background: #777; display: flex; flex-direction: column; align-items: cen
 .veu { position: absolute; inset: 0; pointer-events: none; }
 
 /* Tratamento da foto por paleta */
-.c-escuro .foto img { filter: grayscale(.3) saturate(.8) contrast(1.12) brightness(.6); }
+.c-escuro .foto img { filter: grayscale(.3) saturate(.8) contrast(1.12) brightness(.6) blur(var(--desfoque, 0px)); }
 .c-escuro .veu { background: linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,.05) 30%, rgba(0,0,0,.55) 58%, rgba(0,0,0,.92) 82%, #0b0b0d 100%); }
 
 .c-vibrante .foto { background: #e2461d; }
-.c-vibrante .foto img { filter: grayscale(1) contrast(1.35) brightness(1.08); mix-blend-mode: multiply; }
+.c-vibrante .foto img { filter: grayscale(1) contrast(1.35) brightness(1.08) blur(var(--desfoque, 0px)); mix-blend-mode: multiply; }
 .c-vibrante .veu { background: linear-gradient(180deg, rgba(120,18,0,.1) 0%, rgba(120,18,0,0) 30%, rgba(110,16,0,.45) 60%, rgba(96,12,0,.85) 85%, #6a0f02 100%); }
 
-.c-claro .foto img { filter: grayscale(.85) contrast(.92) brightness(1.1); }
+.c-claro .foto img { filter: grayscale(.85) contrast(.92) brightness(1.1) blur(var(--desfoque, 0px)); }
 .c-claro .veu { background: linear-gradient(180deg, rgba(238,235,229,.15) 0%, rgba(238,235,229,.2) 30%, rgba(238,235,229,.7) 55%, rgba(238,235,229,.95) 75%, #eeebe5 100%); }
 
 /* Fundo provisório enquanto a foto não chega */
