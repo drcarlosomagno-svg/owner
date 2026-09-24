@@ -380,6 +380,8 @@ async function listaDeFotos(col) {
     '',
     'Salve cada foto nesta pasta com o nome indicado (`.jpg`, `.png` ou `.webp`) e rode `npm run render -- --campanha`. O gerador aplica sozinho o tratamento de cor da paleta.',
     '',
+    'Links diretos para cada foto (Pexels e Unsplash, com licença de uso comercial): [`LINKS.md`](LINKS.md).',
+    '',
     'Use fotos com licença para uso comercial (Unsplash, Pexels, banco de imagens pago ou fotos suas). Imagem do Pinterest quase sempre pertence a outra pessoa.',
     '',
     '| Arquivo | Paleta | O que buscar | Descrição | Situação |',
