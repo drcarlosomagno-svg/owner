@@ -1,7 +1,7 @@
 // Gera os Reels da paper.ai__ (vídeo 9:16, 1080×1920, 30 fps) a partir de reels/roteiros/*.yaml.
 //
 //   npm run reels            todos os roteiros
-//   npm run reels -- 07      só os que têm "07" no nome
+//   npm run reels -- 07      só os que têm "07" no nome (aceita vários: -- 07 08)
 //
 // Cada cena é montada em HTML com o visual da campanha. A animação (palavras entrando,
 // números contando, zoom lento na foto, grão de filme) é calculada quadro a quadro,
@@ -23,7 +23,7 @@ const PASTA_ROTEIROS = path.join(RAIZ, 'reels', 'roteiros');
 const PASTA_FOTOS = path.join(RAIZ, 'campanha', 'fotos');
 const PASTA_SAIDA = path.join(RAIZ, 'exports', 'reels');
 const PASTA_BUILD = path.join(RAIZ, '.build');
-// Os vídeos são montados aqui e só vão para exports/reels/ quando a geração inteira termina,
+// Cada vídeo é montado aqui e só vai para exports/reels/ depois de pronto,
 // para o repositório nunca ficar com um vídeo pela metade.
 const PASTA_MONTAGEM = path.join(PASTA_BUILD, 'reels');
 const FPS = 30;
@@ -85,7 +85,12 @@ function fotoHtml(nome, enquadre = {}) {
     enquadre.posicao ? `object-position:${enquadre.posicao}` : '',
     enquadre.desfoque ? `--desfoque:${enquadre.desfoque}` : '',
   ].filter(Boolean).join(';');
-  const dados = `data-zoom="${Number(enquadre.zoom || 1)}" data-x="${escapeHtml(enquadre.x || '0%')}" data-y="${escapeHtml(enquadre.y || '0%')}"`;
+  // Zoom mínimo para a foto deslocada continuar cobrindo a tela inteira (a foto tem 104% do
+  // tamanho do Reel e o zoom lento começa em 1,04).
+  const frac = (v) => Math.abs(parseFloat(v || '0') || 0) / 100;
+  const zoomMinimo = Math.max(0.9615 + 2 * frac(enquadre.y), 0.9617 + 2 * frac(enquadre.x)) / 1.04;
+  const zoom = Math.max(Number(enquadre.zoom || 1), Math.ceil(zoomMinimo * 100) / 100);
+  const dados = `data-zoom="${zoom}" data-x="${escapeHtml(enquadre.x || '0%')}" data-y="${escapeHtml(enquadre.y || '0%')}"`;
   return `<div class="foto"><img src="${url}" alt="" ${dados}${estilo ? ` style="${escapeHtml(estilo)}"` : ''}></div><div class="veu"></div>`;
 }
 
@@ -161,7 +166,17 @@ function prepararPagina(tempos) {
       }
       return v;
     };
-    const kt = reduzir('--kt', () => cabeLargura('.titulo .p'), 0.45);
+    // Palavra longa que não cabe na largura: o título inteiro diminui um pouco (raiz da
+    // proporção) e só a palavra diminui o resto, para não ficar desproporcional.
+    const largura = conteudo.getBoundingClientRect().width;
+    const palavrasTitulo = [...conteudo.querySelectorAll('.titulo .p')];
+    const menor = Math.min(1, ...palavrasTitulo.map((p) => largura / p.getBoundingClientRect().width));
+    if (menor < 1) conteudo.style.setProperty('--kt', Math.max(0.62, Math.round(Math.sqrt(menor) * 100) / 100));
+    for (const p of palavrasTitulo) {
+      const w = p.getBoundingClientRect().width;
+      if (w > largura) p.style.fontSize = `${Math.floor((largura / w) * 98) / 100}em`;
+    }
+    const kt = reduzir('--kt', () => cabeLargura('.titulo .p'), 0.45) * (Number(conteudo.style.getPropertyValue('--kt')) || 1);
     const kn = reduzir('--kn', () => cabeLargura('.numero'), 0.45);
     const k = reduzir('--k', () => cabeAltura() && cabeLargura('.p, .numero, .selo, .acoes'), 0.55);
     const cabe = cabeAltura() && cabeLargura('.p, .numero, .selo, .acoes');
@@ -365,29 +380,32 @@ async function galeria() {
 }
 
 async function main() {
-  const filtro = process.argv.slice(2).find((a) => !a.startsWith('--'));
-  const arquivos = (await readdir(PASTA_ROTEIROS)).filter((f) => /\.ya?ml$/.test(f) && !f.startsWith('_') && (!filtro || f.includes(filtro))).sort();
+  // Filtros: um ou mais trechos do nome (npm run reels -- 08 10 11).
+  const filtros = process.argv.slice(2).filter((a) => !a.startsWith('--'));
+  const arquivos = (await readdir(PASTA_ROTEIROS))
+    .filter((f) => /\.ya?ml$/.test(f) && !f.startsWith('_') && (!filtros.length || filtros.some((t) => f.includes(t))))
+    .sort();
   if (!arquivos.length) throw new Error('nenhum roteiro encontrado');
-  const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
+  await mkdir(PASTA_SAIDA, { recursive: true });
   let falhas = 0;
-  const prontos = [];
   for (const arquivo of arquivos) {
     const inicio = Date.now();
+    // Um navegador por Reel: se um cair, os outros seguem.
+    const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
     try {
       const { r, avisos } = await gerar(browser, arquivo);
-      prontos.push(r.id);
+      // O vídeo só entra em exports/reels/ depois de pronto.
+      await rm(path.join(PASTA_SAIDA, r.id), { recursive: true, force: true });
+      await cp(path.join(PASTA_MONTAGEM, r.id), path.join(PASTA_SAIDA, r.id), { recursive: true });
+      await galeria();
       console.log(`✓ ${r.id}  (${r.segundos} s, ${r.cenas.length} cenas, ${Math.round((Date.now() - inicio) / 1000)} s para gerar)${avisos.length ? `  ⚠ ${avisos.length} aviso(s)` : ''}`);
       avisos.forEach((a) => console.log(`    - ${a}`));
     } catch (e) {
       falhas++;
       console.error(`✗ ${arquivo}: ${e.message}`);
+    } finally {
+      await browser.close().catch(() => {});
     }
-  }
-  await browser.close();
-  await mkdir(PASTA_SAIDA, { recursive: true });
-  for (const id of prontos) {
-    await rm(path.join(PASTA_SAIDA, id), { recursive: true, force: true });
-    await cp(path.join(PASTA_MONTAGEM, id), path.join(PASTA_SAIDA, id), { recursive: true });
   }
   await galeria();
   console.log('Vídeos em exports/reels/');

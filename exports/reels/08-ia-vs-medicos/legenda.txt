@@ -1,0 +1,13 @@
+IA melhora o raciocínio do médico? Num ensaio randomizado com 50 médicos, a IA sozinha foi melhor que os dois grupos.
+
+Pesquisadores de Stanford, Harvard e outras universidades sortearam os médicos: metade usou um modelo de linguagem além das fontes de sempre, metade só as fontes de sempre. A nota de raciocínio ficou em 76% com IA e 74% sem, diferença que não se separou do acaso. Numa análise exploratória, o modelo sozinho fez 16 pontos a mais que o grupo sem IA.
+
+Nossa leitura, não do estudo: o jeito de perguntar provavelmente pesa. O estudo usou casos escritos e um modelo de 2023.
+
+Para estudar ou pesquisar com IA: dê contexto, peça o raciocínio, peça o que falaria contra e confira tudo na fonte. Nunca cole dados de pacientes. É esse o método dos prompts da Biblioteca paper.ai__ (link na bio).
+
+Fonte: Goh E et al. JAMA Netw Open. 2024;7(10):e2440969. doi:10.1001/jamanetworkopen.2024.40969
+
+💾 Salva pra usar antes de abrir o chat.
+
+#inteligenciaartificial #medicina #residenciamedica #chatgpt #paperai

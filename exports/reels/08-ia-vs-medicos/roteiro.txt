@@ -1,0 +1,9 @@
+Deram IA para os médicos
+
+1. · JAMA · ensaio randomizado · Deram IA para os médicos. A IA sozinha foi melhor.
+2. · O experimento · 50 médicos. 6 casos. 60 minutos. · Metade podia usar um modelo de linguagem. A outra metade, só as fontes de sempre.
+3. · Com IA vs sem IA · +2 · pontos. Dentro do acaso. · 76% contra 74% de nota no raciocínio.
+4. · A IA sozinha · +16 · pontos acima dos médicos sem IA. · Numa análise exploratória.
+5. · Nossa leitura, não do estudo · Ter a ferramenta não bastou. · O jeito de perguntar provavelmente pesa. O estudo não mediu isso.
+6. · O que não dá para dizer · Casos escritos. Modelo de 2023. · E a vantagem da IA sozinha ainda precisa ser confirmada.
+7. · Pergunte com método. · Contexto, raciocínio, o que falaria contra e checagem na fonte. Nunca dados de paciente. · Goh et al. JAMA Netw Open, 2024
