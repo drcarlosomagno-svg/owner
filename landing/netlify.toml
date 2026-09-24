@@ -1,0 +1,16 @@
+# Configuração da Netlify para a página de vendas.
+# No painel da Netlify, use "landing" como Base directory; a página é estática e não tem build.
+[build]
+  publish = "."
+
+# Vídeos e imagens mudam pouco: o navegador pode guardar por uma semana.
+[[headers]]
+  for = "/videos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

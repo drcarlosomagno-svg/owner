@@ -67,20 +67,30 @@ depoimentos: [
 
 A seção aparece sozinha quando houver pelo menos um. Depois das primeiras vendas, a Kiwify permite pedir avaliação aos compradores; prints de mensagens reais (com autorização) também funcionam bem.
 
-## 3. Coloque no ar
+## 3. Coloque no ar pela Netlify (ligada ao GitHub)
 
-- **Netlify Drop** (o mais simples): entre em app.netlify.com/drop e arraste a pasta `landing` inteira. Sai um endereço na hora; depois dá para ligar um domínio seu.
-- **Vercel** ou **Cloudflare Pages**: crie um projeto apontando para esta pasta.
-- **GitHub Pages**: publique a pasta `landing` (em repositório privado, exige plano pago do GitHub).
+Assim, toda alteração enviada ao repositório vai para o ar sozinha, em cerca de um minuto.
 
-Depois de publicar, troque `og.jpg` pelo endereço completo na linha `<meta property="og:image" ...>` (ex.: `https://seudominio.com.br/og.jpg`). WhatsApp e Instagram só mostram a imagem com o endereço completo.
+1. Entre em netlify.com e crie a conta com **Sign up with GitHub** (grátis).
+2. **Add new project → Import an existing project → GitHub.** Autorize a Netlify a ver o repositório `drcarlosomagno-svg/owner`.
+3. Escolha o repositório `owner` e preencha:
+   - **Branch to deploy:** `claude/paper-ai-instagram-carrosels-vbke0t`
+   - **Base directory:** `landing`
+   - **Build command** e **Publish directory:** deixe em branco (o `landing/netlify.toml` já resolve).
+4. Clique em **Deploy**. Em um minuto a página está no ar num endereço aleatório.
+5. Em **Project configuration → Change project name**, use `bibliotecapaperai`. O endereço vira `https://bibliotecapaperai.netlify.app`, que é o que a imagem de compartilhamento (`og:image`) já usa. Se o nome estiver ocupado, escolha outro e troque o endereço nas duas linhas `og:` do `index.html`.
+
+Domínio próprio (ex.: `paperai.com.br`): em **Domain management → Add a domain**, depois de comprar o domínio (Registro.br, por exemplo).
+
+Plano B, sem GitHub: arraste a pasta `landing` para app.netlify.com/drop. Funciona, mas cada alteração precisa ser arrastada de novo.
 
 ## 4. Ligue à Kiwify e ao Instagram
 
-1. Na Kiwify, informe o endereço da página como página de vendas do produto.
-2. No Instagram, use o endereço no link da bio com a origem marcada: `https://seudominio.com.br/?utm_source=instagram&utm_medium=bio`. A página repassa `utm_*` e `src` ao checkout, e a Kiwify mostra de onde veio cada venda.
-3. Nos Stories e Reels, use outra origem (`utm_medium=stories`, `utm_medium=reels`) para comparar.
-4. Pixel da Meta ou Google Analytics: cole o código que eles fornecem antes de `</head>`.
+1. Na Kiwify: **Produtos → Criar produto**, pagamento único, nome `Biblioteca de Prompts paper.ai__`, preço **R$ 39,90**. No campo de site (obrigatório), use `https://bibliotecapaperai.netlify.app`.
+2. Configure a entrega (área de membros com o link da Biblioteca) e o checkout, e salve.
+3. Na aba **Links** do produto, copie o link de checkout e cole em `CONFIG.checkout` no `index.html` (ou mande para o Claude colocar). Ao enviar para o repositório, a Netlify atualiza a página.
+4. No Instagram, use no link da bio `https://bibliotecapaperai.netlify.app/?utm_source=instagram&utm_medium=bio`. A página repassa `utm_*` e `src` ao checkout, e a Kiwify mostra de onde veio cada venda. Nos Stories e Reels, troque `utm_medium` (`stories`, `reels`) para comparar.
+5. Pixel da Meta ou Google Analytics: cole o código que eles fornecem antes de `</head>`.
 
 ## 5. Entrega
 
