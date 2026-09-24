@@ -89,6 +89,9 @@ button { font: inherit; color: inherit; }
 .heroi .acoes { display: grid; justify-items: start; gap: 16px; margin-top: 34px; }
 .heroi .confianca { color: var(--luz-3); }
 .heroi .confianca .ico { color: var(--ok-vivo); }
+.preco-heroi { font-size: 16px; color: var(--luz-2); }
+.preco-heroi b { font: 400 30px/1 var(--display); color: #fff; letter-spacing: .3px; margin-left: 4px; }
+.preco-heroi s, .barra-compra s { color: var(--luz-3); }
 
 /* Janela animada da Biblioteca */
 .mock { position: relative; border-radius: 18px; background: #FCFCFB; color: var(--tinta); box-shadow: 0 50px 100px -30px rgba(0, 0, 0, .8), 0 0 0 1px rgba(255, 255, 255, .08); overflow: hidden; font-size: 13.5px; line-height: 1.45; }
@@ -512,6 +515,7 @@ button { font: inherit; color: inherit; }
             <span><svg class="ico" aria-hidden="true"><use href="#i-raio"/></svg>Acesso logo após o pagamento</span>
             <span><svg class="ico" aria-hidden="true"><use href="#i-cadeado"/></svg>Compra segura pela Kiwify</span>
           </p>
+          <p class="preco-heroi"><span data-de-curto hidden></span> <b data-preco>R$ 00</b></p>
         </div>
       </div>
       <figure>
@@ -931,7 +935,7 @@ button { font: inherit; color: inherit; }
 </footer>
 
 <div class="barra-compra" id="barra-compra" aria-hidden="true">
-  <p class="p"><b data-preco>R$ 00</b><span data-parcelas></span></p>
+  <p class="p"><span data-de-curto hidden></span><b data-preco>R$ 00</b></p>
   <a class="btn btn-prim" data-checkout href="#oferta" tabindex="-1">Quero a Biblioteca</a>
 </div>
 <a class="whats" id="whats" href="#" rel="noopener" aria-label="Tirar dúvidas pelo WhatsApp" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
@@ -945,14 +949,14 @@ button { font: inherit; color: inherit; }
 // =====================================================================
 const CONFIG = {
   checkout: 'https://pay.kiwify.com.br/SEU-CODIGO', // link do checkout do produto na Kiwify
-  preco: 'R$ 00',        // preço à vista, ex.: 'R$ 97'
+  preco: 'R$ 39,90',     // preço à vista
   parcelas: '',          // opcional, ex.: 'ou 12x de R$ 9,74' (copie do checkout)
-  precoDe: '',           // opcional: preço anterior riscado. Só use se ele existiu de verdade.
-  selo: '',              // opcional, ex.: 'Preço de lançamento'. Só use se for verdade.
+  precoDe: 'R$ 119,90',  // preço cheio, riscado (o que vale depois da promoção)
+  selo: 'Preço promocional', // selo acima do preço (o desconto em % é calculado sozinho)
   prazo: '',             // opcional: fim real da oferta, ex.: '2026-10-05T23:59:00-03:00'. Liga a contagem regressiva.
   faixa: '',             // opcional: aviso no topo, ex.: 'Lançamento: preço especial até 05/10'
   garantiaDias: 7,       // a Kiwify exige no mínimo 7
-  autor: '',             // ex.: 'Dr. Nome Sobrenome · CRM-SP 000000' (Resolução CFM 2.336/2023)
+  autor: '',             // opcional, ex.: 'Dr. Nome Sobrenome'
   foto: '',              // opcional: arquivo da sua foto, ex.: 'autor.jpg'
   whatsapp: '',          // opcional: número com DDI e DDD, só dígitos, ex.: '5511999999999'
   instagram: 'https://www.instagram.com/paper.ai__/',
@@ -973,7 +977,11 @@ const CONFIG = {
   $$('[data-preco]').forEach((el) => (el.textContent = CONFIG.preco));
   $$('[data-parcelas]').forEach((el) => { el.textContent = CONFIG.parcelas; el.hidden = !CONFIG.parcelas; });
   $$('[data-preco-de]').forEach((el) => { el.innerHTML = CONFIG.precoDe ? `De <s>${esc(CONFIG.precoDe)}</s> por` : ''; el.hidden = !CONFIG.precoDe; });
-  $$('[data-selo]').forEach((el) => { el.textContent = CONFIG.selo; el.hidden = !CONFIG.selo; });
+  const valorDe = (t) => Number(String(t).replace(/[^\d,]/g, '').replace(',', '.')) || 0;
+  const desconto = CONFIG.precoDe ? Math.round((1 - valorDe(CONFIG.preco) / valorDe(CONFIG.precoDe)) * 100) : 0;
+  const selo = [CONFIG.selo, desconto > 0 ? `${desconto}% de desconto` : ''].filter(Boolean).join(' · ');
+  $$('[data-selo]').forEach((el) => { el.textContent = selo; el.hidden = !selo; });
+  $$('[data-de-curto]').forEach((el) => { el.innerHTML = CONFIG.precoDe ? `de <s>${esc(CONFIG.precoDe)}</s> por` : ''; el.hidden = !CONFIG.precoDe; });
   $$('[data-garantia]').forEach((el) => (el.textContent = CONFIG.garantiaDias));
   $$('[data-instagram]').forEach((el) => (el.href = CONFIG.instagram));
   if (CONFIG.faixa) { $('[data-faixa]').textContent = CONFIG.faixa; $('#faixa').hidden = false; }
@@ -1015,7 +1023,7 @@ const CONFIG = {
   }
 
   // Aviso de configuração (só aparece enquanto falta algo).
-  const faltam = [!linkOk && 'o link do checkout da Kiwify', !precoOk && 'o preço', !CONFIG.autor && 'seu nome e CRM'].filter(Boolean);
+  const faltam = [!linkOk && 'o link do checkout da Kiwify', !precoOk && 'o preço'].filter(Boolean);
   if (faltam.length) {
     const c = $('#config');
     c.innerHTML = `<b>Página em configuração</b>Falta preencher no bloco CONFIG (fim do arquivo):<ul>${faltam.map((f) => `<li>${f}</li>`).join('')}</ul><button type="button">Esconder este aviso</button>`;

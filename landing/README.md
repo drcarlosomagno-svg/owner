@@ -24,7 +24,9 @@ Também: barra de compra fixa no celular, barra de progresso de leitura, botão 
 
 ## 1. Preencha o CONFIG
 
-No fim de `index.html` há um bloco `CONFIG`. É o único lugar que precisa editar. Enquanto faltar o link, o preço ou o autor, um aviso amarelo aparece no canto da tela (só você vê isso enquanto configura; some quando estiver tudo preenchido).
+No fim de `index.html` há um bloco `CONFIG`. É o único lugar que precisa editar. Enquanto faltar o link do checkout, um aviso amarelo aparece no canto da tela; ele some quando o link estiver preenchido.
+
+Configuração atual: **de R$ 119,90 por R$ 39,90**, com o selo "Preço promocional · 67% de desconto" (a porcentagem é calculada sozinha).
 
 | Campo | O que colocar |
 |---|---|
@@ -36,7 +38,7 @@ No fim de `index.html` há um bloco `CONFIG`. É o único lugar que precisa edit
 | `prazo` | Opcional: fim real da condição, ex.: `2026-10-05T23:59:00-03:00`. Liga a contagem regressiva; ela some sozinha quando o prazo acaba. Não use prazo que reinicia. |
 | `faixa` | Opcional: aviso no topo, ex.: `Lançamento: preço especial até 05/10`. |
 | `garantiaDias` | A Kiwify exige no mínimo 7. |
-| `autor` | Seu nome e CRM, ex.: `Dr. Nome Sobrenome · CRM-SP 000000` (Resolução CFM 2.336/2023). |
+| `autor` | Opcional: seu nome, se quiser que apareça em "Quem faz". |
 | `foto` | Opcional: uma foto sua (ex.: `autor.jpg`, na pasta `landing`). |
 | `whatsapp` | Opcional: número com DDI e DDD, só dígitos. Liga o botão flutuante. |
 | `depoimentos` | Depoimentos reais (veja abaixo). |
