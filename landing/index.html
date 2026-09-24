@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Biblioteca paper.ai__</title>
+<meta name="description" content="Onze prompts para buscar, ler, checar e usar evidência com IA. A Biblioteca monta o prompt que faz a IA buscar no PubMed os melhores artigos do tema, com nível de evidência, DOI e link.">
+<meta property="og:title" content="Biblioteca de Prompts paper.ai__">
+<meta property="og:description" content="Onze prompts para buscar, ler, checar e usar evidência com IA. Funciona no Claude, no ChatGPT e no Gemini.">
+<meta property="og:image" content="og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#D0112B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  color-scheme: light;
+  --fundo: #FCFCFB; --cartao: #FFFFFF; --painel: #F5F4F2; --linha: #ECEAE8; --linha-forte: #D9D6D3;
+  --tinta: #17181B; --tinta-2: #4A4A50; --cinza: #726C6E;
+  --vermelho: #D0112B; --vermelho-hover: #B80E26; --vermelho-suave: #FCEDEF; --sobre: #FFFFFF;
+  --realce: #FFF0C7; --realce-tinta: #6B4200; --ok: #1E7F4F; --link: #2B6CB0; --moldura: #0C0C0E;
+  --sombra: 0 1px 2px rgba(23, 24, 27, .04), 0 12px 32px -8px rgba(23, 24, 27, .10);
+  --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+  --texto: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --fundo: #111214; --cartao: #17181B; --painel: #1C1D20; --linha: #27282C; --linha-forte: #3A3B40;
+    --tinta: #EDEBE8; --tinta-2: #C4C1BE; --cinza: #9C9698;
+    --vermelho: #F0445C; --vermelho-hover: #FF5A70; --vermelho-suave: #3A161B; --sobre: #FFFFFF;
+    --realce: #4A3A12; --realce-tinta: #FFD27A; --ok: #4CC38A; --link: #7FB2F0; --moldura: #2A2B30;
+    --sombra: 0 1px 2px rgba(0, 0, 0, .35), 0 12px 32px -8px rgba(0, 0, 0, .5);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --fundo: #111214; --cartao: #17181B; --painel: #1C1D20; --linha: #27282C; --linha-forte: #3A3B40;
+  --tinta: #EDEBE8; --tinta-2: #C4C1BE; --cinza: #9C9698;
+  --vermelho: #F0445C; --vermelho-hover: #FF5A70; --vermelho-suave: #3A161B; --sobre: #FFFFFF;
+  --realce: #4A3A12; --realce-tinta: #FFD27A; --ok: #4CC38A; --link: #7FB2F0; --moldura: #2A2B30;
+  --sombra: 0 1px 2px rgba(0, 0, 0, .35), 0 12px 32px -8px rgba(0, 0, 0, .5);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
+body { margin: 0; background: var(--fundo); color: var(--tinta); font: 400 17px/1.6 var(--texto); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { text-wrap: balance; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--vermelho); outline-offset: 3px; border-radius: 6px; }
+.mono { font-family: var(--mono); }
+.largura { width: 100%; max-width: 1120px; margin-inline: auto; padding-inline: 20px; }
+
+/* Aviso de configuração (some quando o CONFIG está preenchido) */
+.aviso { background: var(--realce); color: var(--realce-tinta); font-size: 14px; line-height: 1.45; }
+.aviso .largura { padding-block: 10px; }
+.aviso code { font-family: var(--mono); font-size: 13px; }
+
+/* Topo */
+.topo { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--fundo) 90%, transparent); -webkit-backdrop-filter: saturate(1.4) blur(10px); backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--linha); }
+.topo .largura { display: flex; align-items: center; gap: 24px; height: 64px; }
+.marca { font: 400 24px/1 var(--display); letter-spacing: .2px; text-decoration: none; }
+.marca span { color: var(--vermelho); }
+.topo nav { display: flex; gap: 22px; margin-left: auto; font-size: 15px; font-weight: 500; color: var(--tinta-2); }
+.topo nav a { text-decoration: none; }
+.topo nav a:hover { color: var(--tinta); }
+
+/* Botões */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 26px; border-radius: 12px; border: 0; font: 600 16.5px/1.2 var(--texto); text-decoration: none; cursor: pointer; white-space: nowrap; transition: background .15s, transform .15s; }
+.btn-prim { background: var(--vermelho); color: var(--sobre); }
+.btn-prim:hover { background: var(--vermelho-hover); }
+.btn-prim:active { transform: scale(.98); }
+.btn-peq { min-height: 40px; padding: 0 16px; font-size: 14.5px; border-radius: 10px; }
+.btn-link { color: var(--tinta-2); font-weight: 600; text-underline-offset: 4px; }
+.btn-link:hover { color: var(--tinta); }
+
+/* Herói */
+.heroi { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, .65fr); gap: 56px; align-items: center; padding-block: 64px 72px; }
+.olho { font: 500 13px/1.3 var(--texto); letter-spacing: 1.3px; text-transform: uppercase; color: var(--cinza); }
+.heroi h1 { font: 400 clamp(64px, 10vw, 128px)/.92 var(--display); letter-spacing: .3px; margin-top: 18px; }
+.heroi h1 span { color: var(--vermelho); }
+.heroi .sub { font-size: clamp(18px, 2vw, 20px); line-height: 1.55; color: var(--tinta-2); max-width: 56ch; margin-top: 24px; }
+.acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; margin-top: 32px; }
+.preco-linha { font-size: 14.5px; color: var(--cinza); margin-top: 14px; }
+.preco-linha b { color: var(--tinta); font-weight: 600; }
+.ias { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 28px; font-size: 14.5px; color: var(--cinza); }
+.ias span:not(:first-child) { padding: 5px 12px; border-radius: 999px; background: var(--painel); color: var(--tinta-2); font-weight: 500; }
+.demo { display: grid; justify-items: center; gap: 12px; }
+.celular { width: min(300px, 100%); aspect-ratio: 9 / 16; border: 11px solid var(--moldura); border-radius: 44px; overflow: hidden; background: #111214; box-shadow: 0 40px 80px -30px rgba(23, 24, 27, .45); }
+.celular video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.demo figcaption { font-size: 13.5px; color: var(--cinza); text-align: center; }
+
+/* Seções e o fio vermelho */
+.trilha { position: relative; display: grid; gap: 112px; padding-block: 24px 112px; }
+.secao { display: grid; gap: 28px; scroll-margin-top: 88px; }
+.secao > header { display: grid; gap: 14px; max-width: 760px; }
+.secao h2 { font: 600 clamp(30px, 4.2vw, 44px)/1.12 var(--texto); letter-spacing: -.8px; }
+.secao > header p { font-size: 18px; line-height: 1.6; color: var(--tinta-2); }
+.olho-sec { position: relative; font: 500 13px/1.3 var(--mono); letter-spacing: 1.2px; text-transform: uppercase; color: var(--vermelho); }
+@media (min-width: 960px) {
+  .trilha { padding-left: 64px; }
+  .trilha::before { content: ""; position: absolute; left: 13px; top: 30px; bottom: 150px; width: 2px; background: var(--vermelho); }
+  .trilha .olho-sec::before { content: ""; position: absolute; left: -58px; top: 50%; width: 14px; height: 14px; margin-top: -7px; border-radius: 50%; background: var(--fundo); border: 2px solid var(--vermelho); }
+  .trilha .fim .olho-sec::before { background: var(--vermelho); }
+}
+
+/* Situações */
+.casos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.caso { display: grid; align-content: start; gap: 10px; padding: 22px; border-radius: 14px; background: var(--painel); }
+.caso .etapa { display: flex; gap: 8px; align-items: center; font: 500 12.5px/1 var(--mono); color: var(--cinza); text-transform: uppercase; letter-spacing: .6px; }
+.cod { display: inline-block; padding: 4px 7px; border-radius: 6px; background: var(--vermelho-suave); color: var(--vermelho); font: 500 12.5px/1 var(--mono); letter-spacing: 0; }
+.caso h3 { font: 600 19px/1.3 var(--texto); }
+.caso p { font-size: 15.5px; line-height: 1.55; color: var(--tinta-2); }
+.prova { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 28px; align-items: center; padding: 28px 30px; border-radius: 16px; border: 1px solid var(--linha-forte); background: var(--cartao); }
+.prova .grande { font: 400 clamp(64px, 9vw, 96px)/.9 var(--display); color: var(--vermelho); }
+.prova p { font-size: 18px; line-height: 1.5; }
+.prova p + p { font-size: 15px; color: var(--tinta-2); }
+.prova .fonte { grid-column: 1 / -1; font: 400 13px/1.5 var(--mono); color: var(--cinza); padding-top: 12px; border-top: 1px solid var(--linha); }
+.prova a { color: var(--link); }
+
+/* Teste */
+.teste { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 40px; align-items: start; }
+.pergunta { display: flex; gap: 8px; padding: 6px; border: 1px solid var(--linha-forte); border-radius: 14px; background: var(--cartao); box-shadow: var(--sombra); }
+.pergunta:focus-within { border-color: var(--vermelho); }
+.pergunta input { flex: 1; min-width: 0; height: 50px; padding: 0 14px; border: 0; background: none; color: var(--tinta); font: 400 17px var(--texto); }
+.pergunta input:focus { outline: none; }
+.pergunta input::placeholder { color: var(--cinza); }
+.exemplos { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 14px; font-size: 14px; color: var(--cinza); }
+.exemplos button { border: 0; border-radius: 999px; padding: 6px 13px; background: var(--painel); color: var(--tinta-2); font: 400 13.5px var(--texto); cursor: pointer; }
+.exemplos button:hover { background: var(--linha); color: var(--tinta); }
+.nota { font-size: 15px; line-height: 1.6; color: var(--tinta-2); margin-top: 20px; }
+.nota b { color: var(--tinta); font-weight: 600; }
+
+/* Cartão de resposta */
+.resposta { display: grid; gap: 6px; padding: 24px 26px; border-radius: 16px; border: 1px solid var(--linha); background: var(--cartao); box-shadow: var(--sombra); font-size: 15px; line-height: 1.55; min-width: 0; }
+.resposta .rotulo { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font: 500 11.5px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .8px; color: var(--cinza); padding-bottom: 12px; margin-bottom: 6px; border-bottom: 1px solid var(--linha); }
+.r-titulo { font-size: 16px; }
+.r-secao { font: 700 16px/1.3 var(--texto); margin-top: 12px; }
+.r-nivel { font: 500 12px/1 var(--mono); text-transform: uppercase; letter-spacing: 1px; color: var(--vermelho); margin-top: 10px; }
+.r-meta { color: var(--tinta-2); font-size: 14px; }
+.r-ids { font: 400 12.5px/1.5 var(--mono); color: var(--tinta-2); overflow-wrap: anywhere; }
+.r-ids a { color: var(--link); }
+.ph { background: var(--realce); color: var(--realce-tinta); border-radius: 4px; padding: 0 4px; }
+.r-tema { background: var(--realce); color: var(--realce-tinta); border-radius: 4px; padding: 0 4px; font-weight: 600; }
+.r-mais { color: var(--cinza); font-size: 14px; margin-top: 10px; }
+
+/* Passos */
+.passos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; counter-reset: passo; }
+.passo { display: grid; gap: 8px; align-content: start; padding: 24px; border-top: 2px solid var(--tinta); }
+.passo .n { font: 500 13px/1 var(--mono); color: var(--vermelho); }
+.passo h3 { font: 600 20px/1.3 var(--texto); }
+.passo p { color: var(--tinta-2); font-size: 16px; }
+.depois { font-size: 16px; color: var(--tinta-2); max-width: 70ch; }
+.depois .cod { margin-inline: 2px; }
+
+/* Catálogo */
+.grupo { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 24px; padding-block: 28px; border-top: 1px solid var(--linha); }
+.grupo:last-child { border-bottom: 1px solid var(--linha); }
+.grupo-cab { display: grid; align-content: start; gap: 6px; }
+.grupo-cab h3 { font: 400 30px/1 var(--display); letter-spacing: .3px; }
+.grupo-cab p { font-size: 15px; color: var(--tinta-2); }
+.faixa { font: 500 12.5px/1 var(--mono); color: var(--cinza); }
+.cartoes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.cartao { display: flex; flex-direction: column; gap: 6px; padding: 18px; border-radius: 12px; background: var(--painel); }
+.cartao .cod { align-self: flex-start; }
+.cartao b { font-weight: 600; font-size: 16.5px; line-height: 1.3; }
+.cartao span:last-child { color: var(--tinta-2); font-size: 14.5px; line-height: 1.45; }
+
+/* Por dentro */
+.dentro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+.lista-provas { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+.lista-provas li { display: grid; gap: 4px; padding-block: 16px; border-top: 1px solid var(--linha); }
+.lista-provas li:last-child { border-bottom: 1px solid var(--linha); }
+.lista-provas b { font-weight: 600; font-size: 17px; }
+.lista-provas span { color: var(--tinta-2); font-size: 15.5px; }
+.marca-r { font-family: var(--mono); font-size: .9em; background: var(--realce); color: var(--realce-tinta); border-radius: 4px; padding: 0 4px; white-space: nowrap; }
+
+/* Cuidados e público */
+.tres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.tres div { display: grid; gap: 8px; align-content: start; padding: 22px; border-radius: 14px; border: 1px solid var(--linha-forte); }
+.tres h3 { font: 600 19px/1.3 var(--texto); }
+.tres p { color: var(--tinta-2); font-size: 15.5px; }
+.publico { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.publico > div { padding: 26px; border-radius: 14px; background: var(--painel); }
+.publico h3 { font: 600 19px/1.3 var(--texto); margin-bottom: 12px; }
+.publico ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.publico li { position: relative; padding-left: 26px; color: var(--tinta-2); font-size: 16px; }
+.publico li::before { position: absolute; left: 0; top: 0; font-weight: 700; }
+.sim li::before { content: "✓"; color: var(--ok); }
+.nao li::before { content: "×"; color: var(--vermelho); font-size: 1.15em; line-height: 1.3; }
+
+/* Quem faz */
+.autor { display: grid; gap: 12px; max-width: 760px; font-size: 18px; color: var(--tinta-2); }
+.autor .nome { font: 600 17px/1.4 var(--texto); color: var(--tinta); }
+
+/* Oferta */
+.oferta { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 40px; align-items: start; }
+.inclui { margin: 0; padding: 0; list-style: none; display: grid; gap: 0; }
+.inclui li { display: grid; grid-template-columns: 28px minmax(0, 1fr); padding-block: 14px; border-top: 1px solid var(--linha); font-size: 16.5px; }
+.inclui li:last-child { border-bottom: 1px solid var(--linha); }
+.inclui li::before { content: "✓"; color: var(--ok); font-weight: 700; }
+.inclui small { display: block; color: var(--cinza); font-size: 14px; }
+.preco-card { display: grid; gap: 14px; padding: 30px; border-radius: 18px; background: var(--cartao); border: 2px solid var(--vermelho); box-shadow: var(--sombra); }
+.preco-card .nome-produto { font: 400 26px/1.1 var(--display); letter-spacing: .2px; }
+.preco-card .nome-produto span { color: var(--vermelho); }
+.de { color: var(--cinza); text-decoration: line-through; font-size: 16px; }
+.valor { font: 400 64px/1 var(--display); letter-spacing: .5px; font-variant-numeric: tabular-nums; }
+.parcelas { color: var(--tinta-2); font-size: 15.5px; }
+.preco-card .btn { width: 100%; min-height: 58px; font-size: 18px; }
+.miudo { font-size: 13.5px; line-height: 1.5; color: var(--cinza); }
+.garantia { display: flex; gap: 12px; align-items: flex-start; padding: 14px; border-radius: 12px; background: var(--painel); font-size: 14.5px; color: var(--tinta-2); }
+.garantia b { color: var(--tinta); }
+.selo-g { flex: none; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--ok); color: var(--ok); font: 400 18px/1 var(--display); }
+
+/* Perguntas */
+.faq { display: grid; max-width: 820px; }
+.faq details { border-top: 1px solid var(--linha); }
+.faq details:last-child { border-bottom: 1px solid var(--linha); }
+.faq summary { display: flex; justify-content: space-between; gap: 16px; padding-block: 18px; cursor: pointer; list-style: none; font: 600 17.5px/1.4 var(--texto); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; flex: none; font: 400 24px/1 var(--texto); color: var(--vermelho); transition: transform .15s; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { padding-bottom: 18px; color: var(--tinta-2); font-size: 16px; max-width: 68ch; }
+
+/* Chamada final e rodapé */
+.final { background: var(--vermelho); color: var(--sobre); }
+.final .largura { display: grid; gap: 22px; justify-items: start; padding-block: 72px; }
+.final h2 { font: 400 clamp(52px, 8vw, 96px)/.95 var(--display); letter-spacing: .3px; }
+.final p { font-size: 19px; max-width: 52ch; opacity: .92; }
+.btn-branco { background: #FFFFFF; color: #17181B; }
+.btn-branco:hover { background: #F5F4F2; }
+.rodape { padding-block: 32px 40px; font-size: 14px; color: var(--cinza); }
+.rodape .largura { display: grid; gap: 10px; }
+.rodape .linha1 { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; }
+.rodape .marca { font-size: 20px; color: var(--tinta); }
+
+/* Barra fixa no celular */
+.barra-compra { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: flex; align-items: center; gap: 12px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); background: color-mix(in srgb, var(--fundo) 94%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-top: 1px solid var(--linha); transform: translateY(110%); transition: transform .25s ease; }
+.barra-compra.visivel { transform: none; }
+.barra-compra .p { display: grid; font-size: 13px; color: var(--cinza); line-height: 1.3; }
+.barra-compra .p b { font: 400 22px/1 var(--display); color: var(--tinta); letter-spacing: .3px; }
+.barra-compra .btn { flex: 1; min-height: 48px; }
+@media (min-width: 761px) { .barra-compra { display: none; } }
+
+/* Telas menores */
+@media (max-width: 959px) {
+  .heroi { grid-template-columns: minmax(0, 1fr); gap: 40px; padding-block: 40px 56px; }
+  .teste, .dentro, .oferta { grid-template-columns: minmax(0, 1fr); }
+  .casos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cartoes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grupo { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .trilha { gap: 88px; }
+}
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  .topo nav { display: none; }
+  .topo .btn { margin-left: auto; }
+  .casos, .cartoes, .passos, .tres, .publico { grid-template-columns: minmax(0, 1fr); }
+  .prova { grid-template-columns: minmax(0, 1fr); padding: 22px; }
+  .pergunta { flex-direction: column; padding: 8px; }
+  .pergunta .btn { width: 100%; }
+  .resposta { padding: 20px; }
+  .acoes .btn-prim { width: 100%; }
+  .rodape { padding-bottom: 96px; }
+}
+</style>
+</head>
+<body>
+
+<div class="aviso" id="aviso" hidden>
+  <div class="largura">
+    <b>Página em configuração.</b> Preencha o link do checkout da Kiwify, o preço, e o seu nome e CRM no bloco <code>CONFIG</code> no fim de <code>landing/index.html</code>. Este aviso some quando o link estiver preenchido.
+  </div>
+</div>
+
+<header class="topo">
+  <div class="largura">
+    <a class="marca" href="#inicio" aria-label="paper.ai__, início">paper<span>.ai__</span></a>
+    <nav aria-label="Seções">
+      <a href="#teste">Teste</a>
+      <a href="#prompts">Os prompts</a>
+      <a href="#dentro">Por dentro</a>
+      <a href="#perguntas">Perguntas</a>
+    </nav>
+    <a class="btn btn-prim btn-peq" data-checkout href="#oferta">Quero a Biblioteca</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="largura heroi">
+    <div>
+      <p class="olho">Biblioteca de prompts para pesquisa científica</p>
+      <h1>Comece sua <span>pesquisa.</span></h1>
+      <p class="sub">Onze prompts para buscar, ler, checar e usar evidência com IA. Você escreve o tema do jeito que perguntaria a um colega. A Biblioteca monta o prompt que faz a IA buscar no PubMed os melhores artigos do tema, com o nível de evidência, o DOI e o link de cada um.</p>
+      <div class="acoes" id="acoes-heroi">
+        <a class="btn btn-prim" data-checkout href="#oferta">Quero a Biblioteca</a>
+        <a class="btn-link" href="#prompts">Ver os 11 prompts</a>
+      </div>
+      <p class="preco-linha"><b data-preco>R$ 00</b> <span data-parcelas></span> · pagamento pela Kiwify · garantia de <span data-garantia>7</span> dias</p>
+      <p class="ias"><span>Funciona no</span><span>Claude</span><span>ChatGPT</span><span>Gemini</span></p>
+    </div>
+    <figure class="demo">
+      <div class="celular">
+        <video id="video-demo" src="demo.mp4" poster="demo-capa.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Demonstração: uma pessoa escreve o tema na Biblioteca, copia o prompt e recebe a resposta da IA com os artigos"></video>
+      </div>
+      <figcaption>O P1 em uso, do tema à resposta (28 s)</figcaption>
+    </figure>
+  </section>
+
+  <div class="largura trilha">
+
+    <section class="secao" id="situacoes">
+      <header>
+        <p class="olho-sec">Para que serve</p>
+        <h2>Onde a Biblioteca entra na sua semana</h2>
+      </header>
+      <div class="casos">
+        <article class="caso">
+          <p class="etapa"><span class="cod">P1</span> Buscar</p>
+          <h3>Sessão de artigos às 7h e nada lido às 23h.</h3>
+          <p>O Motor de Busca de Referências traz os melhores artigos do tema, cada um com o nível de evidência, o que encontrou, o DOI e o link.</p>
+        </article>
+        <article class="caso">
+          <p class="etapa"><span class="cod">P2</span> Buscar</p>
+          <h3>O orientador pediu a estratégia de busca do TCC.</h3>
+          <p>O Gerador de Busca Avançada entrega os termos MeSH, a busca pronta em três versões para o PubMed e o texto da seção de métodos.</p>
+        </article>
+        <article class="caso">
+          <p class="etapa"><span class="cod">P4</span> Ler</p>
+          <h3>Chegaram dez artigos no grupo e não dá para ler todos.</h3>
+          <p>A Triagem Rápida dá um semáforo por artigo, a ameaça principal de cada um e a ordem de leitura.</p>
+        </article>
+        <article class="caso">
+          <p class="etapa"><span class="cod">P8</span> Checar</p>
+          <h3>A IA te entregou uma lista de referências.</h3>
+          <p>O Detector de Referência Falsa confere título, autor, periódico, ano e identificador de cada uma: verificada, parcial, inexistente ou retratada.</p>
+        </article>
+        <article class="caso">
+          <p class="etapa"><span class="cod">P9</span> Checar</p>
+          <h3>Saiu um estudo grande e todo mundo diz que a conduta mudou.</h3>
+          <p>O Diretriz vs. Estudo Novo mostra a recomendação literal, onde o estudo se encaixa e se a recomendação muda mesmo.</p>
+        </article>
+        <article class="caso">
+          <p class="etapa"><span class="cod">P11</span> Usar</p>
+          <h3>O paciente chegou com a manchete no celular.</h3>
+          <p>O Tradutor para Leigos explica o estudo em "de cada 100 pessoas", com o que ele não quer dizer e um texto pronto para a conversa.</p>
+        </article>
+      </div>
+      <div class="prova">
+        <p class="grande">55%</p>
+        <div>
+          <p>das referências geradas pelo GPT-3.5 não existiam. No GPT-4, 18%.</p>
+          <p>Os modelos mudaram desde então e a taxa de hoje pode ser outra. Conferir continua valendo, e é para isso que existe o P8.</p>
+        </div>
+        <p class="fonte">Walters WH, Wilder EI. Scientific Reports, 2023. 636 referências em 84 textos. <a href="https://doi.org/10.1038/s41598-023-41032-5" rel="noopener">doi:10.1038/s41598-023-41032-5</a></p>
+      </div>
+    </section>
+
+    <section class="secao" id="teste">
+      <header>
+        <p class="olho-sec">Teste agora</p>
+        <h2>Escreva um tema e veja o formato da resposta</h2>
+      </header>
+      <div class="teste">
+        <div>
+          <form class="pergunta" id="form-teste">
+            <input id="tema-teste" name="tema" type="text" aria-label="Tema da pesquisa" autocomplete="off" maxlength="90" placeholder="Ex.: creatina e memória em idosos" value="creatina e memória em idosos">
+            <button class="btn btn-prim" type="submit">Criar prompt</button>
+          </form>
+          <div class="exemplos"><span>Experimente:</span>
+            <button type="button" data-ex="creatina e memória em idosos">creatina e memória</button>
+            <button type="button" data-ex="treino intervalado de alta intensidade após infarto do miocárdio">HIIT após infarto</button>
+            <button type="button" data-ex="vitamina D e prevenção de fraturas em idosos">vitamina D e fraturas</button>
+          </div>
+          <p class="nota">Na Biblioteca, o tema entra num prompt de <b>12.666 caracteres</b> (o P1 na versão para o Claude), que manda a IA buscar, abrir e conferir cada artigo antes de citar. Ao lado está o esqueleto do que volta. O prompt completo fica na Biblioteca.</p>
+          <p class="nota"><a class="btn-link" data-checkout href="#oferta">Quero a Biblioteca →</a></p>
+        </div>
+        <div class="resposta" aria-live="polite">
+          <p class="rotulo"><span>Formato da resposta do P1</span><span>esqueleto</span></p>
+          <p class="r-titulo"><b>P1 · Busca de referências</b> — <span class="r-tema" id="resp-tema">creatina e memória em idosos</span></p>
+          <p class="r-meta">Pergunta: <span class="ph">a pergunta clínica em uma linha</span> · Tipo: <span class="ph">tratamento / dano / diagnóstico / prognóstico / prevalência</span></p>
+          <p class="r-secao">Em 30 segundos</p>
+          <p><span class="ph">a resposta à pergunta em até 3 linhas, citando os artigos que a sustentam, ex.: [1] [3]</span></p>
+          <p class="r-secao">Os melhores artigos</p>
+          <p class="r-nivel">Nível 1</p>
+          <p><b>1. <span class="ph">título original do artigo</span></b></p>
+          <p class="r-meta"><span class="ph">primeiro autor</span> et al. · <span class="ph">periódico</span> · <span class="ph">ano</span> · <span class="ph">desenho, n</span></p>
+          <p class="r-meta">Nível de evidência: <b>1</b> (Oxford 2011) · O que encontrou: <span class="ph">medida com IC 95%, ou "sem diferença entre os grupos"</span></p>
+          <p class="r-ids">DOI: <span class="ph">10.xxxx/xxxx</span> · Link: https://pubmed.gov/<span class="ph">PMID</span></p>
+          <p class="r-mais">Depois: Nível 2 a 5 · Diretriz vigente · Limites · Como foi a busca</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="como">
+      <header>
+        <p class="olho-sec">Como funciona</p>
+        <h2>Três passos, na IA que você já usa</h2>
+      </header>
+      <div class="passos">
+        <div class="passo"><span class="n">01</span><h3>Escreva o tema</h3><p>Em linguagem livre, do jeito que você perguntaria a um colega.</p></div>
+        <div class="passo"><span class="n">02</span><h3>Copie o prompt</h3><p>Ele sai pronto para a IA que você usa, com o seu tema já dentro.</p></div>
+        <div class="passo"><span class="n">03</span><h3>Cole numa conversa nova</h3><p>A resposta chega com os melhores artigos, o nível de evidência e o link para abrir cada um.</p></div>
+      </div>
+      <p class="depois">Cada prompt indica o próximo passo. Do P1, por exemplo, você segue para o <span class="cod">P5</span> para ler um artigo a fundo, o <span class="cod">P6</span> para comparar os que discordam ou o <span class="cod">P8</span> para conferir as referências.</p>
+    </section>
+
+    <section class="secao" id="prompts">
+      <header>
+        <p class="olho-sec">Os prompts</p>
+        <h2>Onze prompts, um para cada momento</h2>
+        <p>Do P1 ao P11, na ordem em que o trabalho acontece: buscar, ler, checar e usar.</p>
+      </header>
+      <div>
+      <div class="grupo">
+        <div class="grupo-cab"><h3>Buscar</h3><p>Encontrar o que existe sobre o tema.</p><span class="faixa">P1–P3</span></div>
+        <div class="cartoes">
+          <article class="cartao"><span class="cod">P1</span><b>Motor de Busca de Referências</b><span>Os melhores artigos do tema, com nível de evidência, DOI e link.</span></article>
+          <article class="cartao"><span class="cod">P2</span><b>Gerador de Busca Avançada</b><span>Os termos certos e a busca pronta para colar no PubMed.</span></article>
+          <article class="cartao"><span class="cod">P3</span><b>Vigilância Semanal</b><span>Receba toda semana o que saiu de novo no seu tema.</span></article>
+        </div>
+      </div>
+      <div class="grupo">
+        <div class="grupo-cab"><h3>Ler</h3><p>Decidir o que vale a leitura e ler a fundo.</p><span class="faixa">P4–P6</span></div>
+        <div class="cartoes">
+          <article class="cartao"><span class="cod">P4</span><b>Triagem Rápida</b><span>Em segundos, saiba se o artigo merece sua leitura.</span></article>
+          <article class="cartao"><span class="cod">P5</span><b>Dissecação de um Artigo</b><span>A leitura crítica completa de um único estudo.</span></article>
+          <article class="cartao"><span class="cod">P6</span><b>Mesa de Comparação</b><span>Entenda por que os estudos discordam entre si.</span></article>
+        </div>
+      </div>
+      <div class="grupo">
+        <div class="grupo-cab"><h3>Checar</h3><p>Conferir antes de confiar.</p><span class="faixa">P7–P9</span></div>
+        <div class="cartoes">
+          <article class="cartao"><span class="cod">P7</span><b>Caçador de Vieses</b><span>Encontre onde um resultado bom demais pode falhar.</span></article>
+          <article class="cartao"><span class="cod">P8</span><b>Detector de Referência Falsa</b><span>Confira se cada referência existe de verdade.</span></article>
+          <article class="cartao"><span class="cod">P9</span><b>Diretriz vs. Estudo Novo</b><span>Descubra se o estudo novo muda mesmo a diretriz.</span></article>
+        </div>
+      </div>
+      <div class="grupo">
+        <div class="grupo-cab"><h3>Usar</h3><p>Levar para o consultório e para o público.</p><span class="faixa">P10–P11</span></div>
+        <div class="cartoes">
+          <article class="cartao"><span class="cod">P10</span><b>Tradutor Clínico</b><span>Risco absoluto, NNT e danos, prontos para a consulta.</span></article>
+          <article class="cartao"><span class="cod">P11</span><b>Tradutor para Leigos</b><span>Explique um estudo sem exagerar e sem jargão.</span></article>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="secao" id="dentro">
+      <header>
+        <p class="olho-sec">Por dentro</p>
+        <h2>O que muda na resposta da IA</h2>
+        <p>Um pedido comum ("me passa artigos sobre X") deixa a IA livre para lembrar de cabeça. Os prompts da Biblioteca fecham essa porta.</p>
+      </header>
+      <div class="dentro">
+        <ul class="lista-provas">
+          <li><b>Contrato de veracidade</b><span>Oito regras acima de qualquer pedido: só vale fonte aberta na conversa, PMID e DOI só se lidos na página, número exatamente como publicado, associação não vira causa e resultado nulo pesa o mesmo que o favorável.</span></li>
+          <li><b>Links que você confere</b><span>Cada artigo vem com https://pubmed.gov/PMID, montado com o PMID lido na página do artigo.</span></li>
+          <li><b>Marcas fixas</b><span><span class="marca-r">[não verificado]</span> para o que a IA não leu na fonte, <span class="marca-r">[cálculo meu]</span> para contas dela, com a conta ao lado, e <span class="marca-r">[inferência]</span> para o que o estudo não afirma.</span></li>
+          <li><b>Veredito primeiro</b><span>A resposta começa por "Em 30 segundos" e só depois abre os detalhes.</span></li>
+          <li><b>Métodos reconhecidos</b><span>Nível de evidência de Oxford (OCEBM 2011), certeza GRADE, risco de viés por domínio e busca no padrão PRISMA-S.</span></li>
+          <li><b>Checagem final</b><span>Antes de enviar, a IA confere a própria resposta contra uma lista de itens do prompt e corrige o que falhar.</span></li>
+        </ul>
+        <div class="resposta">
+          <p class="rotulo"><span>Exemplo resumido · P1</span><span>conferido no PubMed</span></p>
+          <p class="r-titulo"><b>P1 · Busca de referências</b> — vitamina D e fraturas em idosos</p>
+          <p class="r-secao">Em 30 segundos</p>
+          <p>Suplementar vitamina D não reduziu fraturas: nem na revisão de 81 ensaios [1], nem no VITAL, com 25.871 adultos não selecionados por deficiência [2].</p>
+          <p class="r-secao">Os melhores artigos</p>
+          <p class="r-nivel">Nível 1</p>
+          <p><b>1. Effects of vitamin D supplementation on musculoskeletal health: a systematic review, meta-analysis, and trial sequential analysis</b></p>
+          <p class="r-meta">Bolland et al. · Lancet Diabetes Endocrinol · 2018 · revisão sistemática, 81 ECRs</p>
+          <p class="r-meta">Nível de evidência: <b>1</b> (Oxford 2011) · O que encontrou: sem efeito em fratura total (RR 1,00; IC 95% 0,93–1,07)</p>
+          <p class="r-ids">DOI: 10.1016/S2213-8587(18)30265-1 · Link: <a href="https://pubmed.gov/30293909" rel="noopener">https://pubmed.gov/30293909</a></p>
+          <p class="r-nivel">Nível 2</p>
+          <p><b>2. Supplemental Vitamin D and Incident Fractures in Midlife and Older Adults</b></p>
+          <p class="r-meta">LeBoff et al. · N Engl J Med · 2022 · ECR, 25.871</p>
+          <p class="r-meta">Nível de evidência: <b>2</b> (Oxford 2011) · O que encontrou: sem diferença em fraturas totais (HR 0,98; IC 95% 0,89–1,08)</p>
+          <p class="r-ids">DOI: 10.1056/NEJMoa2202106 · Link: <a href="https://pubmed.gov/35939577" rel="noopener">https://pubmed.gov/35939577</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="cuidados">
+      <header>
+        <p class="olho-sec">Três cuidados</p>
+        <h2>A IA ajuda. A responsabilidade continua sua.</h2>
+      </header>
+      <div class="tres">
+        <div><h3>Confira as referências</h3><p>IA erra citação misturando pedaços reais: título certo, autor errado. O P8 confere uma a uma.</p></div>
+        <div><h3>Nunca cole dados de paciente</h3><p>Nada de nome, prontuário ou documento. Use um perfil genérico, como "mulher, 60 anos, hipertensa controlada".</p></div>
+        <div><h3>Evidência não é conduta</h3><p>Os prompts interpretam estudos. A decisão sobre cada pessoa continua sendo sua.</p></div>
+      </div>
+    </section>
+
+    <section class="secao" id="para-quem">
+      <header>
+        <p class="olho-sec">Para quem é</p>
+        <h2>Feita para quem lê artigo com prazo</h2>
+      </header>
+      <div class="publico">
+        <div class="sim">
+          <h3>É para você se</h3>
+          <ul>
+            <li>é residente e precisa apresentar artigo, discutir caso ou preparar aula;</li>
+            <li>é estudante de medicina ou pós-graduando, com TCC, revisão ou projeto pela frente;</li>
+            <li>é médico e quer checar um estudo antes de mudar a conduta ou de explicá-lo ao paciente;</li>
+            <li>ensina leitura crítica e quer um roteiro que os alunos consigam seguir.</li>
+          </ul>
+        </div>
+        <div class="nao">
+          <h3>Não é para você se</h3>
+          <ul>
+            <li>quer que a IA decida a conduta no seu lugar;</li>
+            <li>não pretende abrir os links e conferir o que a IA trouxe;</li>
+            <li>procura um jeito de colar dados de paciente na IA. Os prompts não precisam disso.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="quem-faz">
+      <header>
+        <p class="olho-sec">Quem faz</p>
+        <h2>Feita por quem está no hospital</h2>
+      </header>
+      <div class="autor">
+        <p>A Biblioteca é feita por um médico e residente da USP, no Hospital das Clínicas da FMUSP. Os prompts foram escritos com ajuda de IA e revisados por humano, com as mesmas regras que você vê nesta página: fonte conferida, limite do estudo à mostra e nenhum dado de paciente.</p>
+        <p class="nome" data-autor hidden></p>
+        <p><a class="btn-link" data-instagram href="https://www.instagram.com/paper.ai__/" rel="noopener">Acompanhe no Instagram: @paper.ai__</a></p>
+      </div>
+    </section>
+
+    <section class="secao fim" id="oferta">
+      <header>
+        <p class="olho-sec">Acesso</p>
+        <h2>Biblioteca de Prompts paper.ai__</h2>
+      </header>
+      <div class="oferta">
+        <ul class="inclui">
+          <li><span>Os 11 prompts, de P1 a P11<small>Buscar, ler, checar e usar, na ordem em que o trabalho acontece.</small></span></li>
+          <li><span>Versão própria para Claude, ChatGPT e Gemini<small>Com versão curta para o Gemini Flash e uma dica de uso para cada IA.</small></span></li>
+          <li><span>Campos para preencher<small>Você escreve o tema ou cola o estudo; o prompt sai pronto, com tudo dentro.</small></span></li>
+          <li><span>Guia para ler a resposta<small>O que significam o nível de evidência, a certeza GRADE e as marcas [não verificado], [cálculo meu] e [inferência].</small></span></li>
+          <li><span>O próximo passo em cada prompt<small>Cada um indica qual prompt usar depois.</small></span></li>
+        </ul>
+        <div class="preco-card">
+          <p class="nome-produto">paper<span>.ai__</span> Biblioteca de Prompts</p>
+          <p class="de" data-preco-de hidden></p>
+          <p class="valor" data-preco>R$ 00</p>
+          <p class="parcelas" data-parcelas hidden></p>
+          <a class="btn btn-prim" data-checkout href="#oferta">Quero a Biblioteca</a>
+          <p class="miudo">Pagamento seguro pela Kiwify, com Pix, cartão ou boleto. Licença de uso individual.</p>
+          <div class="garantia"><span class="selo-g" data-garantia>7</span><p><b>Garantia de <span data-garantia>7</span> dias.</b> Se a Biblioteca não servir para você, peça o reembolso pela própria Kiwify dentro do prazo.</p></div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="largura secao" id="perguntas" style="padding-block: 8px 104px;">
+    <header>
+      <p class="olho-sec">Perguntas</p>
+      <h2>Antes de comprar</h2>
+    </header>
+    <div class="faq">
+      <details><summary>Preciso pagar uma IA para usar?</summary><p>Não necessariamente. A Biblioteca traz versões para o Claude, o ChatGPT e o Gemini, com uma dica de uso para cada um, inclusive para o ChatGPT gratuito e para o Gemini Flash, que tem uma versão curta própria. Para buscar artigos, a IA precisa estar com a pesquisa na web ligada.</p></details>
+      <details><summary>Como recebo o acesso?</summary><p>Pelo e-mail que você usar na compra, assim que a Kiwify confirmar o pagamento. No Pix e no cartão isso costuma ser imediato; no boleto, leva o tempo da compensação.</p></details>
+      <details><summary>A IA ainda pode errar?</summary><p>Pode. Os prompts diminuem o erro e deixam o que sobra à vista: cada artigo vem com o link montado a partir do PMID lido na página, e o que a IA não conseguiu conferir aparece como [não verificado]. Abra os links antes de citar.</p></details>
+      <details><summary>Posso colar dados de pacientes?</summary><p>Não. Nada de nome, prontuário ou documento. Os prompts pedem o tema, o estudo ou um perfil genérico, como "mulher, 60 anos, sedentária, hipertensa controlada".</p></details>
+      <details><summary>Serve para quem está começando?</summary><p>Serve. Você escreve o tema em linguagem livre e o prompt faz o resto. Cada prompt diz qual usar depois, então dá para seguir do primeiro artigo até a conversa com o paciente.</p></details>
+      <details><summary>Os prompts dizem o que fazer com o paciente?</summary><p>Não. Eles interpretam estudos: o que foi feito, o que foi encontrado e o que não dá para dizer. A decisão sobre cada pessoa continua sendo sua.</p></details>
+      <details><summary>Posso compartilhar com a turma?</summary><p>A licença é de uso individual: cada pessoa compra o seu acesso.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Você tem <span data-garantia>7</span> dias de garantia. Peça o reembolso pela Kiwify dentro do prazo.</p></details>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="largura">
+      <h2>Comece sua pesquisa.</h2>
+      <p>Onze prompts para buscar, ler, checar e usar evidência com IA, no Claude, no ChatGPT ou no Gemini.</p>
+      <a class="btn btn-branco" data-checkout href="#oferta">Quero a Biblioteca</a>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="largura">
+    <p class="linha1"><span class="marca">paper<span>.ai__</span></span><span>Biblioteca de prompts para pesquisa científica</span><a data-instagram href="https://www.instagram.com/paper.ai__/" rel="noopener">Instagram @paper.ai__</a></p>
+    <p>Conteúdo educativo. Os prompts interpretam estudos; a decisão sobre cada pessoa é do médico. Pagamento, entrega e reembolso pela Kiwify. Licença de uso individual.</p>
+    <p data-autor-rodape hidden></p>
+  </div>
+</footer>
+
+<div class="barra-compra" id="barra-compra" aria-hidden="true">
+  <p class="p"><b data-preco>R$ 00</b><span data-parcelas></span></p>
+  <a class="btn btn-prim" data-checkout href="#oferta" tabindex="-1">Quero a Biblioteca</a>
+</div>
+
+<script>
+// ============================================================
+// CONFIG: preencha aqui e salve. É o único lugar para editar.
+// ============================================================
+const CONFIG = {
+  checkout: 'https://pay.kiwify.com.br/SEU-CODIGO', // link do checkout do produto na Kiwify
+  preco: 'R$ 00',            // preço à vista, ex.: 'R$ 97'
+  parcelas: '',              // opcional, ex.: 'ou 12x de R$ 9,74'
+  precoDe: '',               // opcional: preço anterior riscado. Só use se ele existiu de verdade.
+  garantiaDias: 7,           // a Kiwify exige no mínimo 7
+  autor: '',                 // ex.: 'Dr. Nome Sobrenome · CRM-SP 000000' (Resolução CFM 2.336/2023)
+  instagram: 'https://www.instagram.com/paper.ai__/',
+};
+
+(() => {
+  const $$ = (s) => document.querySelectorAll(s);
+  const configurado = /^https:\/\//.test(CONFIG.checkout) && !/SEU-CODIGO/.test(CONFIG.checkout);
+  document.getElementById('aviso').hidden = configurado && !!CONFIG.autor && CONFIG.preco !== 'R$ 00';
+
+  $$('[data-preco]').forEach((el) => (el.textContent = CONFIG.preco));
+  $$('[data-parcelas]').forEach((el) => { el.textContent = CONFIG.parcelas; el.hidden = !CONFIG.parcelas; });
+  $$('[data-preco-de]').forEach((el) => { el.textContent = CONFIG.precoDe ? `De ${CONFIG.precoDe}` : ''; el.hidden = !CONFIG.precoDe; });
+  $$('[data-garantia]').forEach((el) => (el.textContent = CONFIG.garantiaDias));
+  $$('[data-instagram]').forEach((el) => (el.href = CONFIG.instagram));
+  if (CONFIG.autor) {
+    $$('[data-autor]').forEach((el) => { el.textContent = CONFIG.autor; el.hidden = false; });
+    $$('[data-autor-rodape]').forEach((el) => { el.textContent = `Responsável: ${CONFIG.autor}`; el.hidden = false; });
+  }
+
+  // Leva utm_* e src da URL da página para o checkout, para a Kiwify mostrar de onde veio cada venda.
+  function linkCheckout() {
+    try {
+      const u = new URL(CONFIG.checkout);
+      new URLSearchParams(location.search).forEach((v, k) => { if (/^(utm_[a-z]+|src|sck)$/.test(k)) u.searchParams.set(k, v); });
+      return u.toString();
+    } catch (e) {
+      return CONFIG.checkout;
+    }
+  }
+  if (configurado) $$('[data-checkout]').forEach((a) => (a.href = linkCheckout()));
+
+  // Teste: o tema digitado entra no esqueleto da resposta do P1.
+  const form = document.getElementById('form-teste');
+  const campo = document.getElementById('tema-teste');
+  const saida = document.getElementById('resp-tema');
+  const mostrar = () => {
+    const t = campo.value.trim() || 'o seu tema';
+    saida.textContent = t.split(/\s+/).slice(0, 8).join(' ');
+  };
+  form.addEventListener('submit', (e) => { e.preventDefault(); mostrar(); });
+  campo.addEventListener('input', mostrar);
+  $$('[data-ex]').forEach((b) => b.addEventListener('click', () => { campo.value = b.dataset.ex; mostrar(); campo.focus(); }));
+
+  // Vídeo: sem animação para quem pediu menos movimento.
+  const video = document.getElementById('video-demo');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { video.removeAttribute('autoplay'); video.pause(); video.controls = true; }
+
+  // Barra de compra no celular: aparece depois do herói e some perto da oferta.
+  const barra = document.getElementById('barra-compra');
+  if ('IntersectionObserver' in window) {
+    const vis = { heroi: true, oferta: false };
+    const atualizar = () => {
+      const mostra = !vis.heroi && !vis.oferta;
+      barra.classList.toggle('visivel', mostra);
+      barra.setAttribute('aria-hidden', String(!mostra));
+      barra.querySelector('a').tabIndex = mostra ? 0 : -1;
+    };
+    new IntersectionObserver(([e]) => { vis.heroi = e.isIntersecting; atualizar(); }).observe(document.getElementById('acoes-heroi'));
+    new IntersectionObserver(([e]) => { vis.oferta = e.isIntersecting; atualizar(); }, { threshold: 0.15 }).observe(document.getElementById('oferta'));
+  }
+})();
+</script>
+</body>
+</html>

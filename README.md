@@ -7,6 +7,7 @@ São duas coleções:
 - **12 carrosséis educativos** em [`exports/`](exports/), cada um ligado a um prompt da biblioteca (P1 a P11), com legenda e texto alternativo.
 - **20 carrosséis da campanha de crescimento** em [`exports/campanha/`](exports/campanha/README.md): foto na capa, gancho num assunto do momento e um grande estudo contado como história. Veja [`campanha/`](campanha/README.md).
 - **14 Reels** (vídeo 9:16) em [`exports/reels/`](exports/reels/README.md): 10 feitos a partir da campanha, para alcançar quem ainda não segue, e 4 de demonstração, com uma pessoa comum (ilustrada) usando a Biblioteca no celular. Veja [`reels/`](reels/README.md).
+- **Página de vendas** para a Kiwify em [`landing/`](landing/README.md): um arquivo HTML pronto para hospedar, com demonstração interativa do P1, os 11 prompts e a oferta.
 
 ## Por onde começar
 
@@ -17,6 +18,7 @@ São duas coleções:
 | A avaliação dos posts de crescimento atuais | [`campanha/avaliacao-posts-atuais.md`](campanha/avaliacao-posts-atuais.md) |
 | Como escrever com cara de gente e sem inventar | [`campanha/guia-de-escrita.md`](campanha/guia-de-escrita.md) |
 | Postar os Reels (calendário, áudio, capa) | [`reels/README.md`](reels/README.md) |
+| Colocar a página de vendas no ar e ligar à Kiwify | [`landing/README.md`](landing/README.md) |
 | Entender o que está funcionando no Instagram em 2026 | [`pesquisa/tendencias-instagram-2026.md`](pesquisa/tendencias-instagram-2026.md) |
 | Ver concorrentes e como se diferenciar | [`pesquisa/concorrentes-e-referencias.md`](pesquisa/concorrentes-e-referencias.md) |
 | As regras para criar um carrossel (ganchos, CTAs, legenda) | [`estrategia/playbook-carrosseis.md`](estrategia/playbook-carrosseis.md) |
@@ -74,6 +76,7 @@ O Claude escreve o carrossel seguindo o playbook e a identidade, gera as imagens
 ```
 campanha/       campanha de crescimento: textos, estudos conferidos, fotos, guia de escrita
 reels/          roteiros dos Reels (YAML)
+landing/        página de vendas (HTML) para a Kiwify
 carrosseis/     textos dos carrosséis educativos (YAML)
 exports/        slides, legendas e alt text gerados (a campanha fica em exports/campanha/)
 templates/      estilo visual dos slides (CSS)
