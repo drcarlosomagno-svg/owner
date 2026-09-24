@@ -1,5 +1,7 @@
 # Calendário: primeiras 4 semanas
 
+> **Com a campanha de crescimento no ar** ([`campanha/`](../campanha/README.md), 20 posts de segunda a sexta por 4 semanas), os educativos abaixo passam para o **sábado**, um por semana, na mesma ordem. O manifesto (01) continua fixado no perfil.
+
 3 carrosséis por semana (segunda, quarta e sexta, sempre no mesmo horário; comece às 18h30). Cada post tem **um** objetivo de métrica e, quando possível, apresenta **um prompt da biblioteca**. A sequência foi montada para que o "próximo post" anunciado no CTA seja mesmo o próximo.
 
 | Semana | Dia | Carrossel | Prompt | Arquétipo | Objetivo | Reel de apoio (sugestão) |

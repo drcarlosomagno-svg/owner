@@ -1,0 +1,105 @@
+titulo: 70 mil inscritos no Rio. 5 minutos já contavam.
+pauta: O boom da corrida de rua (Maratona do Rio 2026 com recorde de cerca de 70 mil inscritos)
+estudo: Lee et al. (J Am Coll Cardiol, 2014)
+paleta: vibrante
+objetivo: envios
+publicar: Semana 3 · quinta
+foto:
+  busca: "runners street race sunset orange motion blur, running crowd golden hour city, runner legs asphalt orange light"
+  descricao: Corredores numa rua ao pôr do sol, movimento borrado, luz laranja forte. Ninguém identificável, sem número de peito legível.
+
+slides:
+  - tipo: capa
+    selo: JACC · 55.137 adultos · 15 anos
+    titulo: 70 mil inscritos no Rio. ==5 minutos já contavam.==
+    subtitulo: Quem corre pouco e devagar também entrou na conta. E saiu bem nela.
+    chamada: O mínimo que o estudo encontrou. Arraste até o final.
+
+  - tipo: texto
+    selo: 2026
+    titulo: A corrida ==virou programa de sábado.==
+    texto: |
+      Clube de corrida, tênis novo, relógio no pulso. A Maratona do Rio bateu recorde, com cerca de 70 mil inscritos.
+
+      E quem não corre 42 km fica achando que 5 não valem nada.
+
+  - tipo: texto
+    selo: O estudo
+    titulo: 55.137 adultos ==acompanhados por 15 anos.==
+    texto: |
+      Pesquisadores americanos compararam quem corria no tempo livre com quem não corria. Cerca de 1 em cada 4 corria.
+
+      No período, houve 3.413 mortes.
+
+  - tipo: numero
+    selo: Quem corria
+    numero: "−30%"
+    titulo: de risco de morte ==por qualquer causa.==
+    texto: |
+      E 45% menos risco de morte cardiovascular, com cerca de 3 anos a mais de expectativa de vida, em comparação com quem não corria.
+    fonte: Lee et al. J Am Coll Cardiol, 2014
+
+  - tipo: foto
+    foto: 2
+    foto_brief:
+      busca: "single runner silhouette sunrise street red orange, lone jogger backlit city morning"
+      descricao: Uma pessoa correndo sozinha, em contraluz, numa rua de manhã cedo. Silhueta, céu laranja ou vermelho.
+    selo: O detalhe
+    titulo: Não precisou ==ser muito.==
+    texto: |
+      O benefício foi parecido entre quem corria pouco e quem corria muito, em tempo, distância, frequência e velocidade.
+
+  - tipo: lista
+    selo: Já apareceu com
+    titulo: O mínimo ==que já contou.==
+    itens:
+      - t: Menos de 51 minutos por semana
+        d: somando tudo
+      - t: 1 a 2 vezes por semana
+      - t: Menos de 9,6 km por semana
+      - t: Abaixo de 9,6 km/h
+        d: ritmo de trote
+    nota: "Os autores resumem assim: mesmo 5 a 10 minutos por dia."
+
+  - tipo: frase
+    frase: Quem ==continuou== levou mais.
+    texto: |
+      Quem manteve a corrida ao longo dos anos teve 29% menos risco de morte geral e 50% menos de morte cardiovascular do que quem nunca correu.
+
+  - tipo: estudo
+    revista: Lee et al. · Journal of the American College of Cardiology, 2014
+    quem: 55.137 adultos de 18 a 100 anos, com média de 44
+    achou: Correr, mesmo pouco e devagar, associado a menos morte geral e cardiovascular
+    limite: É observacional. Quem corre pode ter outros hábitos saudáveis, e a corrida foi relatada em questionário. O estudo não diz que correr mais é inútil. Diz que pouco já apareceu.
+    doi: 10.1016/j.jacc.2014.04.058
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Não espere ==a maratona.==
+    texto: |
+      Um trote curto, uma ou duas vezes por semana, já estava do lado bom da estatística.
+
+      Se você tem doença do coração, sente dor ou está parado há muito tempo, comece com uma avaliação médica.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pro amigo que acha ==que 5 km é pouco.==
+    texto: E marca quem vai correr com você no sábado.
+    fonte: "Lee DC et al. J Am Coll Cardiol. 2014 · doi:10.1016/j.jacc.2014.04.058"
+
+legenda: |
+  Quanto de corrida faz diferença? Num estudo com 55 mil adultos, 5 a 10 minutos por dia já apareceram com menos mortalidade.
+
+  A Maratona do Rio de 2026 teve recorde, com cerca de 70 mil inscritos. E muita gente que corre 5 km acha que isso não conta.
+
+  Num estudo com 55.137 adultos acompanhados por 15 anos, quem corria teve 30% menos risco de morte por qualquer causa e 45% menos de morte cardiovascular, com cerca de 3 anos a mais de expectativa de vida. O benefício foi parecido entre quem corria pouco e quem corria muito: menos de 51 minutos por semana, uma ou duas vezes, abaixo de 9,6 km/h, já apareceu. Quem manteve o hábito teve os maiores ganhos.
+
+  É um estudo observacional, com corrida relatada em questionário.
+
+  ⚠️ Doença do coração, dor ou muito tempo parado? Comece com uma avaliação médica.
+
+  Fonte: Lee DC et al. Leisure-time running reduces all-cause and cardiovascular mortality risk. J Am Coll Cardiol. 2014;64(5):472-81. doi:10.1016/j.jacc.2014.04.058
+
+  📤 Manda pro amigo que acha que 5 km é pouco.
+
+hashtags: [corrida, corridaderua, cardiologia, saude, paperai]

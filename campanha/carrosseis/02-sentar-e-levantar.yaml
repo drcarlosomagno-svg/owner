@@ -1,0 +1,93 @@
+titulo: Sentar no chão e levantar sem as mãos
+pauta: Estudo brasileiro sobre o teste de sentar e levantar, publicado em set/2026
+estudo: Araújo et al. (Eur J Prev Cardiol, 2026) e o estudo original de 2012
+paleta: vibrante
+objetivo: envios
+publicar: Semana 1 · terça
+foto:
+  busca: "person sitting on floor cross legged minimal, yoga floor silhouette, getting up from floor side view"
+  descricao: Pessoa sentada de pernas cruzadas no chão, de perfil, fundo liso. Silhueta forte, que funcione em alto contraste.
+
+slides:
+  - tipo: capa
+    selo: Eur J Prev Cardiol · 4.282 adultos · 12 anos
+    titulo: Sentar no chão e levantar ==sem as mãos.==
+    subtitulo: Um teste criado no Rio de Janeiro acabou de ganhar um novo estudo. Ele diz muito sobre os próximos anos.
+    chamada: Qual nota você tiraria? Arraste até o final.
+
+  - tipo: texto
+    selo: Rio de Janeiro
+    titulo: Um teste sem aparelho nenhum.
+    texto: |
+      O médico Claudio Gil Araújo criou o teste na sua clínica de medicina do exercício, no Rio.
+
+      Você começa com 10 pontos. Perde 1 a cada apoio de mão ou joelho, e meio ponto se desequilibrar. Sentar vale 5. Levantar vale 5.
+
+  - tipo: texto
+    selo: Setembro de 2026
+    titulo: O estudo novo ==saiu este mês.==
+    texto: |
+      4.282 adultos de 46 a 75 anos fizeram o teste e foram acompanhados por cerca de 12 anos.
+
+      Nesse tempo, 665 morreram. A pergunta era se a nota do chão tinha avisado antes.
+
+  - tipo: numero
+    selo: Quem tirou nota 10
+    numero: "3,7%"
+    titulo: morreram no período.
+    texto: |
+      Entre quem tirou de 0 a 4, foram **42,1%**.
+    fonte: Araújo et al. Eur J Prev Cardiol, 2026
+
+  - tipo: frase
+    frase: 6 vezes mais risco de ==morte cardiovascular.==
+    texto: |
+      Comparando a nota mais alta com a mais baixa, e já descontando idade, sexo, peso e doenças, o risco de morte cardiovascular foi 6,05 vezes maior. O de morte natural, 3,84 vezes.
+
+  - tipo: texto
+    selo: Por que um gesto tão simples
+    titulo: Levantar do chão ==cobra tudo de uma vez.==
+    texto: |
+      Força, potência, flexibilidade, equilíbrio e composição do corpo.
+
+      Os autores chamam isso de aptidão não aeróbica. É a parte do condicionamento que a esteira não mede.
+
+  - tipo: estudo
+    revista: Araújo et al. · European Journal of Preventive Cardiology, 2026
+    quem: 4.282 adultos de 46 a 75 anos (68% homens) da coorte da clínica CLINIMEX, no Rio
+    achou: Nota baixa no teste associada a mais morte natural e cardiovascular em 12 anos
+    limite: É associação. O estudo não testou se treinar para melhorar a nota reduz o risco. E os participantes vieram de uma clínica, não de uma amostra de toda a população.
+    doi: 10.1093/eurjpc/zwaf325
+
+  - tipo: texto
+    selo: Antes de tentar em casa
+    titulo: Faça com ==alguém do lado.==
+    texto: |
+      Chão firme, descalço, espaço livre em volta. Se você tem dor no joelho ou no quadril, ou já caiu antes, faça com o seu médico ou fisioterapeuta.
+
+      A nota serve de ponto de partida para uma conversa sobre força e equilíbrio.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pro seu pai ==fazer o teste.==
+    texto: E conta nos comentários a nota de vocês dois.
+    fonte: "Araújo CGS et al. Eur J Prev Cardiol. 2026 · doi:10.1093/eurjpc/zwaf325 · Brito LB et al. 2012 · doi:10.1177/2047487312471759"
+
+legenda: |
+  Teste de sentar e levantar: o estudo brasileiro de 2026 que ligou a nota do chão ao risco de morte em 12 anos.
+
+  O teste foi criado no Rio pelo médico Claudio Gil Araújo. Você senta no chão e levanta, e perde pontos a cada apoio de mão ou joelho. Nota de 0 a 10.
+
+  No estudo publicado este mês, 4.282 adultos de 46 a 75 anos foram acompanhados por cerca de 12 anos. Morreram 3,7% de quem tirou 10 e 42,1% de quem tirou de 0 a 4. Comparando os extremos, o risco de morte cardiovascular foi 6 vezes maior.
+
+  É associação, não prova de causa. Mas mostra o quanto força, equilíbrio e flexibilidade dizem sobre o futuro.
+
+  ⚠️ Tem dor no joelho, no quadril ou histórico de queda? Faça o teste com o seu médico ou fisioterapeuta.
+
+  Fontes:
+  Araújo CGS et al. Sitting-rising test scores predict natural and cardiovascular causes of deaths. Eur J Prev Cardiol. 2026;33(12):2170-8. doi:10.1093/eurjpc/zwaf325
+  Brito LB et al. Ability to sit and rise from the floor as a predictor of all-cause mortality. Eur J Prev Cardiol. 2012. doi:10.1177/2047487312471759
+
+  📤 Manda pro seu pai fazer o teste.
+
+hashtags: [longevidade, medicinadoexercicio, envelhecimento, saude, paperai]

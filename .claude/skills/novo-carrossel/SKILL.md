@@ -7,6 +7,8 @@ description: Cria um novo carrossel da paper.ai__ para o Instagram a partir de u
 
 Tema pedido: $ARGUMENTS
 
+> Se o pedido for um post de **crescimento** (foto na capa, gancho num assunto do momento, um grande estudo contado como história), ele vai para a campanha: escreva em `campanha/carrosseis/`, siga `campanha/README.md` e `campanha/guia-de-escrita.md`, confira os números em `campanha/estudos-verificados.md` e gere com `npm run render -- --campanha NN`. O resto deste roteiro vale para os carrosséis educativos.
+
 ## 1. Leia antes de escrever
 
 - `estrategia/playbook-carrosseis.md`: anatomia, arquétipos, ganchos, CTAs, legenda, checklist.

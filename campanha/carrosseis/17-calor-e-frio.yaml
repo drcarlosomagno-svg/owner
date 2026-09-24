@@ -1,0 +1,89 @@
+titulo: O calor assusta. O frio matou mais.
+pauta: Ondas de calor e recordes de temperatura
+estudo: Gasparrini et al. (The Lancet, 2015)
+paleta: vibrante
+objetivo: envios
+publicar: Semana 4 · terça
+foto:
+  busca: "heat wave city orange haze sun, red sky heat street, sun glare hot asphalt orange"
+  descricao: Rua ou céu da cidade sob calor forte, luz laranja-avermelhada estourada, efeito de ar quente.
+
+slides:
+  - tipo: capa
+    selo: Lancet · 74 milhões de mortes · 13 países
+    titulo: O calor assusta. ==O frio matou mais.==
+    subtitulo: Um estudo com dados do Brasil e de outros 12 países mediu qual temperatura pesa mais nas mortes.
+    chamada: O que os 74 milhões de mortes mostraram. Arraste até o final.
+
+  - tipo: texto
+    selo: Todo verão
+    titulo: Recorde de calor ==vira manchete.==
+    texto: |
+      E com razão: calor extremo é perigoso.
+
+      Mas quando uma equipe internacional, com pesquisadores da Faculdade de Medicina da USP, olhou para todas as temperaturas ao mesmo tempo, a conta saiu diferente.
+
+  - tipo: texto
+    selo: O estudo
+    titulo: 74.225.200 mortes. ==384 lugares.==
+    texto: |
+      Dados de 1985 a 2012, em 13 países, incluindo o Brasil.
+
+      Os pesquisadores cruzaram a temperatura de cada dia com as mortes das três semanas seguintes.
+
+  - tipo: numero
+    selo: O total
+    numero: "7,71%"
+    titulo: das mortes ligadas a ==temperatura fora do ideal.==
+    texto: |
+      Variou de 3,37% na Tailândia a 11% na China.
+    fonte: Gasparrini et al. Lancet, 2015
+
+  - tipo: numero
+    selo: Separando os dois
+    numero: "7,29%"
+    titulo: vieram do frio. ==Do calor, 0,42%.==
+    texto: |
+      Quase toda a mortalidade ligada à temperatura veio de dias mais frios do que o ideal de cada lugar.
+    fonte: Gasparrini et al. Lancet, 2015
+
+  - tipo: frase
+    frase: E não foram ==os dias extremos.==
+    texto: |
+      Frio e calor extremos somaram só 0,86% das mortes. O peso maior veio de dias moderadamente fora do ideal, os que ninguém chama de onda.
+
+  - tipo: estudo
+    revista: Gasparrini et al. · The Lancet, 2015
+    quem: 74.225.200 mortes em 384 lugares de 13 países, incluindo o Brasil
+    achou: 7,71% das mortes ligadas a temperatura fora do ideal, quase todas pelo frio
+    limite: Dados até 2012, antes dos recordes recentes de calor. É associação. E não diz que o aquecimento global é bom; os autores dizem que o achado importa para prever os efeitos das mudanças do clima.
+    doi: 10.1016/S0140-6736(14)62114-0
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Agasalho também ==é saúde.==
+    texto: |
+      O frio fora do ideal apareceu muito mais na conta do que o calor. Proteger-se dele entra na mesma lista que proteger-se do calor.
+
+      O calor continua perigoso. Só não é o único.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pra quem só se preocupa ==no verão.==
+    texto: E pra tia que sai sem casaco em julho.
+    fonte: "Gasparrini A et al. Lancet. 2015 · doi:10.1016/S0140-6736(14)62114-0"
+
+legenda: |
+  Calor ou frio: qual mata mais? Um estudo com 74 milhões de mortes em 13 países, incluindo o Brasil, respondeu.
+
+  Com dados de 1985 a 2012 e coautoria de pesquisadores da Faculdade de Medicina da USP, o estudo publicado no Lancet atribuiu 7,71% das mortes a temperaturas fora do ideal. O frio respondeu por 7,29%. O calor, por 0,42%.
+
+  E o maior peso não veio dos extremos: frio e calor extremos somaram só 0,86% das mortes. O resto veio de dias moderadamente fora do ideal.
+
+  O estudo é observacional e os dados vão até 2012. Não diz que o aquecimento global é bom; os autores lembram que o achado importa para prever os efeitos das mudanças do clima.
+
+  Fonte: Gasparrini A et al. Mortality risk attributable to high and low ambient temperature: a multicountry observational study. Lancet. 2015;386(9991):369-75. doi:10.1016/S0140-6736(14)62114-0
+
+  📤 Manda pra quem só se preocupa no verão.
+
+hashtags: [calor, frio, clima, saudepublica, paperai]

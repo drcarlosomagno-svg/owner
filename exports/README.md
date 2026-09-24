@@ -4,6 +4,8 @@ Gerado por `npm run render`. Formato 3:4 (1080×1440).
 
 Cada pasta tem os slides numerados (`01.png`, `02.png`…), a legenda pronta para colar (`legenda.txt`) e o texto alternativo de cada slide (`alt-text.txt`).
 
+A campanha de crescimento (posts com foto) está em [`campanha/`](campanha/).
+
 | # | Carrossel | Prompt da biblioteca | Arquétipo | Objetivo | Quando postar |
 |---|---|---|---|---|---|
 | 01 | [Manifesto da paper.ai__](#01-manifesto) | — | Bastidor / venda | seguidores (fixar no perfil) | Semana 1 · segunda |

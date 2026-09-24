@@ -1,0 +1,89 @@
+titulo: Solidão e 100 mortes por hora
+pauta: Relatório da OMS sobre conexão social (871 mil mortes por ano)
+estudo: Holt-Lunstad et al. (PLoS Medicine, 2010)
+paleta: escuro
+objetivo: envios
+publicar: Semana 1 · quinta
+foto:
+  busca: "lonely person city night window reflection, alone subway night moody, empty bench night streetlight"
+  descricao: Pessoa sozinha numa janela de ônibus ou metrô à noite, reflexos de luz da cidade, rosto em sombra ou de costas.
+
+slides:
+  - tipo: capa
+    selo: PLoS Med · 148 estudos · 308.849 pessoas
+    titulo: A solidão está ligada a ==100 mortes por hora.==
+    subtitulo: A conta é da OMS. A explicação vem de um estudo que juntou 148 pesquisas.
+    chamada: O que o estudo encontrou. Arraste até o final.
+
+  - tipo: texto
+    selo: Junho de 2025
+    titulo: A OMS fez a conta.
+    texto: |
+      Solidão e isolamento aparecem associados a mais de 871 mil mortes por ano no mundo. Uma em cada seis pessoas se sente sozinha.
+
+      Entre adolescentes, a proporção é ainda maior.
+
+  - tipo: texto
+    selo: A pergunta
+    titulo: Como algo que ==não aparece no exame== pode pesar tanto?
+    texto: |
+      Solidão não sobe na glicemia nem aparece no raio-x. Por isso, durante muito tempo, ficou de fora da conversa sobre saúde.
+
+  - tipo: texto
+    selo: 2010
+    titulo: 148 estudos. ==308.849 pessoas.==
+    texto: |
+      A psicóloga Julianne Holt-Lunstad juntou o que existia sobre relações sociais e mortalidade e fez uma metanálise.
+
+      O resultado virou referência mundial sobre o tema.
+
+  - tipo: numero
+    selo: O resultado
+    numero: 50%
+    titulo: mais chance de sobreviver com ==vínculos fortes.==
+    texto: |
+      O resultado se repetiu em diferentes idades, nos dois sexos, com ou sem doença no início e em diferentes causas de morte.
+    fonte: Holt-Lunstad et al. PLoS Med, 2010
+
+  - tipo: frase
+    frase: Morar com alguém ==não bastou.==
+    texto: |
+      O efeito foi mais forte quando os estudos mediam a rede de relações como um todo. Só dividir a casa foi o que menos pesou.
+
+  - tipo: estudo
+    revista: Holt-Lunstad et al. · PLoS Medicine, 2010
+    quem: Metanálise de 148 estudos, com 308.849 participantes
+    achou: Relações sociais mais fortes, 50% mais chance de sobreviver no período estudado (OR 1,50)
+    limite: São estudos observacionais. Mostram associação. Não dá para dizer quantos anos de vida um amigo acrescenta, nem que a solidão, sozinha, causa a morte.
+    doi: 10.1371/journal.pmed.1000316
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Manda a mensagem ==que você está adiando.==
+    texto: |
+      Os autores compararam o peso das relações ao de fatores de risco clássicos de mortalidade.
+
+      Cuidar de vínculo entra na mesma lista que cuidar da pressão.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Envia este post ==pra quem você sente falta.==
+    texto: Pode ser o começo da conversa.
+    fonte: "Holt-Lunstad J et al. PLoS Med. 2010 · doi:10.1371/journal.pmed.1000316"
+
+legenda: |
+  Solidão faz mal à saúde? A OMS ligou o isolamento a 871 mil mortes por ano. Um estudo com 148 pesquisas explica por quê.
+
+  Em junho de 2025, a OMS publicou que solidão e isolamento estão associados a cerca de 100 mortes por hora no mundo, e que uma em cada seis pessoas se sente sozinha.
+
+  Em 2010, a psicóloga Julianne Holt-Lunstad reuniu 148 estudos com mais de 300 mil pessoas. Quem tinha relações sociais mais fortes teve 50% mais chance de sobreviver no período estudado. E morar com alguém, sozinho, foi o que menos pesou.
+
+  São estudos observacionais: mostram associação, não medem quanto um amigo acrescenta de vida. Mas colocam o vínculo na mesma prateleira dos fatores de risco que a gente leva a sério.
+
+  Se você está passando por um momento difícil, o CVV atende de graça, 24 horas, pelo 188.
+
+  Fonte: Holt-Lunstad J, Smith TB, Layton JB. Social relationships and mortality risk: a meta-analytic review. PLoS Med. 2010;7(7):e1000316. doi:10.1371/journal.pmed.1000316
+
+  📤 Envia pra quem você sente falta.
+
+hashtags: [solidao, saudemental, relacionamentos, saude, paperai]

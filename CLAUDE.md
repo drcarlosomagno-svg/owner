@@ -7,6 +7,7 @@ Conteúdo de Instagram da paper.ai__ (biblioteca de prompts de IA para pesquisa 
 - `npm run render`: gera todos os carrosséis em `exports/` (3:4, 1080×1440).
 - `npm run render -- 03`: só os arquivos com "03" no nome.
 - `npm run render -- --formato 4x5`: versão 1080×1350 em `exports-4x5/`.
+- `npm run render -- --campanha` (ou `--educativos`): só uma das coleções.
 - Fora do ambiente em nuvem: `npx playwright install chromium` uma vez, ou defina `CHROMIUM_PATH`.
 
 ## Estrutura
@@ -17,6 +18,7 @@ Conteúdo de Instagram da paper.ai__ (biblioteca de prompts de IA para pesquisa 
 - `templates/slide.css`: todo o visual, com os tokens do produto (vermelho `#D0112B`, Anton, IBM Plex). Tamanhos dentro de `.corpo` usam `calc(Npx * var(--k))`.
 - `marca/catalogo-produto.json`: os onze prompts da Biblioteca de Prompts (P1–P11), extraídos do artefato do produto. `produto: P8` no YAML liga o carrossel a um prompt.
 - `exports/`: saída gerada e versionada (o usuário baixa daqui). Sempre regenere depois de editar um YAML.
+- `campanha/`: campanha de crescimento (20 carrosséis com foto). `campanha/carrosseis/*.yaml` → `exports/campanha/` (JPG). Visual em `templates/campanha.css` e `scripts/lib/campanha.mjs`, com três paletas (`escuro`, `vibrante`, `claro`). Fotos em `campanha/fotos/<id>.jpg`; o gerador escreve `campanha/fotos/LISTA.md` com o que falta.
 
 ## Regras de conteúdo
 
@@ -25,3 +27,4 @@ Conteúdo de Instagram da paper.ai__ (biblioteca de prompts de IA para pesquisa 
 - Nenhum dado sem fonte verificável; prompts sempre com regra de checagem; nunca sugerir colar dados de pacientes na IA.
 - Sem superlativos não demonstráveis ("a melhor biblioteca").
 - Para criar um carrossel novo, use o skill `/novo-carrossel`.
+- Campanha: todo número tem de estar em `campanha/estudos-verificados.md` (conferido no PubMed) e o texto segue `campanha/guia-de-escrita.md` (associação não vira causa, interpretação nossa rotulada, ficha com "O que não dá para dizer", sem travessão nem palavras típicas de IA). Foto só com licença de uso comercial.

@@ -1,0 +1,91 @@
+titulo: Seus genes explicam menos do que você pensa
+pauta: '"Na minha família todo mundo tem": genética, longevidade e o expossoma'
+estudo: Argentieri et al. (Nature Medicine, 2025)
+paleta: claro
+objetivo: envios
+publicar: Semana 2 · quinta
+foto:
+  busca: "old family photos hands pale table, vintage family portrait light linen, hands holding old photograph soft light"
+  descricao: Mãos segurando fotos antigas de família sobre uma mesa clara, luz natural. Tons pálidos, rostos das fotos sem nitidez.
+
+slides:
+  - tipo: capa
+    selo: Nature Medicine · 492.567 pessoas
+    titulo: Seus genes explicam ==menos do que você pensa.==
+    subtitulo: Oxford comparou o peso do DNA e o do ambiente no risco de morrer. A distância foi grande.
+    chamada: Onde o DNA ainda manda. Arraste até o final.
+
+  - tipo: texto
+    selo: A frase de todo almoço de domingo
+    titulo: “Na minha família, ==todo mundo tem.==”
+    texto: |
+      Pressão alta, diabetes, infarto. A frase quase sempre vem com um encolher de ombros, como se estivesse tudo escrito.
+
+      Uma parte está. A pergunta é quanto.
+
+  - tipo: texto
+    selo: O estudo
+    titulo: Meio milhão de pessoas. ==Genes contra ambiente.==
+    texto: |
+      Pesquisadores da Universidade de Oxford usaram o UK Biobank. De um lado, escores de risco genético para 22 doenças. Do outro, o expossoma: as exposições do ambiente e do jeito de viver.
+
+      Acharam 25 exposições ligadas à morte e ao envelhecimento, entre elas fumo, atividade física e condição financeira.
+
+  - tipo: numero
+    selo: Quanto cada um explicou, além da idade e do sexo
+    numero: "17"
+    titulo: pontos para o ambiente. ==Menos de 2 para os genes.==
+    texto: |
+      É quanto cada um acrescentou para explicar a variação no risco de morte.
+    fonte: Argentieri et al. Nat Med, 2025
+
+  - tipo: frase
+    frase: O DNA ==não saiu de cena.==
+    texto: |
+      Em demências e nos cânceres de mama, próstata e intestino, o risco genético explicou mais do que o ambiente.
+
+  - tipo: texto
+    selo: Onde o ambiente pesou mais
+    titulo: Pulmão, coração ==e fígado.==
+    texto: |
+      Nas doenças desses órgãos, as exposições explicaram mais do que a genética.
+
+      E o efeito delas apareceu qualquer que fosse o risco genético da pessoa.
+
+  - tipo: estudo
+    revista: Argentieri et al. · Nature Medicine, 2025
+    quem: 492.567 participantes do UK Biobank
+    achou: 25 exposições ligadas a morte e envelhecimento. O ambiente explicou 17 pontos a mais da variação na mortalidade; os genes, menos de 2
+    limite: É observacional e com britânicos. Escore genético não é o DNA inteiro. E família divide genes, mas também divide casa, mesa e hábitos.
+    doi: 10.1038/s41591-024-03483-9
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Histórico de família ==é aviso, não sentença.==
+    texto: |
+      Ele diz onde olhar primeiro. Conte tudo ao seu médico.
+
+      Mas, no risco de morte como um todo, o que vem de fora pesou bem mais do que o que veio de berço.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pra quem ==culpa a genética== por tudo.
+    texto: Com carinho. E confere se não é você.
+    fonte: "Argentieri MA et al. Nat Med. 2025 · doi:10.1038/s41591-024-03483-9"
+
+legenda: |
+  É genético? Um estudo de Oxford com meio milhão de pessoas mediu o peso dos genes e do ambiente no risco de morte.
+
+  Pesquisadores da Universidade de Oxford analisaram 492.567 participantes do UK Biobank. Encontraram 25 exposições ligadas à mortalidade e ao envelhecimento, entre elas fumo, atividade física e condição financeira.
+
+  Além da idade e do sexo, o ambiente explicou 17 pontos percentuais a mais da variação no risco de morte. Os escores genéticos de 22 doenças, menos de 2.
+
+  O DNA não sumiu: pesou mais em demências e nos cânceres de mama, próstata e intestino. O ambiente pesou mais nas doenças de pulmão, coração e fígado.
+
+  É um estudo observacional. Histórico familiar continua importante, e vale contar ao seu médico.
+
+  Fonte: Argentieri MA et al. Integrating the environmental and genetic architectures of aging and mortality. Nat Med. 2025;31(3):1016-25. doi:10.1038/s41591-024-03483-9
+
+  📤 Manda pra quem culpa a genética por tudo.
+
+hashtags: [longevidade, genetica, estilodevida, saude, paperai]

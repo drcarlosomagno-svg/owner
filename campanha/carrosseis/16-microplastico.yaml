@@ -1,0 +1,89 @@
+titulo: Tem plástico no cérebro humano
+pauta: Microplásticos no corpo humano (manchetes que viralizaram)
+estudo: Nihart et al. (Nature Medicine, 2025)
+paleta: escuro
+objetivo: envios
+publicar: Semana 4 · segunda
+foto:
+  busca: "plastic wrap texture black background macro, crumpled plastic dark light, plastic bottle dark water macro"
+  descricao: Filme plástico amassado ou garrafa plástica em fundo preto, luz dura revelando a textura. Macro, abstrato, sem marca.
+
+slides:
+  - tipo: capa
+    selo: Nature Medicine · cérebros de 2016 e 2024
+    titulo: Tem plástico ==no cérebro humano.==
+    subtitulo: E mais em 2024 do que em 2016. O estudo que virou manchete, lido até o fim.
+    chamada: O que ele prova e o que não prova. Arraste até o final.
+
+  - tipo: texto
+    selo: A manchete
+    titulo: Você viu a notícia. ==Leu o estudo?==
+    texto: |
+      Plástico no cérebro rodou o mundo no começo de 2025.
+
+      O artigo original, da Universidade do Novo México, diz coisas mais precisas. E algumas mais importantes.
+
+  - tipo: texto
+    selo: Como fizeram
+    titulo: Rim, fígado e cérebro ==de pessoas que já morreram.==
+    texto: |
+      Três técnicas diferentes para confirmar o achado: decompor o tecido pelo calor e identificar o que sobra, ler a assinatura química no infravermelho e olhar no microscópio eletrônico.
+
+  - tipo: frase
+    frase: Havia plástico ==nos três órgãos.==
+    texto: |
+      Principalmente polietileno, o plástico de sacolas e embalagens. No cérebro, a proporção de polietileno foi ainda maior, em fragmentos em forma de caco, em escala nanométrica.
+
+  - tipo: frase
+    frase: De 2016 para 2024, ==a concentração subiu.==
+    texto: |
+      No fígado e no cérebro, as amostras de quem morreu em 2024 tinham mais plástico do que as de 2016. Idade, sexo e causa da morte não explicaram a diferença.
+
+  - tipo: frase
+    frase: Nos cérebros com demência, ==havia ainda mais.==
+    texto: |
+      Com depósitos nas paredes dos vasos e em células de defesa do cérebro.
+
+  - tipo: texto
+    selo: Cuidado com o salto
+    titulo: Isso ==não prova== que plástico causa demência.
+    texto: |
+      O estudo olhou tecidos depois da morte. Não sabe o que veio primeiro: pode ser que um cérebro doente acumule mais plástico, e não o contrário.
+
+      Os próprios autores pedem estudos sobre como o plástico entra, como sai e o que faz no corpo.
+
+  - tipo: estudo
+    revista: Nihart et al. · Nature Medicine, 2025
+    quem: Amostras de rim, fígado e cérebro de pessoas que morreram em 2016 e em 2024, nos EUA
+    achou: Micro e nanoplásticos nos três órgãos, com mais polietileno no cérebro e aumento entre 2016 e 2024
+    limite: Não mostra causa. O resumo não informa quantas pessoas foram estudadas. E não diz quanto plástico faz mal, nem se faz.
+    doi: 10.1038/s41591-024-03453-1
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Menos pânico. ==Mais pergunta boa.==
+    texto: |
+      Ninguém sabe ainda o tamanho do risco. O que o estudo mostra é que a exposição existe e, nessas amostras, cresceu.
+
+      Desconfie de quem vende solução pronta para um problema que a ciência ainda está medindo.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pra quem viu a manchete ==e se assustou.==
+    texto: O estudo é mais interessante do que o susto.
+    fonte: "Nihart AJ et al. Nat Med. 2025 · doi:10.1038/s41591-024-03453-1"
+
+legenda: |
+  Microplástico no cérebro: o que o estudo da Nature Medicine mostrou, e o que ele não pode dizer.
+
+  Pesquisadores da Universidade do Novo México analisaram rim, fígado e cérebro de pessoas falecidas com três técnicas diferentes. Encontraram micro e nanoplásticos nos três órgãos, principalmente polietileno. No cérebro, a proporção de polietileno foi maior, em fragmentos nanométricos.
+
+  As amostras de 2024 tinham mais plástico no fígado e no cérebro do que as de 2016. E cérebros com diagnóstico de demência acumulavam ainda mais.
+
+  Isso não prova que o plástico causa demência: o estudo foi feito depois da morte e não sabe o que veio primeiro. Os autores pedem pesquisas sobre como o plástico entra, sai e age no corpo.
+
+  Fonte: Nihart AJ et al. Bioaccumulation of microplastics in decedent human brains. Nat Med. 2025;31(4):1114-9. doi:10.1038/s41591-024-03453-1
+
+  📤 Manda pra quem viu a manchete e se assustou.
+
+hashtags: [microplastico, meioambiente, neurologia, saude, paperai]

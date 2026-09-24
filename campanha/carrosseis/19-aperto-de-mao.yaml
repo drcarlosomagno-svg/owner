@@ -1,0 +1,89 @@
+titulo: Seu aperto de mão prevê mais que a sua pressão
+pauta: Força muscular e longevidade (a onda do treino de força)
+estudo: Leong et al. (The Lancet, 2015, estudo PURE)
+paleta: escuro
+objetivo: envios
+publicar: Semana 4 · quinta
+foto:
+  busca: "clenched fist dramatic side light black background, hand grip chiaroscuro, handshake dark moody"
+  descricao: Mão fechada ou aperto de mão em luz lateral forte, fundo preto, contraste alto. Estilo claro-escuro.
+
+slides:
+  - tipo: capa
+    selo: Lancet · 139.691 pessoas · 17 países
+    titulo: Seu aperto de mão ==prevê mais que a sua pressão.==
+    subtitulo: Um teste de força feito com a mão, em 17 países, com brasileiros no meio.
+    chamada: O que a força da mão avisou. Arraste até o final.
+
+  - tipo: texto
+    selo: No consultório
+    titulo: A pressão você sabe de cor. ==E a sua força?==
+    texto: |
+      Provavelmente ninguém nunca mediu.
+
+      Um estudo com gente de 17 países colocou as duas medidas lado a lado para ver qual avisava melhor.
+
+  - tipo: texto
+    selo: O estudo PURE
+    titulo: 139.691 pessoas ==de 35 a 70 anos.==
+    texto: |
+      Da Suécia ao Zimbábue, passando pelo Brasil. Cada participante apertou um dinamômetro, o aparelho que mede a força da mão.
+
+      Depois, os pesquisadores acompanharam o que aconteceu nos 4 anos seguintes.
+
+  - tipo: numero
+    selo: A cada 5 kg a menos de força
+    numero: "+16%"
+    titulo: de risco de ==morte por qualquer causa.==
+    texto: |
+      E 17% a mais de risco de morte cardiovascular. O risco de infarto e de AVC também subiu.
+    fonte: Leong et al. Lancet, 2015
+
+  - tipo: frase
+    frase: A força previu a morte ==melhor que a pressão sistólica.==
+    texto: |
+      Para morte por qualquer causa e por doença cardiovascular, a força da mão foi um indicador mais forte do que a pressão.
+
+  - tipo: texto
+    selo: O que ela não previu
+    titulo: Diabetes, quedas ==e fraturas, não.==
+    texto: |
+      O estudo não encontrou associação entre a força e diabetes, internação por pneumonia ou DPOC, lesão por queda ou fratura.
+
+      A força conta uma parte da história.
+
+  - tipo: estudo
+    revista: Leong et al. · The Lancet, 2015 (estudo PURE)
+    quem: 139.691 adultos de 17 países de renda alta, média e baixa
+    achou: Menos força de preensão, mais morte geral e cardiovascular
+    limite: A força é um marcador de risco. O estudo não testou se ficar mais forte reduz a mortalidade, e os autores dizem que isso ainda precisa ser pesquisado.
+    doi: 10.1016/S0140-6736(14)62000-6
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Treino de força ==não é vaidade.==
+    texto: |
+      O estudo não prova que ganhar força aumenta a vida. Mostra que ela diz muito sobre o risco.
+
+      Se você só faz esteira, vale conversar com o seu médico ou com um profissional de educação física sobre incluir força.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pra quem ==só faz esteira.==
+    texto: E pro amigo do aperto de mão mole.
+    fonte: "Leong DP et al. Lancet. 2015 · doi:10.1016/S0140-6736(14)62000-6"
+
+legenda: |
+  Força da mão e risco de morte: um estudo com 139 mil pessoas de 17 países, incluindo o Brasil, comparou força e pressão.
+
+  No estudo PURE, publicado no Lancet, cada participante apertou um dinamômetro e foi acompanhado por cerca de 4 anos. A cada 5 kg a menos de força de preensão, o risco de morte por qualquer causa subiu 16% e o de morte cardiovascular, 17%. A força previu essas mortes melhor do que a pressão sistólica.
+
+  Ela não se associou a diabetes, quedas ou fraturas. E o estudo não testou se ficar mais forte reduz a mortalidade; os autores dizem que isso ainda precisa ser pesquisado.
+
+  Força é marcador de risco, e conversa para ter com o seu médico.
+
+  Fonte: Leong DP et al. Prognostic value of grip strength: findings from the Prospective Urban Rural Epidemiology (PURE) study. Lancet. 2015;386(9990):266-73. doi:10.1016/S0140-6736(14)62000-6
+
+  📤 Manda pra quem só faz esteira.
+
+hashtags: [treinodeforca, longevidade, cardiologia, saude, paperai]

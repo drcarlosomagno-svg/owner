@@ -1,0 +1,89 @@
+titulo: O jejum intermitente empatou com o básico
+pauta: Jejum intermitente e "janela de alimentação" como estratégia para emagrecer
+estudo: Liu et al. (N Engl J Med, 2022)
+paleta: claro
+objetivo: envios
+publicar: Semana 3 · sexta
+foto:
+  busca: "empty white plate fork minimal pale table, breakfast table morning light white, minimal plate linen soft light"
+  descricao: Prato branco vazio com talher sobre mesa clara, luz da manhã. Minimalista, tons de branco e cinza.
+
+slides:
+  - tipo: capa
+    selo: NEJM · 139 pessoas · 12 meses
+    titulo: O jejum intermitente ==empatou com o básico.==
+    subtitulo: Um ano de estudo. A mesma meta de calorias. Só mudou o relógio.
+    chamada: Qual foi a diferença. Arraste até o final.
+
+  - tipo: texto
+    selo: A promessa
+    titulo: Comer só numa janela ==de 8 horas.==
+    texto: |
+      Primeira refeição às 8h, última às 16h, e jejum no resto do dia. A promessa é que o relógio emagrece.
+
+      Um grupo de Guangzhou, na China, testou por um ano inteiro.
+
+  - tipo: texto
+    selo: O experimento
+    titulo: Os dois grupos ==comeram o mesmo tanto.==
+    texto: |
+      139 pessoas com obesidade foram sorteadas. Todas seguiram a mesma meta de calorias: 1.500 a 1.800 por dia para homens, 1.200 a 1.500 para mulheres.
+
+      Metade podia comer a qualquer hora. A outra metade, só entre 8h e 16h.
+
+  - tipo: numero
+    selo: Depois de 12 meses
+    numero: 1,8 kg
+    titulo: de diferença. ==Dentro do acaso.==
+    texto: |
+      Quem fez o jejum perdeu 8,0 kg. Quem só cortou calorias perdeu 6,3 kg. A diferença não teve significância estatística (P = 0,11).
+    fonte: Liu et al. N Engl J Med, 2022
+
+  - tipo: texto
+    selo: Não foi só o peso
+    titulo: Cintura, gordura e pressão ==também empataram.==
+    texto: |
+      Circunferência da cintura, gordura corporal, massa magra, pressão e marcadores metabólicos seguiram o mesmo resultado.
+
+      Os efeitos adversos também foram parecidos nos dois grupos.
+
+  - tipo: frase
+    frase: Quem emagreceu ==foi a caloria.==
+    texto: |
+      Os dois grupos perderam peso. O que eles tinham em comum era comer menos.
+
+  - tipo: estudo
+    revista: Liu et al. · New England Journal of Medicine, 2022
+    quem: 139 adultos com obesidade, na China; 118 completaram os 12 meses
+    achou: Janela de 8 horas + corte de calorias não foi melhor do que só cortar calorias
+    limite: Uma população e um horário. Não diz que o jejum faz mal nem que não funciona. E o intervalo de confiança não descarta uma vantagem pequena para o jejum.
+    doi: 10.1056/NEJMoa2114833
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Se o jejum te ajuda a comer menos, ==ótimo.==
+    texto: |
+      Se ele te faz sofrer, compensar à noite ou desistir em duas semanas, este estudo sugere que você não está perdendo nada de especial.
+
+      Os dois caminhos chegaram ao mesmo lugar. Vale escolher o que você aguenta por um ano, o tempo que o estudo durou.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pra quem ==sofre no jejum== sem necessidade.
+    texto: E pra quem jura que o segredo está no relógio.
+    fonte: "Liu D et al. N Engl J Med. 2022 · doi:10.1056/NEJMoa2114833"
+
+legenda: |
+  Jejum intermitente emagrece mais? Um ensaio de 12 meses no NEJM comparou comer entre 8h e 16h com só cortar calorias.
+
+  Pesquisadores de Guangzhou, na China, sortearam 139 pessoas com obesidade. Todas seguiram a mesma meta de calorias. Metade comia a qualquer hora; a outra metade, só entre 8h e 16h.
+
+  Depois de um ano, o grupo do jejum perdeu 8,0 kg e o grupo do corte de calorias, 6,3 kg. A diferença de 1,8 kg não foi estatisticamente significativa. Cintura, gordura corporal, pressão e marcadores metabólicos seguiram o mesmo resultado.
+
+  O jejum não fez mal e funcionou: funcionou tanto quanto o básico. Se ele te ajuda a comer menos, ótimo. Se te faz sofrer, o estudo sugere que você não perde nada escolhendo outro caminho.
+
+  Fonte: Liu D et al. Calorie restriction with or without time-restricted eating in weight loss. N Engl J Med. 2022;386(16):1495-1504. doi:10.1056/NEJMoa2114833
+
+  📤 Manda pra quem sofre no jejum sem necessidade.
+
+hashtags: [jejumintermitente, emagrecimento, nutricao, obesidade, paperai]

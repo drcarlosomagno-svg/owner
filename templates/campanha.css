@@ -1,0 +1,200 @@
+/* paper.ai__ — campanha de crescimento.
+   Foto de fundo tratada por paleta, título condensado em caixa alta,
+   selo com o estudo e barra de progresso. Mesmas fontes do produto. */
+
+@font-face { font-family: 'Anton'; src: url('../assets/fonts/anton-latin-400-normal.woff2') format('woff2'); font-weight: 400; }
+@font-face { font-family: 'IBM Plex Sans'; src: url('../assets/fonts/ibm-plex-sans-latin-400-normal.woff2') format('woff2'); font-weight: 400; }
+@font-face { font-family: 'IBM Plex Sans'; src: url('../assets/fonts/ibm-plex-sans-latin-400-italic.woff2') format('woff2'); font-weight: 400; font-style: italic; }
+@font-face { font-family: 'IBM Plex Sans'; src: url('../assets/fonts/ibm-plex-sans-latin-500-normal.woff2') format('woff2'); font-weight: 500; }
+@font-face { font-family: 'IBM Plex Sans'; src: url('../assets/fonts/ibm-plex-sans-latin-600-normal.woff2') format('woff2'); font-weight: 600; }
+@font-face { font-family: 'IBM Plex Sans'; src: url('../assets/fonts/ibm-plex-sans-latin-700-normal.woff2') format('woff2'); font-weight: 700; }
+@font-face { font-family: 'IBM Plex Mono'; src: url('../assets/fonts/ibm-plex-mono-latin-500-normal.woff2') format('woff2'); font-weight: 500; }
+
+:root {
+  --display: 'Anton', Impact, 'Arial Narrow Bold', sans-serif;
+  --texto: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'IBM Plex Mono', Menlo, monospace;
+  --px: 76px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #777; display: flex; flex-direction: column; align-items: center; gap: 40px; padding: 40px 0; -webkit-font-smoothing: antialiased; }
+
+/* ---------- Paletas ---------- */
+
+.c-escuro {
+  --fundo: #0b0b0d; --tinta: #f5f3ef; --tinta-2: rgba(245, 243, 239, .8); --cinza: rgba(245, 243, 239, .55);
+  --acento: #e5132e; --sobre-acento: #ffffff; --linha: rgba(245, 243, 239, .16); --trilho: rgba(245, 243, 239, .2);
+  --cartao: rgba(255, 255, 255, .06);
+}
+.c-vibrante {
+  --fundo: #d63c17; --tinta: #fff8f2; --tinta-2: rgba(255, 248, 242, .9); --cinza: rgba(255, 248, 242, .7);
+  --acento: #111111; --sobre-acento: #fff8f2; --linha: rgba(255, 248, 242, .3); --trilho: rgba(255, 248, 242, .3);
+  --cartao: rgba(0, 0, 0, .14);
+}
+.c-claro {
+  --fundo: #eeebe5; --tinta: #151515; --tinta-2: #45423f; --cinza: #7a756f;
+  --acento: #d0112b; --sobre-acento: #ffffff; --linha: rgba(21, 21, 21, .14); --trilho: rgba(21, 21, 21, .14);
+  --cartao: rgba(255, 255, 255, .6);
+}
+
+/* ---------- Estrutura ---------- */
+
+.slide { position: relative; width: var(--w); height: var(--h); overflow: hidden; background: var(--fundo); color: var(--tinta); font-family: var(--texto); }
+
+.foto { position: absolute; inset: 0; }
+.foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.veu { position: absolute; inset: 0; pointer-events: none; }
+
+/* Tratamento da foto por paleta */
+.c-escuro .foto img { filter: grayscale(.3) saturate(.8) contrast(1.12) brightness(.6); }
+.c-escuro .veu { background: linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,.05) 30%, rgba(0,0,0,.55) 58%, rgba(0,0,0,.92) 82%, #0b0b0d 100%); }
+
+.c-vibrante .foto { background: #e2461d; }
+.c-vibrante .foto img { filter: grayscale(1) contrast(1.35) brightness(1.08); mix-blend-mode: multiply; }
+.c-vibrante .veu { background: linear-gradient(180deg, rgba(120,18,0,.1) 0%, rgba(120,18,0,0) 30%, rgba(110,16,0,.45) 60%, rgba(96,12,0,.85) 85%, #6a0f02 100%); }
+
+.c-claro .foto img { filter: grayscale(.85) contrast(.92) brightness(1.1); }
+.c-claro .veu { background: linear-gradient(180deg, rgba(238,235,229,.15) 0%, rgba(238,235,229,.2) 30%, rgba(238,235,229,.7) 55%, rgba(238,235,229,.95) 75%, #eeebe5 100%); }
+
+/* Fundo provisório enquanto a foto não chega */
+.c-escuro .foto.provisoria { background: radial-gradient(ellipse 55% 45% at 68% 26%, rgba(255,255,255,.2), transparent 70%), radial-gradient(ellipse 80% 70% at 35% 55%, #26262b, #0b0b0d 75%); }
+.c-vibrante .foto.provisoria { background: radial-gradient(ellipse 60% 50% at 32% 28%, #ff8a4a, #e2461d 50%, #8a1905 100%); }
+.c-claro .foto.provisoria { background: radial-gradient(ellipse 60% 50% at 62% 26%, #ffffff, #e7e3dc 55%, #cdc7be 100%); }
+.pendente {
+  position: absolute; top: 34px; right: 34px;
+  font: 500 18px/1 var(--mono); letter-spacing: .04em;
+  color: var(--tinta); opacity: .55;
+  padding: 8px 12px; border: 1.5px dashed currentColor; border-radius: 8px;
+}
+/* Nos slides de foto a paginação ocupa o canto direito */
+.tipo-foto .pendente { right: auto; left: 34px; }
+
+/* Grão de filme: tira a cara de "arte digital lisa" */
+.grao {
+  position: absolute; inset: 0; pointer-events: none; opacity: .13; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 1 0'/></filter><rect width='100%' height='100%' filter='url(%23g)'/></svg>");
+}
+.c-claro .grao { opacity: .1; mix-blend-mode: multiply; }
+
+.corpo {
+  --k: 1;
+  position: absolute;
+  top: 150px; bottom: 150px; left: var(--px); right: var(--px);
+  display: flex; flex-direction: column; justify-content: center;
+  gap: calc(30px * var(--k));
+  overflow: hidden;
+}
+.corpo > * { flex-shrink: 0; }
+
+.pag { position: absolute; top: 64px; right: var(--px); font: 500 24px/1 var(--mono); color: var(--cinza); }
+.rodape {
+  position: absolute; left: var(--px); right: var(--px); bottom: 82px;
+  display: flex; justify-content: space-between;
+  font: 500 23px/1 var(--mono); color: var(--cinza); letter-spacing: .02em;
+}
+.progresso { position: absolute; left: var(--px); right: var(--px); bottom: 50px; height: 6px; border-radius: 3px; background: var(--trilho); overflow: hidden; }
+.progresso span { display: block; height: 100%; background: var(--acento); border-radius: 3px; }
+.c-vibrante .progresso span { background: #fff8f2; }
+
+/* ---------- Tipografia ---------- */
+
+.selo {
+  align-self: flex-start;
+  font: 700 calc(25px * var(--k))/1.15 var(--texto);
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--sobre-acento); background: var(--acento);
+  padding: 10px 16px 9px; border-radius: 4px;
+}
+.titulo {
+  font: 400 calc(92px * var(--k))/1.08 var(--display);
+  text-transform: uppercase; letter-spacing: .3px;
+  text-wrap: balance;
+}
+.titulo.grande { font-size: calc(104px * var(--k)); }
+mark { background: none; color: var(--acento); }
+.c-vibrante mark { color: #111; }
+/* Sobre a foto, o véu escurece a base: o destaque vira tarja preta para não sumir */
+.c-vibrante.com-foto mark {
+  color: #fff8f2; padding: 0 .1em;
+  background: linear-gradient(#111, #111) 0 var(--tarja-y, 58%) / 100% var(--tarja-h, 66%) no-repeat;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+
+.texto { display: flex; flex-direction: column; gap: calc(22px * var(--k)); font-size: calc(40px * var(--k)); line-height: 1.42; color: var(--tinta-2); text-wrap: pretty; }
+.texto strong { color: var(--tinta); font-weight: 700; }
+.texto em { font-style: italic; }
+.nota { font-size: calc(28px * var(--k)); line-height: 1.45; color: var(--cinza); }
+.fonte { font: 500 calc(21px * var(--k))/1.5 var(--mono); color: var(--cinza); }
+
+/* ---------- Capa ---------- */
+
+.tipo-capa .corpo { top: 120px; bottom: 110px; justify-content: flex-end; align-items: center; text-align: center; gap: calc(26px * var(--k)); }
+.tipo-capa .selo { align-self: center; }
+.assinatura {
+  display: inline-flex; align-items: center; gap: 12px;
+  font: 600 calc(27px * var(--k))/1 var(--texto); color: var(--tinta);
+}
+.marca-circulo {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 50%;
+  background: var(--acento); color: var(--sobre-acento);
+  font: 700 22px/1 var(--texto); box-shadow: 0 0 0 3px rgba(255,255,255,.9);
+}
+.manchete {
+  font: 400 calc(128px * var(--k))/1.05 var(--display);
+  text-transform: uppercase; letter-spacing: .5px;
+  text-wrap: balance;
+}
+.sub { font-size: calc(35px * var(--k)); line-height: 1.38; color: var(--tinta-2); max-width: 94%; text-wrap: balance; }
+.chamada {
+  font: 700 calc(24px * var(--k))/1.3 var(--texto); letter-spacing: .05em; text-transform: uppercase;
+  color: var(--sobre-acento); background: var(--acento);
+  padding: 14px 22px; border-radius: 4px; max-width: 92%;
+}
+
+/* ---------- Slide de foto ---------- */
+
+.tipo-foto .corpo { justify-content: flex-end; }
+
+/* ---------- Frase (a virada) ---------- */
+
+.frase { font: 400 calc(112px * var(--k))/1.07 var(--display); text-transform: uppercase; letter-spacing: .4px; text-wrap: balance; }
+
+/* ---------- Número ---------- */
+
+.numero { font: 400 calc(260px * var(--k))/.9 var(--display); color: var(--acento); letter-spacing: 1px; white-space: nowrap; }
+.c-vibrante .numero { color: #fff8f2; }
+
+/* ---------- Ficha do estudo ---------- */
+
+.ficha { display: flex; flex-direction: column; border-top: 2px solid var(--linha); }
+.ficha .linha { padding: calc(18px * var(--k)) 0; border-bottom: 2px solid var(--linha); display: grid; grid-template-columns: calc(250px * var(--k)) 1fr; gap: calc(22px * var(--k)); }
+.ficha dt { font: 500 calc(21px * var(--k))/1.35 var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--cinza); padding-top: 6px; }
+.ficha dd { font-size: calc(33px * var(--k)); line-height: 1.38; color: var(--tinta); }
+.ficha .linha:last-child dt { color: var(--acento); }
+.c-vibrante .ficha .linha:last-child dt { color: #111; }
+
+/* ---------- Lista ---------- */
+
+.lista { list-style: none; display: flex; flex-direction: column; border-top: 2px solid var(--linha); }
+.lista li { display: grid; grid-template-columns: calc(78px * var(--k)) 1fr; gap: calc(16px * var(--k)); padding: calc(20px * var(--k)) 0; border-bottom: 2px solid var(--linha); }
+.lista .n { font: 400 calc(46px * var(--k))/1 var(--display); color: var(--acento); }
+.c-vibrante .lista .n { color: #111; }
+.lista b { display: block; font-weight: 700; font-size: calc(38px * var(--k)); line-height: 1.25; }
+.lista li span:not(.n) { display: block; margin-top: 6px; font-size: calc(31px * var(--k)); line-height: 1.4; color: var(--tinta-2); }
+
+/* ---------- CTA ---------- */
+
+.acoes { display: flex; gap: 14px; }
+.acoes span { font: 700 calc(26px * var(--k))/1 var(--texto); text-transform: uppercase; letter-spacing: .06em; padding: 14px 22px; border-radius: 4px; border: 2px solid var(--linha); color: var(--cinza); }
+.acoes .ativa { background: var(--acento); border-color: var(--acento); color: var(--sobre-acento); }
+.bastidor { font-size: calc(30px * var(--k)); line-height: 1.45; color: var(--tinta-2); padding-top: calc(24px * var(--k)); border-top: 2px solid var(--linha); }
+.bastidor strong { color: var(--tinta); }
+
+/* ---------- Prancha ---------- */
+
+.prancha { display: grid; gap: 28px; padding: 48px; background: #1c1c1e; font-family: var(--texto); }
+.prancha h1 { grid-column: 1 / -1; font: 400 46px/1 var(--display); letter-spacing: .5px; color: #f5f3ef; text-transform: uppercase; }
+.prancha h1 small { font: 500 22px/1 var(--mono); color: #a6a19b; margin-left: 16px; letter-spacing: 0; text-transform: none; }
+.prancha img { width: 100%; display: block; border-radius: 10px; }

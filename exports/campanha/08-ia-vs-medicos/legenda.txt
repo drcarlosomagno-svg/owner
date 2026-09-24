@@ -1,0 +1,15 @@
+IA melhora o diagnóstico do médico? Um ensaio randomizado com 50 médicos testou. A IA sozinha foi melhor que os dois grupos.
+
+Pesquisadores de Stanford, Harvard e outras universidades sortearam 50 médicos: metade usou um modelo de linguagem além das fontes habituais, metade só as fontes habituais. Cada um teve 60 minutos para até 6 casos clínicos.
+
+O raciocínio diagnóstico ficou em 76% com IA e 74% sem, diferença que não se separou do acaso. Numa análise exploratória, o modelo sozinho fez 16 pontos a mais que o grupo sem IA, e também superou o grupo com IA.
+
+Os autores concluem que falta preparo, das pessoas e da tecnologia, para essa parceria funcionar. O estudo usou casos escritos e um modelo de 2023.
+
+Se você usa IA para estudar ou pesquisar: dê contexto, peça o raciocínio, peça o que falaria contra e confira tudo na fonte. Nunca cole dados de pacientes.
+
+Fonte: Goh E et al. Large language model influence on diagnostic reasoning: a randomized clinical trial. JAMA Netw Open. 2024;7(10):e2440969. doi:10.1001/jamanetworkopen.2024.40969
+
+📤 Manda pro colega que usa IA no plantão.
+
+#inteligenciaartificial #medicina #residenciamedica #chatgpt #paperai

@@ -1,0 +1,87 @@
+titulo: Proibir o celular na escola não bastou
+pauta: Lei 15.100 (celular nas escolas) completou um ano; MEC mede o impacto
+estudo: SMART Schools (Lancet Regional Health Europe, 2025)
+paleta: vibrante
+objetivo: envios
+publicar: Semana 1 · sexta
+foto:
+  busca: "teenagers school hallway lockers, students backpack blur, high school corridor film"
+  descricao: Corredor de escola com adolescentes de costas ou desfocados, mochilas, luz de janela. Rostos não identificáveis.
+
+slides:
+  - tipo: capa
+    selo: Lancet · 1.227 alunos · 30 escolas
+    titulo: Proibir o celular na escola ==não bastou.==
+    subtitulo: O Brasil completou um ano de lei. A Inglaterra já tinha medido o que acontece.
+    chamada: O que o estudo encontrou. Arraste até o final.
+
+  - tipo: texto
+    selo: Janeiro de 2026
+    titulo: A lei fez um ano.
+    texto: |
+      Desde 2025, a Lei 15.100 restringe o celular nas escolas de educação básica do país. O MEC está medindo o efeito.
+
+      Enquanto o resultado não sai, dá para olhar para quem mediu antes.
+
+  - tipo: texto
+    selo: Dois jeitos de fazer
+    titulo: 30 escolas inglesas. ==Duas regras.==
+    texto: |
+      Em 20 delas, o celular era proibido o dia inteiro. Em 10, liberado nos intervalos.
+
+      Pesquisadores da Universidade de Birmingham ouviram 1.227 alunos de 12 a 15 anos e mediram duas coisas: bem-estar mental e tempo de celular.
+
+  - tipo: frase
+    frase: Nenhuma diferença ==no bem-estar.==
+    texto: |
+      A nota média foi 47 nos dois tipos de escola. A distância entre elas ficou em menos de meio ponto, dentro da margem do acaso.
+
+  - tipo: numero
+    selo: O que a proibição conseguiu
+    numero: 40 min
+    titulo: a menos de celular ==durante a aula.==
+    texto: |
+      E 32 minutos a menos de rede social no horário escolar.
+
+      Mas, somando o dia inteiro, e o fim de semana, o uso ficou parecido nos dois grupos.
+
+  - tipo: frase
+    frase: O celular ==mudou de horário.==
+    texto: |
+      Na conta do dia, o tempo de tela quase não se mexeu.
+
+  - tipo: estudo
+    revista: SMART Schools · The Lancet Regional Health Europe, 2025
+    quem: 1.227 alunos de 12 a 15 anos, em 30 escolas da Inglaterra
+    achou: Bem-estar mental igual entre escolas que proíbem e que liberam; menos tela só no horário escolar
+    limite: É uma fotografia de um momento, não acompanha a mudança ao longo do tempo. É da Inglaterra, não do Brasil. E não diz que o celular faz bem.
+    doi: 10.1016/j.lanepe.2025.101211
+
+  - tipo: texto
+    selo: E agora?
+    titulo: O dia de um adolescente ==não termina às 17h.==
+    texto: |
+      Os próprios autores concluem que as regras, do jeito que estão, não se sustentam sozinhas e precisam ser desenvolvidas.
+
+      Tirar o celular da sala foi um começo. A outra metade da conversa acontece em casa.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pro ==grupo dos pais== da escola.
+    texto: Antes da próxima reunião sobre celular.
+    fonte: "Goodyear et al. Lancet Reg Health Eur. 2025 · doi:10.1016/j.lanepe.2025.101211"
+
+legenda: |
+  Proibir celular na escola melhora a saúde mental? O que mostrou o estudo SMART Schools (Lancet, 2025).
+
+  A Lei 15.100, que restringe o celular nas escolas brasileiras, completou um ano. O MEC está medindo o efeito. Na Inglaterra, pesquisadores da Universidade de Birmingham já tinham comparado 30 escolas: 20 que proíbem o celular o dia todo e 10 que liberam nos intervalos.
+
+  Com 1.227 alunos de 12 a 15 anos, o bem-estar mental foi igual nos dois grupos. As escolas restritivas tiraram 40 minutos de celular e 32 de rede social do horário escolar, mas o uso total do dia, e do fim de semana, ficou parecido.
+
+  O estudo é transversal e inglês: não prova que a regra é inútil, nem que o celular faz bem. Mostra que tirar o aparelho da sala, sozinho, não resolveu.
+
+  Fonte: Goodyear VA et al. School phone policies and their association with mental wellbeing, phone use, and social media use (SMART Schools). Lancet Reg Health Eur. 2025;51:101211. doi:10.1016/j.lanepe.2025.101211
+
+  📤 Manda pro grupo dos pais da escola.
+
+hashtags: [celularnaescola, saudemental, adolescencia, educacao, paperai]

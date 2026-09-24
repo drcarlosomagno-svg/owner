@@ -1,0 +1,100 @@
+titulo: O quase ganhar é o que prende
+pauta: Bets custam R$ 30,6 bi por ano ao SUS; 574 mil pessoas já pediram autoexclusão
+estudo: Clark et al. (Neuron, 2009)
+paleta: escuro
+objetivo: envios
+publicar: Semana 2 · terça
+foto:
+  busca: "empty football stadium night floodlights, soccer field dark fog lights, stadium lights night moody"
+  descricao: Estádio de futebol vazio à noite, refletores acesos, névoa ou fumaça no ar, arquibancada no escuro. Nenhuma marca ou escudo visível.
+
+slides:
+  - tipo: capa
+    selo: Neuron · Universidade de Cambridge · 2009
+    titulo: O ==quase== ganhar é o que prende.
+    subtitulo: Na derrota por um triz, o cérebro de quem aposta acende as mesmas áreas da vitória.
+    chamada: O que a ressonância mostrou. Arraste até o final.
+
+  - tipo: texto
+    selo: Setembro de 2026
+    titulo: R$ 30,6 bilhões ==por ano.==
+    texto: |
+      É o impacto financeiro das bets no SUS, na estimativa do IEPS. E 574 mil pessoas já pediram para ser bloqueadas, de uma vez, em todas as casas de aposta autorizadas.
+
+      41% delas deram o mesmo motivo: perda de controle e impacto na saúde mental.
+
+  - tipo: texto
+    selo: A pergunta
+    titulo: Por que é tão difícil ==parar quando se perde?==
+    texto: |
+      Pela lógica, perder deveria afastar. Com muita gente, acontece o contrário.
+
+      Em 2009, um grupo da Universidade de Cambridge colocou voluntários numa ressonância para ver o que o cérebro faz na hora do erro.
+
+  - tipo: texto
+    selo: O experimento
+    titulo: Um caça-níquel ==dentro da ressonância.==
+    texto: |
+      Uma versão simplificada da máquina. Os pesquisadores compararam três resultados: ganhar, errar longe e errar por um triz, quando a roleta para colada no prêmio.
+
+  - tipo: frase
+    frase: O quase ganhar ==foi pior.== E deu mais vontade.
+    texto: |
+      Os voluntários acharam o erro por um triz menos agradável do que o erro longe. Mesmo assim, a vontade de jogar de novo aumentou.
+
+  - tipo: foto
+    foto: 2
+    foto_brief:
+      busca: "slot machine lights dark close up, neon reels dark red, casino lights bokeh night"
+      descricao: Luzes de máquina ou de cassino desfocadas no escuro, vermelho e âmbar. Abstrato, sem logo e sem pessoas.
+    selo: No cérebro
+    titulo: Acendeu o circuito ==da vitória.==
+    texto: |
+      O quase ganhar ativou o estriado e a ínsula, regiões que também respondiam quando o voluntário ganhava dinheiro de verdade.
+
+      Nenhum centavo entrou. O cérebro reagiu mesmo assim.
+
+  - tipo: frase
+    frase: Só funcionou quando ==a pessoa escolhia.==
+    texto: |
+      O efeito apareceu apenas nas rodadas em que o voluntário controlava a jogada. Quando a máquina escolhia sozinha, ele não apareceu.
+
+      O estudo não testou apostas esportivas. Mas repare quantas escolhas elas pedem: o time, o placar, a hora de encerrar.
+
+  - tipo: estudo
+    revista: Clark et al. · Neuron, 2009
+    quem: Voluntários jogando um caça-níquel simplificado durante uma ressonância funcional
+    achou: O quase ganhar diminuiu o prazer, aumentou a vontade de jogar e ativou áreas ligadas à recompensa
+    limite: É um experimento de laboratório, com uma máquina simples. Não mediu apostas esportivas nem cassino online, e não diz quem vai desenvolver vício.
+    doi: 10.1016/j.neuron.2008.12.031
+
+  - tipo: texto
+    selo: Se isso é com você
+    titulo: Existe ajuda, ==e é de graça.==
+    texto: |
+      A plataforma de autoexclusão do governo bloqueia todas as casas de aposta autorizadas com um só pedido, pelo CPF.
+
+      No SUS, a porta de entrada é a unidade básica de saúde ou o CAPS da sua cidade. Em 2026, o SUS abriu também teleatendimento em saúde mental para casos ligados a apostas.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pra quem ==precisa ouvir isso.==
+    texto: Sem julgamento. Vício em aposta é assunto de saúde.
+    fonte: "Clark L et al. Neuron. 2009 · doi:10.1016/j.neuron.2008.12.031"
+
+legenda: |
+  Por que é tão difícil parar de apostar? Um estudo de Cambridge mostrou o que o "quase ganhar" faz com o cérebro.
+
+  As bets custam ao SUS cerca de R$ 30,6 bilhões por ano, segundo estimativa do IEPS. E 574 mil pessoas já usaram a plataforma de autoexclusão do governo; 41% citaram perda de controle e impacto na saúde mental.
+
+  Em 2009, pesquisadores da Universidade de Cambridge colocaram voluntários para jogar um caça-níquel simplificado dentro de uma ressonância. Errar por um triz foi sentido como pior do que errar longe, mas aumentou a vontade de continuar jogando, e ativou regiões do cérebro que também respondem a ganhos de verdade. O efeito só apareceu quando a pessoa controlava a jogada.
+
+  É um experimento de laboratório: não mediu apostas esportivas nem diz quem vai desenvolver vício.
+
+  Se você perdeu o controle: a autoexclusão bloqueia todas as casas autorizadas pelo CPF, e o SUS atende pela unidade básica de saúde, pelo CAPS e, desde 2026, por teleatendimento. Em sofrimento agora? O CVV atende de graça, 24 horas, pelo 188.
+
+  Fonte: Clark L, Lawrence AJ, Astley-Jones F, Gray N. Gambling near-misses enhance motivation to gamble and recruit win-related brain circuitry. Neuron. 2009;61(3):481-90. doi:10.1016/j.neuron.2008.12.031
+
+  📤 Manda pra quem precisa ouvir isso.
+
+hashtags: [bets, apostas, saudemental, neurociencia, paperai]

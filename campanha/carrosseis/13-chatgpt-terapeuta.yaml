@@ -1,0 +1,91 @@
+titulo: 3 da manhã, você desabafou com um chatbot
+pauta: Gente usando IA como terapeuta, principalmente de madrugada
+estudo: Im e Woo (JMIR Mental Health, 2025)
+paleta: escuro
+objetivo: envios
+publicar: Semana 3 · quarta
+foto:
+  busca: "person in bed at night phone glow face, dark bedroom phone light blanket, insomnia phone screen night"
+  descricao: Pessoa deitada no escuro, rosto parcialmente iluminado pela tela do celular. Clima de madrugada, quase tudo em sombra.
+
+slides:
+  - tipo: capa
+    selo: JMIR · 14 estudos · 10 anos de pesquisa
+    titulo: 3 da manhã. ==Você desabafou com um chatbot.==
+    subtitulo: Muita gente faz. Pouca gente sabe o que os estudos mostram.
+    chamada: O que ajudou e o que ninguém testou. Arraste até o final.
+
+  - tipo: texto
+    selo: A cena
+    titulo: Ninguém acordado. ==O chat sempre está.==
+    texto: |
+      Responde na hora. Não julga, não cansa, não muda de assunto.
+
+      Faz sentido que tanta gente conte para a IA o que não conta para ninguém. A pergunta é se isso ajuda de verdade.
+
+  - tipo: texto
+    selo: O estudo
+    titulo: 14 estudos. ==De 2015 a 2025.==
+    texto: |
+      Uma revisão da Universidade de Ulsan, na Coreia do Sul, reuniu pesquisas com chatbots de terapia cognitivo-comportamental, a TCC, para depressão e ansiedade.
+
+  - tipo: frase
+    frase: Na depressão, ==ajudou.== No curto prazo.
+    texto: |
+      Os chatbots de TCC reduziram sintomas de depressão de forma consistente, com efeito moderado.
+
+  - tipo: frase
+    frase: Na ansiedade, ==resultado misto.==
+    texto: |
+      Alguns estudos viram melhora. Outros não viram diferença, ou nem relataram o dado.
+
+  - tipo: frase
+    frase: No longo prazo, ==quase nada medido.==
+    texto: |
+      Pouca gente foi acompanhada por tempo suficiente para saber se o efeito dura.
+
+  - tipo: texto
+    selo: O detalhe
+    titulo: Os estudos testaram ==chatbots de terapia.==
+    texto: |
+      Programas desenhados com técnicas de TCC: rever pensamentos, retomar atividades, registrar o humor.
+
+      Um assistente de uso geral não é a mesma coisa. E, sobre os chatbots de IA generativa, os autores falam em oportunidades e em riscos.
+
+  - tipo: estudo
+    revista: Im e Woo · JMIR Mental Health, 2025
+    quem: Revisão de 14 estudos publicados entre 2015 e 2025
+    achou: Menos sintomas de depressão no curto prazo, com efeito moderado; ansiedade com resultados mistos
+    limite: É uma revisão narrativa, de estudos muito diferentes entre si. Não avaliou assistentes de uso geral e pouco diz sobre o que acontece depois de meses.
+    doi: 10.2196/78340
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Desabafar alivia. ==Crise pede gente.==
+    texto: |
+      Se o chat virou o único lugar onde você fala do que sente, procure um psicólogo ou o seu médico.
+
+      Se está difícil agora, o CVV atende de graça, 24 horas, pelo 188.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pra quem ==desabafa com IA de madrugada.==
+    texto: Com carinho, não com bronca.
+    fonte: "Im CH, Woo M. JMIR Ment Health. 2025 · doi:10.2196/78340"
+
+legenda: |
+  ChatGPT como terapeuta funciona? Uma revisão de 14 estudos mostra o que chatbots de terapia conseguem e o que ninguém mediu.
+
+  Pesquisadores da Universidade de Ulsan, na Coreia do Sul, revisaram 14 estudos (2015 a 2025) com chatbots baseados em terapia cognitivo-comportamental para depressão e ansiedade.
+
+  Na depressão, houve redução de sintomas no curto prazo, com efeito moderado. Na ansiedade, resultados mistos. No longo prazo, pouca evidência. E os autores lembram que os chatbots de IA generativa trazem oportunidades e riscos.
+
+  Os estudos testaram programas de terapia, não assistentes de uso geral.
+
+  Se o chat virou seu único lugar de desabafo, procure um psicólogo ou o seu médico. Se está difícil agora, o CVV atende de graça, 24 horas, pelo 188.
+
+  Fonte: Im CH, Woo M. Clinical efficacy, therapeutic mechanisms, and implementation features of cognitive behavioral therapy-based chatbots for depression and anxiety: narrative review. JMIR Ment Health. 2025;12:e78340. doi:10.2196/78340
+
+  📤 Manda pra quem desabafa com IA de madrugada.
+
+hashtags: [saudemental, inteligenciaartificial, terapia, ansiedade, paperai]

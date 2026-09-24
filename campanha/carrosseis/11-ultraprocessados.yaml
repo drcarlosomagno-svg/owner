@@ -1,0 +1,91 @@
+titulo: A palavra ultraprocessado nasceu no Brasil
+pauta: Ultraprocessados no centro do debate sobre alimentação (rótulos, Guia Alimentar, classificação NOVA)
+estudo: Hall et al. (Cell Metabolism, 2019)
+paleta: vibrante
+objetivo: envios
+publicar: Semana 3 · segunda
+foto:
+  busca: "snacks packaging flat lay orange background, chips soda cookies overhead hard light, junk food red background"
+  descricao: Pacotes de salgadinho, refrigerante e biscoito vistos de cima, luz dura, fundo laranja ou vermelho. Sem marca legível.
+
+slides:
+  - tipo: capa
+    selo: Cell Metabolism · NIH · 20 voluntários internados
+    titulo: A palavra ultraprocessado ==nasceu no Brasil.==
+    subtitulo: Depois, o governo americano internou 20 voluntários para testar a ideia.
+    chamada: Quantas calorias a mais. Arraste até o final.
+
+  - tipo: texto
+    selo: São Paulo
+    titulo: A USP criou ==a classificação NOVA.==
+    texto: |
+      Um grupo liderado por Carlos Monteiro separou a comida pelo grau de processamento, não pelos nutrientes. O último grupo ganhou o nome de ultraprocessados.
+
+      A ideia foi parar no Guia Alimentar para a População Brasileira.
+
+  - tipo: texto
+    selo: A dúvida
+    titulo: Não seria só ==açúcar, gordura e sal?==
+    texto: |
+      Se fosse, dois pratos com as mesmas quantidades desses nutrientes deviam dar no mesmo, processado ou não.
+
+      Kevin Hall, pesquisador do NIH, nos Estados Unidos, montou o teste.
+
+  - tipo: texto
+    selo: O experimento
+    titulo: 20 adultos ==internados por 4 semanas.==
+    texto: |
+      Duas semanas de comida ultraprocessada e duas de comida não processada, em ordem sorteada.
+
+      Os pratos oferecidos tinham as mesmas calorias, a mesma densidade, os mesmos açúcar, sódio, fibra e macronutrientes. Cada um comia o quanto quisesse.
+
+  - tipo: numero
+    selo: Na fase ultraprocessada
+    numero: "+508"
+    titulo: calorias por dia. ==Sem ninguém mandar.==
+    texto: |
+      Mais carboidrato e mais gordura. A proteína ficou igual.
+    fonte: Hall et al. Cell Metab, 2019
+
+  - tipo: frase
+    frase: Em duas semanas, ==a balança respondeu.==
+    texto: |
+      Na dieta ultraprocessada, os voluntários ganharam 0,9 kg. Na não processada, perderam 0,9 kg.
+
+  - tipo: estudo
+    revista: Hall et al. · Cell Metabolism, 2019
+    quem: 20 adultos com peso estável, internados no centro clínico do NIH
+    achou: Com pratos pareados em nutrientes, a dieta ultraprocessada levou a comer 508 kcal a mais por dia
+    limite: Poucos participantes, pouco tempo, ambiente de hospital. O estudo não explica sozinho por que se come mais. E não diz que todo alimento industrializado é igual.
+    doi: 10.1016/j.cmet.2019.05.008
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Leia a lista ==de ingredientes.==
+    texto: |
+      Ingrediente de nome estranho, que você não usaria na sua cozinha, é a pista que o Guia Alimentar dá para reconhecer um ultraprocessado.
+
+      A regra de ouro do Guia cabe numa linha: prefira comida de verdade.
+
+  - tipo: cta
+    destaque: salvar
+    titulo: Salva e manda ==pro grupo da família.==
+    texto: E pra quem acha que ultraprocessado é só açúcar e sal.
+    fonte: "Hall KD et al. Cell Metab. 2019 · doi:10.1016/j.cmet.2019.05.008"
+
+legenda: |
+  Ultraprocessados engordam mesmo com as mesmas calorias? O estudo do NIH que testou a classificação criada na USP.
+
+  A classificação NOVA, que separa os alimentos pelo grau de processamento e deu nome aos ultraprocessados, foi criada por pesquisadores da USP liderados por Carlos Monteiro. Ela está na base do Guia Alimentar para a População Brasileira.
+
+  Em 2019, Kevin Hall internou 20 adultos no NIH por 4 semanas: duas de dieta ultraprocessada e duas de não processada, com pratos pareados em calorias, açúcar, sódio, fibra e macronutrientes. Cada um comia o quanto quisesse.
+
+  Na fase ultraprocessada, comeram 508 calorias a mais por dia e ganharam 0,9 kg. Na não processada, perderam 0,9 kg.
+
+  Foram poucos participantes, pouco tempo e um ambiente de hospital. Mesmo assim, com os nutrientes pareados, a diferença apareceu.
+
+  Fonte: Hall KD et al. Ultra-processed diets cause excess calorie intake and weight gain: an inpatient randomized controlled trial of ad libitum food intake. Cell Metab. 2019;30(1):67-77. doi:10.1016/j.cmet.2019.05.008
+
+  📤 Salva e manda pro grupo da família.
+
+hashtags: [ultraprocessados, alimentacao, nutricao, guiaalimentar, paperai]

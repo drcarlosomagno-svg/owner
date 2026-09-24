@@ -1,0 +1,100 @@
+titulo: Deram IA para os médicos. A IA sozinha foi melhor.
+pauta: Médicos usando IA no dia a dia do consultório e do plantão
+estudo: Goh et al. (JAMA Network Open, 2024)
+paleta: vibrante
+objetivo: envios
+publicar: Semana 2 · quarta
+foto:
+  busca: "doctor hands laptop night, stethoscope keyboard dramatic light, physician desk screen glow"
+  descricao: Mãos de médico (jaleco ou estetoscópio à vista) sobre um notebook, luz da tela. Sem rosto e sem marca de software.
+
+slides:
+  - tipo: capa
+    selo: JAMA · 50 médicos · ensaio randomizado
+    titulo: Deram IA para os médicos. ==A IA sozinha foi melhor.==
+    subtitulo: Um ensaio mediu o raciocínio de 50 médicos. O dado mais comentado nem era o objetivo principal.
+    chamada: O que isso diz sobre usar IA. Arraste até o final.
+
+  - tipo: texto
+    selo: O plantão de 2026
+    titulo: Tem médico abrindo IA ==entre um paciente e outro.==
+    texto: |
+      Para lembrar uma dose, montar um diferencial, revisar um caso.
+
+      A pergunta que importa: com a IA do lado, o médico raciocina melhor?
+
+  - tipo: texto
+    selo: O experimento
+    titulo: 50 médicos. ==6 casos. 60 minutos.==
+    texto: |
+      Pesquisadores de Stanford, Harvard e outras universidades americanas sortearam os médicos em dois grupos. Metade podia usar um modelo de linguagem além das fontes de sempre. A outra metade, só as fontes de sempre.
+
+      A nota media o raciocínio: diagnósticos possíveis, o que falava a favor e contra cada um, e o próximo exame.
+
+  - tipo: numero
+    selo: Médicos com IA vs sem IA
+    numero: "+2"
+    titulo: pontos. ==Dentro do acaso.==
+    texto: |
+      76% contra 74%. Uma diferença que o estudo não conseguiu separar do acaso (P = 0,60).
+    fonte: Goh et al. JAMA Netw Open, 2024
+
+  - tipo: frase
+    frase: Aí eles testaram ==a IA sozinha.==
+    texto: |
+      Numa análise exploratória, os mesmos casos foram dados só para o modelo, sem médico nenhum.
+
+  - tipo: numero
+    selo: IA sozinha vs médicos sem IA
+    numero: "+16"
+    titulo: pontos ==para a máquina.==
+    texto: |
+      E ela também ficou acima do grupo de médicos que tinha a IA do lado.
+    fonte: Goh et al. JAMA Netw Open, 2024 · análise exploratória
+
+  - tipo: texto
+    selo: Como pode?
+    titulo: Ter a ferramenta ==não bastou.==
+    texto: |
+      Os autores concluem que falta preparo, das pessoas e da tecnologia, para a parceria entre médico e IA render.
+
+      **Nossa leitura, não do estudo:** o jeito de perguntar provavelmente pesa. O estudo não mediu como cada médico usou o modelo.
+
+  - tipo: estudo
+    revista: Goh et al. · JAMA Network Open, 2024
+    quem: 50 médicos (26 assistentes e 24 residentes) de medicina de família, clínica médica e emergência
+    achou: Com IA, raciocínio igual ao de quem não usou. A IA sozinha fez 16 pontos a mais
+    limite: Casos escritos, não pacientes reais. Um modelo de 2023, já superado. E a vantagem da IA sozinha veio de uma análise exploratória, que ainda precisa ser confirmada.
+    doi: 10.1001/jamanetworkopen.2024.40969
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Pergunte ==com método.==
+    texto: |
+      Dê contexto. Peça o raciocínio, não só a resposta. Peça o que falaria contra. E confira cada informação na fonte.
+
+      Nunca cole dados que identifiquem um paciente.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pro colega ==que usa IA no plantão.==
+    texto: E salva pra reler antes de abrir o chat.
+    bastidor: A **Biblioteca paper.ai__** reúne prompts de pesquisa com esse método, e com regra de checagem em cada um. Link na bio.
+    fonte: "Goh E et al. JAMA Netw Open. 2024 · doi:10.1001/jamanetworkopen.2024.40969"
+
+legenda: |
+  IA melhora o diagnóstico do médico? Um ensaio randomizado com 50 médicos testou. A IA sozinha foi melhor que os dois grupos.
+
+  Pesquisadores de Stanford, Harvard e outras universidades sortearam 50 médicos: metade usou um modelo de linguagem além das fontes habituais, metade só as fontes habituais. Cada um teve 60 minutos para até 6 casos clínicos.
+
+  O raciocínio diagnóstico ficou em 76% com IA e 74% sem, diferença que não se separou do acaso. Numa análise exploratória, o modelo sozinho fez 16 pontos a mais que o grupo sem IA, e também superou o grupo com IA.
+
+  Os autores concluem que falta preparo, das pessoas e da tecnologia, para essa parceria funcionar. O estudo usou casos escritos e um modelo de 2023.
+
+  Se você usa IA para estudar ou pesquisar: dê contexto, peça o raciocínio, peça o que falaria contra e confira tudo na fonte. Nunca cole dados de pacientes.
+
+  Fonte: Goh E et al. Large language model influence on diagnostic reasoning: a randomized clinical trial. JAMA Netw Open. 2024;7(10):e2440969. doi:10.1001/jamanetworkopen.2024.40969
+
+  📤 Manda pro colega que usa IA no plantão.
+
+hashtags: [inteligenciaartificial, medicina, residenciamedica, chatgpt, paperai]

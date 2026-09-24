@@ -1,0 +1,95 @@
+titulo: 1 minuto, 3 vezes ao dia, sem academia
+pauta: '"Não tenho tempo pra academia" e a moda dos treinos curtos'
+estudo: Stamatakis et al. (Nature Medicine, 2022)
+paleta: vibrante
+objetivo: envios
+publicar: Semana 4 · sexta
+foto:
+  busca: "person running up stairs orange wall shadow, staircase red light motion, climbing stairs hard shadow"
+  descricao: Pessoa subindo escada rápido, parede laranja ou vermelha, sombra forte. Movimento, sem rosto.
+
+slides:
+  - tipo: capa
+    selo: Nature Medicine · 25.241 pessoas que não treinam
+    titulo: 1 minuto, 3 vezes ao dia. ==Sem academia.==
+    subtitulo: Sensores no pulso de gente que não se exercita mostraram o peso dos minutos do dia a dia.
+    chamada: Quanto o risco caiu. Arraste até o final.
+
+  - tipo: texto
+    selo: A desculpa mais honesta
+    titulo: “Eu ==não tenho tempo.==”
+    texto: |
+      Trabalho, trânsito, filho, plantão. A academia fica para segunda-feira. Todas as segundas.
+
+      Uma equipe da Universidade de Sydney resolveu olhar justamente para quem nunca treina.
+
+  - tipo: texto
+    selo: O estudo
+    titulo: Um sensor no pulso ==de quem não se exercita.==
+    texto: |
+      25.241 pessoas do UK Biobank, com idade média de 62 anos, que não faziam exercício no tempo livre. Um acelerômetro registrou o movimento de cada uma, e todas foram acompanhadas por cerca de 7 anos.
+
+  - tipo: texto
+    selo: O que o sensor procurou
+    titulo: Surtos curtos de ==esforço de verdade.==
+    texto: |
+      Atividade vigorosa que já faz parte do dia, fora de qualquer treino: subir escada rápido, apertar o passo. Um ou dois minutos de cada vez.
+
+  - tipo: numero
+    selo: 3 surtos por dia, de 1 a 2 minutos
+    numero: 38–40%
+    titulo: menos risco de morte ==geral e por câncer.==
+    texto: |
+      E 48–49% menos risco de morte cardiovascular, em comparação com quem não tinha nenhum surto.
+    fonte: Stamatakis et al. Nat Med, 2022
+
+  - tipo: numero
+    selo: Somando o dia
+    numero: 4,4 min
+    titulo: já apareceram com ==26–30% menos risco.==
+    texto: |
+      De morte geral e por câncer. E 32–34% menos de morte cardiovascular.
+    fonte: Stamatakis et al. Nat Med, 2022
+
+  - tipo: frase
+    frase: Para quem não treina, ==pareceu treino.==
+    texto: |
+      Em 62.344 pessoas que se exercitavam, a atividade vigorosa mostrou resultados parecidos. Os autores sugerem esses minutos como meta para quem não pode ou não quer fazer exercício.
+
+  - tipo: estudo
+    revista: Stamatakis et al. · Nature Medicine, 2022
+    quem: 25.241 adultos do UK Biobank que não se exercitavam, com atividade medida por acelerômetro
+    achou: Poucos minutos de esforço vigoroso no dia a dia associados a bem menos mortalidade
+    limite: É observacional. Quem consegue fazer esses surtos pode ter mais saúde desde o início. Não é ensaio clínico, e não diz qual atividade fazer.
+    doi: 10.1038/s41591-022-02100-x
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: A escada ==é o seu minuto.==
+    texto: |
+      Suba rápido. Ande como quem está atrasado. Carregue as compras.
+
+      Se você tem doença do coração ou sente dor no peito com esforço, converse antes com o seu médico.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pra quem ==não tem tempo pra nada.==
+    texto: Um minuto essa pessoa tem.
+    fonte: "Stamatakis E et al. Nat Med. 2022 · doi:10.1038/s41591-022-02100-x"
+
+legenda: |
+  Sem tempo para academia? Um estudo com 25 mil pessoas que não treinam mediu o efeito de 1 minuto de esforço, 3 vezes ao dia.
+
+  Pesquisadores da Universidade de Sydney usaram acelerômetros no UK Biobank para medir surtos curtos de atividade vigorosa do dia a dia, como subir escada rápido ou apertar o passo, em 25.241 pessoas que não se exercitavam.
+
+  Quem tinha 3 surtos por dia, de 1 a 2 minutos cada, apresentou 38–40% menos risco de morte geral e por câncer e 48–49% menos de morte cardiovascular. Somar 4,4 minutos por dia já apareceu com 26–30% menos risco. O efeito foi parecido com o do exercício vigoroso em quem treina.
+
+  É um estudo observacional: mostra associação, não prova causa.
+
+  ⚠️ Doença do coração ou dor no peito com esforço? Converse antes com o seu médico.
+
+  Fonte: Stamatakis E et al. Association of wearable device-measured vigorous intermittent lifestyle physical activity with mortality. Nat Med. 2022;28(12):2521-9. doi:10.1038/s41591-022-02100-x
+
+  📤 Manda pra quem não tem tempo pra nada.
+
+hashtags: [atividadefisica, longevidade, semtempo, saude, paperai]

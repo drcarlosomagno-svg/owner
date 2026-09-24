@@ -1,0 +1,88 @@
+titulo: A fita na boca que viralizou
+pauta: Trend de dormir com fita na boca (mouth taping)
+estudo: Revisão sistemática (PLoS One, 2025)
+paleta: claro
+objetivo: envios
+publicar: Semana 3 · terça
+foto:
+  busca: "white linen bed morning light minimal, sleeping person white sheets soft light"
+  descricao: Cama de lençóis brancos com luz suave da manhã, pessoa dormindo de lado ou só o travesseiro. Tons claros, quase sem cor.
+
+slides:
+  - tipo: capa
+    selo: PLoS One · 10 estudos · 213 pacientes
+    titulo: A fita na boca ==viralizou.== A ciência foi olhar.
+    subtitulo: Dormir com a boca colada promete sono profundo e fim do ronco.
+    chamada: O que 10 estudos encontraram. Arraste até o final.
+
+  - tipo: texto
+    selo: A trend
+    titulo: Um pedaço de fita antes de dormir.
+    texto: |
+      A ideia é obrigar a respiração pelo nariz a noite inteira. Os vídeos mostram gente acordando renovada.
+
+      Só que vídeo não é estudo.
+
+  - tipo: texto
+    selo: A pergunta que o vídeo não faz
+    titulo: E se o nariz ==estiver entupido?==
+    texto: |
+      Rinite, desvio de septo, gripe. Muita gente respira pela boca à noite porque o nariz não dá conta.
+
+      Foi isso que uma equipe de otorrinolaringologia do Canadá decidiu checar.
+
+  - tipo: numero
+    selo: 25 anos de literatura
+    numero: "10"
+    titulo: estudos. 213 pacientes. ==No total.==
+    texto: |
+      Foi o que sobrou depois de uma busca em três bases, de 1999 a 2024. É pouco para qualquer promessa.
+
+  - tipo: texto
+    selo: O que eles viram
+    titulo: Só ==2 de 10== mostraram melhora.
+    texto: |
+      Dois estudos acharam melhora em marcadores de apneia. Os outros não viram diferença.
+
+      E vários só aceitaram participantes **sem** problema no nariz, justamente quem corre menos risco.
+
+  - tipo: frase
+    frase: O risco citado foi ==asfixia.==
+    texto: |
+      Com o nariz obstruído, fechar a boca pode deixar a pessoa sem saída de ar. Os autores falam em risco potencialmente sério para quem adota a prática sem critério.
+
+  - tipo: estudo
+    revista: Rhee et al. · PLoS One, 2025
+    quem: Revisão sistemática com 10 estudos e 213 pacientes com respiração pela boca, ronco ou apneia
+    achou: Evidência fraca de benefício e relato de riscos
+    limite: Estudos pequenos e diferentes entre si. Não prova que a fita faz mal a todo mundo, nem que nunca ajuda.
+    doi: 10.1371/journal.pone.0323643
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Ronco e boca aberta ==têm causa.==
+    texto: |
+      Antes da fita, vale descobrir o porquê: o nariz, a posição, o peso, a apneia.
+
+      Isso se investiga com médico e, às vezes, com um exame do sono.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pra quem ==já comprou a fita.==
+    texto: E salva pra quando alguém da família mostrar o vídeo.
+    fonte: "Rhee et al. PLoS One. 2025 · doi:10.1371/journal.pone.0323643"
+
+legenda: |
+  Dormir com fita na boca funciona? O que uma revisão sistemática encontrou sobre a trend do mouth taping.
+
+  A promessa dos vídeos: respirar só pelo nariz, dormir melhor, parar de roncar. Uma equipe de otorrinolaringologia do Canadá revisou 25 anos de estudos e achou só 10, com 213 pacientes no total.
+
+  Dois estudos mostraram melhora em marcadores de apneia. Os outros, nenhuma diferença. E os autores citam um risco sério: com o nariz obstruído, a fita pode deixar a pessoa sem saída de ar.
+
+  Ronco e respiração pela boca têm causa. Descobrir qual é vem antes de qualquer fita.
+
+  Fonte: Rhee J et al. Breaking social media fads and uncovering the safety and efficacy of mouth taping. PLoS One. 2025;20(5):e0323643. doi:10.1371/journal.pone.0323643
+
+  📤 Manda pra quem já comprou a fita.
+
+hashtags: [sono, ronco, apneia, saude, paperai]

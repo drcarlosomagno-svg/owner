@@ -1,0 +1,87 @@
+titulo: O cafezinho não é o vilão
+pauta: Café no dia a dia do brasileiro (maior produtor do mundo)
+estudo: UK Biobank, Chieng et al. (Eur J Prev Cardiol, 2022)
+paleta: claro
+objetivo: envios
+publicar: Semana 1 · quarta
+foto:
+  busca: "coffee cup morning light white table minimal, espresso white ceramic soft shadow"
+  descricao: Xícara de café numa mesa clara, luz de manhã entrando pela janela, sombra suave. Poucos objetos, tons de bege e branco.
+
+slides:
+  - tipo: capa
+    selo: UK Biobank · 449.563 pessoas · 12 anos
+    titulo: O cafezinho ==não é o vilão== que te contaram.
+    subtitulo: O país que mais produz café no mundo pode respirar.
+    chamada: Quantas xícaras apareceram no estudo. Arraste até o final.
+
+  - tipo: texto
+    selo: O ritual
+    titulo: O Brasil funciona ==à base de café.==
+    texto: |
+      No plantão, na padaria, depois do almoço. E quase sempre alguém avisa: "isso acelera o coração".
+
+      Um grupo de cardiologistas australianos resolveu medir.
+
+  - tipo: texto
+    selo: O estudo
+    titulo: 449.563 pessoas ==seguidas por 12 anos.==
+    texto: |
+      Dados do UK Biobank. Os pesquisadores separaram o café em três tipos, moído, instantâneo e descafeinado, e compararam com quem não tomava café.
+
+  - tipo: numero
+    selo: O ponto mais baixo da curva
+    numero: 2 a 3
+    titulo: xícaras por dia, ==o menor risco de morte.==
+    texto: |
+      Com o café moído, o risco de morte por qualquer causa foi 27% menor do que entre quem não tomava café. Com o descafeinado, 14%. Com o instantâneo, 11%.
+    fonte: Chieng et al. Eur J Prev Cardiol, 2022
+
+  - tipo: texto
+    selo: E o coração acelerado?
+    titulo: Menos arritmia, ==não mais.==
+    texto: |
+      O moído e o instantâneo se associaram a menos arritmia entre 1 e 5 xícaras por dia. O menor risco apareceu com 4 a 5 xícaras de moído.
+
+      O descafeinado não mexeu na arritmia.
+
+  - tipo: frase
+    frase: Mas isso ==não é receita.==
+    texto: |
+      O estudo observou quem já tomava café. Não mandou ninguém tomar. Quem toma 2 a 3 xícaras pode ter outros hábitos que a pesquisa não conseguiu medir.
+
+  - tipo: estudo
+    revista: Chieng et al. · European Journal of Preventive Cardiology, 2022
+    quem: 449.563 adultos do UK Biobank, com mediana de 58 anos
+    achou: 2 a 3 xícaras por dia associadas a menos morte e menos doença cardiovascular, nos três tipos de café
+    limite: Associação, não causa. Não diz nada sobre o açúcar que vai junto. Gestação, arritmia já diagnosticada e insônia continuam sendo conversa com o médico.
+    doi: 10.1093/eurjpc/zwac189
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: O cafezinho pode ==ficar na rotina.==
+    texto: |
+      Para adultos saudáveis, 2 a 3 xícaras por dia apareceram do lado bom da estatística.
+
+      Se o café tira o seu sono ou te deixa ansioso, o seu corpo já respondeu por você.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pra quem te julga ==pela terceira xícara.==
+    texto: E salva pra próxima discussão na copa.
+    fonte: "Chieng D et al. Eur J Prev Cardiol. 2022 · doi:10.1093/eurjpc/zwac189"
+
+legenda: |
+  Café faz mal ao coração? O que 449 mil pessoas acompanhadas por 12 anos mostraram.
+
+  O Brasil é o maior produtor de café do mundo e vive à base do cafezinho. E sempre tem alguém dizendo que ele acelera o coração.
+
+  Num estudo com dados do UK Biobank, 2 a 3 xícaras por dia se associaram ao menor risco de morte: 27% menor com café moído, 14% com descafeinado e 11% com instantâneo, em comparação com quem não tomava café. O moído e o instantâneo também se associaram a menos arritmia.
+
+  É um estudo observacional: mostra associação, não manda ninguém começar a tomar café.
+
+  Fonte: Chieng D et al. The impact of coffee subtypes on incident cardiovascular disease, arrhythmias, and mortality. Eur J Prev Cardiol. 2022;29(17):2240-9. doi:10.1093/eurjpc/zwac189
+
+  📤 Manda pra quem te julga pela terceira xícara.
+
+hashtags: [cafe, coracao, cardiologia, saude, paperai]

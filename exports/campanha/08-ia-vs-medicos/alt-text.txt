@@ -1,0 +1,29 @@
+01.jpg
+Slide 1 de 10. JAMA · 50 médicos · ensaio randomizado. Deram IA para os médicos. A IA sozinha foi melhor. Um ensaio mediu o raciocínio de 50 médicos. O dado mais comentado nem era o objetivo principal. O que isso diz sobre usar IA. Arraste até o final.
+
+02.jpg
+Slide 2 de 10. O plantão de 2026. Tem médico abrindo IA entre um paciente e outro. Para lembrar uma dose, montar um diferencial, revisar um caso. A pergunta que importa: com a IA do lado, o médico raciocina melhor?.
+
+03.jpg
+Slide 3 de 10. O experimento. 50 médicos. 6 casos. 60 minutos. Pesquisadores de Stanford, Harvard e outras universidades americanas sortearam os médicos em dois grupos. Metade podia usar um modelo de linguagem além das fontes de sempre. A outra metade, só as fontes de sempre. A nota media o raciocínio: diagnósticos possíveis, o que falava a favor e contra cada um, e o próximo exame.
+
+04.jpg
+Slide 4 de 10. Médicos com IA vs sem IA. pontos. Dentro do acaso. +2. 76% contra 74%. Uma diferença que o estudo não conseguiu separar do acaso (P = 0,60).
+
+05.jpg
+Slide 5 de 10. Aí eles testaram a IA sozinha. Numa análise exploratória, os mesmos casos foram dados só para o modelo, sem médico nenhum.
+
+06.jpg
+Slide 6 de 10. IA sozinha vs médicos sem IA. pontos para a máquina. +16. E ela também ficou acima do grupo de médicos que tinha a IA do lado.
+
+07.jpg
+Slide 7 de 10. Como pode?. Ter a ferramenta não bastou. Os autores concluem que falta preparo, das pessoas e da tecnologia, para a parceria entre médico e IA render. Nossa leitura, não do estudo: o jeito de perguntar provavelmente pesa. O estudo não mediu como cada médico usou o modelo.
+
+08.jpg
+Slide 8 de 10. Goh et al. · JAMA Network Open, 2024. 50 médicos (26 assistentes e 24 residentes) de medicina de família, clínica médica e emergência. Com IA, raciocínio igual ao de quem não usou. A IA sozinha fez 16 pontos a mais. Casos escritos, não pacientes reais. Um modelo de 2023, já superado. E a vantagem da IA sozinha veio de uma análise exploratória, que ainda precisa ser confirmada.
+
+09.jpg
+Slide 9 de 10. O que fazer com isso. Pergunte com método. Dê contexto. Peça o raciocínio, não só a resposta. Peça o que falaria contra. E confira cada informação na fonte. Nunca cole dados que identifiquem um paciente.
+
+10.jpg
+Slide 10 de 10. Manda pro colega que usa IA no plantão. E salva pra reler antes de abrir o chat.

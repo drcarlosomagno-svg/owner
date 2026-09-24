@@ -1,0 +1,97 @@
+titulo: O que acontece quando você para a caneta
+pauta: Semaglutida genérica chega ao Brasil (patente caiu em mar/2026)
+estudo: STEP 1 e extensão (NEJM 2021; Diabetes Obes Metab 2022)
+paleta: escuro
+objetivo: envios
+publicar: Semana 1 · segunda
+foto:
+  busca: "dark moody silhouette window night, cinematic portrait back view"
+  descricao: Pessoa de costas diante de uma janela à noite, luz fria de fora, quase tudo em sombra. Sem rosto visível.
+
+slides:
+  - tipo: capa
+    selo: NEJM · 1.961 adultos · 68 semanas
+    titulo: O que acontece quando você ==para== a caneta.
+    subtitulo: A patente caiu e a semaglutida ficou mais barata. Quase ninguém comenta a segunda parte do estudo.
+    chamada: O que aconteceu um ano depois. Arraste até o final.
+
+  - tipo: texto
+    selo: Março de 2026
+    titulo: A patente caiu.
+    texto: |
+      A semaglutida, o princípio ativo do Ozempic, ganhou versões nacionais. Mais barata, mais perto, mais gente usando.
+
+      E uma pergunta começou a aparecer no consultório: **dá para usar por um tempo e depois parar?**
+
+  - tipo: numero
+    selo: O estudo que aprovou a dose
+    numero: "−14,9%"
+    titulo: de peso em 68 semanas.
+    texto: |
+      No STEP 1, 1.961 adultos com obesidade receberam semaglutida 2,4 mg por semana ou placebo, junto com orientação de dieta e exercício.
+
+      Quem recebeu placebo perdeu 2,4%.
+    fonte: Wilding et al. N Engl J Med, 2021
+
+  - tipo: frase
+    frase: Aí o tratamento ==acabou.==
+    texto: |
+      Na semana 68, tudo foi suspenso: o remédio e o acompanhamento. Os pesquisadores continuaram medindo parte dos participantes por mais um ano.
+
+  - tipo: numero
+    selo: Um ano depois
+    numero: "2/3"
+    titulo: do peso perdido ==voltou.==
+    texto: |
+      O grupo que tinha perdido 17,3% recuperou 11,6 pontos percentuais. Terminou, na semana 120, com 5,6% a menos do que no início.
+    fonte: Wilding et al. Diabetes Obes Metab, 2022 · 327 participantes
+
+  - tipo: texto
+    selo: Não foi só a balança
+    titulo: As melhoras do metabolismo ==também voltaram.==
+    texto: |
+      Na maior parte das medidas cardiometabólicas, o ganho do tratamento andou de volta em direção ao ponto de partida.
+
+      A conclusão dos autores cabe numa linha: obesidade é doença crônica, e manter o resultado exige tratamento contínuo.
+
+  - tipo: estudo
+    revista: Extensão do STEP 1 · Diabetes, Obesity and Metabolism, 2022
+    quem: 327 adultos do estudo original, acompanhados por 1 ano depois de parar o remédio e o programa de estilo de vida
+    achou: Recuperação de dois terços do peso perdido em 52 semanas
+    limite: Análise exploratória, num subgrupo. A suspensão foi de uma vez só, sem redução gradual. Parte dos autores trabalha para a fabricante.
+    doi: 10.1111/dom.14725
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Ninguém para o remédio da pressão ==porque a pressão baixou.==
+    texto: |
+      A lógica é a mesma. O preço cair é uma ótima notícia para quem precisa.
+
+      Mas começar, e principalmente parar, é decisão para tomar com o seu médico, com o plano do "depois" já na mesa.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pra quem ==vai começar== a caneta este mês.
+    texto: Ou pra quem acha que três meses resolvem.
+    fonte: "Wilding 2021 · doi:10.1056/NEJMoa2032183 · Wilding 2022 · doi:10.1111/dom.14725"
+
+legenda: |
+  Parar a semaglutida: o que o estudo STEP 1 mostrou um ano depois de suspender a caneta.
+
+  Em março de 2026 a patente caiu no Brasil e as versões nacionais chegaram. Com o preço menor, uma pergunta ficou comum: dá para usar por um tempo e parar?
+
+  O STEP 1 (NEJM, 2021) testou semaglutida 2,4 mg em 1.961 adultos com obesidade: −14,9% de peso em 68 semanas, contra −2,4% no placebo.
+
+  Depois, os pesquisadores suspenderam tudo e seguiram 327 participantes por mais um ano. Resultado: dois terços do peso perdido voltaram, e a maior parte das melhoras metabólicas também.
+
+  Não é motivo para ter medo do remédio. É motivo para começar sabendo que ele trata uma doença crônica.
+
+  ⚠️ Não comece nem pare nenhum medicamento sem conversar com o seu médico.
+
+  Fontes:
+  Wilding JPH et al. N Engl J Med. 2021;384:989-1002. doi:10.1056/NEJMoa2032183
+  Wilding JPH et al. Diabetes Obes Metab. 2022;24:1553-64. doi:10.1111/dom.14725
+
+  📤 Manda pra quem vai começar a caneta este mês.
+
+hashtags: [semaglutida, ozempic, obesidade, medicinabaseadaemevidencias, paperai]

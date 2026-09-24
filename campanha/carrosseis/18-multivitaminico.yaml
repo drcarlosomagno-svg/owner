@@ -1,0 +1,86 @@
+titulo: O multivitamínico não te fez viver mais
+pauta: Febre de suplementos e "rotinas de vitaminas" nas redes
+estudo: Loftfield et al. (JAMA Network Open, 2024)
+paleta: claro
+objetivo: envios
+publicar: Semana 4 · quarta
+foto:
+  busca: "vitamin capsules white background minimal, supplement pills pale linen soft light, pills scattered white table"
+  descricao: Cápsulas e comprimidos espalhados sobre fundo branco ou linho claro, luz suave. Sem frasco com marca.
+
+slides:
+  - tipo: capa
+    selo: JAMA · 390.124 adultos · até 27 anos
+    titulo: O multivitamínico ==não te fez viver mais.==
+    subtitulo: O Instituto Nacional do Câncer dos EUA acompanhou quase 400 mil pessoas para responder isso.
+    chamada: O que aconteceu com quem tomava todo dia. Arraste até o final.
+
+  - tipo: texto
+    selo: A bancada
+    titulo: Um pote para cada coisa ==que pode dar errado.==
+    texto: |
+      Cápsula de manhã, comprimido no almoço, gota à noite.
+
+      Nos EUA, 1 em cada 3 adultos toma multivitamínico. O motivo principal é prevenir doença.
+
+  - tipo: texto
+    selo: O estudo
+    titulo: 390.124 pessoas. ==Até 27 anos de seguimento.==
+    texto: |
+      Três grandes coortes americanas, com adultos sem câncer nem outras doenças crônicas no começo. Quase 165 mil morreram no período.
+
+      A análise tentou descontar o estilo de vida e o efeito de quem começa a vitamina porque já está doente.
+
+  - tipo: frase
+    frase: Quem tomava ==não viveu mais.==
+    texto: |
+      Na primeira metade do acompanhamento, o risco de morte foi 4% maior entre os usuários. Na segunda, igual. O resultado se repetiu nas principais causas de morte.
+
+  - tipo: texto
+    selo: E tem um detalhe
+    titulo: Quem toma vitamina ==já se cuidava mais.==
+    texto: |
+      Entre os usuários diários, havia menos fumantes e mais gente com faculdade.
+
+      Mesmo com esse perfil a favor, o benefício não apareceu.
+
+  - tipo: estudo
+    revista: Loftfield et al. · JAMA Network Open, 2024
+    quem: 390.124 adultos de 3 coortes dos EUA, com idade mediana de 61,5 anos
+    achou: Tomar multivitamínico não se associou a menos mortalidade
+    limite: É observacional, com uso de vitamina relatado pela própria pessoa. Não avaliou quem tem deficiência diagnosticada, gestantes ou quem precisa de reposição específica.
+    doi: 10.1001/jamanetworkopen.2024.18729
+
+  - tipo: frase
+    frase: Suplemento trata ==falta, não ansiedade.==
+    texto: |
+      Deficiência diagnosticada, gestação, algumas cirurgias: aí a reposição tem motivo, e exame por trás.
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Leve os potes ==na próxima consulta.==
+    texto: |
+      Mostre ao seu médico tudo o que você toma. Às vezes falta exame e sobra cápsula.
+
+      E o que você economizar paga uma feira bem melhor.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pra quem tem ==uma farmácia na bancada.==
+    texto: Sem julgar. Só mostrando o estudo.
+    fonte: "Loftfield E et al. JAMA Netw Open. 2024 · doi:10.1001/jamanetworkopen.2024.18729"
+
+legenda: |
+  Multivitamínico aumenta a longevidade? O Instituto Nacional do Câncer dos EUA seguiu 390 mil adultos por até 27 anos.
+
+  Nos EUA, 1 em cada 3 adultos toma multivitamínico, e o motivo principal é prevenir doença. Pesquisadores do NCI analisaram três grandes coortes, com adultos sem câncer ou doença crônica no início, e tentaram descontar o estilo de vida e o efeito de quem começa a tomar vitamina por já estar doente.
+
+  Resultado: tomar multivitamínico não se associou a menor mortalidade. Na primeira metade do acompanhamento, o risco foi 4% maior entre os usuários; na segunda, igual. E quem tomava já tinha um perfil mais saudável, com menos fumantes e mais gente com faculdade.
+
+  É um estudo observacional. Não vale para quem tem deficiência diagnosticada, gestantes ou quem precisa de reposição específica. Leve seus suplementos na próxima consulta.
+
+  Fonte: Loftfield E et al. Multivitamin use and mortality risk in 3 prospective US cohorts. JAMA Netw Open. 2024;7(6):e2418729. doi:10.1001/jamanetworkopen.2024.18729
+
+  📤 Manda pra quem tem uma farmácia na bancada.
+
+hashtags: [suplementos, vitaminas, longevidade, saude, paperai]

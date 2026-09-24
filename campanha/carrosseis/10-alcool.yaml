@@ -1,0 +1,95 @@
+titulo: A dose de álcool que menos faz mal é zero
+pauta: "Uma taça de vinho por dia faz bem ao coração?"
+estudo: GBD 2016 Alcohol Collaborators (The Lancet, 2018)
+paleta: escuro
+objetivo: envios
+publicar: Semana 2 · sexta
+foto:
+  busca: "red wine glass dark moody table, wine glass side light black background, half empty wine glass shadow"
+  descricao: Taça de vinho tinto sobre mesa escura, luz lateral dura, fundo quase preto. Sem garrafa com rótulo.
+
+slides:
+  - tipo: capa
+    selo: Lancet · 195 países · 592 estudos
+    titulo: A dose de álcool ==que menos faz mal== é zero.
+    subtitulo: A taça "pelo coração" entrou na conta. E a conta deu zero mesmo assim.
+    chamada: O que o maior levantamento encontrou. Arraste até o final.
+
+  - tipo: texto
+    selo: A frase do jantar
+    titulo: “Uma taça por dia ==faz bem.==”
+    texto: |
+      Você já ouviu. Talvez até num consultório. A ideia vinha de estudos que viam menos infarto em quem bebia pouco.
+
+      Em 2018, um consórcio mundial resolveu colocar todos os efeitos na mesma balança.
+
+  - tipo: texto
+    selo: O tamanho da conta
+    titulo: 195 países. ==23 problemas de saúde.==
+    texto: |
+      694 fontes de dados sobre consumo e 592 estudos sobre risco. Infarto, diabetes, câncer, acidente de trânsito, tuberculose, violência contra si mesmo.
+
+      Tudo somado, doença por doença.
+
+  - tipo: numero
+    selo: O resultado
+    numero: "0"
+    titulo: "doses por semana: ==o nível de menor dano.=="
+    texto: |
+      Pesando benefícios e prejuízos, o consumo que minimizou a perda de saúde foi zero.
+    fonte: GBD 2016 Alcohol Collaborators. Lancet, 2018
+
+  - tipo: texto
+    selo: E o coração?
+    titulo: O possível ganho ==não compensou.==
+    texto: |
+      A análise levou em conta os efeitos protetores que aparecem em algumas doenças. Mesmo assim, o risco de morte por qualquer causa, e o de câncer em especial, subiu junto com o consumo.
+
+  - tipo: numero
+    selo: Entre 15 e 49 anos
+    numero: 1º
+    titulo: fator de risco de ==morte e incapacidade.==
+    texto: |
+      Em 2016, o álcool respondeu por 12,2% das mortes de homens e 3,8% das de mulheres nessa faixa de idade. Na população inteira, ficou em 7º lugar.
+    fonte: GBD 2016 Alcohol Collaborators. Lancet, 2018
+
+  - tipo: frase
+    frase: Depois dos 50, ==o câncer aparece.==
+    texto: |
+      Nessa faixa, os cânceres foram 27,1% das mortes atribuídas ao álcool entre as mulheres e 18,9% entre os homens.
+
+  - tipo: estudo
+    revista: GBD 2016 Alcohol Collaborators · The Lancet, 2018
+    quem: Dados de 195 países e territórios, de 1990 a 2016
+    achou: O nível de consumo que minimiza o dano à saúde é zero dose por semana
+    limite: É modelagem, com margem de incerteza (de 0 a 0,8 dose por semana). Não diz que uma taça no fim de semana vai te matar. Diz que ela não entra na conta como proteção.
+    doi: 10.1016/S0140-6736(18)31310-2
+
+  - tipo: texto
+    selo: O que fazer com isso
+    titulo: Beber menos ==já conta.==
+    texto: |
+      O risco subiu com a dose. Então cada dose a menos anda na direção certa.
+
+      E, se você não bebe, o estudo não te dá nenhum motivo de saúde para começar.
+
+  - tipo: cta
+    destaque: enviar
+    titulo: Manda pra quem ainda usa ==o vinho como remédio.==
+    texto: Sem sermão. Só a conta.
+    fonte: "GBD 2016 Alcohol Collaborators. Lancet. 2018 · doi:10.1016/S0140-6736(18)31310-2"
+
+legenda: |
+  Uma taça de vinho faz bem ao coração? O maior levantamento sobre álcool, com 195 países, diz que a dose mais segura é zero.
+
+  O estudo Global Burden of Disease reuniu 694 fontes de dados sobre consumo e 592 estudos sobre risco, e pesou 23 problemas de saúde, incluindo os efeitos protetores que aparecem em algumas doenças.
+
+  Resultado: o nível de consumo que minimiza o dano à saúde é zero dose por semana. O risco de morte, e de câncer em especial, sobe com o consumo. Entre 15 e 49 anos, o álcool foi o principal fator de risco de morte e incapacidade em 2016. Depois dos 50, os cânceres responderam por 27,1% das mortes atribuídas ao álcool entre mulheres e 18,9% entre homens.
+
+  É um estudo de modelagem, com margem de incerteza. Não diz que uma taça vai te matar. Diz que ela não entra na conta como proteção.
+
+  Fonte: GBD 2016 Alcohol Collaborators. Alcohol use and burden for 195 countries and territories, 1990-2016. Lancet. 2018;392(10152):1015-35. doi:10.1016/S0140-6736(18)31310-2
+
+  📤 Manda pra quem ainda usa o vinho como remédio.
+
+hashtags: [alcool, vinho, cancer, saude, paperai]
