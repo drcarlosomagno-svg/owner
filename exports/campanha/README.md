@@ -81,7 +81,7 @@ Fotos: veja a lista do que buscar em [`campanha/fotos/LISTA.md`](../../campanha/
 <a id="08-ia-vs-medicos"></a>
 ## Deram IA para os médicos. A IA sozinha foi melhor.
 
-**vibrante** · Médicos usando IA no dia a dia do consultório e do plantão · Semana 2 · quarta · 10 slides · 1 foto(s) pendente(s) · [slides](08-ia-vs-medicos/) · [legenda](08-ia-vs-medicos/legenda.txt) · [alt text](08-ia-vs-medicos/alt-text.txt)
+**vibrante** · Médicos usando IA no dia a dia do consultório e do plantão · Semana 2 · quarta · 10 slides · [slides](08-ia-vs-medicos/) · [legenda](08-ia-vs-medicos/legenda.txt) · [alt text](08-ia-vs-medicos/alt-text.txt)
 
 ![Deram IA para os médicos. A IA sozinha foi melhor.](08-ia-vs-medicos/_prancha.jpg)
 

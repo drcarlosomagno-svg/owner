@@ -10,6 +10,9 @@ foto:
 
 slides:
   - tipo: capa
+    enquadre:
+      inteira: true
+      y: "-25%"
     selo: JAMA · 50 médicos · ensaio randomizado
     titulo: Deram IA para os médicos. ==A IA sozinha foi melhor.==
     subtitulo: Um ensaio mediu o raciocínio de 50 médicos. O dado mais comentado nem era o objetivo principal.

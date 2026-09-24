@@ -11,6 +11,7 @@ Fotos baixadas pelo dono da página a partir da lista em [`LINKS.md`](LINKS.md).
 | `05-celular-na-escola.jpg` | [Pexels 8456146](https://www.pexels.com/photo/back-view-shot-of-students-walking-on-a-hallway-while-having-a-conversation-8456146/) |
 | `06-dez-mil-passos.jpg` | [Pexels 29607484](https://www.pexels.com/photo/minimalist-footwear-and-geometric-shadows-art-29607484/) |
 | `07-bets.jpg` e `07-bets-2.jpg` | [Pexels 3021120](https://www.pexels.com/photo/slot-machines-3021120/) (a mesma foto; no slide 6 ela aparece aproximada e desfocada) |
+| `08-ia-vs-medicos.jpg` | [Pexels 5327916](https://www.pexels.com/photo/a-medical-person-using-a-laptop-for-research-5327916/) |
 | `09-genes-vs-estilo-de-vida.jpg` | [Pexels 7545238](https://www.pexels.com/photo/a-person-s-hands-holding-vintage-photographs-7545238/) |
 | `10-alcool.jpg` | [Pexels 312080](https://www.pexels.com/photo/alcohol-bar-beverage-black-background-312080/) |
 | `11-ultraprocessados.jpg` | [Pexels 479628](https://www.pexels.com/photo/potato-chips-479628/) |
@@ -25,4 +26,3 @@ Fotos baixadas pelo dono da página a partir da lista em [`LINKS.md`](LINKS.md).
 | `19-aperto-de-mao.jpg` | [Pexels 7298869](https://www.pexels.com/photo/a-clenched-fist-7298869/) |
 | `20-um-minuto.jpg` | [Unsplash Or4_-uT-S5c](https://unsplash.com/photos/a-black-and-white-photo-of-a-man-running-up-a-flight-of-stairs-Or4_-uT-S5c) |
 
-Pendente: `08-ia-vs-medicos.jpg` (a foto enviada não abriu).
