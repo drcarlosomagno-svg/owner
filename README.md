@@ -19,6 +19,7 @@ São duas coleções:
 | A avaliação dos posts de crescimento atuais | [`campanha/avaliacao-posts-atuais.md`](campanha/avaliacao-posts-atuais.md) |
 | Como escrever com cara de gente e sem inventar | [`campanha/guia-de-escrita.md`](campanha/guia-de-escrita.md) |
 | Postar os Reels (calendário, áudio, capa) | [`reels/README.md`](reels/README.md) |
+| O plano de 90 dias para crescer alcance e vender | [`estrategia/plano-de-alcance.md`](estrategia/plano-de-alcance.md), com [Reels e criativos](estrategia/reels-e-criativos.md) e [engenharia de marketing](estrategia/engenharia-de-marketing.md) |
 | Postar os Stories dos destaques | [`exports/stories/README.md`](exports/stories/README.md) |
 | Colocar a página de vendas no ar e ligar à Kiwify | [`landing/README.md`](landing/README.md) |
 | Entender o que está funcionando no Instagram em 2026 | [`pesquisa/tendencias-instagram-2026.md`](pesquisa/tendencias-instagram-2026.md) |
