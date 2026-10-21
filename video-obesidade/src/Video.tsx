@@ -79,7 +79,17 @@ const Montagem: React.FC<{beat: Beat}> = ({beat}) => {
   return <Broll key={k} nome={nomes[k]} beat={beat} desde={k ? m[k] : 0} ate={k < 2 ? m[k + 1] : undefined} />;
 };
 
-const BeatView: React.FC<{beat: Beat}> = ({beat}) => {
+// B-roll ainda não baixado: o beat vira FULL_TALK com punch-in, para o vídeo sair postável
+const semBroll = (b: Beat) => {
+  const r = b.render;
+  const arqs: string[] = r.montagem ?? (r.broll ? [r.broll] : []);
+  return arqs.length > 0 && arqs.some((a) => !temArquivo(a));
+};
+
+const BeatView: React.FC<{beat: Beat}> = ({beat: original}) => {
+  const beat: Beat = semBroll(original)
+    ? {...original, layout: 'FULL_TALK', render: {...original.render, zoom: [1.12, 1.16], trans: original.render.trans === 'leak' ? 'leak' : 'whip'}}
+    : original;
   const r = beat.render;
   const ini = fr(beat.t_in);
   const relf = (abs: number) => abs - ini;

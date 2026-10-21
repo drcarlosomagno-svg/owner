@@ -1,9 +1,11 @@
 import React from 'react';
 import {spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {Beat, C, EDL, FONT, HALF_Y, LEGENDA, SAFE, SPLIT_Y} from './theme';
+import {Beat, C, EDL, FONT, HALF_Y, LEGENDA, SAFE, SPLIT_Y, temArquivo} from './theme';
 
 // Altura da legenda conforme o layout do beat (no split, fica na divisória)
 const yDoLayout = (b: Beat) => {
+  const arqs: string[] = b.render.montagem ?? (b.render.broll ? [b.render.broll] : []);
+  if (arqs.some((a) => !temArquivo(a))) return 1300; // B-roll ausente: beat vira FULL_TALK
   if (b.layout === 'SPLIT_TOP_BROLL') return SPLIT_Y;
   if (b.layout === 'SPLIT_50_50') return HALF_Y;
   if (b.layout === 'PIP') return 1060;
