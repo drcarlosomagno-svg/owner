@@ -1,0 +1,2894 @@
+{
+ "fonte": "whisper large-v3 (int8, sherpa-onnx) + tempos parakeet-tdt-0.6b-v3 (int8, sherpa-onnx)",
+ "duracao_cortada": 115.5,
+ "palavras": [
+  {
+   "w": "Por",
+   "start": 1.926,
+   "end": 2.166,
+   "fonte": "interp",
+   "t_in": 0.0,
+   "t_out": 0.199
+  },
+  {
+   "w": "que",
+   "start": 2.166,
+   "end": 2.406,
+   "fonte": "interp",
+   "t_in": 0.199,
+   "t_out": 0.439
+  },
+  {
+   "w": "algumas",
+   "start": 2.406,
+   "end": 2.726,
+   "fonte": "ok",
+   "t_in": 0.439,
+   "t_out": 0.759
+  },
+  {
+   "w": "pessoas",
+   "start": 2.726,
+   "end": 2.966,
+   "fonte": "ok",
+   "t_in": 0.759,
+   "t_out": 0.999
+  },
+  {
+   "w": "emagrecem,",
+   "start": 2.966,
+   "end": 3.846,
+   "fonte": "ok",
+   "t_in": 0.999,
+   "t_out": 1.879
+  },
+  {
+   "w": "mas",
+   "start": 3.846,
+   "end": 4.006,
+   "fonte": "ok",
+   "t_in": 1.879,
+   "t_out": 2.039
+  },
+  {
+   "w": "depois",
+   "start": 4.006,
+   "end": 4.326,
+   "fonte": "ok",
+   "t_in": 2.039,
+   "t_out": 2.359
+  },
+  {
+   "w": "voltam",
+   "start": 4.326,
+   "end": 4.726,
+   "fonte": "ok",
+   "t_in": 2.359,
+   "t_out": 2.759
+  },
+  {
+   "w": "a",
+   "start": 4.726,
+   "end": 4.886,
+   "fonte": "ok",
+   "t_in": 2.759,
+   "t_out": 2.919
+  },
+  {
+   "w": "ganhar",
+   "start": 4.886,
+   "end": 5.206,
+   "fonte": "ok",
+   "t_in": 2.919,
+   "t_out": 3.239
+  },
+  {
+   "w": "peso,",
+   "start": 5.206,
+   "end": 5.686,
+   "fonte": "ok",
+   "t_in": 3.239,
+   "t_out": 3.719
+  },
+  {
+   "w": "mesmo",
+   "start": 5.686,
+   "end": 5.926,
+   "fonte": "ok",
+   "t_in": 3.719,
+   "t_out": 3.959
+  },
+  {
+   "w": "tentando",
+   "start": 5.926,
+   "end": 6.326,
+   "fonte": "ok",
+   "t_in": 3.959,
+   "t_out": 4.359
+  },
+  {
+   "w": "manter",
+   "start": 6.326,
+   "end": 6.646,
+   "fonte": "ok",
+   "t_in": 4.359,
+   "t_out": 4.679
+  },
+  {
+   "w": "os",
+   "start": 6.646,
+   "end": 6.726,
+   "fonte": "ok",
+   "t_in": 4.679,
+   "t_out": 4.759
+  },
+  {
+   "w": "hábitos",
+   "start": 6.726,
+   "end": 7.126,
+   "fonte": "ok",
+   "t_in": 4.759,
+   "t_out": 5.159
+  },
+  {
+   "w": "que",
+   "start": 7.206,
+   "end": 7.286,
+   "fonte": "ok",
+   "t_in": 5.239,
+   "t_out": 5.319
+  },
+  {
+   "w": "elas",
+   "start": 7.286,
+   "end": 7.526,
+   "fonte": "ok",
+   "t_in": 5.319,
+   "t_out": 5.559
+  },
+  {
+   "w": "aprenderam?",
+   "start": 7.526,
+   "end": 8.086,
+   "fonte": "ok",
+   "t_in": 5.559,
+   "t_out": 6.119
+  },
+  {
+   "w": "E",
+   "start": 8.246,
+   "end": 8.486,
+   "fonte": "ok",
+   "t_in": 6.279,
+   "t_out": 6.519
+  },
+  {
+   "w": "onde",
+   "start": 8.486,
+   "end": 8.726,
+   "fonte": "ok",
+   "t_in": 6.519,
+   "t_out": 6.759
+  },
+  {
+   "w": "entram",
+   "start": 8.726,
+   "end": 9.126,
+   "fonte": "ok",
+   "t_in": 6.759,
+   "t_out": 7.159
+  },
+  {
+   "w": "os",
+   "start": 9.126,
+   "end": 9.286,
+   "fonte": "ok",
+   "t_in": 7.159,
+   "t_out": 7.319
+  },
+  {
+   "w": "medicamentos",
+   "start": 9.286,
+   "end": 9.686,
+   "fonte": "ok",
+   "t_in": 7.319,
+   "t_out": 7.719
+  },
+  {
+   "w": "nesse",
+   "start": 9.846,
+   "end": 10.166,
+   "fonte": "ok",
+   "t_in": 7.879,
+   "t_out": 8.199
+  },
+  {
+   "w": "processo?",
+   "start": 10.166,
+   "end": 10.646,
+   "fonte": "ok",
+   "t_in": 8.199,
+   "t_out": 8.679
+  },
+  {
+   "w": "O",
+   "start": 14.47,
+   "end": 14.63,
+   "fonte": "ok",
+   "t_in": 8.803,
+   "t_out": 8.963
+  },
+  {
+   "w": "peso",
+   "start": 14.63,
+   "end": 14.95,
+   "fonte": "ok",
+   "t_in": 8.963,
+   "t_out": 9.283
+  },
+  {
+   "w": "corporal",
+   "start": 14.95,
+   "end": 15.51,
+   "fonte": "ok",
+   "t_in": 9.283,
+   "t_out": 9.843
+  },
+  {
+   "w": "não",
+   "start": 15.51,
+   "end": 15.75,
+   "fonte": "ok",
+   "t_in": 9.843,
+   "t_out": 10.083
+  },
+  {
+   "w": "depende",
+   "start": 15.75,
+   "end": 16.23,
+   "fonte": "ok",
+   "t_in": 10.083,
+   "t_out": 10.563
+  },
+  {
+   "w": "apenas",
+   "start": 16.23,
+   "end": 16.47,
+   "fonte": "ok",
+   "t_in": 10.563,
+   "t_out": 10.803
+  },
+  {
+   "w": "de",
+   "start": 16.47,
+   "end": 16.63,
+   "fonte": "ok",
+   "t_in": 10.803,
+   "t_out": 10.963
+  },
+  {
+   "w": "força",
+   "start": 16.63,
+   "end": 17.03,
+   "fonte": "ok",
+   "t_in": 10.963,
+   "t_out": 11.363
+  },
+  {
+   "w": "de",
+   "start": 17.03,
+   "end": 17.11,
+   "fonte": "ok",
+   "t_in": 11.363,
+   "t_out": 11.443
+  },
+  {
+   "w": "vontade,",
+   "start": 17.11,
+   "end": 17.59,
+   "fonte": "ok",
+   "t_in": 11.443,
+   "t_out": 11.923
+  },
+  {
+   "w": "ele",
+   "start": 17.59,
+   "end": 17.75,
+   "fonte": "ok",
+   "t_in": 11.923,
+   "t_out": 12.083
+  },
+  {
+   "w": "também",
+   "start": 17.75,
+   "end": 18.07,
+   "fonte": "ok",
+   "t_in": 12.083,
+   "t_out": 12.403
+  },
+  {
+   "w": "vai",
+   "start": 18.07,
+   "end": 18.23,
+   "fonte": "ok",
+   "t_in": 12.403,
+   "t_out": 12.563
+  },
+  {
+   "w": "ser",
+   "start": 18.23,
+   "end": 18.39,
+   "fonte": "ok",
+   "t_in": 12.563,
+   "t_out": 12.723
+  },
+  {
+   "w": "regulado",
+   "start": 18.39,
+   "end": 18.95,
+   "fonte": "ok",
+   "t_in": 12.723,
+   "t_out": 13.283
+  },
+  {
+   "w": "por",
+   "start": 18.95,
+   "end": 19.11,
+   "fonte": "ok",
+   "t_in": 13.283,
+   "t_out": 13.443
+  },
+  {
+   "w": "mecanismos",
+   "start": 19.11,
+   "end": 19.83,
+   "fonte": "ok",
+   "t_in": 13.443,
+   "t_out": 14.163
+  },
+  {
+   "w": "biológicos",
+   "start": 19.83,
+   "end": 20.55,
+   "fonte": "ok",
+   "t_in": 14.163,
+   "t_out": 14.883
+  },
+  {
+   "w": "que",
+   "start": 20.55,
+   "end": 20.71,
+   "fonte": "ok",
+   "t_in": 14.883,
+   "t_out": 15.043
+  },
+  {
+   "w": "influenciam",
+   "start": 20.71,
+   "end": 21.35,
+   "fonte": "ok",
+   "t_in": 15.043,
+   "t_out": 15.683
+  },
+  {
+   "w": "a",
+   "start": 21.35,
+   "end": 21.43,
+   "fonte": "ok",
+   "t_in": 15.683,
+   "t_out": 15.763
+  },
+  {
+   "w": "fome,",
+   "start": 21.43,
+   "end": 21.75,
+   "fonte": "ok",
+   "t_in": 15.763,
+   "t_out": 16.083
+  },
+  {
+   "w": "a",
+   "start": 21.75,
+   "end": 21.91,
+   "fonte": "ok",
+   "t_in": 16.083,
+   "t_out": 16.243
+  },
+  {
+   "w": "saciedade",
+   "start": 21.91,
+   "end": 22.39,
+   "fonte": "ok",
+   "t_in": 16.243,
+   "t_out": 16.723
+  },
+  {
+   "w": "e",
+   "start": 22.39,
+   "end": 22.47,
+   "fonte": "ok",
+   "t_in": 16.723,
+   "t_out": 16.803
+  },
+  {
+   "w": "o",
+   "start": 22.55,
+   "end": 22.63,
+   "fonte": "ok",
+   "t_in": 16.883,
+   "t_out": 16.963
+  },
+  {
+   "w": "gasto",
+   "start": 22.63,
+   "end": 22.95,
+   "fonte": "ok",
+   "t_in": 16.963,
+   "t_out": 17.283
+  },
+  {
+   "w": "de",
+   "start": 22.95,
+   "end": 23.11,
+   "fonte": "ok",
+   "t_in": 17.283,
+   "t_out": 17.443
+  },
+  {
+   "w": "energia.",
+   "start": 23.11,
+   "end": 23.83,
+   "fonte": "ok",
+   "t_in": 17.443,
+   "t_out": 17.9
+  },
+  {
+   "w": "Quando",
+   "start": 23.83,
+   "end": 24.15,
+   "fonte": "ok",
+   "t_in": 17.9,
+   "t_out": 18.15
+  },
+  {
+   "w": "uma",
+   "start": 24.15,
+   "end": 24.31,
+   "fonte": "ok",
+   "t_in": 18.15,
+   "t_out": 18.31
+  },
+  {
+   "w": "pessoa",
+   "start": 24.31,
+   "end": 24.71,
+   "fonte": "ok",
+   "t_in": 18.31,
+   "t_out": 18.71
+  },
+  {
+   "w": "perde",
+   "start": 24.71,
+   "end": 25.19,
+   "fonte": "ok",
+   "t_in": 18.71,
+   "t_out": 19.19
+  },
+  {
+   "w": "peso,",
+   "start": 25.19,
+   "end": 25.75,
+   "fonte": "ok",
+   "t_in": 19.19,
+   "t_out": 19.75
+  },
+  {
+   "w": "o",
+   "start": 25.75,
+   "end": 25.91,
+   "fonte": "ok",
+   "t_in": 19.75,
+   "t_out": 19.91
+  },
+  {
+   "w": "organismo",
+   "start": 25.91,
+   "end": 26.39,
+   "fonte": "ok",
+   "t_in": 19.91,
+   "t_out": 20.39
+  },
+  {
+   "w": "pode",
+   "start": 26.39,
+   "end": 26.63,
+   "fonte": "ok",
+   "t_in": 20.39,
+   "t_out": 20.63
+  },
+  {
+   "w": "responder",
+   "start": 26.63,
+   "end": 26.95,
+   "fonte": "ok",
+   "t_in": 20.63,
+   "t_out": 20.95
+  },
+  {
+   "w": "aumentando",
+   "start": 27.03,
+   "end": 27.51,
+   "fonte": "ok",
+   "t_in": 21.03,
+   "t_out": 21.51
+  },
+  {
+   "w": "a",
+   "start": 27.51,
+   "end": 27.59,
+   "fonte": "ok",
+   "t_in": 21.51,
+   "t_out": 21.59
+  },
+  {
+   "w": "fome",
+   "start": 27.59,
+   "end": 27.99,
+   "fonte": "ok",
+   "t_in": 21.59,
+   "t_out": 21.99
+  },
+  {
+   "w": "e",
+   "start": 27.99,
+   "end": 28.15,
+   "fonte": "ok",
+   "t_in": 21.99,
+   "t_out": 22.15
+  },
+  {
+   "w": "reduzindo",
+   "start": 28.15,
+   "end": 28.63,
+   "fonte": "ok",
+   "t_in": 22.15,
+   "t_out": 22.63
+  },
+  {
+   "w": "o",
+   "start": 28.63,
+   "end": 28.71,
+   "fonte": "ok",
+   "t_in": 22.63,
+   "t_out": 22.71
+  },
+  {
+   "w": "gasto",
+   "start": 28.71,
+   "end": 29.03,
+   "fonte": "ok",
+   "t_in": 22.71,
+   "t_out": 23.03
+  },
+  {
+   "w": "energético.",
+   "start": 29.03,
+   "end": 29.51,
+   "fonte": "ok",
+   "t_in": 23.03,
+   "t_out": 23.51
+  },
+  {
+   "w": "Isso",
+   "start": 29.59,
+   "end": 29.67,
+   "fonte": "ok",
+   "t_in": 23.59,
+   "t_out": 23.67
+  },
+  {
+   "w": "ajuda",
+   "start": 29.83,
+   "end": 30.07,
+   "fonte": "ok",
+   "t_in": 23.83,
+   "t_out": 24.07
+  },
+  {
+   "w": "a",
+   "start": 30.07,
+   "end": 30.15,
+   "fonte": "ok",
+   "t_in": 24.07,
+   "t_out": 24.15
+  },
+  {
+   "w": "explicar",
+   "start": 30.15,
+   "end": 30.47,
+   "fonte": "ok",
+   "t_in": 24.15,
+   "t_out": 24.47
+  },
+  {
+   "w": "por",
+   "start": 30.47,
+   "end": 30.55,
+   "fonte": "ok",
+   "t_in": 24.47,
+   "t_out": 24.55
+  },
+  {
+   "w": "que",
+   "start": 30.55,
+   "end": 30.8,
+   "fonte": "interp",
+   "t_in": 24.55,
+   "t_out": 24.8
+  },
+  {
+   "w": "manter",
+   "start": 30.87,
+   "end": 31.19,
+   "fonte": "ok",
+   "t_in": 24.87,
+   "t_out": 25.19
+  },
+  {
+   "w": "o",
+   "start": 31.19,
+   "end": 31.27,
+   "fonte": "ok",
+   "t_in": 25.19,
+   "t_out": 25.27
+  },
+  {
+   "w": "peso",
+   "start": 31.27,
+   "end": 31.59,
+   "fonte": "ok",
+   "t_in": 25.27,
+   "t_out": 25.59
+  },
+  {
+   "w": "perdido",
+   "start": 31.59,
+   "end": 32.07,
+   "fonte": "ok",
+   "t_in": 25.59,
+   "t_out": 26.07
+  },
+  {
+   "w": "pode",
+   "start": 32.07,
+   "end": 32.23,
+   "fonte": "ok",
+   "t_in": 26.07,
+   "t_out": 26.23
+  },
+  {
+   "w": "ser",
+   "start": 32.23,
+   "end": 32.39,
+   "fonte": "ok",
+   "t_in": 26.23,
+   "t_out": 26.39
+  },
+  {
+   "w": "tão",
+   "start": 32.39,
+   "end": 32.55,
+   "fonte": "ok",
+   "t_in": 26.39,
+   "t_out": 26.55
+  },
+  {
+   "w": "difícil",
+   "start": 32.55,
+   "end": 33.03,
+   "fonte": "ok",
+   "t_in": 26.55,
+   "t_out": 27.03
+  },
+  {
+   "w": "para",
+   "start": 33.03,
+   "end": 33.19,
+   "fonte": "interp",
+   "t_in": 27.03,
+   "t_out": 27.19
+  },
+  {
+   "w": "muita",
+   "start": 33.19,
+   "end": 33.43,
+   "fonte": "ok",
+   "t_in": 27.19,
+   "t_out": 27.43
+  },
+  {
+   "w": "gente.",
+   "start": 33.43,
+   "end": 33.91,
+   "fonte": "ok",
+   "t_in": 27.43,
+   "t_out": 27.767
+  },
+  {
+   "w": "É",
+   "start": 33.91,
+   "end": 34.15,
+   "fonte": "ok",
+   "t_in": 27.767,
+   "t_out": 27.85
+  },
+  {
+   "w": "nesse",
+   "start": 34.15,
+   "end": 34.39,
+   "fonte": "ok",
+   "t_in": 27.85,
+   "t_out": 28.09
+  },
+  {
+   "w": "contexto",
+   "start": 34.39,
+   "end": 34.71,
+   "fonte": "ok",
+   "t_in": 28.09,
+   "t_out": 28.41
+  },
+  {
+   "w": "que",
+   "start": 34.71,
+   "end": 34.87,
+   "fonte": "ok",
+   "t_in": 28.41,
+   "t_out": 28.57
+  },
+  {
+   "w": "entram",
+   "start": 34.87,
+   "end": 35.27,
+   "fonte": "ok",
+   "t_in": 28.57,
+   "t_out": 28.97
+  },
+  {
+   "w": "alguns",
+   "start": 35.27,
+   "end": 35.51,
+   "fonte": "ok",
+   "t_in": 28.97,
+   "t_out": 29.21
+  },
+  {
+   "w": "medicamentos",
+   "start": 35.51,
+   "end": 35.99,
+   "fonte": "ok",
+   "t_in": 29.21,
+   "t_out": 29.69
+  },
+  {
+   "w": "para",
+   "start": 35.99,
+   "end": 36.15,
+   "fonte": "interp",
+   "t_in": 29.69,
+   "t_out": 29.85
+  },
+  {
+   "w": "obesidade.",
+   "start": 36.15,
+   "end": 37.19,
+   "fonte": "ok",
+   "t_in": 29.85,
+   "t_out": 30.89
+  },
+  {
+   "w": "Medicamentos",
+   "start": 37.19,
+   "end": 37.83,
+   "fonte": "ok",
+   "t_in": 30.89,
+   "t_out": 31.53
+  },
+  {
+   "w": "como",
+   "start": 37.83,
+   "end": 38.07,
+   "fonte": "ok",
+   "t_in": 31.53,
+   "t_out": 31.77
+  },
+  {
+   "w": "a",
+   "start": 38.07,
+   "end": 38.23,
+   "fonte": "ok",
+   "t_in": 31.77,
+   "t_out": 31.93
+  },
+  {
+   "w": "semaglutida,",
+   "start": 38.23,
+   "end": 39.19,
+   "fonte": "ok",
+   "t_in": 31.93,
+   "t_out": 32.89
+  },
+  {
+   "w": "a",
+   "start": 39.19,
+   "end": 39.27,
+   "fonte": "ok",
+   "t_in": 32.89,
+   "t_out": 32.97
+  },
+  {
+   "w": "tirzepatida,",
+   "start": 39.27,
+   "end": 39.49,
+   "fonte": "interp",
+   "t_in": 32.97,
+   "t_out": 33.167
+  },
+  {
+   "w": "atuam",
+   "start": 40.23,
+   "end": 40.63,
+   "fonte": "ok",
+   "t_in": 33.197,
+   "t_out": 33.597
+  },
+  {
+   "w": "em",
+   "start": 40.63,
+   "end": 40.71,
+   "fonte": "ok",
+   "t_in": 33.597,
+   "t_out": 33.677
+  },
+  {
+   "w": "vias",
+   "start": 40.71,
+   "end": 41.03,
+   "fonte": "ok",
+   "t_in": 33.677,
+   "t_out": 33.997
+  },
+  {
+   "w": "hormonais",
+   "start": 41.03,
+   "end": 41.67,
+   "fonte": "ok",
+   "t_in": 33.997,
+   "t_out": 34.637
+  },
+  {
+   "w": "envolvidas",
+   "start": 41.67,
+   "end": 42.31,
+   "fonte": "ok",
+   "t_in": 34.637,
+   "t_out": 35.277
+  },
+  {
+   "w": "na",
+   "start": 42.31,
+   "end": 42.47,
+   "fonte": "ok",
+   "t_in": 35.277,
+   "t_out": 35.437
+  },
+  {
+   "w": "regulação",
+   "start": 42.47,
+   "end": 42.87,
+   "fonte": "ok",
+   "t_in": 35.437,
+   "t_out": 35.837
+  },
+  {
+   "w": "do",
+   "start": 42.87,
+   "end": 43.03,
+   "fonte": "ok",
+   "t_in": 35.837,
+   "t_out": 35.997
+  },
+  {
+   "w": "apetite",
+   "start": 43.03,
+   "end": 43.51,
+   "fonte": "ok",
+   "t_in": 35.997,
+   "t_out": 36.477
+  },
+  {
+   "w": "e",
+   "start": 43.51,
+   "end": 43.56,
+   "fonte": "interp",
+   "t_in": 36.477,
+   "t_out": 36.527
+  },
+  {
+   "w": "da",
+   "start": 43.51,
+   "end": 43.67,
+   "fonte": "ok",
+   "t_in": 36.477,
+   "t_out": 36.637
+  },
+  {
+   "w": "saciedade.",
+   "start": 43.67,
+   "end": 44.47,
+   "fonte": "ok",
+   "t_in": 36.637,
+   "t_out": 37.333
+  },
+  {
+   "w": "Eles",
+   "start": 44.47,
+   "end": 44.63,
+   "fonte": "ok",
+   "t_in": 37.333,
+   "t_out": 37.43
+  },
+  {
+   "w": "podem",
+   "start": 44.71,
+   "end": 44.95,
+   "fonte": "ok",
+   "t_in": 37.51,
+   "t_out": 37.75
+  },
+  {
+   "w": "ajudar",
+   "start": 44.95,
+   "end": 45.19,
+   "fonte": "ok",
+   "t_in": 37.75,
+   "t_out": 37.99
+  },
+  {
+   "w": "a",
+   "start": 45.19,
+   "end": 45.27,
+   "fonte": "ok",
+   "t_in": 37.99,
+   "t_out": 38.07
+  },
+  {
+   "w": "pessoa",
+   "start": 45.27,
+   "end": 45.51,
+   "fonte": "ok",
+   "t_in": 38.07,
+   "t_out": 38.31
+  },
+  {
+   "w": "a",
+   "start": 45.51,
+   "end": 45.59,
+   "fonte": "ok",
+   "t_in": 38.31,
+   "t_out": 38.39
+  },
+  {
+   "w": "sentir",
+   "start": 45.59,
+   "end": 45.91,
+   "fonte": "ok",
+   "t_in": 38.39,
+   "t_out": 38.71
+  },
+  {
+   "w": "menos",
+   "start": 45.91,
+   "end": 46.07,
+   "fonte": "ok",
+   "t_in": 38.71,
+   "t_out": 38.87
+  },
+  {
+   "w": "fome,",
+   "start": 46.07,
+   "end": 46.55,
+   "fonte": "ok",
+   "t_in": 38.87,
+   "t_out": 39.35
+  },
+  {
+   "w": "controlar",
+   "start": 46.55,
+   "end": 46.95,
+   "fonte": "ok",
+   "t_in": 39.35,
+   "t_out": 39.75
+  },
+  {
+   "w": "melhor",
+   "start": 46.95,
+   "end": 47.19,
+   "fonte": "ok",
+   "t_in": 39.75,
+   "t_out": 39.99
+  },
+  {
+   "w": "a",
+   "start": 47.19,
+   "end": 47.35,
+   "fonte": "ok",
+   "t_in": 39.99,
+   "t_out": 40.15
+  },
+  {
+   "w": "ingestão",
+   "start": 47.35,
+   "end": 47.75,
+   "fonte": "ok",
+   "t_in": 40.15,
+   "t_out": 40.55
+  },
+  {
+   "w": "de",
+   "start": 47.75,
+   "end": 47.83,
+   "fonte": "ok",
+   "t_in": 40.55,
+   "t_out": 40.63
+  },
+  {
+   "w": "alimentos",
+   "start": 47.83,
+   "end": 48.31,
+   "fonte": "ok",
+   "t_in": 40.63,
+   "t_out": 41.11
+  },
+  {
+   "w": "e",
+   "start": 48.31,
+   "end": 48.47,
+   "fonte": "ok",
+   "t_in": 41.11,
+   "t_out": 41.27
+  },
+  {
+   "w": "perder",
+   "start": 48.47,
+   "end": 48.79,
+   "fonte": "ok",
+   "t_in": 41.27,
+   "t_out": 41.59
+  },
+  {
+   "w": "peso.",
+   "start": 48.79,
+   "end": 49.27,
+   "fonte": "ok",
+   "t_in": 41.59,
+   "t_out": 42.07
+  },
+  {
+   "w": "Mas",
+   "start": 49.542,
+   "end": 49.782,
+   "fonte": "ok",
+   "t_in": 42.2,
+   "t_out": 42.315
+  },
+  {
+   "w": "existe",
+   "start": 49.782,
+   "end": 50.102,
+   "fonte": "ok",
+   "t_in": 42.315,
+   "t_out": 42.635
+  },
+  {
+   "w": "um",
+   "start": 50.262,
+   "end": 50.342,
+   "fonte": "ok",
+   "t_in": 42.795,
+   "t_out": 42.875
+  },
+  {
+   "w": "ponto",
+   "start": 50.342,
+   "end": 50.742,
+   "fonte": "ok",
+   "t_in": 42.875,
+   "t_out": 43.275
+  },
+  {
+   "w": "bem",
+   "start": 50.742,
+   "end": 51.062,
+   "fonte": "ok",
+   "t_in": 43.275,
+   "t_out": 43.595
+  },
+  {
+   "w": "importante.",
+   "start": 51.062,
+   "end": 52.182,
+   "fonte": "ok",
+   "t_in": 43.595,
+   "t_out": 44.3
+  },
+  {
+   "w": "Prescrever",
+   "start": 52.182,
+   "end": 53.142,
+   "fonte": "ok",
+   "t_in": 44.3,
+   "t_out": 45.242
+  },
+  {
+   "w": "medicamento",
+   "start": 53.222,
+   "end": 53.862,
+   "fonte": "ok",
+   "t_in": 45.322,
+   "t_out": 45.962
+  },
+  {
+   "w": "não",
+   "start": 53.942,
+   "end": 54.182,
+   "fonte": "ok",
+   "t_in": 46.042,
+   "t_out": 46.282
+  },
+  {
+   "w": "é",
+   "start": 54.182,
+   "end": 54.342,
+   "fonte": "ok",
+   "t_in": 46.282,
+   "t_out": 46.442
+  },
+  {
+   "w": "apenas",
+   "start": 54.342,
+   "end": 54.662,
+   "fonte": "ok",
+   "t_in": 46.442,
+   "t_out": 46.762
+  },
+  {
+   "w": "escolher",
+   "start": 54.742,
+   "end": 55.222,
+   "fonte": "ok",
+   "t_in": 46.842,
+   "t_out": 47.322
+  },
+  {
+   "w": "uma",
+   "start": 55.222,
+   "end": 55.382,
+   "fonte": "ok",
+   "t_in": 47.322,
+   "t_out": 47.482
+  },
+  {
+   "w": "dose.",
+   "start": 55.382,
+   "end": 56.342,
+   "fonte": "ok",
+   "t_in": 47.482,
+   "t_out": 47.8
+  },
+  {
+   "w": "Como",
+   "start": 56.592,
+   "end": 56.742,
+   "fonte": "interp",
+   "t_in": 47.859,
+   "t_out": 48.009
+  },
+  {
+   "w": "médico,",
+   "start": 56.742,
+   "end": 57.222,
+   "fonte": "ok",
+   "t_in": 48.009,
+   "t_out": 48.489
+  },
+  {
+   "w": "eu",
+   "start": 57.222,
+   "end": 57.302,
+   "fonte": "ok",
+   "t_in": 48.489,
+   "t_out": 48.569
+  },
+  {
+   "w": "preciso",
+   "start": 57.302,
+   "end": 57.622,
+   "fonte": "ok",
+   "t_in": 48.569,
+   "t_out": 48.889
+  },
+  {
+   "w": "avaliar",
+   "start": 57.622,
+   "end": 58.102,
+   "fonte": "ok",
+   "t_in": 48.889,
+   "t_out": 49.369
+  },
+  {
+   "w": "se",
+   "start": 58.102,
+   "end": 58.262,
+   "fonte": "ok",
+   "t_in": 49.369,
+   "t_out": 49.529
+  },
+  {
+   "w": "existe",
+   "start": 58.262,
+   "end": 58.662,
+   "fonte": "ok",
+   "t_in": 49.529,
+   "t_out": 49.929
+  },
+  {
+   "w": "indicação",
+   "start": 58.662,
+   "end": 59.142,
+   "fonte": "ok",
+   "t_in": 49.929,
+   "t_out": 50.409
+  },
+  {
+   "w": "clínica,",
+   "start": 59.142,
+   "end": 59.782,
+   "fonte": "ok",
+   "t_in": 50.409,
+   "t_out": 51.049
+  },
+  {
+   "w": "quais",
+   "start": 59.782,
+   "end": 60.102,
+   "fonte": "ok",
+   "t_in": 51.049,
+   "t_out": 51.369
+  },
+  {
+   "w": "são",
+   "start": 60.102,
+   "end": 60.342,
+   "fonte": "ok",
+   "t_in": 51.369,
+   "t_out": 51.609
+  },
+  {
+   "w": "os",
+   "start": 60.342,
+   "end": 60.422,
+   "fonte": "ok",
+   "t_in": 51.609,
+   "t_out": 51.689
+  },
+  {
+   "w": "benefícios",
+   "start": 60.422,
+   "end": 61.142,
+   "fonte": "ok",
+   "t_in": 51.689,
+   "t_out": 52.409
+  },
+  {
+   "w": "esperados,",
+   "start": 61.142,
+   "end": 61.782,
+   "fonte": "ok",
+   "t_in": 52.409,
+   "t_out": 53.049
+  },
+  {
+   "w": "os",
+   "start": 61.782,
+   "end": 61.942,
+   "fonte": "ok",
+   "t_in": 53.049,
+   "t_out": 53.209
+  },
+  {
+   "w": "possíveis",
+   "start": 61.942,
+   "end": 62.342,
+   "fonte": "ok",
+   "t_in": 53.209,
+   "t_out": 53.609
+  },
+  {
+   "w": "efeitos",
+   "start": 62.342,
+   "end": 62.822,
+   "fonte": "ok",
+   "t_in": 53.609,
+   "t_out": 54.089
+  },
+  {
+   "w": "adversos,",
+   "start": 62.822,
+   "end": 63.782,
+   "fonte": "ok",
+   "t_in": 54.089,
+   "t_out": 54.882
+  },
+  {
+   "w": "as",
+   "start": 63.782,
+   "end": 63.942,
+   "fonte": "ok",
+   "t_in": 54.882,
+   "t_out": 55.042
+  },
+  {
+   "w": "outras",
+   "start": 63.942,
+   "end": 64.262,
+   "fonte": "ok",
+   "t_in": 55.042,
+   "t_out": 55.362
+  },
+  {
+   "w": "doenças",
+   "start": 64.262,
+   "end": 64.822,
+   "fonte": "ok",
+   "t_in": 55.362,
+   "t_out": 55.922
+  },
+  {
+   "w": "que",
+   "start": 64.822,
+   "end": 64.982,
+   "fonte": "ok",
+   "t_in": 55.922,
+   "t_out": 56.082
+  },
+  {
+   "w": "a",
+   "start": 64.982,
+   "end": 65.062,
+   "fonte": "ok",
+   "t_in": 56.082,
+   "t_out": 56.162
+  },
+  {
+   "w": "pessoa",
+   "start": 65.062,
+   "end": 65.302,
+   "fonte": "ok",
+   "t_in": 56.162,
+   "t_out": 56.402
+  },
+  {
+   "w": "já",
+   "start": 65.302,
+   "end": 65.462,
+   "fonte": "ok",
+   "t_in": 56.402,
+   "t_out": 56.562
+  },
+  {
+   "w": "tem",
+   "start": 65.462,
+   "end": 65.862,
+   "fonte": "ok",
+   "t_in": 56.562,
+   "t_out": 56.962
+  },
+  {
+   "w": "e",
+   "start": 65.862,
+   "end": 65.912,
+   "fonte": "interp",
+   "t_in": 56.962,
+   "t_out": 57.012
+  },
+  {
+   "w": "os",
+   "start": 65.862,
+   "end": 66.022,
+   "fonte": "ok",
+   "t_in": 56.962,
+   "t_out": 57.122
+  },
+  {
+   "w": "medicamentos",
+   "start": 66.022,
+   "end": 66.502,
+   "fonte": "ok",
+   "t_in": 57.122,
+   "t_out": 57.602
+  },
+  {
+   "w": "que",
+   "start": 66.502,
+   "end": 66.582,
+   "fonte": "ok",
+   "t_in": 57.602,
+   "t_out": 57.682
+  },
+  {
+   "w": "ela",
+   "start": 66.582,
+   "end": 66.742,
+   "fonte": "ok",
+   "t_in": 57.682,
+   "t_out": 57.842
+  },
+  {
+   "w": "já",
+   "start": 66.742,
+   "end": 66.902,
+   "fonte": "ok",
+   "t_in": 57.842,
+   "t_out": 58.002
+  },
+  {
+   "w": "utiliza.",
+   "start": 66.902,
+   "end": 67.622,
+   "fonte": "ok",
+   "t_in": 58.002,
+   "t_out": 58.567
+  },
+  {
+   "w": "Também",
+   "start": 67.622,
+   "end": 67.942,
+   "fonte": "ok",
+   "t_in": 58.567,
+   "t_out": 58.742
+  },
+  {
+   "w": "é",
+   "start": 67.942,
+   "end": 68.102,
+   "fonte": "ok",
+   "t_in": 58.742,
+   "t_out": 58.902
+  },
+  {
+   "w": "preciso",
+   "start": 68.102,
+   "end": 68.342,
+   "fonte": "ok",
+   "t_in": 58.902,
+   "t_out": 59.142
+  },
+  {
+   "w": "acompanhar",
+   "start": 68.342,
+   "end": 68.902,
+   "fonte": "ok",
+   "t_in": 59.142,
+   "t_out": 59.702
+  },
+  {
+   "w": "a",
+   "start": 68.902,
+   "end": 68.982,
+   "fonte": "ok",
+   "t_in": 59.702,
+   "t_out": 59.782
+  },
+  {
+   "w": "resposta",
+   "start": 68.982,
+   "end": 69.382,
+   "fonte": "ok",
+   "t_in": 59.782,
+   "t_out": 60.182
+  },
+  {
+   "w": "do",
+   "start": 69.382,
+   "end": 69.542,
+   "fonte": "ok",
+   "t_in": 60.182,
+   "t_out": 60.342
+  },
+  {
+   "w": "tratamento",
+   "start": 69.542,
+   "end": 70.022,
+   "fonte": "ok",
+   "t_in": 60.342,
+   "t_out": 60.822
+  },
+  {
+   "w": "e",
+   "start": 70.022,
+   "end": 70.182,
+   "fonte": "ok",
+   "t_in": 60.822,
+   "t_out": 60.982
+  },
+  {
+   "w": "decidir",
+   "start": 70.182,
+   "end": 70.662,
+   "fonte": "ok",
+   "t_in": 60.982,
+   "t_out": 61.462
+  },
+  {
+   "w": "junto",
+   "start": 70.662,
+   "end": 70.982,
+   "fonte": "ok",
+   "t_in": 61.462,
+   "t_out": 61.782
+  },
+  {
+   "w": "com",
+   "start": 70.982,
+   "end": 71.142,
+   "fonte": "ok",
+   "t_in": 61.782,
+   "t_out": 61.942
+  },
+  {
+   "w": "o",
+   "start": 71.142,
+   "end": 71.222,
+   "fonte": "ok",
+   "t_in": 61.942,
+   "t_out": 62.022
+  },
+  {
+   "w": "paciente",
+   "start": 71.222,
+   "end": 71.622,
+   "fonte": "ok",
+   "t_in": 62.022,
+   "t_out": 62.422
+  },
+  {
+   "w": "como",
+   "start": 71.782,
+   "end": 72.022,
+   "fonte": "ok",
+   "t_in": 62.582,
+   "t_out": 62.822
+  },
+  {
+   "w": "que",
+   "start": 72.022,
+   "end": 72.182,
+   "fonte": "ok",
+   "t_in": 62.822,
+   "t_out": 62.982
+  },
+  {
+   "w": "vai",
+   "start": 72.182,
+   "end": 72.422,
+   "fonte": "ok",
+   "t_in": 62.982,
+   "t_out": 63.222
+  },
+  {
+   "w": "conduzir",
+   "start": 72.422,
+   "end": 72.982,
+   "fonte": "ok",
+   "t_in": 63.222,
+   "t_out": 63.782
+  },
+  {
+   "w": "isso",
+   "start": 72.982,
+   "end": 73.302,
+   "fonte": "ok",
+   "t_in": 63.782,
+   "t_out": 64.102
+  },
+  {
+   "w": "ao",
+   "start": 73.542,
+   "end": 73.782,
+   "fonte": "ok",
+   "t_in": 64.342,
+   "t_out": 64.582
+  },
+  {
+   "w": "longo",
+   "start": 73.782,
+   "end": 74.102,
+   "fonte": "ok",
+   "t_in": 64.582,
+   "t_out": 64.902
+  },
+  {
+   "w": "do",
+   "start": 74.102,
+   "end": 74.262,
+   "fonte": "ok",
+   "t_in": 64.902,
+   "t_out": 65.062
+  },
+  {
+   "w": "tempo.",
+   "start": 74.262,
+   "end": 74.662,
+   "fonte": "ok",
+   "t_in": 65.062,
+   "t_out": 65.4
+  },
+  {
+   "w": "E",
+   "start": 74.662,
+   "end": 74.822,
+   "fonte": "ok",
+   "t_in": 65.4,
+   "t_out": 65.4
+  },
+  {
+   "w": "por",
+   "start": 74.822,
+   "end": 74.982,
+   "fonte": "ok",
+   "t_in": 65.4,
+   "t_out": 65.549
+  },
+  {
+   "w": "que",
+   "start": 74.982,
+   "end": 75.062,
+   "fonte": "ok",
+   "t_in": 65.549,
+   "t_out": 65.629
+  },
+  {
+   "w": "isso",
+   "start": 75.222,
+   "end": 75.382,
+   "fonte": "ok",
+   "t_in": 65.789,
+   "t_out": 65.949
+  },
+  {
+   "w": "importa?",
+   "start": 75.382,
+   "end": 75.782,
+   "fonte": "ok",
+   "t_in": 65.949,
+   "t_out": 66.349
+  },
+  {
+   "w": "Porque",
+   "start": 75.782,
+   "end": 75.942,
+   "fonte": "ok",
+   "t_in": 66.349,
+   "t_out": 66.509
+  },
+  {
+   "w": "a",
+   "start": 75.942,
+   "end": 76.022,
+   "fonte": "interp",
+   "t_in": 66.509,
+   "t_out": 66.589
+  },
+  {
+   "w": "obesidade",
+   "start": 76.022,
+   "end": 76.502,
+   "fonte": "ok",
+   "t_in": 66.589,
+   "t_out": 67.069
+  },
+  {
+   "w": "é",
+   "start": 76.502,
+   "end": 76.582,
+   "fonte": "ok",
+   "t_in": 67.069,
+   "t_out": 67.149
+  },
+  {
+   "w": "uma",
+   "start": 76.662,
+   "end": 76.742,
+   "fonte": "ok",
+   "t_in": 67.229,
+   "t_out": 67.309
+  },
+  {
+   "w": "doença",
+   "start": 76.742,
+   "end": 77.142,
+   "fonte": "ok",
+   "t_in": 67.309,
+   "t_out": 67.709
+  },
+  {
+   "w": "crônica.",
+   "start": 77.142,
+   "end": 77.702,
+   "fonte": "ok",
+   "t_in": 67.709,
+   "t_out": 68.269
+  },
+  {
+   "w": "Em",
+   "start": 77.702,
+   "end": 77.862,
+   "fonte": "ok",
+   "t_in": 68.269,
+   "t_out": 68.429
+  },
+  {
+   "w": "muitos",
+   "start": 77.862,
+   "end": 78.102,
+   "fonte": "ok",
+   "t_in": 68.429,
+   "t_out": 68.669
+  },
+  {
+   "w": "casos,",
+   "start": 78.102,
+   "end": 78.582,
+   "fonte": "ok",
+   "t_in": 68.669,
+   "t_out": 69.149
+  },
+  {
+   "w": "interromper",
+   "start": 78.582,
+   "end": 79.142,
+   "fonte": "ok",
+   "t_in": 69.149,
+   "t_out": 69.709
+  },
+  {
+   "w": "o",
+   "start": 79.142,
+   "end": 79.302,
+   "fonte": "ok",
+   "t_in": 69.709,
+   "t_out": 69.869
+  },
+  {
+   "w": "tratamento",
+   "start": 79.302,
+   "end": 79.942,
+   "fonte": "ok",
+   "t_in": 69.869,
+   "t_out": 70.509
+  },
+  {
+   "w": "pode",
+   "start": 79.942,
+   "end": 80.182,
+   "fonte": "ok",
+   "t_in": 70.509,
+   "t_out": 70.749
+  },
+  {
+   "w": "favorecer",
+   "start": 80.182,
+   "end": 80.742,
+   "fonte": "ok",
+   "t_in": 70.749,
+   "t_out": 71.309
+  },
+  {
+   "w": "o",
+   "start": 80.742,
+   "end": 80.822,
+   "fonte": "ok",
+   "t_in": 71.309,
+   "t_out": 71.389
+  },
+  {
+   "w": "retorno",
+   "start": 80.822,
+   "end": 81.142,
+   "fonte": "ok",
+   "t_in": 71.389,
+   "t_out": 71.709
+  },
+  {
+   "w": "da",
+   "start": 81.142,
+   "end": 81.302,
+   "fonte": "ok",
+   "t_in": 71.709,
+   "t_out": 71.869
+  },
+  {
+   "w": "fome",
+   "start": 81.302,
+   "end": 81.622,
+   "fonte": "ok",
+   "t_in": 71.869,
+   "t_out": 72.189
+  },
+  {
+   "w": "e",
+   "start": 81.622,
+   "end": 81.702,
+   "fonte": "ok",
+   "t_in": 72.189,
+   "t_out": 72.269
+  },
+  {
+   "w": "a",
+   "start": 81.782,
+   "end": 81.862,
+   "fonte": "ok",
+   "t_in": 72.349,
+   "t_out": 72.429
+  },
+  {
+   "w": "recuperação",
+   "start": 81.862,
+   "end": 82.342,
+   "fonte": "ok",
+   "t_in": 72.429,
+   "t_out": 72.909
+  },
+  {
+   "w": "daquele",
+   "start": 82.342,
+   "end": 82.662,
+   "fonte": "ok",
+   "t_in": 72.909,
+   "t_out": 73.229
+  },
+  {
+   "w": "peso",
+   "start": 82.662,
+   "end": 82.982,
+   "fonte": "ok",
+   "t_in": 73.229,
+   "t_out": 73.549
+  },
+  {
+   "w": "que",
+   "start": 82.982,
+   "end": 83.142,
+   "fonte": "ok",
+   "t_in": 73.549,
+   "t_out": 73.709
+  },
+  {
+   "w": "foi",
+   "start": 83.142,
+   "end": 83.382,
+   "fonte": "ok",
+   "t_in": 73.709,
+   "t_out": 73.949
+  },
+  {
+   "w": "perdido.",
+   "start": 83.382,
+   "end": 84.022,
+   "fonte": "ok",
+   "t_in": 73.949,
+   "t_out": 74.367
+  },
+  {
+   "w": "Isso",
+   "start": 84.102,
+   "end": 84.342,
+   "fonte": "ok",
+   "t_in": 74.367,
+   "t_out": 74.575
+  },
+  {
+   "w": "não",
+   "start": 84.342,
+   "end": 84.502,
+   "fonte": "ok",
+   "t_in": 74.575,
+   "t_out": 74.735
+  },
+  {
+   "w": "significa",
+   "start": 84.502,
+   "end": 85.062,
+   "fonte": "ok",
+   "t_in": 74.735,
+   "t_out": 75.295
+  },
+  {
+   "w": "falta",
+   "start": 85.062,
+   "end": 85.302,
+   "fonte": "ok",
+   "t_in": 75.295,
+   "t_out": 75.535
+  },
+  {
+   "w": "de",
+   "start": 85.302,
+   "end": 85.462,
+   "fonte": "ok",
+   "t_in": 75.535,
+   "t_out": 75.695
+  },
+  {
+   "w": "disciplina.",
+   "start": 85.462,
+   "end": 86.182,
+   "fonte": "ok",
+   "t_in": 75.695,
+   "t_out": 76.415
+  },
+  {
+   "w": "Pode",
+   "start": 86.182,
+   "end": 86.342,
+   "fonte": "ok",
+   "t_in": 76.415,
+   "t_out": 76.575
+  },
+  {
+   "w": "ser",
+   "start": 86.422,
+   "end": 86.582,
+   "fonte": "ok",
+   "t_in": 76.655,
+   "t_out": 76.815
+  },
+  {
+   "w": "só",
+   "start": 86.582,
+   "end": 86.822,
+   "fonte": "ok",
+   "t_in": 76.815,
+   "t_out": 77.055
+  },
+  {
+   "w": "que",
+   "start": 86.822,
+   "end": 87.062,
+   "fonte": "ok",
+   "t_in": 77.055,
+   "t_out": 77.295
+  },
+  {
+   "w": "o",
+   "start": 87.062,
+   "end": 87.142,
+   "fonte": "ok",
+   "t_in": 77.295,
+   "t_out": 77.375
+  },
+  {
+   "w": "corpo",
+   "start": 87.142,
+   "end": 87.462,
+   "fonte": "ok",
+   "t_in": 77.375,
+   "t_out": 77.695
+  },
+  {
+   "w": "respondeu",
+   "start": 87.462,
+   "end": 88.022,
+   "fonte": "ok",
+   "t_in": 77.695,
+   "t_out": 78.255
+  },
+  {
+   "w": "dessa",
+   "start": 88.022,
+   "end": 88.262,
+   "fonte": "ok",
+   "t_in": 78.255,
+   "t_out": 78.495
+  },
+  {
+   "w": "maneira.",
+   "start": 88.262,
+   "end": 88.742,
+   "fonte": "ok",
+   "t_in": 78.495,
+   "t_out": 78.975
+  },
+  {
+   "w": "E",
+   "start": 88.742,
+   "end": 88.902,
+   "fonte": "ok",
+   "t_in": 78.975,
+   "t_out": 79.135
+  },
+  {
+   "w": "a",
+   "start": 88.902,
+   "end": 89.062,
+   "fonte": "ok",
+   "t_in": 79.135,
+   "t_out": 79.295
+  },
+  {
+   "w": "alimentação,",
+   "start": 89.062,
+   "end": 89.702,
+   "fonte": "ok",
+   "t_in": 79.295,
+   "t_out": 79.935
+  },
+  {
+   "w": "o",
+   "start": 89.702,
+   "end": 89.782,
+   "fonte": "ok",
+   "t_in": 79.935,
+   "t_out": 80.015
+  },
+  {
+   "w": "exercício",
+   "start": 89.782,
+   "end": 90.182,
+   "fonte": "ok",
+   "t_in": 80.015,
+   "t_out": 80.415
+  },
+  {
+   "w": "e",
+   "start": 90.262,
+   "end": 90.342,
+   "fonte": "ok",
+   "t_in": 80.495,
+   "t_out": 80.575
+  },
+  {
+   "w": "o",
+   "start": 90.342,
+   "end": 90.422,
+   "fonte": "ok",
+   "t_in": 80.575,
+   "t_out": 80.655
+  },
+  {
+   "w": "sono",
+   "start": 90.422,
+   "end": 90.902,
+   "fonte": "ok",
+   "t_in": 80.655,
+   "t_out": 81.135
+  },
+  {
+   "w": "e",
+   "start": 91.046,
+   "end": 91.366,
+   "fonte": "ok",
+   "t_in": 81.233,
+   "t_out": 81.333
+  },
+  {
+   "w": "o",
+   "start": 91.366,
+   "end": 91.526,
+   "fonte": "ok",
+   "t_in": 81.333,
+   "t_out": 81.493
+  },
+  {
+   "w": "acompanhamento",
+   "start": 91.526,
+   "end": 92.246,
+   "fonte": "ok",
+   "t_in": 81.493,
+   "t_out": 82.213
+  },
+  {
+   "w": "médico",
+   "start": 92.246,
+   "end": 92.486,
+   "fonte": "ok",
+   "t_in": 82.213,
+   "t_out": 82.453
+  },
+  {
+   "w": "vão",
+   "start": 92.566,
+   "end": 92.726,
+   "fonte": "ok",
+   "t_in": 82.533,
+   "t_out": 82.693
+  },
+  {
+   "w": "ter",
+   "start": 92.726,
+   "end": 92.886,
+   "fonte": "ok",
+   "t_in": 82.693,
+   "t_out": 82.853
+  },
+  {
+   "w": "papéis",
+   "start": 92.886,
+   "end": 93.366,
+   "fonte": "ok",
+   "t_in": 82.853,
+   "t_out": 83.333
+  },
+  {
+   "w": "complementares.",
+   "start": 93.366,
+   "end": 94.166,
+   "fonte": "ok",
+   "t_in": 83.333,
+   "t_out": 84.133
+  },
+  {
+   "w": "Nenhum",
+   "start": 94.166,
+   "end": 94.566,
+   "fonte": "ok",
+   "t_in": 84.133,
+   "t_out": 84.533
+  },
+  {
+   "w": "medicamento",
+   "start": 94.566,
+   "end": 95.206,
+   "fonte": "ok",
+   "t_in": 84.533,
+   "t_out": 85.173
+  },
+  {
+   "w": "deve",
+   "start": 95.206,
+   "end": 95.606,
+   "fonte": "ok",
+   "t_in": 85.173,
+   "t_out": 85.573
+  },
+  {
+   "w": "ser",
+   "start": 95.606,
+   "end": 95.846,
+   "fonte": "ok",
+   "t_in": 85.573,
+   "t_out": 85.813
+  },
+  {
+   "w": "usado",
+   "start": 95.846,
+   "end": 96.166,
+   "fonte": "ok",
+   "t_in": 85.813,
+   "t_out": 86.133
+  },
+  {
+   "w": "por",
+   "start": 96.166,
+   "end": 96.326,
+   "fonte": "ok",
+   "t_in": 86.133,
+   "t_out": 86.293
+  },
+  {
+   "w": "conta",
+   "start": 96.326,
+   "end": 96.726,
+   "fonte": "ok",
+   "t_in": 86.293,
+   "t_out": 86.693
+  },
+  {
+   "w": "própria",
+   "start": 96.726,
+   "end": 97.126,
+   "fonte": "ok",
+   "t_in": 86.693,
+   "t_out": 87.093
+  },
+  {
+   "w": "e",
+   "start": 97.206,
+   "end": 97.366,
+   "fonte": "ok",
+   "t_in": 87.173,
+   "t_out": 87.333
+  },
+  {
+   "w": "nem",
+   "start": 97.366,
+   "end": 97.606,
+   "fonte": "ok",
+   "t_in": 87.333,
+   "t_out": 87.573
+  },
+  {
+   "w": "existe",
+   "start": 97.606,
+   "end": 97.926,
+   "fonte": "ok",
+   "t_in": 87.573,
+   "t_out": 87.893
+  },
+  {
+   "w": "uma",
+   "start": 97.926,
+   "end": 98.086,
+   "fonte": "ok",
+   "t_in": 87.893,
+   "t_out": 88.053
+  },
+  {
+   "w": "estratégia",
+   "start": 98.086,
+   "end": 98.646,
+   "fonte": "ok",
+   "t_in": 88.053,
+   "t_out": 88.613
+  },
+  {
+   "w": "única",
+   "start": 98.646,
+   "end": 98.966,
+   "fonte": "ok",
+   "t_in": 88.613,
+   "t_out": 88.933
+  },
+  {
+   "w": "adequada",
+   "start": 99.126,
+   "end": 99.686,
+   "fonte": "ok",
+   "t_in": 89.093,
+   "t_out": 89.653
+  },
+  {
+   "w": "para",
+   "start": 99.686,
+   "end": 99.926,
+   "fonte": "ok",
+   "t_in": 89.653,
+   "t_out": 89.893
+  },
+  {
+   "w": "todo",
+   "start": 99.926,
+   "end": 100.166,
+   "fonte": "ok",
+   "t_in": 89.893,
+   "t_out": 90.133
+  },
+  {
+   "w": "mundo.",
+   "start": 100.166,
+   "end": 100.646,
+   "fonte": "ok",
+   "t_in": 90.133,
+   "t_out": 90.4
+  },
+  {
+   "w": "Tratar",
+   "start": 100.646,
+   "end": 101.046,
+   "fonte": "ok",
+   "t_in": 90.4,
+   "t_out": 90.679
+  },
+  {
+   "w": "a",
+   "start": 101.046,
+   "end": 101.126,
+   "fonte": "ok",
+   "t_in": 90.679,
+   "t_out": 90.759
+  },
+  {
+   "w": "obesidade",
+   "start": 101.126,
+   "end": 101.926,
+   "fonte": "ok",
+   "t_in": 90.759,
+   "t_out": 91.559
+  },
+  {
+   "w": "vai",
+   "start": 101.926,
+   "end": 102.246,
+   "fonte": "ok",
+   "t_in": 91.559,
+   "t_out": 91.879
+  },
+  {
+   "w": "muito",
+   "start": 102.246,
+   "end": 102.486,
+   "fonte": "ok",
+   "t_in": 91.879,
+   "t_out": 92.119
+  },
+  {
+   "w": "além",
+   "start": 102.486,
+   "end": 103.046,
+   "fonte": "ok",
+   "t_in": 92.119,
+   "t_out": 92.679
+  },
+  {
+   "w": "de",
+   "start": 103.046,
+   "end": 103.286,
+   "fonte": "ok",
+   "t_in": 92.679,
+   "t_out": 92.919
+  },
+  {
+   "w": "fazer",
+   "start": 103.286,
+   "end": 103.526,
+   "fonte": "ok",
+   "t_in": 92.919,
+   "t_out": 93.159
+  },
+  {
+   "w": "o",
+   "start": 103.686,
+   "end": 103.846,
+   "fonte": "ok",
+   "t_in": 93.319,
+   "t_out": 93.479
+  },
+  {
+   "w": "número",
+   "start": 103.846,
+   "end": 104.166,
+   "fonte": "ok",
+   "t_in": 93.479,
+   "t_out": 93.799
+  },
+  {
+   "w": "na",
+   "start": 104.166,
+   "end": 104.326,
+   "fonte": "ok",
+   "t_in": 93.799,
+   "t_out": 93.959
+  },
+  {
+   "w": "balança",
+   "start": 104.326,
+   "end": 104.806,
+   "fonte": "ok",
+   "t_in": 93.959,
+   "t_out": 94.439
+  },
+  {
+   "w": "diminuir",
+   "start": 104.806,
+   "end": 105.286,
+   "fonte": "ok",
+   "t_in": 94.439,
+   "t_out": 94.919
+  },
+  {
+   "w": "e",
+   "start": 105.366,
+   "end": 105.606,
+   "fonte": "ok",
+   "t_in": 94.999,
+   "t_out": 95.239
+  },
+  {
+   "w": "precisa",
+   "start": 105.606,
+   "end": 105.926,
+   "fonte": "ok",
+   "t_in": 95.239,
+   "t_out": 95.559
+  },
+  {
+   "w": "ser",
+   "start": 105.926,
+   "end": 106.086,
+   "fonte": "ok",
+   "t_in": 95.559,
+   "t_out": 95.719
+  },
+  {
+   "w": "entendido",
+   "start": 106.086,
+   "end": 106.486,
+   "fonte": "ok",
+   "t_in": 95.719,
+   "t_out": 96.119
+  },
+  {
+   "w": "como",
+   "start": 106.486,
+   "end": 106.646,
+   "fonte": "ok",
+   "t_in": 96.119,
+   "t_out": 96.279
+  },
+  {
+   "w": "uma",
+   "start": 106.646,
+   "end": 106.806,
+   "fonte": "ok",
+   "t_in": 96.279,
+   "t_out": 96.439
+  },
+  {
+   "w": "doença,",
+   "start": 106.806,
+   "end": 107.206,
+   "fonte": "ok",
+   "t_in": 96.439,
+   "t_out": 96.839
+  },
+  {
+   "w": "avaliar",
+   "start": 107.206,
+   "end": 107.766,
+   "fonte": "ok",
+   "t_in": 96.839,
+   "t_out": 97.399
+  },
+  {
+   "w": "cada",
+   "start": 107.766,
+   "end": 108.086,
+   "fonte": "ok",
+   "t_in": 97.399,
+   "t_out": 97.719
+  },
+  {
+   "w": "pessoa",
+   "start": 108.086,
+   "end": 108.406,
+   "fonte": "ok",
+   "t_in": 97.719,
+   "t_out": 98.039
+  },
+  {
+   "w": "construir",
+   "start": 108.566,
+   "end": 109.046,
+   "fonte": "ok",
+   "t_in": 98.199,
+   "t_out": 98.679
+  },
+  {
+   "w": "um",
+   "start": 109.046,
+   "end": 109.206,
+   "fonte": "ok",
+   "t_in": 98.679,
+   "t_out": 98.839
+  },
+  {
+   "w": "tratamento",
+   "start": 109.206,
+   "end": 109.686,
+   "fonte": "ok",
+   "t_in": 98.839,
+   "t_out": 99.319
+  },
+  {
+   "w": "que",
+   "start": 109.686,
+   "end": 109.846,
+   "fonte": "ok",
+   "t_in": 99.319,
+   "t_out": 99.479
+  },
+  {
+   "w": "seja",
+   "start": 109.846,
+   "end": 110.406,
+   "fonte": "ok",
+   "t_in": 99.479,
+   "t_out": 100.039
+  },
+  {
+   "w": "positivo.",
+   "start": 110.406,
+   "end": 111.046,
+   "fonte": "ok",
+   "t_in": 100.039,
+   "t_out": 100.679
+  },
+  {
+   "w": "durante",
+   "start": 111.366,
+   "end": 111.686,
+   "fonte": "ok",
+   "t_in": 100.999,
+   "t_out": 101.319
+  },
+  {
+   "w": "o",
+   "start": 111.846,
+   "end": 111.926,
+   "fonte": "ok",
+   "t_in": 101.479,
+   "t_out": 101.559
+  },
+  {
+   "w": "tempo",
+   "start": 111.926,
+   "end": 112.246,
+   "fonte": "ok",
+   "t_in": 101.559,
+   "t_out": 101.879
+  },
+  {
+   "w": "e",
+   "start": 112.246,
+   "end": 112.486,
+   "fonte": "ok",
+   "t_in": 101.879,
+   "t_out": 102.119
+  },
+  {
+   "w": "sustentável",
+   "start": 112.486,
+   "end": 113.526,
+   "fonte": "ok",
+   "t_in": 102.119,
+   "t_out": 103.159
+  },
+  {
+   "w": "assim",
+   "start": 113.526,
+   "end": 113.846,
+   "fonte": "ok",
+   "t_in": 103.159,
+   "t_out": 103.479
+  },
+  {
+   "w": "que",
+   "start": 114.086,
+   "end": 114.406,
+   "fonte": "ok",
+   "t_in": 103.667,
+   "t_out": 103.873
+  },
+  {
+   "w": "o",
+   "start": 114.406,
+   "end": 114.646,
+   "fonte": "ok",
+   "t_in": 103.873,
+   "t_out": 104.113
+  },
+  {
+   "w": "paciente",
+   "start": 114.646,
+   "end": 115.126,
+   "fonte": "ok",
+   "t_in": 104.113,
+   "t_out": 104.593
+  },
+  {
+   "w": "precisa.",
+   "start": 115.126,
+   "end": 115.846,
+   "fonte": "ok",
+   "t_in": 104.593,
+   "t_out": 105.113
+  },
+  {
+   "w": "Então",
+   "start": 115.846,
+   "end": 116.086,
+   "fonte": "ok",
+   "t_in": 105.113,
+   "t_out": 105.353
+  },
+  {
+   "w": "é",
+   "start": 116.246,
+   "end": 116.486,
+   "fonte": "ok",
+   "t_in": 105.513,
+   "t_out": 105.753
+  },
+  {
+   "w": "necessário",
+   "start": 116.486,
+   "end": 116.966,
+   "fonte": "ok",
+   "t_in": 105.753,
+   "t_out": 106.233
+  },
+  {
+   "w": "que",
+   "start": 116.966,
+   "end": 117.126,
+   "fonte": "ok",
+   "t_in": 106.233,
+   "t_out": 106.393
+  },
+  {
+   "w": "a",
+   "start": 117.126,
+   "end": 117.206,
+   "fonte": "ok",
+   "t_in": 106.393,
+   "t_out": 106.473
+  },
+  {
+   "w": "gente",
+   "start": 117.206,
+   "end": 117.446,
+   "fonte": "ok",
+   "t_in": 106.473,
+   "t_out": 106.713
+  },
+  {
+   "w": "tenha",
+   "start": 117.446,
+   "end": 117.766,
+   "fonte": "ok",
+   "t_in": 106.713,
+   "t_out": 107.033
+  },
+  {
+   "w": "mais",
+   "start": 117.766,
+   "end": 118.006,
+   "fonte": "ok",
+   "t_in": 107.033,
+   "t_out": 107.273
+  },
+  {
+   "w": "saúde.",
+   "start": 118.006,
+   "end": 118.726,
+   "fonte": "ok",
+   "t_in": 107.273,
+   "t_out": 107.833
+  },
+  {
+   "w": "para",
+   "start": 118.758,
+   "end": 118.918,
+   "fonte": "ok",
+   "t_in": 107.833,
+   "t_out": 107.918
+  },
+  {
+   "w": "que",
+   "start": 119.078,
+   "end": 119.158,
+   "fonte": "ok",
+   "t_in": 108.078,
+   "t_out": 108.158
+  },
+  {
+   "w": "a",
+   "start": 119.158,
+   "end": 119.238,
+   "fonte": "ok",
+   "t_in": 108.158,
+   "t_out": 108.238
+  },
+  {
+   "w": "gente",
+   "start": 119.238,
+   "end": 119.398,
+   "fonte": "ok",
+   "t_in": 108.238,
+   "t_out": 108.398
+  },
+  {
+   "w": "consiga",
+   "start": 119.398,
+   "end": 119.798,
+   "fonte": "ok",
+   "t_in": 108.398,
+   "t_out": 108.798
+  },
+  {
+   "w": "viver",
+   "start": 119.798,
+   "end": 120.118,
+   "fonte": "ok",
+   "t_in": 108.798,
+   "t_out": 109.118
+  },
+  {
+   "w": "aquilo",
+   "start": 120.118,
+   "end": 120.358,
+   "fonte": "ok",
+   "t_in": 109.118,
+   "t_out": 109.358
+  },
+  {
+   "w": "que",
+   "start": 120.358,
+   "end": 120.518,
+   "fonte": "ok",
+   "t_in": 109.358,
+   "t_out": 109.518
+  },
+  {
+   "w": "mais",
+   "start": 120.518,
+   "end": 120.758,
+   "fonte": "ok",
+   "t_in": 109.518,
+   "t_out": 109.758
+  },
+  {
+   "w": "importa.",
+   "start": 120.758,
+   "end": 121.238,
+   "fonte": "ok",
+   "t_in": 109.758,
+   "t_out": 110.238
+  },
+  {
+   "w": "E",
+   "start": 121.238,
+   "end": 121.398,
+   "fonte": "ok",
+   "t_in": 110.238,
+   "t_out": 110.398
+  },
+  {
+   "w": "para",
+   "start": 121.398,
+   "end": 121.558,
+   "fonte": "ok",
+   "t_in": 110.398,
+   "t_out": 110.558
+  },
+  {
+   "w": "isso,",
+   "start": 121.558,
+   "end": 121.878,
+   "fonte": "ok",
+   "t_in": 110.558,
+   "t_out": 110.878
+  },
+  {
+   "w": "o",
+   "start": 121.878,
+   "end": 121.958,
+   "fonte": "ok",
+   "t_in": 110.878,
+   "t_out": 110.958
+  },
+  {
+   "w": "tratamento",
+   "start": 121.958,
+   "end": 122.438,
+   "fonte": "ok",
+   "t_in": 110.958,
+   "t_out": 111.438
+  },
+  {
+   "w": "de",
+   "start": 122.438,
+   "end": 122.598,
+   "fonte": "ok",
+   "t_in": 111.438,
+   "t_out": 111.598
+  },
+  {
+   "w": "obesidade",
+   "start": 122.598,
+   "end": 123.238,
+   "fonte": "ok",
+   "t_in": 111.598,
+   "t_out": 112.238
+  },
+  {
+   "w": "entra",
+   "start": 123.238,
+   "end": 123.478,
+   "fonte": "ok",
+   "t_in": 112.238,
+   "t_out": 112.478
+  },
+  {
+   "w": "como",
+   "start": 123.478,
+   "end": 123.638,
+   "fonte": "ok",
+   "t_in": 112.478,
+   "t_out": 112.638
+  },
+  {
+   "w": "um",
+   "start": 123.638,
+   "end": 123.718,
+   "fonte": "ok",
+   "t_in": 112.638,
+   "t_out": 112.718
+  },
+  {
+   "w": "pilar",
+   "start": 123.718,
+   "end": 124.118,
+   "fonte": "ok",
+   "t_in": 112.718,
+   "t_out": 113.118
+  },
+  {
+   "w": "fundamental",
+   "start": 124.118,
+   "end": 124.678,
+   "fonte": "ok",
+   "t_in": 113.118,
+   "t_out": 113.678
+  },
+  {
+   "w": "na",
+   "start": 124.678,
+   "end": 124.838,
+   "fonte": "ok",
+   "t_in": 113.678,
+   "t_out": 113.838
+  },
+  {
+   "w": "qualidade",
+   "start": 124.838,
+   "end": 125.318,
+   "fonte": "ok",
+   "t_in": 113.838,
+   "t_out": 114.318
+  },
+  {
+   "w": "de",
+   "start": 125.318,
+   "end": 125.398,
+   "fonte": "ok",
+   "t_in": 114.318,
+   "t_out": 114.398
+  },
+  {
+   "w": "vida",
+   "start": 125.398,
+   "end": 125.718,
+   "fonte": "ok",
+   "t_in": 114.398,
+   "t_out": 114.718
+  },
+  {
+   "w": "das",
+   "start": 125.718,
+   "end": 125.958,
+   "fonte": "ok",
+   "t_in": 114.718,
+   "t_out": 114.958
+  },
+  {
+   "w": "pessoas.",
+   "start": 125.958,
+   "end": 126.598,
+   "fonte": "ok",
+   "t_in": 114.958,
+   "t_out": 115.5
+  }
+ ]
+}
