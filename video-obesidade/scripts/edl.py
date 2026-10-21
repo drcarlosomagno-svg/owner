@@ -231,6 +231,55 @@ BEATS = [
   "Payoff + CTA; o último quadro casa com o primeiro."),
 ]
 
+# Parâmetros de render por beat (id = posição em BEATS). Chaves terminadas em _t são
+# tempos do vídeo-base e viram quadros absolutos (_f). zoom = [inicio, fim] ou degrau.
+RENDER = {
+ 0: dict(zoom=[1.20, 1.23], trans="none", motion="risco", texto="FALTA DE DISCIPLINA", marca_t=[75.30]),
+ 1: dict(motion="grafico", modo="desce", trans="split"),
+ 2: dict(motion="grafico", modo="sanfona", trans="cut"),
+ 3: dict(broll="b03_cozinha.png", trans="leak"),
+ 4: dict(zoom=[1.12, 1.14], trans="whip"),
+ 5: dict(motion="mito", mito="Só força de vontade", verdade="Biologia + comportamento", trans="glitch"),
+ 6: dict(motion="cerebro", trans="zoom"),
+ 7: dict(motion="icones", marca_t=[15.76, 16.24, 16.96], trans="cut"),
+ 8: dict(broll="b08_cinto.png", trans="split"),
+ 9: dict(motion="mostradores", marca_t=[21.03, 22.15], trans="mask"),
+ 10: dict(zoom=[1.0, 1.02], degrau_t=26.55, degrau=1.20, trans="cut"),
+ 11: dict(zoom=[1.08, 1.10], flash_t=28.57, trans="cut"),
+ 12: dict(motion="nomes", marca_t=[31.93, 32.97], trans="cut"),
+ 13: dict(motion="hormonios", trans="zoom"),
+ 14: dict(broll="b14_refeicao.png", trans="split"),
+ 15: dict(motion="checklist", itens=["Menos fome", "Controle da ingestão", "Perda de peso"], marca_t=[37.40, 39.75, 41.27], trans="mask", pip=True),
+ 16: dict(zoom=[1.25, 1.27], trans="whip"),
+ 17: dict(motion="mito", mito="Só escolher a dose", verdade="Avaliar a pessoa", glitch_t=46.04, trans="cut"),
+ 18: dict(zoom=[1.08, 1.10], terco=True, trans="cut"),
+ 19: dict(motion="checklist", itens=["Indicação clínica", "Benefícios esperados", "Efeitos adversos", "Outras doenças", "Medicamentos em uso"], marca_t=[49.93, 51.69, 53.61, 99999, 99999], trans="mask", pip=True),
+ 20: dict(motion="checklist", itens=["Indicação clínica", "Benefícios esperados", "Efeitos adversos", "Outras doenças", "Medicamentos em uso"], marca_t=[49.93, 51.69, 53.61, 55.36, 57.12], trans="split"),
+ 21: dict(broll="b21_consultorio.png", trans="leak"),
+ 22: dict(motion="linha_tempo", marca_t=[63.22, 64.58], trans="cut"),
+ 23: dict(zoom=[1.20, 1.22], trans="whip", interrogacao=True),
+ 24: dict(motion="texto_grande", texto="DOENÇA CRÔNICA", trans="flash"),
+ 25: dict(motion="grafico", modo="pausa", marca_t=[69.15], trans="cut"),
+ 26: dict(motion="grafico", modo="volta", trans="cut"),
+ 27: dict(motion="mito", mito="Falta de disciplina", verdade="O corpo reagindo", glitch_t=75.30, trans="glitch"),
+ 28: dict(motion="hormonios", corpo=True, trans="cut"),
+ 29: dict(montagem=["b29a_comida.png", "b29b_treino.png", "b29c_sono.png"], marca_t=[79.30, 80.02, 80.66], trans="cut"),
+ 30: dict(motion="pecas", trans="cut"),
+ 31: dict(zoom=[1.25, 1.27], alerta=True, trans="cut"),
+ 32: dict(motion="silhuetas", trans="split"),
+ 33: dict(motion="balanca", marca_t=[91.88], trans="zoom"),
+ 34: dict(zoom=[1.08, 1.10], trans="cut"),
+ 35: dict(motion="linha_tempo", continua=True, marca_t=[98.84, 101.00], trans="mask", pip=True),
+ 36: dict(zoom=[1.0, 1.02], degrau_t=102.12, degrau=1.15, trans="cut"),
+ 37: dict(broll="b37_escada.png", trans="leak"),
+ 38: dict(broll="b38_familia.png", trans="cut"),
+ 39: dict(zoom=[1.08, 1.10], trans="cut"),
+ 40: dict(zoom=[1.20, 1.23], flash_t=112.72, trans="flash_t"),
+}
+SPLIT_LAYOUTS = {"SPLIT_TOP_BROLL"}
+CTA = dict(texto="Mande este vídeo para quem está usando algum remédio para obesidade", inicio_t=110.96)
+LOOP = dict(inicio_t=7.32, fim_t=28.57)   # cadeado do open loop
+
 f = lambda t: round(t * FPS)          # tempo -> quadro
 beats = []
 for i, b in enumerate(BEATS):
@@ -249,12 +298,42 @@ for i, b in enumerate(BEATS):
         shift = OFF
     fr_in = f(t_in)
     sfx_out = [{"som": som, "frame": fr_in if t == "in" else f(t + shift)} for t, som in sfx]
-    beats.append({"id": i, "t_in": round(f(t_in) / FPS, 3), "t_out": round(f(t_out) / FPS, 3),
+    rp = {}
+    for k, v in RENDER.get(i, {}).items():
+        if k.endswith("_t"):
+            conv = lambda t: f(t + shift) if t < 9999 else 10 ** 6
+            rp[k[:-2] + "_f"] = [conv(x) for x in v] if isinstance(v, list) else conv(v)
+        else:
+            rp[k] = v
+    beats.append({"render": rp, "id": i, "t_in": round(f(t_in) / FPS, 3), "t_out": round(f(t_out) / FPS, 3),
                   "src_in": s_in, "src_out": s_out, "fala": fala, "layout": layout, "visual": visual,
                   "tipo_visual": tipo, "prompt_ia": prompt, "transicao_entrada": trans,
                   "sfx": sfx_out, "enfase": enf, "motivo": motivo})
 
+# legenda: palavras em quadros absolutos, em blocos de até 3 palavras (quebra em pontuação e beat)
+import re
+norm = lambda w: re.sub(r"[^\wà-úç]", "", w.lower())
+pal = json.load(open("transcript.json"))["palavras"]
+co_words = [w for w in pal if COLD_OPEN[0] - 0.05 <= w["t_in"] < COLD_OPEN[1] - 0.05]
+seq = [(w, w["t_in"] - COLD_OPEN[0], w["t_out"] - COLD_OPEN[0]) for w in co_words]
+seq += [(w, w["t_in"] + OFF, w["t_out"] + OFF) for w in pal]
+legenda, bloco = [], []
+def beat_de(fr):
+    return next(b for b in reversed(beats) if f(b["t_in"]) <= fr)
+for w, a, b in seq:
+    fa, fb = f(a), f(b)
+    bt = beat_de(fa)
+    if bloco and (len(bloco) >= 3 or bloco[-1]["beat"] != bt["id"] or bloco[-1]["w"][-1] in ".?!,:"):
+        legenda.append(bloco); bloco = []
+    txt = w["w"].replace("positivo.", "positivo").replace("saúde.", "saúde,")
+    bloco.append({"w": txt, "f_in": fa, "f_out": fb, "beat": bt["id"],
+                  "enfase": norm(txt) in {norm(e) for e in bt["enfase"]}})
+legenda.append(bloco)
+json.dump([{"f_in": bl[0]["f_in"], "palavras": bl} for bl in legenda], open("src/legenda.json", "w"), ensure_ascii=False)
+
 json.dump({"fps": FPS, "largura": 1080, "altura": 1920, "fonte_video": "work/base.mp4",
+           "off": OFF, "co_quadros": f(OFF), "cta": {"texto": CTA["texto"], "f_in": f(CTA["inicio_t"] + OFF)},
+           "loop": {"f_in": f(LOOP["inicio_t"] + OFF), "f_out": f(LOOP["fim_t"] + OFF)},
            "duracao": round(f(DUR_BASE + OFF) / FPS, 3), "cold_open": list(COLD_OPEN),
            "beats": beats}, open("edl.json", "w"), ensure_ascii=False, indent=1)
 

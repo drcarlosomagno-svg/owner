@@ -1,0 +1,31 @@
+{
+ "nota": "Assets gerados no Runway (workspace 'Carlos', plano Free) em 2026-10-21. Os links assinados ficam em work/runway_urls.tsv (fora do git, expiram em poucos dias); em outra sessão, peça ao Claude para renovar pelo task_id ou baixe pela biblioteca do Runway e salve com o nome indicado.",
+ "imagens": {
+  "broll/b03_cozinha.png": "59966c45-74cf-4d02-8bb4-fd09ba3dfb6e",
+  "broll/b08_cinto.png": "25b23714-b38f-4836-864e-12beb1122d00",
+  "broll/b14_refeicao.png": "6d109eeb-321f-489f-9640-f2dc6dae941f",
+  "broll/b21_consultorio.png": "10096bd2-fd78-46b4-b56c-11fc45b0733c",
+  "broll/b29a_comida.png": "2c0cecb7-352a-4a23-9ebd-489f3cbb88a2",
+  "broll/b29b_treino.png": "eb779f2c-7ea6-49b9-a46f-9b238d415892",
+  "broll/b29c_sono.png": "9fae9aa6-b48a-40e2-9005-4ff72871b13b",
+  "broll/b37_escada.png": "957caf74-cf46-4c93-98c1-1dfec99e8f4a",
+  "broll/b38_familia.png": "d32c670e-948c-4f28-a6c2-abe49bd9c2ee"
+ },
+ "sfx": {
+  "sfx/runway/whoosh.mp3": "ac725828-dd99-4276-8f7c-cde5493ba3eb",
+  "sfx/runway/whoosh_reverso.mp3": "646513a4-4938-49c5-82cd-2d05775080b7",
+  "sfx/runway/zoom.mp3": "daec1b2d-7e4c-4f08-aa24-67cd8010dd2e",
+  "sfx/runway/pop.mp3": "78de696e-4aba-4847-bb0d-637c28daaa65",
+  "sfx/runway/tick.mp3": "ecfc1f52-d104-4444-9f53-6ec06979101f",
+  "sfx/runway/click.mp3": "e40d241e-43d1-41d5-b283-bfcbba2238d1",
+  "sfx/runway/impact.mp3": "8ebc410a-18be-423c-a760-a954011a778e",
+  "sfx/runway/hit_leve.mp3": "854c220b-24c4-4d81-a558-f7c3b816696f",
+  "sfx/runway/glitch.mp3": "a6562dd3-f1eb-489c-b73f-6e8cb7024b5a",
+  "sfx/runway/buzzer.mp3": "42a2efc1-7e57-4b59-9be7-13f6415573ca",
+  "sfx/runway/ding.mp3": "70622fb4-c3e4-40f6-8812-5a341cebb848",
+  "sfx/runway/riser.mp3": "f6bc66d3-1e1e-4a86-b95d-4356aaac124f",
+  "sfx/runway/amb_cozinha.mp3": "3c772d45-4a7e-49ce-a756-9efa391db1e6",
+  "sfx/runway/amb_consultorio.mp3": "49626d89-47ad-4af4-a870-04348c269d82",
+  "sfx/runway/amb_parque.mp3": "24f6680d-580e-4556-9405-8b0511440588"
+ }
+}

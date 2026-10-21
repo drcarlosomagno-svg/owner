@@ -3,6 +3,16 @@
  "largura": 1080,
  "altura": 1920,
  "fonte_video": "work/base.mp4",
+ "off": 1.88,
+ "co_quadros": 56,
+ "cta": {
+  "texto": "Mande este vídeo para quem está usando algum remédio para obesidade",
+  "f_in": 3385
+ },
+ "loop": {
+  "f_in": 276,
+  "f_out": 914
+ },
  "duracao": 117.367,
  "cold_open": [
   74.37,
@@ -10,6 +20,18 @@
  ],
  "beats": [
   {
+   "render": {
+    "zoom": [
+     1.2,
+     1.23
+    ],
+    "trans": "none",
+    "motion": "risco",
+    "texto": "FALTA DE DISCIPLINA",
+    "marca_f": [
+     28
+    ]
+   },
    "id": 0,
    "t_in": 0.0,
    "t_out": 1.867,
@@ -38,6 +60,11 @@
    "motivo": "Frase mais contraintuitiva do vídeo; abre um loop ('isso' o quê?) que só fecha aos 76 s."
   },
   {
+   "render": {
+    "motion": "grafico",
+    "modo": "desce",
+    "trans": "split"
+   },
    "id": 1,
    "t_in": 1.867,
    "t_out": 3.767,
@@ -65,6 +92,11 @@
    "motivo": "Corte de padrão logo após o cold open; o gráfico vira o 'personagem' da pergunta."
   },
   {
+   "render": {
+    "motion": "grafico",
+    "modo": "sanfona",
+    "trans": "cut"
+   },
    "id": 2,
    "t_in": 3.767,
    "t_out": 5.6,
@@ -90,6 +122,10 @@
    "motivo": "A virada da linha encena a frustração que o público conhece."
   },
   {
+   "render": {
+    "broll": "b03_cozinha.png",
+    "trans": "leak"
+   },
    "id": 3,
    "t_in": 5.6,
    "t_out": 8.167,
@@ -113,6 +149,13 @@
    "motivo": "Identificação: o público se vê na cena antes de ouvir a explicação."
   },
   {
+   "render": {
+    "zoom": [
+     1.12,
+     1.14
+    ],
+    "trans": "whip"
+   },
    "id": 4,
    "t_in": 8.167,
    "t_out": 10.667,
@@ -144,6 +187,12 @@
    "motivo": "Promessa explícita; o cadeado segura a resposta por ~20 s."
   },
   {
+   "render": {
+    "motion": "mito",
+    "mito": "Só força de vontade",
+    "verdade": "Biologia + comportamento",
+    "trans": "glitch"
+   },
    "id": 5,
    "t_in": 10.667,
    "t_out": 13.8,
@@ -173,6 +222,10 @@
    "motivo": "Contraste direto com a crença do público."
   },
   {
+   "render": {
+    "motion": "cerebro",
+    "trans": "zoom"
+   },
    "id": 6,
    "t_in": 13.8,
    "t_out": 16.767,
@@ -201,6 +254,15 @@
    "motivo": "Aprofunda: entra 'dentro' do corpo no momento em que a fala vira mecanismo."
   },
   {
+   "render": {
+    "motion": "icones",
+    "marca_f": [
+     529,
+     544,
+     565
+    ],
+    "trans": "cut"
+   },
    "id": 7,
    "t_in": 16.767,
    "t_out": 19.767,
@@ -234,6 +296,10 @@
    "motivo": "Três estímulos em 2 s; cada palavra-chave vira imagem."
   },
   {
+   "render": {
+    "broll": "b08_cinto.png",
+    "trans": "split"
+   },
    "id": 8,
    "t_in": 19.767,
    "t_out": 21.633,
@@ -258,6 +324,14 @@
    "motivo": "Imagem concreta, sem antes-e-depois de paciente."
   },
   {
+   "render": {
+    "motion": "mostradores",
+    "marca_f": [
+     687,
+     721
+    ],
+    "trans": "mask"
+   },
    "id": 9,
    "t_in": 21.633,
    "t_out": 25.467,
@@ -287,6 +361,15 @@
    "motivo": "Mecanismo central do vídeo, mostrado como 'o corpo reagindo'."
   },
   {
+   "render": {
+    "zoom": [
+     1.0,
+     1.02
+    ],
+    "degrau_f": 853,
+    "degrau": 1.2,
+    "trans": "cut"
+   },
    "id": 10,
    "t_in": 25.467,
    "t_out": 29.667,
@@ -311,6 +394,14 @@
    "motivo": "Volta ao rosto para gerar empatia; o punch-in quebra os 3,8 s."
   },
   {
+   "render": {
+    "zoom": [
+     1.08,
+     1.1
+    ],
+    "flash_f": 914,
+    "trans": "cut"
+   },
    "id": 11,
    "t_in": 29.667,
    "t_out": 32.767,
@@ -334,6 +425,14 @@
    "motivo": "Recompensa da promessa feita aos 6 s."
   },
   {
+   "render": {
+    "motion": "nomes",
+    "marca_f": [
+     1014,
+     1046
+    ],
+    "trans": "cut"
+   },
    "id": 12,
    "t_in": 32.767,
    "t_out": 35.067,
@@ -362,6 +461,10 @@
    "motivo": "Nomes que o público já ouviu, escritos corretamente."
   },
   {
+   "render": {
+    "motion": "hormonios",
+    "trans": "zoom"
+   },
    "id": 13,
    "t_in": 35.067,
    "t_out": 39.2,
@@ -391,6 +494,10 @@
    "motivo": "Mesma linguagem visual do mecanismo, para o público ligar uma coisa à outra."
   },
   {
+   "render": {
+    "broll": "b14_refeicao.png",
+    "trans": "split"
+   },
    "id": 14,
    "t_in": 39.2,
    "t_out": 41.233,
@@ -415,6 +522,21 @@
    "motivo": "Cena de cotidiano, sem promessa de resultado."
   },
   {
+   "render": {
+    "motion": "checklist",
+    "itens": [
+     "Menos fome",
+     "Controle da ingestão",
+     "Perda de peso"
+    ],
+    "marca_f": [
+     1178,
+     1249,
+     1295
+    ],
+    "trans": "mask",
+    "pip": true
+   },
    "id": 15,
    "t_in": 41.233,
    "t_out": 44.067,
@@ -443,6 +565,13 @@
    "motivo": "Mudança de escala da minha imagem; lista organiza a informação."
   },
   {
+   "render": {
+    "zoom": [
+     1.25,
+     1.27
+    ],
+    "trans": "whip"
+   },
    "id": 16,
    "t_in": 44.067,
    "t_out": 46.167,
@@ -470,6 +599,13 @@
    "motivo": "Virada do vídeo; o 'mas' pede o enquadramento mais fechado."
   },
   {
+   "render": {
+    "motion": "mito",
+    "mito": "Só escolher a dose",
+    "verdade": "Avaliar a pessoa",
+    "glitch_f": 1438,
+    "trans": "cut"
+   },
    "id": 17,
    "t_in": 46.167,
    "t_out": 49.733,
@@ -499,6 +635,14 @@
    "motivo": "Mito × verdade sobre o próprio ato médico."
   },
   {
+   "render": {
+    "zoom": [
+     1.08,
+     1.1
+    ],
+    "terco": true,
+    "trans": "cut"
+   },
    "id": 18,
    "t_in": 49.733,
    "t_out": 52.8,
@@ -527,6 +671,25 @@
    "motivo": "Autoridade sem exagero; identificação exigida pelo CFM."
   },
   {
+   "render": {
+    "motion": "checklist",
+    "itens": [
+     "Indicação clínica",
+     "Benefícios esperados",
+     "Efeitos adversos",
+     "Outras doenças",
+     "Medicamentos em uso"
+    ],
+    "marca_f": [
+     1554,
+     1607,
+     1665,
+     1000000,
+     1000000
+    ],
+    "trans": "mask",
+    "pip": true
+   },
    "id": 19,
    "t_in": 52.8,
    "t_out": 56.6,
@@ -555,6 +718,24 @@
    "motivo": "Cada item falado vira um check, no ritmo da fala."
   },
   {
+   "render": {
+    "motion": "checklist",
+    "itens": [
+     "Indicação clínica",
+     "Benefícios esperados",
+     "Efeitos adversos",
+     "Outras doenças",
+     "Medicamentos em uso"
+    ],
+    "marca_f": [
+     1554,
+     1607,
+     1665,
+     1717,
+     1770
+    ],
+    "trans": "split"
+   },
    "id": 20,
    "t_in": 56.6,
    "t_out": 60.467,
@@ -583,6 +764,10 @@
    "motivo": "Troca de layout no meio da lista para não passar de 3 s parado."
   },
   {
+   "render": {
+    "broll": "b21_consultorio.png",
+    "trans": "leak"
+   },
    "id": 21,
    "t_in": 60.467,
    "t_out": 63.833,
@@ -611,6 +796,14 @@
    "motivo": "Mostra o processo, sem paciente identificável (CFM)."
   },
   {
+   "render": {
+    "motion": "linha_tempo",
+    "marca_f": [
+     1953,
+     1994
+    ],
+    "trans": "cut"
+   },
    "id": 22,
    "t_in": 63.833,
    "t_out": 67.267,
@@ -643,6 +836,14 @@
    "motivo": "Prepara a ideia de doença crônica."
   },
   {
+   "render": {
+    "zoom": [
+     1.2,
+     1.22
+    ],
+    "trans": "whip",
+    "interrogacao": true
+   },
    "id": 23,
    "t_in": 67.267,
    "t_out": 68.233,
@@ -670,6 +871,11 @@
    "motivo": "Pergunta curta; segura a resposta por menos de 1 s."
   },
   {
+   "render": {
+    "motion": "texto_grande",
+    "texto": "DOENÇA CRÔNICA",
+    "trans": "flash"
+   },
    "id": 24,
    "t_in": 68.233,
    "t_out": 70.133,
@@ -694,6 +900,14 @@
    "motivo": "Tese central do vídeo; peso visual máximo."
   },
   {
+   "render": {
+    "motion": "grafico",
+    "modo": "pausa",
+    "marca_f": [
+     2131
+    ],
+    "trans": "cut"
+   },
    "id": 25,
    "t_in": 70.133,
    "t_out": 72.4,
@@ -717,6 +931,11 @@
    "motivo": "Continuidade com o gráfico do início (beats 1–2)."
   },
   {
+   "render": {
+    "motion": "grafico",
+    "modo": "volta",
+    "trans": "cut"
+   },
    "id": 26,
    "t_in": 72.4,
    "t_out": 76.267,
@@ -746,6 +965,13 @@
    "motivo": "Fecha o arco do gráfico e responde à pergunta do início."
   },
   {
+   "render": {
+    "motion": "mito",
+    "mito": "Falta de disciplina",
+    "verdade": "O corpo reagindo",
+    "glitch_f": 2315,
+    "trans": "glitch"
+   },
    "id": 27,
    "t_in": 76.267,
    "t_out": 78.3,
@@ -774,6 +1000,11 @@
    "motivo": "Fecha o loop aberto no frame 0; quem chegou até aqui recebe o contexto."
   },
   {
+   "render": {
+    "motion": "hormonios",
+    "corpo": true,
+    "trans": "cut"
+   },
    "id": 28,
    "t_in": 78.3,
    "t_out": 80.867,
@@ -798,6 +1029,19 @@
    "motivo": "Reforça a explicação biológica sem culpa."
   },
   {
+   "render": {
+    "montagem": [
+     "b29a_comida.png",
+     "b29b_treino.png",
+     "b29c_sono.png"
+    ],
+    "marca_f": [
+     2435,
+     2457,
+     2476
+    ],
+    "trans": "cut"
+   },
    "id": 29,
    "t_in": 80.867,
    "t_out": 83.1,
@@ -831,6 +1075,10 @@
    "motivo": "Aceleração: 3 cortes em 2 s."
   },
   {
+   "render": {
+    "motion": "pecas",
+    "trans": "cut"
+   },
    "id": 30,
    "t_in": 83.1,
    "t_out": 86.0,
@@ -858,6 +1106,14 @@
    "motivo": "Mostra 'complementar' como encaixe, não como hierarquia."
   },
   {
+   "render": {
+    "zoom": [
+     1.25,
+     1.27
+    ],
+    "alerta": true,
+    "trans": "cut"
+   },
    "id": 31,
    "t_in": 86.0,
    "t_out": 89.067,
@@ -883,6 +1139,10 @@
    "motivo": "Frase mais importante para o público do CTA (quem já usa remédio)."
   },
   {
+   "render": {
+    "motion": "silhuetas",
+    "trans": "split"
+   },
    "id": 32,
    "t_in": 89.067,
    "t_out": 92.267,
@@ -912,6 +1172,13 @@
    "motivo": "Individualização; contra a receita pronta."
   },
   {
+   "render": {
+    "motion": "balanca",
+    "marca_f": [
+     2813
+    ],
+    "trans": "zoom"
+   },
    "id": 33,
    "t_in": 92.267,
    "t_out": 96.867,
@@ -940,6 +1207,13 @@
    "motivo": "Muda o foco do número para a pessoa."
   },
   {
+   "render": {
+    "zoom": [
+     1.08,
+     1.1
+    ],
+    "trans": "cut"
+   },
    "id": 34,
    "t_in": 96.867,
    "t_out": 100.067,
@@ -965,6 +1239,16 @@
    "motivo": "Respiro de rosto antes do bloco final."
   },
   {
+   "render": {
+    "motion": "linha_tempo",
+    "continua": true,
+    "marca_f": [
+     3022,
+     3086
+    ],
+    "trans": "mask",
+    "pip": true
+   },
    "id": 35,
    "t_in": 100.067,
    "t_out": 103.767,
@@ -992,6 +1276,15 @@
    "motivo": "Reaproveita a linha do tempo: continuidade visual."
   },
   {
+   "render": {
+    "zoom": [
+     1.0,
+     1.02
+    ],
+    "degrau_f": 3120,
+    "degrau": 1.15,
+    "trans": "cut"
+   },
    "id": 36,
    "t_in": 103.767,
    "t_out": 107.0,
@@ -1015,6 +1308,10 @@
    "motivo": "Palavra-chave do tratamento crônico."
   },
   {
+   "render": {
+    "broll": "b37_escada.png",
+    "trans": "leak"
+   },
    "id": 37,
    "t_in": 107.0,
    "t_out": 109.7,
@@ -1042,6 +1339,10 @@
    "motivo": "Começa a aceleração final com imagem de vida, não de balança."
   },
   {
+   "render": {
+    "broll": "b38_familia.png",
+    "trans": "cut"
+   },
    "id": 38,
    "t_in": 109.7,
    "t_out": 112.133,
@@ -1065,6 +1366,13 @@
    "motivo": "Momento emocional; luz quente fecha o arco."
   },
   {
+   "render": {
+    "zoom": [
+     1.08,
+     1.1
+    ],
+    "trans": "cut"
+   },
    "id": 39,
    "t_in": 112.133,
    "t_out": 114.533,
@@ -1092,6 +1400,14 @@
    "motivo": "CTA entra junto com o payoff, não depois."
   },
   {
+   "render": {
+    "zoom": [
+     1.2,
+     1.23
+    ],
+    "flash_f": 3438,
+    "trans": "flash_t"
+   },
    "id": 40,
    "t_in": 114.533,
    "t_out": 117.367,
